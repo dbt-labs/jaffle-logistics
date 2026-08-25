@@ -1,0 +1,80 @@
+version: 2
+
+models:
+  - name: dim_hubs
+    description: "Hub dimension."
+    columns:
+      - name: hub_id
+        tests: [unique, not_null]
+
+  - name: dim_clients
+    description: "Client dimension enriched with contract SLA target."
+    columns:
+      - name: client_id
+        tests: [unique, not_null]
+      - name: health
+        tests:
+          - accepted_values:
+              arguments:
+                values: ['healthy', 'watch', 'at-risk']
+
+  - name: dim_drivers
+    description: "Driver dimension enriched with home-hub city."
+    columns:
+      - name: driver_id
+        tests: [unique, not_null]
+      - name: home_hub_id
+        tests:
+          - relationships:
+              arguments:
+                to: ref('dim_hubs')
+                field: hub_id
+
+  - name: fct_shipments
+    description: "Shipment fact (grain: shipment) with touchpoint counts."
+    columns:
+      - name: shipment_id
+        tests: [unique, not_null]
+      - name: client_id
+        tests:
+          - relationships:
+              arguments:
+                to: ref('dim_clients')
+                field: client_id
+      - name: status
+        tests:
+          - accepted_values:
+              arguments:
+                values: ['delivered', 'delayed', 'failed', 'returned']
+
+  - name: fct_incidents
+    description: "Incident fact (grain: incident) with report/work-order flags."
+    columns:
+      - name: incident_id
+        tests: [unique, not_null]
+      - name: hub_id
+        tests:
+          - relationships:
+              arguments:
+                to: ref('dim_hubs')
+                field: hub_id
+      - name: incident_type
+        tests:
+          - accepted_values:
+              arguments:
+                values: ['damage', 'delay', 'accident', 'mispick', 'dispute', 'weather']
+
+  - name: fct_account_health
+    description: >
+      Monthly account-health fact (grain: client-month). Surfaces the Kellerman
+      decline: on-time % down, ticket/incident counts up across 2025.
+    columns:
+      - name: account_month_key
+        tests: [unique, not_null]
+      - name: client_id
+        tests:
+          - not_null
+          - relationships:
+              arguments:
+                to: ref('dim_clients')
+                field: client_id

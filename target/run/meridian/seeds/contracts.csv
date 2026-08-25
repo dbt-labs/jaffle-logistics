@@ -1,0 +1,14 @@
+
+    
+    
+    
+    create table sthibeault_test_db.dbt_sthibeault.contracts (contract_id text,client_id text,effective_date date,sla_ontime_pct integer,credit_terms text)
+  ;
+    -- dbt seed --
+    
+            insert into sthibeault_test_db.dbt_sthibeault.contracts (contract_id, client_id, effective_date, sla_ontime_pct, credit_terms) values
+            (%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s)
+        
+
+;
+  

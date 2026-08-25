@@ -1,0 +1,244 @@
+thread_id,channel,participants,started_at,linked_ids,body
+SLK-9000,#dispatch,"@tina, @ray, @mcardenas, @gordon",2025-07-04T18:54:00,INC-2025-00099 RTE-CIN-20250704-002,"@tina: heads up, seeing an issue tied to INC-2025-00099 at Cincinnati
+@ray: on it. how many stops affected?
+@tina: route RTE-CIN-20250704-002, driver's holding for instructions
+@mcardenas: let's get a report filed
+@tina: thx. will update the thread"
+SLK-9001,#fleet,"@curtis, @marla, @tina",2025-06-09T22:04:00,INC-2025-00061 RTE-IND-20250609-004,"@curtis: heads up, seeing an issue tied to INC-2025-00061 at Indianapolis
+@marla: ugh again? pulling the route now
+@curtis: route RTE-IND-20250609-004, exceptions piling up
+@tina: looping in ops lead
+@curtis: filed. see the incident record"
+SLK-9002,#ops-ind,"@yolanda, @tina",2025-06-11T10:46:00,INC-2025-00193 RTE-IND-20250611-003,"@yolanda: heads up, seeing an issue tied to INC-2025-00193 at Indianapolis
+@tina: is this the same thing from this morning?
+@yolanda: route RTE-IND-20250611-003, we may need to reassign
+@yolanda: ok tracking"
+SLK-9003,#dispatch,"@ray, @tina, @devon",2025-05-15T14:15:00,INC-2025-00207 RTE-DET-20250515-001,"@ray: heads up, seeing an issue tied to INC-2025-00207 at Detroit
+@tina: on it. how many stops affected?
+@ray: route RTE-DET-20250515-001, exceptions piling up
+@devon: customer already asking
+@ray: thx. will update the thread"
+SLK-9004,#ops-cin,"@elaine, @tokafor, @marcus, @hank",2025-06-19T13:29:00,INC-2025-00182 RTE-CMH-20250619-003,"@elaine: heads up, seeing an issue tied to INC-2025-00182 at Columbus
+@tokafor: ugh again? pulling the route now
+@elaine: route RTE-CMH-20250619-003, exceptions piling up
+@marcus: k, I'll cover the reattempts
+@elaine: thx. will update the thread"
+SLK-9005,#dispatch,"@gordon, @curtis",2025-03-13T18:23:00,INC-2025-00100 RTE-CHI-20250313-003,"@gordon: heads up, seeing an issue tied to INC-2025-00100 at Chicago
+@curtis: on it. how many stops affected?
+@gordon: ok tracking"
+SLK-9006,#ops-cin,"@gordon, @mcardenas, @curtis, @devon",2025-03-03T17:04:00,INC-2025-00222,"@gordon: heads up, seeing an issue tied to INC-2025-00222 at Cincinnati
+@mcardenas: who's the driver on this one
+@curtis: customer already asking
+@gordon: ok tracking"
+SLK-9007,#ops-ind,"@dana, @marla, @hank",2025-06-09T21:43:00,INC-2025-00061 RTE-IND-20250609-004,"@dana: heads up, seeing an issue tied to INC-2025-00061 at Indianapolis
+@marla: ugh again? pulling the route now
+@dana: route RTE-IND-20250609-004, exceptions piling up
+@hank: customer already asking
+@dana: filed. see the incident record"
+SLK-9008,#ops-chi,"@rhalvorsen, @priya.n",2025-11-14T12:09:00,INC-2025-00007 RTE-CIN-20251114-001,"@rhalvorsen: heads up, seeing an issue tied to INC-2025-00007 at Cincinnati
+@priya.n: on it. how many stops affected?
+@rhalvorsen: route RTE-CIN-20251114-001, exceptions piling up
+@rhalvorsen: filed. see the incident record"
+SLK-9009,#ops-cin,"@devon, @dana",2025-06-20T07:35:00,INC-2025-00031 RTE-CIN-20250620-001,"@devon: heads up, seeing an issue tied to INC-2025-00031 at Cincinnati
+@dana: is this the same thing from this morning?
+@devon: route RTE-CIN-20250620-001, driver's holding for instructions
+@devon: ok tracking"
+SLK-9010,#ops-ind,"@sam, @tina, @ray",2025-06-19T13:05:00,INC-2025-00182 RTE-CMH-20250619-003,"@sam: heads up, seeing an issue tied to INC-2025-00182 at Columbus
+@tina: who's the driver on this one
+@ray: looping in ops lead
+@sam: filed. see the incident record"
+SLK-9011,#ops-chi,"@yolanda, @devon, @marcus",2025-07-29T07:37:00,INC-2025-00078 RTE-CHI-20250729-005,"@yolanda: heads up, seeing an issue tied to INC-2025-00078 at Chicago
+@devon: ugh again? pulling the route now
+@yolanda: route RTE-CHI-20250729-005, exceptions piling up
+@marcus: looping in ops lead
+@yolanda: filed. see the incident record"
+SLK-9012,#accounts,"@curtis, @tokafor, @rhalvorsen, @dana",2025-07-23T21:15:00,INC-2025-00108 RTE-IND-20250723-001,"@curtis: heads up, seeing an issue tied to INC-2025-00108 at Indianapolis
+@tokafor: ugh again? pulling the route now
+@curtis: route RTE-IND-20250723-001, driver's holding for instructions
+@rhalvorsen: k, I'll cover the reattempts
+@curtis: thx. will update the thread"
+SLK-9013,#ops-chi,"@sandra, @tina, @yolanda, @ray",2025-07-24T20:31:00,INC-2025-00180 RTE-CHI-20250724-001,"@sandra: heads up, seeing an issue tied to INC-2025-00180 at Chicago
+@tina: ugh again? pulling the route now
+@yolanda: let's get a report filed
+@sandra: filed. see the incident record"
+SLK-9014,#ops-cin,"@curtis, @marcus, @mcardenas",2025-11-28T16:29:00,INC-2025-00048,"@curtis: heads up, seeing an issue tied to INC-2025-00048 at Columbus
+@marcus: is this the same thing from this morning?
+@mcardenas: let's get a report filed
+@curtis: ok tracking"
+SLK-9015,#ops-cmh,"@frank, @elaine, @yolanda, @rhalvorsen",2025-11-28T19:27:00,INC-2025-00048,"@frank: heads up, seeing an issue tied to INC-2025-00048 at Columbus
+@elaine: who's the driver on this one
+@yolanda: customer already asking
+@frank: thx. will update the thread"
+SLK-9016,#ops-chi,"@gordon, @alicia, @tina",2025-09-05T21:16:00,INC-2025-00229 RTE-CHI-20250905-002,"@gordon: heads up, seeing an issue tied to INC-2025-00229 at Chicago
+@alicia: is this the same thing from this morning?
+@gordon: route RTE-CHI-20250905-002, we may need to reassign
+@tina: let's get a report filed
+@gordon: ok tracking"
+SLK-9017,#ops-cin,"@devon, @mcardenas, @hank",2025-06-08T15:16:00,INC-2025-00047 RTE-CMH-20250608-001,"@devon: heads up, seeing an issue tied to INC-2025-00047 at Columbus
+@mcardenas: on it. how many stops affected?
+@devon: route RTE-CMH-20250608-001, exceptions piling up
+@hank: let's get a report filed
+@devon: ok tracking"
+SLK-9018,#fleet,"@gordon, @frank",2025-03-17T23:07:00,INC-2025-00081 RTE-CHI-20250317-001,"@gordon: heads up, seeing an issue tied to INC-2025-00081 at Chicago
+@frank: on it. how many stops affected?
+@gordon: route RTE-CHI-20250317-001, driver's holding for instructions
+@gordon: filed. see the incident record"
+SLK-9019,#ops-cin,"@sandra, @curtis",2025-08-13T19:26:00,INC-2025-00250,"@sandra: heads up, seeing an issue tied to INC-2025-00250 at Columbus
+@curtis: on it. how many stops affected?
+@sandra: ok tracking"
+SLK-9020,#ops-chi,"@sandra, @dana, @rhalvorsen",2025-11-01T15:24:00,INC-2025-00203,"@sandra: heads up, seeing an issue tied to INC-2025-00203 at Chicago
+@dana: who's the driver on this one
+@rhalvorsen: customer already asking
+@sandra: filed. see the incident record"
+SLK-9021,#ops-chi,"@devon, @rhalvorsen, @tina",2025-11-21T21:52:00,INC-2025-00217 RTE-CHI-20251121-004,"@devon: heads up, seeing an issue tied to INC-2025-00217 at Chicago
+@rhalvorsen: ugh again? pulling the route now
+@devon: route RTE-CHI-20251121-004, driver's holding for instructions
+@tina: looping in ops lead
+@devon: filed. see the incident record"
+SLK-9022,#ops-chi,"@alicia, @yolanda, @priya.n",2025-07-21T21:05:00,INC-2025-00176 RTE-CHI-20250721-002,"@alicia: heads up, seeing an issue tied to INC-2025-00176 at Chicago
+@yolanda: ugh again? pulling the route now
+@priya.n: k, I'll cover the reattempts
+@alicia: ok tracking"
+SLK-9023,#fleet,"@sandra, @elaine",2025-05-02T14:00:00,INC-2025-00117 RTE-CIN-20250502-001,"@sandra: heads up, seeing an issue tied to INC-2025-00117 at Cincinnati
+@elaine: on it. how many stops affected?
+@sandra: route RTE-CIN-20250502-001, we may need to reassign
+@sandra: ok tracking"
+SLK-9024,#ops-chi,"@devon, @sandra",2025-08-28T20:49:00,INC-2025-00196 RTE-CMH-20250828-001,"@devon: heads up, seeing an issue tied to INC-2025-00196 at Columbus
+@sandra: is this the same thing from this morning?
+@devon: ok tracking"
+SLK-9025,#ops-chi,"@yolanda, @mcardenas, @curtis",2025-07-22T10:32:00,INC-2025-00085,"@yolanda: heads up, seeing an issue tied to INC-2025-00085 at Chicago
+@mcardenas: who's the driver on this one
+@curtis: let's get a report filed
+@yolanda: filed. see the incident record"
+SLK-9026,#incident-response,"@mcardenas, @tina",2025-07-24T21:50:00,INC-2025-00180 RTE-CHI-20250724-001,"@mcardenas: heads up, seeing an issue tied to INC-2025-00180 at Chicago
+@tina: is this the same thing from this morning?
+@mcardenas: route RTE-CHI-20250724-001, driver's holding for instructions
+@mcardenas: thx. will update the thread"
+SLK-9027,#fleet,"@alicia, @elaine, @tokafor, @marla",2025-07-21T21:33:00,INC-2025-00234 RTE-CHI-20250721-005,"@alicia: heads up, seeing an issue tied to INC-2025-00234 at Chicago
+@elaine: ugh again? pulling the route now
+@alicia: route RTE-CHI-20250721-005, we may need to reassign
+@tokafor: looping in ops lead
+@alicia: thx. will update the thread"
+SLK-9028,#incident-response,"@rhalvorsen, @curtis, @gordon",2025-07-01T10:42:00,INC-2025-00101 RTE-CMH-20250701-001,"@rhalvorsen: heads up, seeing an issue tied to INC-2025-00101 at Columbus
+@curtis: is this the same thing from this morning?
+@rhalvorsen: route RTE-CMH-20250701-001, exceptions piling up
+@gordon: looping in ops lead
+@rhalvorsen: ok tracking"
+SLK-9029,#ops-det,"@tokafor, @ray, @yolanda",2025-07-24T13:41:00,INC-2025-00167 RTE-DET-20250724-002,"@tokafor: heads up, seeing an issue tied to INC-2025-00167 at Detroit
+@ray: who's the driver on this one
+@tokafor: route RTE-DET-20250724-002, driver's holding for instructions
+@yolanda: let's get a report filed
+@tokafor: filed. see the incident record"
+SLK-9030,#ops-ind,"@curtis, @frank",2025-08-12T18:02:00,INC-2025-00201 RTE-CIN-20250812-002,"@curtis: heads up, seeing an issue tied to INC-2025-00201 at Cincinnati
+@frank: is this the same thing from this morning?
+@curtis: route RTE-CIN-20250812-002, we may need to reassign
+@curtis: thx. will update the thread"
+SLK-9031,#ops-chi,"@alicia, @marcus, @ray, @sandra",2025-12-17T19:24:00,INC-2025-00254 RTE-CMH-20251217-003,"@alicia: heads up, seeing an issue tied to INC-2025-00254 at Columbus
+@marcus: on it. how many stops affected?
+@alicia: route RTE-CMH-20251217-003, we may need to reassign
+@ray: k, I'll cover the reattempts
+@alicia: thx. will update the thread"
+SLK-9032,#fleet,"@frank, @tokafor, @devon, @marcus",2025-07-21T21:25:00,INC-2025-00234 RTE-CHI-20250721-005,"@frank: heads up, seeing an issue tied to INC-2025-00234 at Chicago
+@tokafor: ugh again? pulling the route now
+@frank: route RTE-CHI-20250721-005, driver's holding for instructions
+@devon: k, I'll cover the reattempts
+@frank: thx. will update the thread"
+SLK-9033,#fleet,"@frank, @alicia, @gordon",2025-10-10T07:34:00,INC-2025-00095 RTE-CMH-20251010-004,"@frank: heads up, seeing an issue tied to INC-2025-00095 at Columbus
+@alicia: is this the same thing from this morning?
+@gordon: let's get a report filed
+@frank: ok tracking"
+SLK-9034,#ops-det,"@hank, @marla, @alicia",2025-01-15T11:20:00,INC-2025-00121 RTE-DET-20250115-003,"@hank: heads up, seeing an issue tied to INC-2025-00121 at Detroit
+@marla: on it. how many stops affected?
+@hank: route RTE-DET-20250115-003, driver's holding for instructions
+@alicia: let's get a report filed
+@hank: ok tracking"
+SLK-9035,#ops-det,"@rhalvorsen, @gordon",2025-01-14T07:42:00,INC-2025-00087,"@rhalvorsen: heads up, seeing an issue tied to INC-2025-00087 at Detroit
+@gordon: who's the driver on this one
+@rhalvorsen: thx. will update the thread"
+SLK-9036,#ops-cin,"@gordon, @curtis, @mcardenas, @dana",2025-08-12T18:25:00,INC-2025-00201 RTE-CIN-20250812-002,"@gordon: heads up, seeing an issue tied to INC-2025-00201 at Cincinnati
+@curtis: ugh again? pulling the route now
+@gordon: route RTE-CIN-20250812-002, exceptions piling up
+@mcardenas: customer already asking
+@gordon: filed. see the incident record"
+SLK-9037,#ops-det,"@elaine, @rhalvorsen, @curtis, @dana",2025-02-21T14:22:00,INC-2025-00065,"@elaine: heads up, seeing an issue tied to INC-2025-00065 at Cincinnati
+@rhalvorsen: on it. how many stops affected?
+@curtis: looping in ops lead
+@elaine: thx. will update the thread"
+SLK-9038,#ops-det,"@tina, @marla, @sandra, @gordon",2025-04-16T19:47:00,INC-2025-00204,"@tina: heads up, seeing an issue tied to INC-2025-00204 at Detroit
+@marla: ugh again? pulling the route now
+@sandra: k, I'll cover the reattempts
+@tina: filed. see the incident record"
+SLK-9039,#ops-chi,"@hank, @marcus, @priya.n, @mcardenas",2025-05-23T18:55:00,INC-2025-00165 RTE-CHI-20250523-002,"@hank: heads up, seeing an issue tied to INC-2025-00165 at Chicago
+@marcus: who's the driver on this one
+@priya.n: looping in ops lead
+@hank: ok tracking"
+SLK-9040,#dispatch,"@mcardenas, @ray, @rhalvorsen, @frank",2025-06-08T14:49:00,INC-2025-00047 RTE-CMH-20250608-001,"@mcardenas: heads up, seeing an issue tied to INC-2025-00047 at Columbus
+@ray: on it. how many stops affected?
+@mcardenas: route RTE-CMH-20250608-001, driver's holding for instructions
+@rhalvorsen: let's get a report filed
+@mcardenas: thx. will update the thread"
+SLK-9041,#ops-cmh,"@priya.n, @gordon, @ray",2025-05-19T11:40:00,INC-2025-00052 RTE-CMH-20250519-003,"@priya.n: heads up, seeing an issue tied to INC-2025-00052 at Columbus
+@gordon: on it. how many stops affected?
+@priya.n: route RTE-CMH-20250519-003, driver's holding for instructions
+@ray: looping in ops lead
+@priya.n: thx. will update the thread"
+SLK-9042,#ops-cmh,"@frank, @curtis, @rhalvorsen",2025-08-28T20:16:00,INC-2025-00196 RTE-CMH-20250828-001,"@frank: heads up, seeing an issue tied to INC-2025-00196 at Columbus
+@curtis: on it. how many stops affected?
+@rhalvorsen: looping in ops lead
+@frank: thx. will update the thread"
+SLK-9043,#ops-cin,"@rhalvorsen, @marla, @curtis, @elaine",2025-05-02T21:13:00,INC-2025-00151 RTE-CHI-20250502-001,"@rhalvorsen: heads up, seeing an issue tied to INC-2025-00151 at Chicago
+@marla: ugh again? pulling the route now
+@rhalvorsen: route RTE-CHI-20250502-001, we may need to reassign
+@curtis: looping in ops lead
+@rhalvorsen: filed. see the incident record"
+SLK-9044,#incident-response,"@ray, @priya.n, @marla",2025-04-25T17:08:00,INC-2025-00239 RTE-IND-20250425-001,"@ray: heads up, seeing an issue tied to INC-2025-00239 at Indianapolis
+@priya.n: ugh again? pulling the route now
+@ray: route RTE-IND-20250425-001, we may need to reassign
+@marla: customer already asking
+@ray: ok tracking"
+SLK-9045,#fleet,"@rhalvorsen, @marcus, @frank",2025-03-05T22:53:00,INC-2025-00126,"@rhalvorsen: heads up, seeing an issue tied to INC-2025-00126 at Chicago
+@marcus: who's the driver on this one
+@frank: k, I'll cover the reattempts
+@rhalvorsen: filed. see the incident record"
+SLK-9046,#ops-chi,"@priya.n, @elaine",2025-12-03T21:30:00,INC-2025-00186,"@priya.n: heads up, seeing an issue tied to INC-2025-00186 at Detroit
+@elaine: on it. how many stops affected?
+@priya.n: filed. see the incident record"
+SLK-9047,#ops-ind,"@yolanda, @alicia",2025-01-09T16:31:00,INC-2025-00139 RTE-IND-20250109-002,"@yolanda: heads up, seeing an issue tied to INC-2025-00139 at Indianapolis
+@alicia: who's the driver on this one
+@yolanda: route RTE-IND-20250109-002, driver's holding for instructions
+@yolanda: ok tracking"
+SLK-9048,#ops-det,"@mcardenas, @sam",2025-06-09T22:06:00,INC-2025-00061 RTE-IND-20250609-004,"@mcardenas: heads up, seeing an issue tied to INC-2025-00061 at Indianapolis
+@sam: on it. how many stops affected?
+@mcardenas: route RTE-IND-20250609-004, exceptions piling up
+@mcardenas: filed. see the incident record"
+SLK-9049,#ops-chi,"@tokafor, @sam, @gordon, @marla",2025-05-02T12:46:00,INC-2025-00117 RTE-CIN-20250502-001,"@tokafor: heads up, seeing an issue tied to INC-2025-00117 at Cincinnati
+@sam: ugh again? pulling the route now
+@gordon: k, I'll cover the reattempts
+@tokafor: thx. will update the thread"
+SLK-99001,#ops-chi,"@gordon, @marla, @tokafor, @marcus",2025-01-15T09:05:00,INC-2025-00417 RTE-CHI-20250115-201,"@marla: storm's bad. we've got ~24 CHI routes with heavy exceptions this morning
+@gordon: just heard a semi jackknifed on the ramp — that's INC-2025-00417. everyone ok?
+@tokafor: driver's fine, unit's not. recovery en route, I'll open the work order
+@marla: holding remaining routes. RTE-CHI-20250115-201 is the one that went down
+@marcus: Kellerman already called. their freight is in this batch. going to be a credit conversation
+@gordon: file the incident report today. let's get ahead of the tickets"
+SLK-99010,#accounts,"@marcus, @elaine, @dana",2025-07-18T11:00:00,CLI-0042,"@marcus: getting worried about Kellerman (CLI-0042). on-time's been sliding since the Q2 QBR and tickets are up
+@elaine: is it a CHI capacity thing or something systemic?
+@marcus: bit of both. moving them to watch. going to need a real plan before Q3
+@dana: strategic account, let's not let this become a churn story"
+SLK-99011,#accounts,"@marcus, @dana, @gordon",2025-10-15T15:30:00,CLI-0042,"@marcus: Kellerman (CLI-0042) is officially at-risk. they're evaluating alternatives
+@dana: ok this is a retention fire drill. save plan written?
+@marcus: yes, CRM-9030. dedicated CHI capacity + weekly scorecard + exec sponsor
+@gordon: ops will support the dedicated capacity for peak. let's not lose them"
+SLK-99020,#ops-ind,"@alicia, @priya.n, @sandra",2025-05-13T10:40:00,INC-2025-02233,"@sandra: getting multiple 'wrong item' tickets out of IND this morning
+@alicia: yeah it's a pattern, opening INC-2025-02233. smells like a bin issue
+@priya.n: confirmed — bin label doesn't match WMS. several orders pulled from it
+@alicia: freeze that bin, scan-to-confirm going forward. postmortem friday"
+SLK-99030,#legal,"@sackerman, @kellsworth, @frank",2025-09-09T10:00:00,DRV-01188 LGL-9002,"@kellsworth: deactivated DRV-01188 for cause. he's disputing the 08/21 no-show
+@frank: dispatch log for that day says he CALLED IN a mechanical and waited for a callback. that contradicts our written warning
+@sackerman: that's the problem — HR-9301 says no-call/no-show, DN-900002 says he notified the hub. we need to reconcile before this goes anywhere
+@kellsworth: driver agreement LGL-9002 covers termination for cause, but the conflicting record weakens it. let's get the phone logs"
+SLK-99040,#dispatch,"@gordon, @marla, @alicia, @frank, @yolanda",2025-11-24T08:30:00,HUB-CHI HUB-IND HUB-DET HUB-CIN HUB-CMH,"@gordon: peak is here. volume's up ~40% network-wide vs baseline, exceptions climbing everywhere
+@marla: CHI is slammed, watching the weather too — do NOT want a repeat of January
+@alicia: IND holding up post-mispick fix. scan-to-confirm is slowing us slightly but accuracy's good
+@frank: fleet's stretched, PMs deferred where safe. flag anything unsafe
+@yolanda: overlap risk with the Kellerman save plan — they get dedicated CHI capacity, protect it"

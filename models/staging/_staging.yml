@@ -1,0 +1,410 @@
+version: 2
+
+# Schema tests for the staging layer. PK unique/not_null, FK relationships (which
+# double as anchor validation — a mis-seeded anchor breaks a join here), and
+# accepted_values on every enum (SPEC §7). Generic-test arguments are nested
+# under `arguments:` per the dbt 1.11 schema.
+
+models:
+  - name: stg_hubs
+    description: "One row per hub."
+    columns:
+      - name: hub_id
+        tests: [unique, not_null]
+      - name: hub_function
+        tests:
+          - accepted_values:
+              arguments:
+                values: ['HQ', 'hub', 'warehouse']
+
+  - name: stg_vehicles
+    description: "One row per fleet vehicle."
+    columns:
+      - name: vehicle_id
+        tests: [unique, not_null]
+      - name: hub_id
+        tests:
+          - not_null
+          - relationships:
+              arguments:
+                to: ref('stg_hubs')
+                field: hub_id
+      - name: vehicle_type
+        tests:
+          - accepted_values:
+              arguments:
+                values: ['van', 'box_truck', 'semi']
+      - name: status
+        tests:
+          - accepted_values:
+              arguments:
+                values: ['active', 'maintenance', 'retired']
+
+  - name: stg_drivers
+    description: "One row per driver."
+    columns:
+      - name: driver_id
+        tests: [unique, not_null]
+      - name: hub_id
+        tests:
+          - not_null
+          - relationships:
+              arguments:
+                to: ref('stg_hubs')
+                field: hub_id
+      - name: employment_type
+        tests:
+          - accepted_values:
+              arguments:
+                values: ['employee', 'contractor']
+      - name: status
+        tests:
+          - accepted_values:
+              arguments:
+                values: ['active', 'inactive', 'disputed']
+
+  - name: stg_clients
+    description: "One row per client."
+    columns:
+      - name: client_id
+        tests: [unique, not_null]
+      - name: tier
+        tests:
+          - accepted_values:
+              arguments:
+                values: ['strategic', 'mid', 'small']
+      - name: line_of_business
+        tests:
+          - accepted_values:
+              arguments:
+                values: ['last-mile', 'LTL', 'warehousing']
+      - name: health
+        tests:
+          - accepted_values:
+              arguments:
+                values: ['healthy', 'watch', 'at-risk']
+
+  - name: stg_contracts
+    description: "One row per contract."
+    columns:
+      - name: contract_id
+        tests: [unique, not_null]
+      - name: client_id
+        tests:
+          - not_null
+          - relationships:
+              arguments:
+                to: ref('stg_clients')
+                field: client_id
+
+  - name: stg_shipments
+    description: "One row per shipment."
+    columns:
+      - name: shipment_id
+        tests: [unique, not_null]
+      - name: client_id
+        tests:
+          - not_null
+          - relationships:
+              arguments:
+                to: ref('stg_clients')
+                field: client_id
+      - name: origin_hub_id
+        tests:
+          - not_null
+          - relationships:
+              arguments:
+                to: ref('stg_hubs')
+                field: hub_id
+      - name: route_id
+        tests:
+          - relationships:
+              arguments:
+                to: ref('stg_routes')
+                field: route_id
+      - name: service_level
+        tests:
+          - accepted_values:
+              arguments:
+                values: ['standard', 'expedited', 'freight']
+      - name: status
+        tests:
+          - accepted_values:
+              arguments:
+                values: ['delivered', 'delayed', 'failed', 'returned']
+
+  - name: stg_routes
+    description: "One row per route (driver-day at a hub)."
+    columns:
+      - name: route_id
+        tests: [unique, not_null]
+      - name: hub_id
+        tests:
+          - not_null
+          - relationships:
+              arguments:
+                to: ref('stg_hubs')
+                field: hub_id
+      - name: driver_id
+        tests:
+          - not_null
+          - relationships:
+              arguments:
+                to: ref('stg_drivers')
+                field: driver_id
+      - name: vehicle_id
+        tests:
+          - not_null
+          - relationships:
+              arguments:
+                to: ref('stg_vehicles')
+                field: vehicle_id
+      - name: status
+        tests:
+          - accepted_values:
+              arguments:
+                values: ['completed', 'partial', 'canceled']
+
+  - name: stg_incidents
+    description: "One row per incident."
+    columns:
+      - name: incident_id
+        tests: [unique, not_null]
+      - name: hub_id
+        tests:
+          - not_null
+          - relationships:
+              arguments:
+                to: ref('stg_hubs')
+                field: hub_id
+      - name: shipment_id
+        tests:
+          - relationships:
+              arguments:
+                to: ref('stg_shipments')
+                field: shipment_id
+      - name: route_id
+        tests:
+          - relationships:
+              arguments:
+                to: ref('stg_routes')
+                field: route_id
+      - name: driver_id
+        tests:
+          - relationships:
+              arguments:
+                to: ref('stg_drivers')
+                field: driver_id
+      - name: vehicle_id
+        tests:
+          - relationships:
+              arguments:
+                to: ref('stg_vehicles')
+                field: vehicle_id
+      - name: incident_type
+        tests:
+          - accepted_values:
+              arguments:
+                values: ['damage', 'delay', 'accident', 'mispick', 'dispute', 'weather']
+      - name: severity
+        tests:
+          - accepted_values:
+              arguments:
+                values: [1, 2, 3, 4]
+                quote: false
+
+  - name: stg_dispatch_notes
+    description: "One row per dispatch note."
+    columns:
+      - name: note_id
+        tests: [unique, not_null]
+      - name: route_id
+        tests:
+          - not_null
+          - relationships:
+              arguments:
+                to: ref('stg_routes')
+                field: route_id
+      - name: driver_id
+        tests:
+          - relationships:
+              arguments:
+                to: ref('stg_drivers')
+                field: driver_id
+      - name: hub_id
+        tests:
+          - relationships:
+              arguments:
+                to: ref('stg_hubs')
+                field: hub_id
+
+  - name: stg_support_tickets
+    description: "One row per support ticket."
+    columns:
+      - name: ticket_id
+        tests: [unique, not_null]
+      - name: client_id
+        tests:
+          - not_null
+          - relationships:
+              arguments:
+                to: ref('stg_clients')
+                field: client_id
+      - name: shipment_id
+        tests:
+          - relationships:
+              arguments:
+                to: ref('stg_shipments')
+                field: shipment_id
+      - name: status
+        tests:
+          - accepted_values:
+              arguments:
+                values: ['open', 'pending', 'resolved']
+      - name: channel
+        tests:
+          - accepted_values:
+              arguments:
+                values: ['email', 'phone', 'chat', 'portal']
+
+  - name: stg_crm_notes
+    description: "One row per CRM note."
+    columns:
+      - name: note_id
+        tests: [unique, not_null]
+      - name: client_id
+        tests:
+          - not_null
+          - relationships:
+              arguments:
+                to: ref('stg_clients')
+                field: client_id
+      - name: note_type
+        tests:
+          - accepted_values:
+              arguments:
+                values: ['QBR', 'call', 'plan']
+      - name: sentiment
+        tests:
+          - accepted_values:
+              arguments:
+                values: ['positive', 'neutral', 'concerned']
+      - name: shipment_id
+        description: "Optional: the shipment a note is about (account-level notes are null)."
+        tests:
+          - relationships:
+              arguments:
+                to: ref('stg_shipments')
+                field: shipment_id
+
+  - name: stg_incident_reports
+    description: "One row per incident report / postmortem."
+    columns:
+      - name: report_id
+        tests: [unique, not_null]
+      - name: incident_id
+        tests:
+          - not_null
+          - relationships:
+              arguments:
+                to: ref('stg_incidents')
+                field: incident_id
+      - name: shipment_id
+        description: "Optional: the affected shipment recorded on the report."
+        tests:
+          - relationships:
+              arguments:
+                to: ref('stg_shipments')
+                field: shipment_id
+
+  - name: stg_fleet_work_orders
+    description: "One row per fleet work order."
+    columns:
+      - name: wo_id
+        tests: [unique, not_null]
+      - name: vehicle_id
+        tests:
+          - not_null
+          - relationships:
+              arguments:
+                to: ref('stg_vehicles')
+                field: vehicle_id
+      - name: hub_id
+        tests:
+          - relationships:
+              arguments:
+                to: ref('stg_hubs')
+                field: hub_id
+      - name: linked_incident_id
+        tests:
+          - relationships:
+              arguments:
+                to: ref('stg_incidents')
+                field: incident_id
+
+  - name: stg_slack_threads
+    description: "One row per Slack thread."
+    columns:
+      - name: thread_id
+        tests: [unique, not_null]
+
+  - name: stg_legal_docs
+    description: "One row per legal document."
+    columns:
+      - name: doc_id
+        tests: [unique, not_null]
+      - name: client_id
+        tests:
+          - relationships:
+              arguments:
+                to: ref('stg_clients')
+                field: client_id
+      - name: driver_id
+        tests:
+          - relationships:
+              arguments:
+                to: ref('stg_drivers')
+                field: driver_id
+      - name: doc_type
+        tests:
+          - accepted_values:
+              arguments:
+                values: ['MSA', 'SLA_addendum', 'driver_agreement']
+
+  - name: stg_hr_docs
+    description: "One row per HR document."
+    columns:
+      - name: hr_doc_id
+        tests: [unique, not_null]
+      - name: driver_id
+        tests:
+          - not_null
+          - relationships:
+              arguments:
+                to: ref('stg_drivers')
+                field: driver_id
+      - name: doc_type
+        tests:
+          - accepted_values:
+              arguments:
+                values: ['onboarding', 'disciplinary', 'training']
+
+  - name: stg_call_transcripts
+    description: "One row per CRM call transcript, linked to the crm_note it transcribes."
+    columns:
+      - name: transcript_id
+        tests: [unique, not_null]
+      - name: crm_note_id
+        tests:
+          - not_null
+          - relationships:
+              arguments:
+                to: ref('stg_crm_notes')
+                field: note_id
+      - name: client_id
+        tests:
+          - not_null
+          - relationships:
+              arguments:
+                to: ref('stg_clients')
+                field: client_id

@@ -1,0 +1,2 @@
+packages:
+  - git: "https://github.com/dbt-labs/dbt-context-engineering.git"

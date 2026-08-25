@@ -1,0 +1,6 @@
+hub_id,city,function,capacity_pkg_day
+HUB-CMH,Columbus,HQ,42000
+HUB-CHI,Chicago,hub,68000
+HUB-IND,Indianapolis,warehouse,51000
+HUB-DET,Detroit,hub,47000
+HUB-CIN,Cincinnati,hub,39000

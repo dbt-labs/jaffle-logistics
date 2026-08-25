@@ -1,0 +1,37 @@
+version: 2
+
+models:
+  - name: int_shipment_touchpoints
+    description: >
+      Every artifact that references a shipment, unioned into one long table —
+      from typed columns (tickets, incidents) and from free text via regex
+      (dispatch notes, Slack, CRM notes, incident reports). Grain: one row per
+      (source, artifact, shipment_id).
+    columns:
+      - name: touchpoint_key
+        tests: [unique, not_null]
+      - name: shipment_id
+        description: "Extracted/joined shipment ID; must resolve to a real shipment."
+        tests:
+          - not_null
+          - relationships:
+              arguments:
+                to: ref('stg_shipments')
+                field: shipment_id
+      - name: source
+        tests:
+          - accepted_values:
+              arguments:
+                values: ['support_ticket', 'incident', 'crm_note',
+                         'incident_report', 'call_transcript', 'dispatch_note']
+
+  - name: int_client_monthly_sla
+    description: "Monthly on-time performance per client. Grain: (client, month)."
+    columns:
+      - name: client_id
+        tests:
+          - not_null
+          - relationships:
+              arguments:
+                to: ref('stg_clients')
+                field: client_id

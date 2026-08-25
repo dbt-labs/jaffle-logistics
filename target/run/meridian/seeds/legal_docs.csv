@@ -1,0 +1,14 @@
+
+    
+    
+    
+    create table sthibeault_test_db.dbt_sthibeault.legal_docs (doc_id text,client_id text,driver_id text,effective_date date,doc_type text,body text)
+  ;
+    -- dbt seed --
+    
+            insert into sthibeault_test_db.dbt_sthibeault.legal_docs (doc_id, client_id, driver_id, effective_date, doc_type, body) values
+            (%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s)
+        
+
+;
+  
