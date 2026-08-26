@@ -5,19 +5,19 @@
 -- into a DuckDB session against jaffle_logistics.duckdb.
 
 with weather_incidents as (
-    select date_trunc('month', occurred_at) as month, count(*) as weather_incidents
+    select {{ dbt.date_trunc('month', 'occurred_at') }} as month, count(*) as weather_incidents
     from {{ ref('stg_incidents') }}
     where incident_type = 'weather'
     group by 1
 ),
 weather_dispatch as (
-    select date_trunc('month', noted_at) as month, count(*) as weather_dispatch_notes
+    select {{ dbt.date_trunc('month', 'noted_at') }} as month, count(*) as weather_dispatch_notes
     from {{ ref('stg_dispatch_notes') }}
     where exception_type = 'weather'
     group by 1
 ),
 delayed as (
-    select date_trunc('month', created_at) as month, count(*) as delayed_shipments
+    select {{ dbt.date_trunc('month', 'created_at') }} as month, count(*) as delayed_shipments
     from {{ ref('stg_shipments') }}
     where status = 'delayed'
     group by 1

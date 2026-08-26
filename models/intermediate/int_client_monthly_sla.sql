@@ -8,7 +8,7 @@ with shipments as (
 
 select
     client_id,
-    date_trunc('month', created_at)                             as month,
+    {{ dbt.date_trunc('month', 'created_at') }}                 as month,
     count(*)                                                    as shipments,
     sum(case when status = 'delivered' then 1 else 0 end)       as delivered,
     sum(case when status in ('delayed', 'failed', 'returned')

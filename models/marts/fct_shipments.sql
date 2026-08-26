@@ -26,7 +26,7 @@ select
     (s.status = 'delivered')                        as is_ontime,
     s.created_at,
     s.delivered_at,
-    date_trunc('month', s.created_at)               as created_month,
+    {{ dbt.date_trunc('month', 's.created_at') }}    as created_month,
     s.route_id,
     coalesce(t.touchpoint_count, 0)                 as touchpoint_count
 from shipments s

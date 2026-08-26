@@ -28,7 +28,7 @@ select
     i.driver_id,
     i.vehicle_id,
     i.occurred_at,
-    date_trunc('month', i.occurred_at)          as occurred_month,
+    {{ dbt.date_trunc('month', 'i.occurred_at') }}  as occurred_month,
     coalesce(r.report_count, 0)                 as report_count,
     coalesce(w.work_order_count, 0)             as work_order_count,
     (coalesce(r.report_count, 0) > 0)           as has_report,

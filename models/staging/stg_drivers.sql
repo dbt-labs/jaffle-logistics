@@ -5,5 +5,5 @@ select
     employment_type,
     cast(hire_date as date)   as hire_date,
     status,
-    cast(perf_score as double) as perf_score
+    cast(perf_score as {{ dbt.type_float() }}) as perf_score
 from {{ ref('drivers') }}

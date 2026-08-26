@@ -1,575 +1,190 @@
 ticket_id,client_id,shipment_id,opened_at,channel,status,csat,body
-TKT-200014,CLI-0201,SHP-202508-000160,2025-08-14T14:14:00,email,resolved,1,"[customer] Where is SHP-202508-000160?? Your tracking hasn't updated and my customer is furious. I need answers today.
-[agent.dfoster] Thank you for your patience. I've located SHP-202508-000160 in our system (origin HUB-DET). Checking with dispatch now.
-[agent.dfoster] Dispatch confirms SHP-202508-000160 will be reattempted next business day. I've flagged your account for a proactive follow-up.
-[customer] Okay, thank you. Please keep me posted."
-TKT-200222,CLI-0201,SHP-202504-000088,2025-04-06T15:44:00,phone,resolved,5,"[customer] Following up on SHP-202504-000088 — could you send the POD once it's delivered? Accounting needs it.
-[agent.mruiz] Attached the POD for SHP-202504-000088. Let me know if there's anything else!
-[customer] Perfect, thank you!"
-TKT-200017,CLI-0007,SHP-202508-000005,2025-08-06T17:03:00,chat,resolved,1,"[customer] Where is SHP-202508-000005?? Your tracking hasn't updated and my customer is furious. I need answers today.
-[agent.tpatel] Thanks for reaching out — I'm sorry for the trouble with SHP-202508-000005. I see it was affected by an exception at our Detroit hub. Let me pull the latest.
-[agent.tpatel] Good news — SHP-202508-000005 is back in motion. I'll monitor it through delivery and confirm the POD with you."
-TKT-200086,CLI-0169,SHP-202511-000153,2025-11-14T15:57:00,email,resolved,3,"[customer] Hi, I'm checking on shipment SHP-202511-000153. The status shows delayed — can you tell me the latest ETA?
-[agent.jbrooks] Thanks for reaching out — I'm sorry for the trouble with SHP-202511-000153. I see it was affected by an exception at our Indianapolis hub. Let me pull the latest.
-[agent.jbrooks] Update: SHP-202511-000153 is re-routed and expected to deliver within 48 hours. I've added a note to prioritize it. Anything else I can do?
-[customer] Appreciate the quick turnaround."
-TKT-200276,CLI-0155,SHP-202504-000006,2025-04-18T09:35:00,phone,resolved,4,"[customer] Hi — quick question on SHP-202504-000006. Can you confirm the delivery window?
-[agent.lchen] Attached the POD for SHP-202504-000006. Let me know if there's anything else!
-[customer] Perfect, thank you!"
-TKT-200207,CLI-0007,SHP-202510-000172,2025-10-30T00:02:00,phone,resolved,5,"[customer] Hi — quick question on SHP-202510-000172. Can you confirm the delivery window?
-[agent.lchen] Attached the POD for SHP-202510-000172. Let me know if there's anything else!
-[customer] Perfect, thank you!"
-TKT-200106,CLI-0169,SHP-202511-000414,2025-11-18T14:46:00,email,resolved,4,"[customer] Hi — quick question on SHP-202511-000414. Can you confirm the delivery window?
-[agent.kobrien] Happy to help — SHP-202511-000414 is on schedule out of our Columbus hub; delivery is within the next 1–2 business days.
-[customer] Great, appreciate it."
-TKT-200224,CLI-0201,SHP-202511-000117,2025-11-04T18:05:00,portal,resolved,5,"[customer] Can you confirm SHP-202511-000117 is still on track to arrive this week?
-[agent.tpatel] Sure thing. I've noted the update on SHP-202511-000117 and confirmed it with the Detroit team.
-[customer] Great, appreciate it."
-TKT-200275,CLI-0155,SHP-202508-000139,2025-08-26T02:00:00,email,resolved,4,"[customer] Hello, I need to update the delivery contact for SHP-202508-000139 if it hasn't gone out yet.
-[agent.mruiz] Sure thing. I've noted the update on SHP-202508-000139 and confirmed it with the Indianapolis team.
-[customer] Thanks for the quick help."
-TKT-200046,CLI-0169,SHP-202511-000362,2025-11-18T21:07:00,email,resolved,4,"[customer] Following up on SHP-202511-000362. Could you confirm whether this will still be delivered this week?
-[agent.dfoster] Thank you for your patience. I've located SHP-202511-000362 in our system (origin HUB-CHI). Checking with dispatch now.
-[agent.dfoster] Good news — SHP-202511-000362 is back in motion. I'll monitor it through delivery and confirm the POD with you.
-[customer] That still isn't good enough but I'll wait for the update."
-TKT-200005,CLI-0201,SHP-202510-000078,2025-10-16T00:27:00,phone,resolved,5,"[customer] Good morning! Quick question on SHP-202510-000078, currently failed. No rush, just planning around it.
-[agent.jbrooks] Apologies for the delay on SHP-202510-000078. I've opened an investigation and looped in the Indianapolis operations team."
-TKT-200100,CLI-0201,SHP-202508-000084,2025-08-29T22:23:00,phone,resolved,5,"[customer] Hello, I need to update the delivery contact for SHP-202508-000084 if it hasn't gone out yet.
-[agent.lchen] Attached the POD for SHP-202508-000084. Let me know if there's anything else!
-[customer] Great, appreciate it."
-TKT-200281,CLI-0007,SHP-202503-000041,2025-04-02T23:00:00,portal,resolved,5,"[customer] Can you confirm SHP-202503-000041 is still on track to arrive this week?
-[agent.lchen] Happy to help — SHP-202503-000041 is on schedule out of our Cincinnati hub; delivery is within the next 1–2 business days.
-[customer] Great, appreciate it."
-TKT-200257,CLI-0007,SHP-202507-000089,2025-07-16T18:07:00,phone,resolved,5,"[customer] Hi — quick question on SHP-202507-000089. Can you confirm the delivery window?
-[agent.dfoster] Attached the POD for SHP-202507-000089. Let me know if there's anything else!
-[customer] Thanks for the quick help."
-TKT-200284,CLI-0169,SHP-202509-000183,2025-09-15T21:34:00,chat,resolved,5,"[customer] Hi — quick question on SHP-202509-000183. Can you confirm the delivery window?
-[agent.lchen] Happy to help — SHP-202509-000183 is on schedule out of our Cincinnati hub; delivery is within the next 1–2 business days.
-[customer] Thanks for the quick help."
-TKT-200131,CLI-0042,SHP-202512-000311,2025-12-22T21:47:00,chat,resolved,5,"[customer] Can you confirm SHP-202512-000311 is still on track to arrive this week?
-[agent.tpatel] Sure thing. I've noted the update on SHP-202512-000311 and confirmed it with the Cincinnati team.
-[customer] Thanks for the quick help."
-TKT-200210,CLI-0201,SHP-202504-000029,2025-04-24T19:09:00,phone,resolved,4,"[customer] Following up on SHP-202504-000029 — could you send the POD once it's delivered? Accounting needs it.
-[agent.dfoster] Happy to help — SHP-202504-000029 is on schedule out of our Cincinnati hub; delivery is within the next 1–2 business days.
-[customer] Perfect, thank you!"
-TKT-200142,CLI-0042,SHP-202509-000070,2025-09-03T12:35:00,phone,resolved,5,"[customer] Following up on SHP-202509-000070 — could you send the POD once it's delivered? Accounting needs it.
-[agent.tpatel] Happy to help — SHP-202509-000070 is on schedule out of our Chicago hub; delivery is within the next 1–2 business days.
-[customer] Thanks for the quick help."
-TKT-200214,CLI-0007,SHP-202512-000297,2025-12-24T09:26:00,email,resolved,4,"[customer] Can you confirm SHP-202512-000297 is still on track to arrive this week?
-[agent.kobrien] Attached the POD for SHP-202512-000297. Let me know if there's anything else!
-[customer] Perfect, thank you!"
-TKT-200030,CLI-0201,SHP-202504-000023,2025-04-10T20:12:00,email,pending,,"[customer] This is the second time I'm reaching out about SHP-202504-000023. It was due days ago and I still have nothing. This is unacceptable for the rates we pay.
-[agent.lchen] Apologies for the delay on SHP-202504-000023. I've opened an investigation and looped in the Columbus operations team.
-[agent.lchen] Good news — SHP-202504-000023 is back in motion. I'll monitor it through delivery and confirm the POD with you."
-TKT-200247,CLI-0201,SHP-202506-000193,2025-06-08T22:33:00,email,resolved,5,"[customer] Can you confirm SHP-202506-000193 is still on track to arrive this week?
-[agent.tpatel] Attached the POD for SHP-202506-000193. Let me know if there's anything else!
-[customer] Perfect, thank you!"
-TKT-200218,CLI-0155,SHP-202512-000293,2025-12-23T16:02:00,chat,resolved,5,"[customer] Can you confirm SHP-202512-000293 is still on track to arrive this week?
-[agent.lchen] Attached the POD for SHP-202512-000293. Let me know if there's anything else!
-[customer] Thanks for the quick help."
-TKT-200118,CLI-0169,SHP-202506-000095,2025-06-09T18:29:00,portal,resolved,5,"[customer] Can you confirm SHP-202506-000095 is still on track to arrive this week?
-[agent.kobrien] Happy to help — SHP-202506-000095 is on schedule out of our Indianapolis hub; delivery is within the next 1–2 business days.
-[customer] Great, appreciate it."
-TKT-200045,CLI-0169,SHP-202512-000341,2025-12-13T17:12:00,portal,resolved,2,"[customer] Requesting an update on SHP-202512-000341. It appears to be delayed.
-[agent.tpatel] Apologies for the delay on SHP-202512-000341. I've opened an investigation and looped in the Chicago operations team.
-[agent.tpatel] Dispatch confirms SHP-202512-000341 will be reattempted next business day. I've flagged your account for a proactive follow-up."
-TKT-200055,CLI-0201,SHP-202508-000134,2025-08-06T18:16:00,email,resolved,3,"[customer] Good morning! Quick question on SHP-202508-000134, currently delayed. No rush, just planning around it.
-[agent.mruiz] Thanks for reaching out — I'm sorry for the trouble with SHP-202508-000134. I see it was affected by an exception at our Chicago hub. Let me pull the latest.
-[agent.mruiz] Good news — SHP-202508-000134 is back in motion. I'll monitor it through delivery and confirm the POD with you."
-TKT-200227,CLI-0042,SHP-202502-000168,2025-02-04T20:40:00,phone,resolved,5,"[customer] Hi — quick question on SHP-202502-000168. Can you confirm the delivery window?
-[agent.jbrooks] Sure thing. I've noted the update on SHP-202502-000168 and confirmed it with the Cincinnati team.
-[customer] Perfect, thank you!"
-TKT-200012,CLI-0169,SHP-202511-000108,2025-11-12T20:30:00,phone,resolved,3,"[customer] Following up on SHP-202511-000108. Could you confirm whether this will still be delivered this week?
-[agent.lchen] Thank you for your patience. I've located SHP-202511-000108 in our system (origin HUB-DET). Checking with dispatch now.
-[agent.lchen] Update: SHP-202511-000108 is re-routed and expected to deliver within 48 hours. I've added a note to prioritize it. Anything else I can do?"
-TKT-200272,CLI-0169,SHP-202508-000254,2025-08-09T17:49:00,chat,resolved,5,"[customer] Following up on SHP-202508-000254 — could you send the POD once it's delivered? Accounting needs it.
-[agent.dfoster] Happy to help — SHP-202508-000254 is on schedule out of our Indianapolis hub; delivery is within the next 1–2 business days.
-[customer] Great, appreciate it."
-TKT-200024,CLI-0007,SHP-202503-000194,2025-03-17T16:54:00,phone,resolved,1,"[customer] Where is SHP-202503-000194?? Your tracking hasn't updated and my customer is furious. I need answers today.
-[agent.mruiz] Apologies for the delay on SHP-202503-000194. I've opened an investigation and looped in the Detroit operations team.
-[customer] That still isn't good enough but I'll wait for the update."
-TKT-200199,CLI-0201,SHP-202501-000108,2025-01-27T15:37:00,email,resolved,5,"[customer] Hi — quick question on SHP-202501-000108. Can you confirm the delivery window?
-[agent.jbrooks] Happy to help — SHP-202501-000108 is on schedule out of our Chicago hub; delivery is within the next 1–2 business days.
-[customer] Thanks for the quick help."
-TKT-200180,CLI-0042,SHP-202506-000287,2025-06-21T17:52:00,chat,resolved,5,"[customer] Hello, I need to update the delivery contact for SHP-202506-000287 if it hasn't gone out yet.
-[agent.jbrooks] Attached the POD for SHP-202506-000287. Let me know if there's anything else!
-[customer] Perfect, thank you!"
-TKT-200285,CLI-0042,SHP-202503-000257,2025-03-12T15:55:00,chat,resolved,5,"[customer] Following up on SHP-202503-000257 — could you send the POD once it's delivered? Accounting needs it.
-[agent.dfoster] Sure thing. I've noted the update on SHP-202503-000257 and confirmed it with the Indianapolis team.
-[customer] Great, appreciate it."
-TKT-200134,CLI-0201,SHP-202507-000047,2025-07-10T23:34:00,chat,resolved,5,"[customer] Can you confirm SHP-202507-000047 is still on track to arrive this week?
-[agent.mruiz] Sure thing. I've noted the update on SHP-202507-000047 and confirmed it with the Indianapolis team.
-[customer] Thanks for the quick help."
-TKT-200070,CLI-0169,SHP-202509-000058,2025-09-18T22:02:00,portal,resolved,2,"[customer] This is the second time I'm reaching out about SHP-202509-000058. It was due days ago and I still have nothing. This is unacceptable for the rates we pay.
-[agent.mruiz] Thanks for reaching out — I'm sorry for the trouble with SHP-202509-000058. I see it was affected by an exception at our Cincinnati hub. Let me pull the latest.
-[agent.mruiz] Update: SHP-202509-000058 is re-routed and expected to deliver within 48 hours. I've added a note to prioritize it. Anything else I can do?"
-TKT-200038,CLI-0201,SHP-202512-000008,2025-12-27T12:19:00,phone,resolved,3,"[customer] Hello, hoping you can help with SHP-202512-000008. I understand there may be delays — just need an updated delivery window when you have a moment. Thanks!
-[agent.lchen] Thank you for your patience. I've located SHP-202512-000008 in our system (origin HUB-CMH). Checking with dispatch now.
-[agent.lchen] Dispatch confirms SHP-202512-000008 will be reattempted next business day. I've flagged your account for a proactive follow-up."
-TKT-200050,CLI-0155,SHP-202501-000062,2025-01-11T17:56:00,email,resolved,3,"[customer] Hi, I'm checking on shipment SHP-202501-000062. The status shows delayed — can you tell me the latest ETA?
-[agent.mruiz] Thanks for reaching out — I'm sorry for the trouble with SHP-202501-000062. I see it was affected by an exception at our Indianapolis hub. Let me pull the latest.
-[agent.mruiz] Update: SHP-202501-000062 is re-routed and expected to deliver within 48 hours. I've added a note to prioritize it. Anything else I can do?"
-TKT-200271,CLI-0169,SHP-202508-000282,2025-08-29T19:11:00,phone,resolved,5,"[customer] Hello, I need to update the delivery contact for SHP-202508-000282 if it hasn't gone out yet.
-[agent.tpatel] Attached the POD for SHP-202508-000282. Let me know if there's anything else!
-[customer] Perfect, thank you!"
-TKT-200150,CLI-0201,SHP-202512-000176,2025-12-18T23:24:00,chat,resolved,5,"[customer] Hello, I need to update the delivery contact for SHP-202512-000176 if it hasn't gone out yet.
-[agent.jbrooks] Happy to help — SHP-202512-000176 is on schedule out of our Columbus hub; delivery is within the next 1–2 business days.
-[customer] Great, appreciate it."
-TKT-200274,CLI-0155,SHP-202504-000137,2025-04-29T23:03:00,phone,resolved,5,"[customer] Hello, I need to update the delivery contact for SHP-202504-000137 if it hasn't gone out yet.
-[agent.jbrooks] Attached the POD for SHP-202504-000137. Let me know if there's anything else!
-[customer] Thanks for the quick help."
-TKT-200130,CLI-0201,SHP-202507-000234,2025-07-15T15:35:00,portal,resolved,5,"[customer] Hello, I need to update the delivery contact for SHP-202507-000234 if it hasn't gone out yet.
-[agent.mruiz] Happy to help — SHP-202507-000234 is on schedule out of our Chicago hub; delivery is within the next 1–2 business days.
-[customer] Thanks for the quick help."
-TKT-200159,CLI-0042,SHP-202506-000261,2025-06-21T11:56:00,phone,resolved,4,"[customer] Hello, I need to update the delivery contact for SHP-202506-000261 if it hasn't gone out yet.
-[agent.jbrooks] Happy to help — SHP-202506-000261 is on schedule out of our Columbus hub; delivery is within the next 1–2 business days.
-[customer] Great, appreciate it."
-TKT-200194,CLI-0042,SHP-202503-000119,2025-03-05T14:54:00,email,resolved,5,"[customer] Hi — quick question on SHP-202503-000119. Can you confirm the delivery window?
-[agent.kobrien] Happy to help — SHP-202503-000119 is on schedule out of our Indianapolis hub; delivery is within the next 1–2 business days.
-[customer] Perfect, thank you!"
-TKT-200090,CLI-0007,SHP-202512-000381,2025-12-21T22:05:00,email,resolved,4,"[customer] Hi — quick question on SHP-202512-000381. Can you confirm the delivery window?
-[agent.kobrien] Sure thing. I've noted the update on SHP-202512-000381 and confirmed it with the Columbus team.
-[customer] Perfect, thank you!"
-TKT-200064,CLI-0042,SHP-202502-000091,2025-02-08T21:33:00,chat,open,,"[customer] This is the second time I'm reaching out about SHP-202502-000091. It was due days ago and I still have nothing. This is unacceptable for the rates we pay.
-[agent.lchen] Apologies for the delay on SHP-202502-000091. I've opened an investigation and looped in the Detroit operations team.
-[agent.lchen] Update: SHP-202502-000091 is re-routed and expected to deliver within 48 hours. I've added a note to prioritize it. Anything else I can do?
-[customer] That still isn't good enough but I'll wait for the update."
-TKT-200126,CLI-0007,SHP-202512-000394,2025-12-05T20:47:00,phone,resolved,5,"[customer] Hello, I need to update the delivery contact for SHP-202512-000394 if it hasn't gone out yet.
-[agent.jbrooks] Attached the POD for SHP-202512-000394. Let me know if there's anything else!
-[customer] Perfect, thank you!"
-TKT-200228,CLI-0169,SHP-202501-000177,2025-01-03T17:06:00,chat,resolved,4,"[customer] Following up on SHP-202501-000177 — could you send the POD once it's delivered? Accounting needs it.
-[agent.mruiz] Attached the POD for SHP-202501-000177. Let me know if there's anything else!
-[customer] Thanks for the quick help."
-TKT-200135,CLI-0042,SHP-202506-000152,2025-06-09T20:26:00,phone,resolved,5,"[customer] Following up on SHP-202506-000152 — could you send the POD once it's delivered? Accounting needs it.
-[agent.jbrooks] Attached the POD for SHP-202506-000152. Let me know if there's anything else!
-[customer] Thanks for the quick help."
-TKT-200095,CLI-0042,SHP-202502-000246,2025-02-27T17:54:00,chat,resolved,5,"[customer] Following up on SHP-202502-000246 — could you send the POD once it's delivered? Accounting needs it.
-[agent.jbrooks] Sure thing. I've noted the update on SHP-202502-000246 and confirmed it with the Chicago team.
-[customer] Great, appreciate it."
-TKT-200149,CLI-0007,SHP-202504-000017,2025-04-04T11:39:00,portal,resolved,4,"[customer] Following up on SHP-202504-000017 — could you send the POD once it's delivered? Accounting needs it.
-[agent.kobrien] Happy to help — SHP-202504-000017 is on schedule out of our Cincinnati hub; delivery is within the next 1–2 business days.
-[customer] Thanks for the quick help."
-TKT-200063,CLI-0169,SHP-202501-000310,2025-01-15T07:49:00,email,resolved,3,"[customer] Requesting an update on SHP-202501-000310. It appears to be delayed.
-[agent.mruiz] Thank you for your patience. I've located SHP-202501-000310 in our system (origin HUB-IND). Checking with dispatch now."
-TKT-200298,CLI-0201,SHP-202507-000101,2025-07-03T22:35:00,email,resolved,5,"[customer] Following up on SHP-202507-000101 — could you send the POD once it's delivered? Accounting needs it.
-[agent.lchen] Sure thing. I've noted the update on SHP-202507-000101 and confirmed it with the Detroit team.
-[customer] Great, appreciate it."
-TKT-200104,CLI-0007,SHP-202511-000052,2025-11-03T11:43:00,chat,resolved,5,"[customer] Can you confirm SHP-202511-000052 is still on track to arrive this week?
-[agent.mruiz] Attached the POD for SHP-202511-000052. Let me know if there's anything else!
-[customer] Great, appreciate it."
-TKT-200018,CLI-0169,SHP-202501-000308,2025-01-05T15:53:00,email,resolved,1,"[customer] Extremely disappointed. SHP-202501-000308 was marked delayed with zero communication. Please escalate.
-[agent.tpatel] Apologies for the delay on SHP-202501-000308. I've opened an investigation and looped in the Indianapolis operations team."
-TKT-200040,CLI-0201,SHP-202508-000026,2025-09-01T22:41:00,chat,open,,"[customer] This is the second time I'm reaching out about SHP-202508-000026. It was due days ago and I still have nothing. This is unacceptable for the rates we pay.
-[agent.tpatel] Thanks for reaching out — I'm sorry for the trouble with SHP-202508-000026. I see it was affected by an exception at our Chicago hub. Let me pull the latest."
-TKT-200117,CLI-0042,SHP-202505-000270,2025-05-15T20:15:00,phone,resolved,5,"[customer] Following up on SHP-202505-000270 — could you send the POD once it's delivered? Accounting needs it.
-[agent.tpatel] Sure thing. I've noted the update on SHP-202505-000270 and confirmed it with the Detroit team.
-[customer] Perfect, thank you!"
-TKT-200144,CLI-0169,SHP-202503-000032,2025-03-23T23:40:00,portal,resolved,5,"[customer] Can you confirm SHP-202503-000032 is still on track to arrive this week?
-[agent.mruiz] Happy to help — SHP-202503-000032 is on schedule out of our Cincinnati hub; delivery is within the next 1–2 business days.
-[customer] Perfect, thank you!"
-TKT-200093,CLI-0155,SHP-202512-000187,2025-12-03T10:51:00,chat,resolved,4,"[customer] Can you confirm SHP-202512-000187 is still on track to arrive this week?
-[agent.kobrien] Happy to help — SHP-202512-000187 is on schedule out of our Indianapolis hub; delivery is within the next 1–2 business days.
-[customer] Great, appreciate it."
-TKT-200081,CLI-0169,SHP-202501-000070,2025-01-16T19:15:00,portal,resolved,4,"[customer] Following up on SHP-202501-000070. Could you confirm whether this will still be delivered this week?
-[agent.dfoster] Apologies for the delay on SHP-202501-000070. I've opened an investigation and looped in the Indianapolis operations team.
-[agent.dfoster] Update: SHP-202501-000070 is re-routed and expected to deliver within 48 hours. I've added a note to prioritize it. Anything else I can do?
-[customer] Okay, thank you. Please keep me posted."
-TKT-200099,CLI-0155,SHP-202509-000184,2025-09-04T19:30:00,portal,resolved,4,"[customer] Hi — quick question on SHP-202509-000184. Can you confirm the delivery window?
-[agent.tpatel] Sure thing. I've noted the update on SHP-202509-000184 and confirmed it with the Detroit team.
-[customer] Great, appreciate it."
-TKT-200137,CLI-0042,SHP-202510-000152,2025-10-27T07:52:00,phone,resolved,5,"[customer] Following up on SHP-202510-000152 — could you send the POD once it's delivered? Accounting needs it.
-[agent.jbrooks] Sure thing. I've noted the update on SHP-202510-000152 and confirmed it with the Cincinnati team.
-[customer] Thanks for the quick help."
-TKT-200299,CLI-0201,SHP-202503-000289,2025-03-20T18:42:00,chat,resolved,4,"[customer] Hi — quick question on SHP-202503-000289. Can you confirm the delivery window?
-[agent.mruiz] Sure thing. I've noted the update on SHP-202503-000289 and confirmed it with the Detroit team.
-[customer] Perfect, thank you!"
-TKT-200079,CLI-0201,SHP-202505-000205,2025-05-05T16:54:00,phone,resolved,4,"[customer] Requesting an update on SHP-202505-000205. It appears to be delayed.
-[agent.mruiz] Apologies for the delay on SHP-202505-000205. I've opened an investigation and looped in the Detroit operations team.
-[agent.mruiz] Update: SHP-202505-000205 is re-routed and expected to deliver within 48 hours. I've added a note to prioritize it. Anything else I can do?
-[customer] Okay, thank you. Please keep me posted."
-TKT-200252,CLI-0042,SHP-202507-000231,2025-07-28T17:04:00,chat,resolved,4,"[customer] Can you confirm SHP-202507-000231 is still on track to arrive this week?
-[agent.lchen] Happy to help — SHP-202507-000231 is on schedule out of our Columbus hub; delivery is within the next 1–2 business days.
-[customer] Perfect, thank you!"
-TKT-200160,CLI-0201,SHP-202512-000352,2025-12-05T02:31:00,email,resolved,5,"[customer] Following up on SHP-202512-000352 — could you send the POD once it's delivered? Accounting needs it.
-[agent.jbrooks] Sure thing. I've noted the update on SHP-202512-000352 and confirmed it with the Chicago team.
-[customer] Thanks for the quick help."
-TKT-200282,CLI-0042,SHP-202504-000002,2025-04-13T21:39:00,portal,resolved,5,"[customer] Hello, I need to update the delivery contact for SHP-202504-000002 if it hasn't gone out yet.
-[agent.lchen] Sure thing. I've noted the update on SHP-202504-000002 and confirmed it with the Chicago team.
-[customer] Great, appreciate it."
-TKT-200094,CLI-0169,SHP-202501-000135,2025-01-17T09:53:00,portal,resolved,4,"[customer] Hello, I need to update the delivery contact for SHP-202501-000135 if it hasn't gone out yet.
-[agent.jbrooks] Happy to help — SHP-202501-000135 is on schedule out of our Detroit hub; delivery is within the next 1–2 business days.
-[customer] Great, appreciate it."
-TKT-200213,CLI-0169,SHP-202503-000244,2025-03-22T17:18:00,chat,resolved,5,"[customer] Following up on SHP-202503-000244 — could you send the POD once it's delivered? Accounting needs it.
-[agent.lchen] Sure thing. I've noted the update on SHP-202503-000244 and confirmed it with the Columbus team.
-[customer] Perfect, thank you!"
-TKT-200152,CLI-0042,SHP-202502-000245,2025-02-26T13:21:00,email,resolved,4,"[customer] Hello, I need to update the delivery contact for SHP-202502-000245 if it hasn't gone out yet.
-[agent.lchen] Attached the POD for SHP-202502-000245. Let me know if there's anything else!
-[customer] Great, appreciate it."
-TKT-200028,CLI-0201,SHP-202501-000260,2025-01-12T17:50:00,chat,resolved,3,"[customer] Requesting an update on SHP-202501-000260. It appears to be delayed.
-[agent.jbrooks] Thanks for reaching out — I'm sorry for the trouble with SHP-202501-000260. I see it was affected by an exception at our Detroit hub. Let me pull the latest.
-[agent.jbrooks] Dispatch confirms SHP-202501-000260 will be reattempted next business day. I've flagged your account for a proactive follow-up."
-TKT-200074,CLI-0169,SHP-202502-000184,2025-02-06T21:01:00,chat,pending,,"[customer] Extremely disappointed. SHP-202502-000184 was marked returned with zero communication. Please escalate.
-[agent.dfoster] Thanks for reaching out — I'm sorry for the trouble with SHP-202502-000184. I see it was affected by an exception at our Columbus hub. Let me pull the latest."
-TKT-200153,CLI-0169,SHP-202505-000076,2025-05-10T09:18:00,chat,resolved,5,"[customer] Can you confirm SHP-202505-000076 is still on track to arrive this week?
-[agent.jbrooks] Sure thing. I've noted the update on SHP-202505-000076 and confirmed it with the Columbus team.
-[customer] Thanks for the quick help."
-TKT-200147,CLI-0155,SHP-202508-000078,2025-08-25T20:09:00,phone,resolved,5,"[customer] Can you confirm SHP-202508-000078 is still on track to arrive this week?
-[agent.dfoster] Happy to help — SHP-202508-000078 is on schedule out of our Chicago hub; delivery is within the next 1–2 business days.
-[customer] Perfect, thank you!"
-TKT-200085,CLI-0042,SHP-202502-000286,2025-02-06T23:12:00,phone,resolved,4,"[customer] Requesting an update on SHP-202502-000286. It appears to be failed.
-[agent.mruiz] Thank you for your patience. I've located SHP-202502-000286 in our system (origin HUB-CMH). Checking with dispatch now.
-[agent.mruiz] Dispatch confirms SHP-202502-000286 will be reattempted next business day. I've flagged your account for a proactive follow-up."
-TKT-200023,CLI-0201,SHP-202512-000223,2025-12-14T15:34:00,portal,resolved,2,"[customer] Where is SHP-202512-000223?? Your tracking hasn't updated and my customer is furious. I need answers today.
-[agent.kobrien] Thanks for reaching out — I'm sorry for the trouble with SHP-202512-000223. I see it was affected by an exception at our Indianapolis hub. Let me pull the latest.
-[customer] That still isn't good enough but I'll wait for the update."
-TKT-200125,CLI-0169,SHP-202508-000080,2025-08-07T23:58:00,email,resolved,5,"[customer] Hi — quick question on SHP-202508-000080. Can you confirm the delivery window?
-[agent.jbrooks] Attached the POD for SHP-202508-000080. Let me know if there's anything else!
-[customer] Thanks for the quick help."
-TKT-200177,CLI-0042,SHP-202506-000052,2025-06-27T11:04:00,email,resolved,5,"[customer] Can you confirm SHP-202506-000052 is still on track to arrive this week?
-[agent.tpatel] Sure thing. I've noted the update on SHP-202506-000052 and confirmed it with the Indianapolis team.
-[customer] Thanks for the quick help."
-TKT-200293,CLI-0007,SHP-202504-000279,2025-05-02T23:49:00,chat,resolved,5,"[customer] Hi — quick question on SHP-202504-000279. Can you confirm the delivery window?
-[agent.dfoster] Happy to help — SHP-202504-000279 is on schedule out of our Chicago hub; delivery is within the next 1–2 business days.
-[customer] Thanks for the quick help."
-TKT-200065,CLI-0007,SHP-202511-000378,2025-11-02T20:46:00,phone,pending,,"[customer] Hi, I'm checking on shipment SHP-202511-000378. The status shows delayed — can you tell me the latest ETA?
-[agent.kobrien] Thank you for your patience. I've located SHP-202511-000378 in our system (origin HUB-CHI). Checking with dispatch now.
-[agent.kobrien] Good news — SHP-202511-000378 is back in motion. I'll monitor it through delivery and confirm the POD with you."
-TKT-200056,CLI-0007,SHP-202503-000013,2025-03-07T18:28:00,chat,resolved,2,"[customer] Following up on SHP-202503-000013. Could you confirm whether this will still be delivered this week?
-[agent.kobrien] Thank you for your patience. I've located SHP-202503-000013 in our system (origin HUB-DET). Checking with dispatch now.
-[agent.kobrien] Good news — SHP-202503-000013 is back in motion. I'll monitor it through delivery and confirm the POD with you.
-[customer] Okay, thank you. Please keep me posted."
-TKT-200263,CLI-0042,SHP-202502-000115,2025-02-14T20:27:00,email,resolved,5,"[customer] Hi — quick question on SHP-202502-000115. Can you confirm the delivery window?
-[agent.tpatel] Happy to help — SHP-202502-000115 is on schedule out of our Chicago hub; delivery is within the next 1–2 business days.
-[customer] Perfect, thank you!"
-TKT-200220,CLI-0155,SHP-202512-000478,2025-12-20T03:38:00,email,resolved,4,"[customer] Can you confirm SHP-202512-000478 is still on track to arrive this week?
-[agent.mruiz] Attached the POD for SHP-202512-000478. Let me know if there's anything else!
-[customer] Thanks for the quick help."
-TKT-200239,CLI-0155,SHP-202512-000203,2025-12-05T19:13:00,portal,resolved,4,"[customer] Hello, I need to update the delivery contact for SHP-202512-000203 if it hasn't gone out yet.
-[agent.jbrooks] Happy to help — SHP-202512-000203 is on schedule out of our Detroit hub; delivery is within the next 1–2 business days.
-[customer] Perfect, thank you!"
-TKT-200255,CLI-0169,SHP-202512-000476,2025-12-01T06:49:00,email,resolved,5,"[customer] Hi — quick question on SHP-202512-000476. Can you confirm the delivery window?
-[agent.kobrien] Happy to help — SHP-202512-000476 is on schedule out of our Indianapolis hub; delivery is within the next 1–2 business days.
-[customer] Great, appreciate it."
-TKT-200027,CLI-0155,SHP-202502-000224,2025-02-22T14:48:00,email,resolved,2,"[customer] Where is SHP-202502-000224?? Your tracking hasn't updated and my customer is furious. I need answers today.
-[agent.mruiz] Apologies for the delay on SHP-202502-000224. I've opened an investigation and looped in the Indianapolis operations team.
-[customer] Appreciate the quick turnaround."
-TKT-200264,CLI-0169,SHP-202501-000009,2025-01-27T17:54:00,phone,resolved,5,"[customer] Following up on SHP-202501-000009 — could you send the POD once it's delivered? Accounting needs it.
-[agent.tpatel] Happy to help — SHP-202501-000009 is on schedule out of our Cincinnati hub; delivery is within the next 1–2 business days.
-[customer] Great, appreciate it."
-TKT-200256,CLI-0201,SHP-202510-000277,2025-10-14T18:27:00,phone,resolved,5,"[customer] Hi — quick question on SHP-202510-000277. Can you confirm the delivery window?
-[agent.jbrooks] Attached the POD for SHP-202510-000277. Let me know if there's anything else!
-[customer] Great, appreciate it."
-TKT-200225,CLI-0042,SHP-202503-000163,2025-03-24T19:18:00,portal,resolved,4,"[customer] Can you confirm SHP-202503-000163 is still on track to arrive this week?
-[agent.mruiz] Happy to help — SHP-202503-000163 is on schedule out of our Detroit hub; delivery is within the next 1–2 business days.
-[customer] Perfect, thank you!"
-TKT-200212,CLI-0155,SHP-202509-000285,2025-09-21T22:13:00,phone,resolved,5,"[customer] Hi — quick question on SHP-202509-000285. Can you confirm the delivery window?
-[agent.mruiz] Happy to help — SHP-202509-000285 is on schedule out of our Cincinnati hub; delivery is within the next 1–2 business days.
-[customer] Thanks for the quick help."
-TKT-200061,CLI-0155,SHP-202502-000161,2025-02-27T14:19:00,portal,open,,"[customer] Hi, I'm checking on shipment SHP-202502-000161. The status shows failed — can you tell me the latest ETA?
-[agent.lchen] Thanks for reaching out — I'm sorry for the trouble with SHP-202502-000161. I see it was affected by an exception at our Cincinnati hub. Let me pull the latest.
-[agent.lchen] Dispatch confirms SHP-202502-000161 will be reattempted next business day. I've flagged your account for a proactive follow-up.
-[customer] That still isn't good enough but I'll wait for the update."
-TKT-200138,CLI-0155,SHP-202512-000335,2025-12-15T19:08:00,chat,resolved,5,"[customer] Hi — quick question on SHP-202512-000335. Can you confirm the delivery window?
-[agent.lchen] Attached the POD for SHP-202512-000335. Let me know if there's anything else!
-[customer] Thanks for the quick help."
-TKT-200123,CLI-0169,SHP-202510-000113,2025-10-27T14:56:00,phone,resolved,5,"[customer] Hello, I need to update the delivery contact for SHP-202510-000113 if it hasn't gone out yet.
-[agent.jbrooks] Happy to help — SHP-202510-000113 is on schedule out of our Detroit hub; delivery is within the next 1–2 business days.
-[customer] Thanks for the quick help."
-TKT-200270,CLI-0155,SHP-202511-000235,2025-11-11T19:33:00,chat,resolved,5,"[customer] Hi — quick question on SHP-202511-000235. Can you confirm the delivery window?
-[agent.lchen] Happy to help — SHP-202511-000235 is on schedule out of our Columbus hub; delivery is within the next 1–2 business days.
-[customer] Perfect, thank you!"
-TKT-200043,CLI-0155,SHP-202511-000367,2025-11-19T13:08:00,chat,open,,"[customer] Following up on SHP-202511-000367. Could you confirm whether this will still be delivered this week?
-[agent.dfoster] Thank you for your patience. I've located SHP-202511-000367 in our system (origin HUB-CIN). Checking with dispatch now.
-[agent.dfoster] Good news — SHP-202511-000367 is back in motion. I'll monitor it through delivery and confirm the POD with you."
-TKT-200119,CLI-0007,SHP-202502-000173,2025-02-26T19:37:00,chat,resolved,5,"[customer] Hello, I need to update the delivery contact for SHP-202502-000173 if it hasn't gone out yet.
-[agent.tpatel] Attached the POD for SHP-202502-000173. Let me know if there's anything else!
-[customer] Perfect, thank you!"
-TKT-200278,CLI-0042,SHP-202511-000329,2025-11-05T18:39:00,phone,resolved,5,"[customer] Hello, I need to update the delivery contact for SHP-202511-000329 if it hasn't gone out yet.
-[agent.dfoster] Happy to help — SHP-202511-000329 is on schedule out of our Cincinnati hub; delivery is within the next 1–2 business days.
-[customer] Great, appreciate it."
-TKT-200230,CLI-0042,SHP-202507-000266,2025-07-30T17:46:00,phone,resolved,5,"[customer] Hi — quick question on SHP-202507-000266. Can you confirm the delivery window?
-[agent.kobrien] Sure thing. I've noted the update on SHP-202507-000266 and confirmed it with the Cincinnati team.
-[customer] Thanks for the quick help."
-TKT-200259,CLI-0169,SHP-202512-000390,2025-12-11T08:00:00,chat,resolved,5,"[customer] Can you confirm SHP-202512-000390 is still on track to arrive this week?
-[agent.jbrooks] Happy to help — SHP-202512-000390 is on schedule out of our Detroit hub; delivery is within the next 1–2 business days.
-[customer] Perfect, thank you!"
-TKT-200008,CLI-0201,SHP-202505-000231,2025-05-26T13:36:00,phone,resolved,1,"[customer] Where is SHP-202505-000231?? Your tracking hasn't updated and my customer is furious. I need answers today.
-[agent.jbrooks] Thanks for reaching out — I'm sorry for the trouble with SHP-202505-000231. I see it was affected by an exception at our Columbus hub. Let me pull the latest.
-[agent.jbrooks] Update: SHP-202505-000231 is re-routed and expected to deliver within 48 hours. I've added a note to prioritize it. Anything else I can do?
-[customer] Appreciate the quick turnaround."
-TKT-200200,CLI-0169,SHP-202503-000175,2025-03-08T09:47:00,portal,resolved,5,"[customer] Following up on SHP-202503-000175 — could you send the POD once it's delivered? Accounting needs it.
-[agent.dfoster] Sure thing. I've noted the update on SHP-202503-000175 and confirmed it with the Columbus team.
-[customer] Great, appreciate it."
-TKT-200269,CLI-0201,SHP-202505-000215,2025-05-07T11:38:00,email,resolved,5,"[customer] Hi — quick question on SHP-202505-000215. Can you confirm the delivery window?
-[agent.kobrien] Happy to help — SHP-202505-000215 is on schedule out of our Chicago hub; delivery is within the next 1–2 business days.
-[customer] Perfect, thank you!"
-TKT-200289,CLI-0155,SHP-202507-000212,2025-07-17T16:56:00,phone,resolved,4,"[customer] Hi — quick question on SHP-202507-000212. Can you confirm the delivery window?
-[agent.dfoster] Attached the POD for SHP-202507-000212. Let me know if there's anything else!
-[customer] Thanks for the quick help."
-TKT-200098,CLI-0042,SHP-202511-000328,2025-11-21T16:29:00,portal,resolved,5,"[customer] Hi — quick question on SHP-202511-000328. Can you confirm the delivery window?
-[agent.jbrooks] Attached the POD for SHP-202511-000328. Let me know if there's anything else!
-[customer] Great, appreciate it."
-TKT-200179,CLI-0201,SHP-202501-000304,2025-01-09T18:24:00,email,resolved,5,"[customer] Hello, I need to update the delivery contact for SHP-202501-000304 if it hasn't gone out yet.
-[agent.tpatel] Attached the POD for SHP-202501-000304. Let me know if there's anything else!
-[customer] Perfect, thank you!"
-TKT-200121,CLI-0155,SHP-202503-000314,2025-03-08T21:09:00,email,resolved,5,"[customer] Hello, I need to update the delivery contact for SHP-202503-000314 if it hasn't gone out yet.
-[agent.mruiz] Happy to help — SHP-202503-000314 is on schedule out of our Cincinnati hub; delivery is within the next 1–2 business days.
-[customer] Thanks for the quick help."
-TKT-200109,CLI-0042,SHP-202508-000222,2025-08-01T13:20:00,portal,resolved,5,"[customer] Hello, I need to update the delivery contact for SHP-202508-000222 if it hasn't gone out yet.
-[agent.jbrooks] Happy to help — SHP-202508-000222 is on schedule out of our Indianapolis hub; delivery is within the next 1–2 business days.
-[customer] Perfect, thank you!"
-TKT-200089,CLI-0169,SHP-202501-000216,2025-01-10T12:01:00,email,resolved,3,"[customer] Hi, I'm checking on shipment SHP-202501-000216. The status shows failed — can you tell me the latest ETA?
-[agent.tpatel] Thanks for reaching out — I'm sorry for the trouble with SHP-202501-000216. I see it was affected by an exception at our Indianapolis hub. Let me pull the latest.
-[agent.tpatel] Good news — SHP-202501-000216 is back in motion. I'll monitor it through delivery and confirm the POD with you.
-[customer] Appreciate the quick turnaround."
-TKT-200020,CLI-0042,SHP-202502-000120,2025-02-20T15:07:00,chat,pending,,"[customer] Good morning! Quick question on SHP-202502-000120, currently delayed. No rush, just planning around it.
-[agent.dfoster] Apologies for the delay on SHP-202502-000120. I've opened an investigation and looped in the Cincinnati operations team."
-TKT-200203,CLI-0007,SHP-202511-000038,2025-11-11T00:50:00,phone,resolved,4,"[customer] Following up on SHP-202511-000038 — could you send the POD once it's delivered? Accounting needs it.
-[agent.mruiz] Happy to help — SHP-202511-000038 is on schedule out of our Detroit hub; delivery is within the next 1–2 business days.
-[customer] Thanks for the quick help."
-TKT-200156,CLI-0201,SHP-202505-000136,2025-05-19T16:18:00,chat,resolved,5,"[customer] Hi — quick question on SHP-202505-000136. Can you confirm the delivery window?
-[agent.kobrien] Attached the POD for SHP-202505-000136. Let me know if there's anything else!
-[customer] Great, appreciate it."
-TKT-200102,CLI-0042,SHP-202510-000114,2025-10-12T10:23:00,email,resolved,5,"[customer] Following up on SHP-202510-000114 — could you send the POD once it's delivered? Accounting needs it.
-[agent.tpatel] Sure thing. I've noted the update on SHP-202510-000114 and confirmed it with the Cincinnati team.
-[customer] Great, appreciate it."
-TKT-200124,CLI-0007,SHP-202511-000142,2025-11-04T13:17:00,email,resolved,5,"[customer] Following up on SHP-202511-000142 — could you send the POD once it's delivered? Accounting needs it.
-[agent.jbrooks] Happy to help — SHP-202511-000142 is on schedule out of our Cincinnati hub; delivery is within the next 1–2 business days.
-[customer] Thanks for the quick help."
-TKT-200155,CLI-0201,SHP-202510-000131,2025-10-16T16:05:00,portal,resolved,5,"[customer] Following up on SHP-202510-000131 — could you send the POD once it's delivered? Accounting needs it.
-[agent.lchen] Happy to help — SHP-202510-000131 is on schedule out of our Cincinnati hub; delivery is within the next 1–2 business days.
-[customer] Thanks for the quick help."
-TKT-200059,CLI-0201,SHP-202506-000026,2025-06-28T20:57:00,chat,resolved,3,"[customer] Hello, hoping you can help with SHP-202506-000026. I understand there may be delays — just need an updated delivery window when you have a moment. Thanks!
-[agent.kobrien] Apologies for the delay on SHP-202506-000026. I've opened an investigation and looped in the Chicago operations team.
-[agent.kobrien] Dispatch confirms SHP-202506-000026 will be reattempted next business day. I've flagged your account for a proactive follow-up."
-TKT-200173,CLI-0169,SHP-202505-000052,2025-05-11T00:06:00,portal,resolved,5,"[customer] Hi — quick question on SHP-202505-000052. Can you confirm the delivery window?
-[agent.kobrien] Sure thing. I've noted the update on SHP-202505-000052 and confirmed it with the Indianapolis team.
-[customer] Perfect, thank you!"
-TKT-200092,CLI-0169,SHP-202509-000244,2025-09-04T17:41:00,chat,resolved,5,"[customer] Hello, I need to update the delivery contact for SHP-202509-000244 if it hasn't gone out yet.
-[agent.mruiz] Happy to help — SHP-202509-000244 is on schedule out of our Indianapolis hub; delivery is within the next 1–2 business days.
-[customer] Perfect, thank you!"
-TKT-200162,CLI-0042,SHP-202511-000148,2025-11-06T08:49:00,phone,resolved,4,"[customer] Hello, I need to update the delivery contact for SHP-202511-000148 if it hasn't gone out yet.
-[agent.jbrooks] Sure thing. I've noted the update on SHP-202511-000148 and confirmed it with the Detroit team.
-[customer] Perfect, thank you!"
-TKT-200294,CLI-0007,SHP-202502-000158,2025-02-22T16:32:00,email,resolved,5,"[customer] Can you confirm SHP-202502-000158 is still on track to arrive this week?
-[agent.dfoster] Attached the POD for SHP-202502-000158. Let me know if there's anything else!
-[customer] Great, appreciate it."
-TKT-200082,CLI-0155,SHP-202501-000114,2025-01-18T11:22:00,chat,open,,"[customer] Good morning! Quick question on SHP-202501-000114, currently delayed. No rush, just planning around it.
-[agent.jbrooks] Apologies for the delay on SHP-202501-000114. I've opened an investigation and looped in the Indianapolis operations team.
-[agent.jbrooks] Dispatch confirms SHP-202501-000114 will be reattempted next business day. I've flagged your account for a proactive follow-up."
-TKT-200163,CLI-0169,SHP-202501-000078,2025-01-11T18:15:00,email,resolved,5,"[customer] Can you confirm SHP-202501-000078 is still on track to arrive this week?
-[agent.mruiz] Attached the POD for SHP-202501-000078. Let me know if there's anything else!
-[customer] Perfect, thank you!"
-TKT-200000,CLI-0042,SHP-202512-000104,2025-12-12T13:54:00,email,pending,,"[customer] Where is SHP-202512-000104?? Your tracking hasn't updated and my customer is furious. I need answers today.
-[agent.jbrooks] Apologies for the delay on SHP-202512-000104. I've opened an investigation and looped in the Indianapolis operations team.
-[agent.jbrooks] Good news — SHP-202512-000104 is back in motion. I'll monitor it through delivery and confirm the POD with you.
-[customer] That still isn't good enough but I'll wait for the update."
-TKT-200268,CLI-0007,SHP-202511-000347,2025-11-21T16:06:00,portal,resolved,5,"[customer] Following up on SHP-202511-000347 — could you send the POD once it's delivered? Accounting needs it.
-[agent.jbrooks] Happy to help — SHP-202511-000347 is on schedule out of our Indianapolis hub; delivery is within the next 1–2 business days.
-[customer] Thanks for the quick help."
-TKT-200243,CLI-0201,SHP-202501-000109,2025-01-06T14:22:00,portal,resolved,4,"[customer] Following up on SHP-202501-000109 — could you send the POD once it's delivered? Accounting needs it.
-[agent.lchen] Attached the POD for SHP-202501-000109. Let me know if there's anything else!
-[customer] Perfect, thank you!"
-TKT-200231,CLI-0169,SHP-202508-000217,2025-08-10T19:25:00,portal,resolved,5,"[customer] Hello, I need to update the delivery contact for SHP-202508-000217 if it hasn't gone out yet.
-[agent.dfoster] Sure thing. I've noted the update on SHP-202508-000217 and confirmed it with the Columbus team.
-[customer] Perfect, thank you!"
-TKT-200127,CLI-0007,SHP-202508-000283,2025-08-07T17:07:00,email,resolved,4,"[customer] Can you confirm SHP-202508-000283 is still on track to arrive this week?
-[agent.dfoster] Attached the POD for SHP-202508-000283. Let me know if there's anything else!
-[customer] Great, appreciate it."
-TKT-200143,CLI-0169,SHP-202506-000086,2025-06-05T20:20:00,phone,resolved,4,"[customer] Can you confirm SHP-202506-000086 is still on track to arrive this week?
-[agent.dfoster] Attached the POD for SHP-202506-000086. Let me know if there's anything else!
-[customer] Thanks for the quick help."
-TKT-200001,CLI-0201,SHP-202512-000200,2025-12-03T11:50:00,email,resolved,5,"[customer] Good morning! Quick question on SHP-202512-000200, currently failed. No rush, just planning around it.
-[agent.dfoster] Thanks for reaching out — I'm sorry for the trouble with SHP-202512-000200. I see it was affected by an exception at our Detroit hub. Let me pull the latest.
-[agent.dfoster] Dispatch confirms SHP-202512-000200 will be reattempted next business day. I've flagged your account for a proactive follow-up."
-TKT-200295,CLI-0042,SHP-202512-000355,2025-12-09T11:31:00,portal,resolved,5,"[customer] Hi — quick question on SHP-202512-000355. Can you confirm the delivery window?
-[agent.jbrooks] Attached the POD for SHP-202512-000355. Let me know if there's anything else!
-[customer] Great, appreciate it."
-TKT-200029,CLI-0201,SHP-202512-000358,2025-12-16T23:06:00,phone,resolved,3,"[customer] This is the second time I'm reaching out about SHP-202512-000358. It was due days ago and I still have nothing. This is unacceptable for the rates we pay.
-[agent.lchen] Thanks for reaching out — I'm sorry for the trouble with SHP-202512-000358. I see it was affected by an exception at our Detroit hub. Let me pull the latest.
-[agent.lchen] Dispatch confirms SHP-202512-000358 will be reattempted next business day. I've flagged your account for a proactive follow-up."
-TKT-200193,CLI-0155,SHP-202503-000012,2025-03-03T15:18:00,portal,resolved,5,"[customer] Hello, I need to update the delivery contact for SHP-202503-000012 if it hasn't gone out yet.
-[agent.mruiz] Happy to help — SHP-202503-000012 is on schedule out of our Detroit hub; delivery is within the next 1–2 business days.
-[customer] Thanks for the quick help."
-TKT-200122,CLI-0155,SHP-202512-000182,2025-12-29T10:28:00,email,resolved,5,"[customer] Hello, I need to update the delivery contact for SHP-202512-000182 if it hasn't gone out yet.
-[agent.mruiz] Happy to help — SHP-202512-000182 is on schedule out of our Cincinnati hub; delivery is within the next 1–2 business days.
-[customer] Thanks for the quick help."
-TKT-200175,CLI-0007,SHP-202502-000104,2025-02-17T20:14:00,chat,resolved,5,"[customer] Can you confirm SHP-202502-000104 is still on track to arrive this week?
-[agent.dfoster] Sure thing. I've noted the update on SHP-202502-000104 and confirmed it with the Columbus team.
-[customer] Perfect, thank you!"
-TKT-200280,CLI-0201,SHP-202509-000218,2025-09-19T15:51:00,portal,resolved,5,"[customer] Can you confirm SHP-202509-000218 is still on track to arrive this week?
-[agent.mruiz] Sure thing. I've noted the update on SHP-202509-000218 and confirmed it with the Chicago team.
-[customer] Perfect, thank you!"
-TKT-200219,CLI-0042,SHP-202506-000177,2025-06-04T17:05:00,portal,resolved,5,"[customer] Following up on SHP-202506-000177 — could you send the POD once it's delivered? Accounting needs it.
-[agent.mruiz] Attached the POD for SHP-202506-000177. Let me know if there's anything else!
-[customer] Thanks for the quick help."
-TKT-200266,CLI-0169,SHP-202511-000247,2025-11-08T15:09:00,chat,resolved,5,"[customer] Hello, I need to update the delivery contact for SHP-202511-000247 if it hasn't gone out yet.
-[agent.jbrooks] Sure thing. I've noted the update on SHP-202511-000247 and confirmed it with the Cincinnati team.
-[customer] Perfect, thank you!"
-TKT-200192,CLI-0169,SHP-202502-000074,2025-02-18T13:50:00,email,resolved,5,"[customer] Following up on SHP-202502-000074 — could you send the POD once it's delivered? Accounting needs it.
-[agent.kobrien] Sure thing. I've noted the update on SHP-202502-000074 and confirmed it with the Chicago team.
-[customer] Perfect, thank you!"
-TKT-200291,CLI-0155,SHP-202502-000126,2025-02-22T18:10:00,portal,resolved,4,"[customer] Hi — quick question on SHP-202502-000126. Can you confirm the delivery window?
-[agent.tpatel] Attached the POD for SHP-202502-000126. Let me know if there's anything else!
-[customer] Perfect, thank you!"
-TKT-200021,CLI-0169,SHP-202502-000275,2025-02-15T17:47:00,chat,resolved,1,"[customer] Where is SHP-202502-000275?? Your tracking hasn't updated and my customer is furious. I need answers today.
-[agent.dfoster] Thanks for reaching out — I'm sorry for the trouble with SHP-202502-000275. I see it was affected by an exception at our Cincinnati hub. Let me pull the latest.
-[customer] Okay, thank you. Please keep me posted."
-TKT-200004,CLI-0201,SHP-202511-000198,2025-11-14T10:00:00,phone,pending,,"[customer] Where is SHP-202511-000198?? Your tracking hasn't updated and my customer is furious. I need answers today.
-[agent.mruiz] Thanks for reaching out — I'm sorry for the trouble with SHP-202511-000198. I see it was affected by an exception at our Chicago hub. Let me pull the latest.
-[agent.mruiz] Good news — SHP-202511-000198 is back in motion. I'll monitor it through delivery and confirm the POD with you.
-[customer] That still isn't good enough but I'll wait for the update."
-TKT-200015,CLI-0155,SHP-202507-000197,2025-07-18T19:53:00,portal,resolved,3,"[customer] Following up on SHP-202507-000197. Could you confirm whether this will still be delivered this week?
-[agent.tpatel] Thanks for reaching out — I'm sorry for the trouble with SHP-202507-000197. I see it was affected by an exception at our Indianapolis hub. Let me pull the latest.
-[agent.tpatel] Good news — SHP-202507-000197 is back in motion. I'll monitor it through delivery and confirm the POD with you.
-[customer] That still isn't good enough but I'll wait for the update."
-TKT-900000,CLI-0042,SHP-202501-900001,2025-01-14T09:00:00,phone,pending,,"[customer] Where is SHP-202501-900001?? Nothing's moved for days. I know Chicago got hit but I need a real ETA.
-[agent.lchen] I'm sorry — the Jan winter storm at our Chicago hub (incident INC-2025-00417) delayed a large batch including SHP-202501-900001. It's re-routed and moving now; expect delivery within 48 hours.
-[customer] Fine. Please make sure it actually does this time."
-TKT-900001,CLI-0042,SHP-202501-900002,2025-01-15T10:07:00,phone,pending,,"[customer] Where is SHP-202501-900002?? Nothing's moved for days. I know Chicago got hit but I need a real ETA.
-[agent.mruiz] I'm sorry — the Jan winter storm at our Chicago hub (incident INC-2025-00417) delayed a large batch including SHP-202501-900002. It's re-routed and moving now; expect delivery within 48 hours.
-[customer] Fine. Please make sure it actually does this time."
-TKT-900002,CLI-0042,SHP-202501-900003,2025-01-16T17:27:00,chat,resolved,3,"[customer] Where is SHP-202501-900003?? Nothing's moved for days. I know Chicago got hit but I need a real ETA.
-[agent.mruiz] I'm sorry — the Jan winter storm at our Chicago hub (incident INC-2025-00417) delayed a large batch including SHP-202501-900003. It's re-routed and moving now; expect delivery within 48 hours.
-[customer] Fine. Please make sure it actually does this time."
-TKT-900003,CLI-0042,SHP-202502-900004,2025-02-03T16:59:00,chat,pending,2,"[customer] Where is SHP-202502-900004?? Nothing's moved for days. I know Chicago got hit but I need a real ETA.
-[agent.mruiz] I'm sorry — the Jan winter storm at our Chicago hub (incident INC-2025-00417) delayed a large batch including SHP-202502-900004. It's re-routed and moving now; expect delivery within 48 hours.
-[customer] Fine. Please make sure it actually does this time."
-TKT-900004,CLI-0042,SHP-202501-900005,2025-01-14T10:34:00,phone,pending,,"[customer] Where is SHP-202501-900005?? Nothing's moved for days. I know Chicago got hit but I need a real ETA.
-[agent.lchen] I'm sorry — the Jan winter storm at our Chicago hub (incident INC-2025-00417) delayed a large batch including SHP-202501-900005. It's re-routed and moving now; expect delivery within 48 hours.
-[customer] Fine. Please make sure it actually does this time."
-TKT-900005,CLI-0042,SHP-202501-900006,2025-01-15T11:13:00,email,resolved,2,"[customer] Where is SHP-202501-900006?? Nothing's moved for days. I know Chicago got hit but I need a real ETA.
-[agent.jbrooks] I'm sorry — the Jan winter storm at our Chicago hub (incident INC-2025-00417) delayed a large batch including SHP-202501-900006. It's re-routed and moving now; expect delivery within 48 hours.
-[customer] Fine. Please make sure it actually does this time."
-TKT-900006,CLI-0042,SHP-202501-900007,2025-01-16T12:51:00,email,resolved,,"[customer] Where is SHP-202501-900007?? Nothing's moved for days. I know Chicago got hit but I need a real ETA.
-[agent.mruiz] I'm sorry — the Jan winter storm at our Chicago hub (incident INC-2025-00417) delayed a large batch including SHP-202501-900007. It's re-routed and moving now; expect delivery within 48 hours.
-[customer] Fine. Please make sure it actually does this time."
-TKT-900007,CLI-0042,SHP-202502-900008,2025-02-03T17:24:00,chat,resolved,2,"[customer] Where is SHP-202502-900008?? Nothing's moved for days. I know Chicago got hit but I need a real ETA.
-[agent.mruiz] I'm sorry — the Jan winter storm at our Chicago hub (incident INC-2025-00417) delayed a large batch including SHP-202502-900008. It's re-routed and moving now; expect delivery within 48 hours.
-[customer] Fine. Please make sure it actually does this time."
-TKT-900008,CLI-0042,SHP-202501-900009,2025-01-14T12:26:00,chat,pending,3,"[customer] Where is SHP-202501-900009?? Nothing's moved for days. I know Chicago got hit but I need a real ETA.
-[agent.jbrooks] I'm sorry — the Jan winter storm at our Chicago hub (incident INC-2025-00417) delayed a large batch including SHP-202501-900009. It's re-routed and moving now; expect delivery within 48 hours.
-[customer] Fine. Please make sure it actually does this time."
-TKT-900009,CLI-0042,SHP-202501-900010,2025-01-15T15:08:00,email,resolved,2,"[customer] Where is SHP-202501-900010?? Nothing's moved for days. I know Chicago got hit but I need a real ETA.
-[agent.jbrooks] I'm sorry — the Jan winter storm at our Chicago hub (incident INC-2025-00417) delayed a large batch including SHP-202501-900010. It's re-routed and moving now; expect delivery within 48 hours.
-[customer] Fine. Please make sure it actually does this time."
-TKT-900010,CLI-0201,SHP-202501-900011,2025-01-16T12:48:00,email,resolved,2,"[customer] Where is SHP-202501-900011?? Nothing's moved for days. I know Chicago got hit but I need a real ETA.
-[agent.mruiz] I'm sorry — the Jan winter storm at our Chicago hub (incident INC-2025-00417) delayed a large batch including SHP-202501-900011. It's re-routed and moving now; expect delivery within 48 hours.
-[customer] Fine. Please make sure it actually does this time."
-TKT-900015,CLI-0007,SHP-202502-900016,2025-02-03T17:58:00,email,resolved,,"[customer] Where is SHP-202502-900016?? Nothing's moved for days. I know Chicago got hit but I need a real ETA.
-[agent.jbrooks] I'm sorry — the Jan winter storm at our Chicago hub (incident INC-2025-00417) delayed a large batch including SHP-202502-900016. It's re-routed and moving now; expect delivery within 48 hours.
-[customer] Fine. Please make sure it actually does this time."
-TKT-900017,CLI-0007,SHP-202501-900018,2025-01-15T12:20:00,email,resolved,1,"[customer] Where is SHP-202501-900018?? Nothing's moved for days. I know Chicago got hit but I need a real ETA.
-[agent.jbrooks] I'm sorry — the Jan winter storm at our Chicago hub (incident INC-2025-00417) delayed a large batch including SHP-202501-900018. It's re-routed and moving now; expect delivery within 48 hours.
-[customer] Fine. Please make sure it actually does this time."
-TKT-910000,CLI-0042,SHP-202505-000271,2025-05-14T14:00:00,phone,pending,3,"[customer] Following up on SHP-202505-000271 — another late LTL load. Our account team keeps promising improvement and we're not seeing it.
-[agent.lchen] Understood, and I'm sorry. I've logged this against the Jaffle Equipment account (CLI-0042) and flagged it for your account owner Marcus Trent.
-[customer] Please do. Appreciate it."
-TKT-910001,CLI-0042,SHP-202506-000261,2025-06-17T15:00:00,phone,resolved,3,"[customer] Following up on SHP-202506-000261 — another late LTL load. Our account team keeps promising improvement and we're not seeing it.
-[agent.lchen] Understood, and I'm sorry. I've logged this against the Jaffle Equipment account (CLI-0042) and flagged it for your account owner Marcus Trent.
-[customer] Please do. Appreciate it."
-TKT-910002,CLI-0042,SHP-202506-000261,2025-06-20T11:00:00,phone,open,2,"[customer] Following up on SHP-202506-000261 — another late LTL load. Our account team keeps promising improvement and we're not seeing it.
-[agent.lchen] Understood, and I'm sorry. I've logged this against the Jaffle Equipment account (CLI-0042) and flagged it for your account owner Marcus Trent.
-[customer] Please do. Appreciate it."
-TKT-910003,CLI-0042,SHP-202507-000266,2025-07-13T09:00:00,email,open,1,"[customer] This keeps happening. Following up on SHP-202507-000266 — another late LTL load. Our account team keeps promising improvement and we're not seeing it.
-[agent.lchen] Understood, and I'm sorry. I've logged this against the Jaffle Equipment account (CLI-0042) and flagged it for your account owner Marcus Trent.
-[customer] We're starting to look at other carriers."
-TKT-910004,CLI-0042,SHP-202507-000237,2025-07-12T09:00:00,email,resolved,1,"[customer] This keeps happening. Following up on SHP-202507-000237 — another late LTL load. Our account team keeps promising improvement and we're not seeing it.
-[agent.lchen] Understood, and I'm sorry. I've logged this against the Jaffle Equipment account (CLI-0042) and flagged it for your account owner Marcus Trent.
-[customer] We're starting to look at other carriers."
-TKT-910005,CLI-0042,SHP-202507-000266,2025-07-10T15:00:00,phone,resolved,1,"[customer] This keeps happening. Following up on SHP-202507-000266 — another late LTL load. Our account team keeps promising improvement and we're not seeing it.
-[agent.lchen] Understood, and I'm sorry. I've logged this against the Jaffle Equipment account (CLI-0042) and flagged it for your account owner Marcus Trent.
-[customer] We're starting to look at other carriers."
-TKT-910006,CLI-0042,SHP-202507-000334,2025-07-10T12:00:00,phone,resolved,1,"[customer] This keeps happening. Following up on SHP-202507-000334 — another late LTL load. Our account team keeps promising improvement and we're not seeing it.
-[agent.lchen] Understood, and I'm sorry. I've logged this against the Jaffle Equipment account (CLI-0042) and flagged it for your account owner Marcus Trent.
-[customer] We're starting to look at other carriers."
-TKT-910007,CLI-0042,SHP-202508-000262,2025-08-13T16:00:00,phone,pending,1,"[customer] This keeps happening. Following up on SHP-202508-000262 — another late LTL load. Our account team keeps promising improvement and we're not seeing it.
-[agent.lchen] Understood, and I'm sorry. I've logged this against the Jaffle Equipment account (CLI-0042) and flagged it for your account owner Marcus Trent.
-[customer] We're starting to look at other carriers."
-TKT-910008,CLI-0042,SHP-202508-000272,2025-08-21T11:00:00,email,pending,1,"[customer] This keeps happening. Following up on SHP-202508-000272 — another late LTL load. Our account team keeps promising improvement and we're not seeing it.
-[agent.lchen] Understood, and I'm sorry. I've logged this against the Jaffle Equipment account (CLI-0042) and flagged it for your account owner Marcus Trent.
-[customer] We're starting to look at other carriers."
-TKT-910009,CLI-0042,SHP-202508-000250,2025-08-22T12:00:00,phone,open,2,"[customer] This keeps happening. Following up on SHP-202508-000250 — another late LTL load. Our account team keeps promising improvement and we're not seeing it.
-[agent.lchen] Understood, and I'm sorry. I've logged this against the Jaffle Equipment account (CLI-0042) and flagged it for your account owner Marcus Trent.
-[customer] We're starting to look at other carriers."
-TKT-910010,CLI-0042,SHP-202508-000277,2025-08-21T16:00:00,phone,resolved,2,"[customer] This keeps happening. Following up on SHP-202508-000277 — another late LTL load. Our account team keeps promising improvement and we're not seeing it.
-[agent.lchen] Understood, and I'm sorry. I've logged this against the Jaffle Equipment account (CLI-0042) and flagged it for your account owner Marcus Trent.
-[customer] We're starting to look at other carriers."
-TKT-910011,CLI-0042,SHP-202508-000262,2025-08-21T11:00:00,phone,resolved,2,"[customer] This keeps happening. Following up on SHP-202508-000262 — another late LTL load. Our account team keeps promising improvement and we're not seeing it.
-[agent.lchen] Understood, and I'm sorry. I've logged this against the Jaffle Equipment account (CLI-0042) and flagged it for your account owner Marcus Trent.
-[customer] We're starting to look at other carriers."
-TKT-910012,CLI-0042,SHP-202508-000272,2025-08-11T12:00:00,email,open,1,"[customer] This keeps happening. Following up on SHP-202508-000272 — another late LTL load. Our account team keeps promising improvement and we're not seeing it.
-[agent.lchen] Understood, and I'm sorry. I've logged this against the Jaffle Equipment account (CLI-0042) and flagged it for your account owner Marcus Trent.
-[customer] We're starting to look at other carriers."
-TKT-910013,CLI-0042,SHP-202509-000294,2025-09-23T13:00:00,phone,pending,1,"[customer] This keeps happening. Following up on SHP-202509-000294 — another late LTL load. Our account team keeps promising improvement and we're not seeing it.
-[agent.lchen] Understood, and I'm sorry. I've logged this against the Jaffle Equipment account (CLI-0042) and flagged it for your account owner Marcus Trent.
-[customer] We're starting to look at other carriers."
-TKT-910014,CLI-0042,SHP-202509-000282,2025-09-14T10:00:00,phone,open,1,"[customer] This keeps happening. Following up on SHP-202509-000282 — another late LTL load. Our account team keeps promising improvement and we're not seeing it.
-[agent.lchen] Understood, and I'm sorry. I've logged this against the Jaffle Equipment account (CLI-0042) and flagged it for your account owner Marcus Trent.
-[customer] We're starting to look at other carriers."
-TKT-910015,CLI-0042,SHP-202509-000255,2025-09-12T11:00:00,email,pending,1,"[customer] This keeps happening. Following up on SHP-202509-000255 — another late LTL load. Our account team keeps promising improvement and we're not seeing it.
-[agent.lchen] Understood, and I'm sorry. I've logged this against the Jaffle Equipment account (CLI-0042) and flagged it for your account owner Marcus Trent.
-[customer] We're starting to look at other carriers."
-TKT-910016,CLI-0042,SHP-202509-000292,2025-09-10T13:00:00,email,open,2,"[customer] This keeps happening. Following up on SHP-202509-000292 — another late LTL load. Our account team keeps promising improvement and we're not seeing it.
-[agent.lchen] Understood, and I'm sorry. I've logged this against the Jaffle Equipment account (CLI-0042) and flagged it for your account owner Marcus Trent.
-[customer] We're starting to look at other carriers."
-TKT-910017,CLI-0042,SHP-202509-000294,2025-09-13T14:00:00,phone,resolved,1,"[customer] This keeps happening. Following up on SHP-202509-000294 — another late LTL load. Our account team keeps promising improvement and we're not seeing it.
-[agent.lchen] Understood, and I'm sorry. I've logged this against the Jaffle Equipment account (CLI-0042) and flagged it for your account owner Marcus Trent.
-[customer] We're starting to look at other carriers."
-TKT-910018,CLI-0042,SHP-202509-000259,2025-09-19T15:00:00,email,resolved,1,"[customer] This keeps happening. Following up on SHP-202509-000259 — another late LTL load. Our account team keeps promising improvement and we're not seeing it.
-[agent.lchen] Understood, and I'm sorry. I've logged this against the Jaffle Equipment account (CLI-0042) and flagged it for your account owner Marcus Trent.
-[customer] We're starting to look at other carriers."
-TKT-910019,CLI-0042,SHP-202509-000294,2025-09-18T13:00:00,email,resolved,1,"[customer] This keeps happening. Following up on SHP-202509-000294 — another late LTL load. Our account team keeps promising improvement and we're not seeing it.
-[agent.lchen] Understood, and I'm sorry. I've logged this against the Jaffle Equipment account (CLI-0042) and flagged it for your account owner Marcus Trent.
-[customer] We're starting to look at other carriers."
-TKT-910020,CLI-0042,SHP-202510-000259,2025-10-26T15:00:00,email,pending,1,"[customer] This keeps happening. Following up on SHP-202510-000259 — another late LTL load. Our account team keeps promising improvement and we're not seeing it.
-[agent.lchen] Understood, and I'm sorry. I've logged this against the Jaffle Equipment account (CLI-0042) and flagged it for your account owner Marcus Trent.
-[customer] We're starting to look at other carriers."
-TKT-910021,CLI-0042,SHP-202510-000312,2025-10-19T12:00:00,email,open,1,"[customer] This keeps happening. Following up on SHP-202510-000312 — another late LTL load. Our account team keeps promising improvement and we're not seeing it.
-[agent.lchen] Understood, and I'm sorry. I've logged this against the Jaffle Equipment account (CLI-0042) and flagged it for your account owner Marcus Trent.
-[customer] We're starting to look at other carriers."
-TKT-910022,CLI-0042,SHP-202510-000259,2025-10-19T15:00:00,phone,resolved,1,"[customer] This keeps happening. Following up on SHP-202510-000259 — another late LTL load. Our account team keeps promising improvement and we're not seeing it.
-[agent.lchen] Understood, and I'm sorry. I've logged this against the Jaffle Equipment account (CLI-0042) and flagged it for your account owner Marcus Trent.
-[customer] We're starting to look at other carriers."
-TKT-910023,CLI-0042,SHP-202510-000332,2025-10-15T14:00:00,email,open,2,"[customer] This keeps happening. Following up on SHP-202510-000332 — another late LTL load. Our account team keeps promising improvement and we're not seeing it.
-[agent.lchen] Understood, and I'm sorry. I've logged this against the Jaffle Equipment account (CLI-0042) and flagged it for your account owner Marcus Trent.
-[customer] We're starting to look at other carriers."
-TKT-910024,CLI-0042,SHP-202510-000312,2025-10-15T15:00:00,email,open,2,"[customer] This keeps happening. Following up on SHP-202510-000312 — another late LTL load. Our account team keeps promising improvement and we're not seeing it.
-[agent.lchen] Understood, and I'm sorry. I've logged this against the Jaffle Equipment account (CLI-0042) and flagged it for your account owner Marcus Trent.
-[customer] We're starting to look at other carriers."
-TKT-910025,CLI-0042,SHP-202510-000259,2025-10-20T11:00:00,email,resolved,1,"[customer] This keeps happening. Following up on SHP-202510-000259 — another late LTL load. Our account team keeps promising improvement and we're not seeing it.
-[agent.lchen] Understood, and I'm sorry. I've logged this against the Jaffle Equipment account (CLI-0042) and flagged it for your account owner Marcus Trent.
-[customer] We're starting to look at other carriers."
-TKT-910026,CLI-0042,SHP-202510-000299,2025-10-10T13:00:00,phone,resolved,2,"[customer] This keeps happening. Following up on SHP-202510-000299 — another late LTL load. Our account team keeps promising improvement and we're not seeing it.
-[agent.lchen] Understood, and I'm sorry. I've logged this against the Jaffle Equipment account (CLI-0042) and flagged it for your account owner Marcus Trent.
-[customer] We're starting to look at other carriers."
-TKT-910027,CLI-0042,SHP-202510-000312,2025-10-23T15:00:00,phone,pending,2,"[customer] This keeps happening. Following up on SHP-202510-000312 — another late LTL load. Our account team keeps promising improvement and we're not seeing it.
-[agent.lchen] Understood, and I'm sorry. I've logged this against the Jaffle Equipment account (CLI-0042) and flagged it for your account owner Marcus Trent.
-[customer] We're starting to look at other carriers."
-TKT-910028,CLI-0042,SHP-202511-000387,2025-11-26T15:00:00,email,pending,1,"[customer] This keeps happening. Following up on SHP-202511-000387 — another late LTL load. Our account team keeps promising improvement and we're not seeing it.
-[agent.lchen] Understood, and I'm sorry. I've logged this against the Jaffle Equipment account (CLI-0042) and flagged it for your account owner Marcus Trent.
-[customer] We're starting to look at other carriers."
-TKT-910029,CLI-0042,SHP-202511-000405,2025-11-24T16:00:00,phone,pending,2,"[customer] This keeps happening. Following up on SHP-202511-000405 — another late LTL load. Our account team keeps promising improvement and we're not seeing it.
-[agent.lchen] Understood, and I'm sorry. I've logged this against the Jaffle Equipment account (CLI-0042) and flagged it for your account owner Marcus Trent.
-[customer] We're starting to look at other carriers."
-TKT-910030,CLI-0042,SHP-202511-000405,2025-11-17T15:00:00,email,pending,1,"[customer] This keeps happening. Following up on SHP-202511-000405 — another late LTL load. Our account team keeps promising improvement and we're not seeing it.
-[agent.lchen] Understood, and I'm sorry. I've logged this against the Jaffle Equipment account (CLI-0042) and flagged it for your account owner Marcus Trent.
-[customer] We're starting to look at other carriers."
-TKT-910031,CLI-0042,SHP-202511-000380,2025-11-14T11:00:00,email,open,2,"[customer] This keeps happening. Following up on SHP-202511-000380 — another late LTL load. Our account team keeps promising improvement and we're not seeing it.
-[agent.lchen] Understood, and I'm sorry. I've logged this against the Jaffle Equipment account (CLI-0042) and flagged it for your account owner Marcus Trent.
-[customer] We're starting to look at other carriers."
-TKT-910032,CLI-0042,SHP-202511-000346,2025-11-25T09:00:00,phone,open,2,"[customer] This keeps happening. Following up on SHP-202511-000346 — another late LTL load. Our account team keeps promising improvement and we're not seeing it.
-[agent.lchen] Understood, and I'm sorry. I've logged this against the Jaffle Equipment account (CLI-0042) and flagged it for your account owner Marcus Trent.
-[customer] We're starting to look at other carriers."
-TKT-920000,CLI-0007,SHP-202505-950001,2025-05-13T16:00:00,chat,resolved,1,"[customer] We received the WRONG items for SHP-202505-950001. This isn't what we ordered at all — looks like it was meant for someone else.
-[agent.mruiz] Apologies — we've identified a fulfillment error at our Indianapolis warehouse affecting several orders (incident INC-2025-02233). We'll arrange pickup of the wrong items and expedite the correct ones.
-[customer] Thank you, please hurry."
-TKT-920003,CLI-0155,SHP-202505-950004,2025-05-16T11:00:00,phone,resolved,2,"[customer] We received the WRONG items for SHP-202505-950004. This isn't what we ordered at all — looks like it was meant for someone else.
-[agent.mruiz] Apologies — we've identified a fulfillment error at our Indianapolis warehouse affecting several orders (incident INC-2025-02233). We'll arrange pickup of the wrong items and expedite the correct ones.
-[customer] Thank you, please hurry."
-TKT-920004,CLI-0169,SHP-202505-950005,2025-05-12T13:00:00,phone,resolved,3,"[customer] We received the WRONG items for SHP-202505-950005. This isn't what we ordered at all — looks like it was meant for someone else.
-[agent.mruiz] Apologies — we've identified a fulfillment error at our Indianapolis warehouse affecting several orders (incident INC-2025-02233). We'll arrange pickup of the wrong items and expedite the correct ones.
-[customer] Thank you, please hurry."
-TKT-920005,CLI-0201,SHP-202505-950006,2025-05-13T13:00:00,phone,resolved,2,"[customer] We received the WRONG items for SHP-202505-950006. This isn't what we ordered at all — looks like it was meant for someone else.
-[agent.mruiz] Apologies — we've identified a fulfillment error at our Indianapolis warehouse affecting several orders (incident INC-2025-02233). We'll arrange pickup of the wrong items and expedite the correct ones.
-[customer] Thank you, please hurry."
+TKT-200014,CLI-0201,SHP-202508-000160,2025-08-14T14:14:00,email,resolved,1,"[customer] Where is SHP-202508-000160?? Your tracking hasn't updated and my customer is furious. I need answers today.~~NL~~[agent.dfoster] Thank you for your patience. I've located SHP-202508-000160 in our system (origin HUB-DET). Checking with dispatch now.~~NL~~[agent.dfoster] Dispatch confirms SHP-202508-000160 will be reattempted next business day. I've flagged your account for a proactive follow-up.~~NL~~[customer] Okay, thank you. Please keep me posted."
+TKT-200222,CLI-0201,SHP-202504-000088,2025-04-06T15:44:00,phone,resolved,5,"[customer] Following up on SHP-202504-000088 — could you send the POD once it's delivered? Accounting needs it.~~NL~~[agent.mruiz] Attached the POD for SHP-202504-000088. Let me know if there's anything else!~~NL~~[customer] Perfect, thank you!"
+TKT-200017,CLI-0007,SHP-202508-000005,2025-08-06T17:03:00,chat,resolved,1,[customer] Where is SHP-202508-000005?? Your tracking hasn't updated and my customer is furious. I need answers today.~~NL~~[agent.tpatel] Thanks for reaching out — I'm sorry for the trouble with SHP-202508-000005. I see it was affected by an exception at our Detroit hub. Let me pull the latest.~~NL~~[agent.tpatel] Good news — SHP-202508-000005 is back in motion. I'll monitor it through delivery and confirm the POD with you.
+TKT-200086,CLI-0169,SHP-202511-000153,2025-11-14T15:57:00,email,resolved,3,"[customer] Hi, I'm checking on shipment SHP-202511-000153. The status shows delayed — can you tell me the latest ETA?~~NL~~[agent.jbrooks] Thanks for reaching out — I'm sorry for the trouble with SHP-202511-000153. I see it was affected by an exception at our Indianapolis hub. Let me pull the latest.~~NL~~[agent.jbrooks] Update: SHP-202511-000153 is re-routed and expected to deliver within 48 hours. I've added a note to prioritize it. Anything else I can do?~~NL~~[customer] Appreciate the quick turnaround."
+TKT-200276,CLI-0155,SHP-202504-000006,2025-04-18T09:35:00,phone,resolved,4,"[customer] Hi — quick question on SHP-202504-000006. Can you confirm the delivery window?~~NL~~[agent.lchen] Attached the POD for SHP-202504-000006. Let me know if there's anything else!~~NL~~[customer] Perfect, thank you!"
+TKT-200207,CLI-0007,SHP-202510-000172,2025-10-30T00:02:00,phone,resolved,5,"[customer] Hi — quick question on SHP-202510-000172. Can you confirm the delivery window?~~NL~~[agent.lchen] Attached the POD for SHP-202510-000172. Let me know if there's anything else!~~NL~~[customer] Perfect, thank you!"
+TKT-200106,CLI-0169,SHP-202511-000414,2025-11-18T14:46:00,email,resolved,4,"[customer] Hi — quick question on SHP-202511-000414. Can you confirm the delivery window?~~NL~~[agent.kobrien] Happy to help — SHP-202511-000414 is on schedule out of our Columbus hub; delivery is within the next 1–2 business days.~~NL~~[customer] Great, appreciate it."
+TKT-200224,CLI-0201,SHP-202511-000117,2025-11-04T18:05:00,portal,resolved,5,"[customer] Can you confirm SHP-202511-000117 is still on track to arrive this week?~~NL~~[agent.tpatel] Sure thing. I've noted the update on SHP-202511-000117 and confirmed it with the Detroit team.~~NL~~[customer] Great, appreciate it."
+TKT-200275,CLI-0155,SHP-202508-000139,2025-08-26T02:00:00,email,resolved,4,"[customer] Hello, I need to update the delivery contact for SHP-202508-000139 if it hasn't gone out yet.~~NL~~[agent.mruiz] Sure thing. I've noted the update on SHP-202508-000139 and confirmed it with the Indianapolis team.~~NL~~[customer] Thanks for the quick help."
+TKT-200046,CLI-0169,SHP-202511-000362,2025-11-18T21:07:00,email,resolved,4,[customer] Following up on SHP-202511-000362. Could you confirm whether this will still be delivered this week?~~NL~~[agent.dfoster] Thank you for your patience. I've located SHP-202511-000362 in our system (origin HUB-CHI). Checking with dispatch now.~~NL~~[agent.dfoster] Good news — SHP-202511-000362 is back in motion. I'll monitor it through delivery and confirm the POD with you.~~NL~~[customer] That still isn't good enough but I'll wait for the update.
+TKT-200005,CLI-0201,SHP-202510-000078,2025-10-16T00:27:00,phone,resolved,5,"[customer] Good morning! Quick question on SHP-202510-000078, currently failed. No rush, just planning around it.~~NL~~[agent.jbrooks] Apologies for the delay on SHP-202510-000078. I've opened an investigation and looped in the Indianapolis operations team."
+TKT-200100,CLI-0201,SHP-202508-000084,2025-08-29T22:23:00,phone,resolved,5,"[customer] Hello, I need to update the delivery contact for SHP-202508-000084 if it hasn't gone out yet.~~NL~~[agent.lchen] Attached the POD for SHP-202508-000084. Let me know if there's anything else!~~NL~~[customer] Great, appreciate it."
+TKT-200281,CLI-0007,SHP-202503-000041,2025-04-02T23:00:00,portal,resolved,5,"[customer] Can you confirm SHP-202503-000041 is still on track to arrive this week?~~NL~~[agent.lchen] Happy to help — SHP-202503-000041 is on schedule out of our Cincinnati hub; delivery is within the next 1–2 business days.~~NL~~[customer] Great, appreciate it."
+TKT-200257,CLI-0007,SHP-202507-000089,2025-07-16T18:07:00,phone,resolved,5,[customer] Hi — quick question on SHP-202507-000089. Can you confirm the delivery window?~~NL~~[agent.dfoster] Attached the POD for SHP-202507-000089. Let me know if there's anything else!~~NL~~[customer] Thanks for the quick help.
+TKT-200284,CLI-0169,SHP-202509-000183,2025-09-15T21:34:00,chat,resolved,5,[customer] Hi — quick question on SHP-202509-000183. Can you confirm the delivery window?~~NL~~[agent.lchen] Happy to help — SHP-202509-000183 is on schedule out of our Cincinnati hub; delivery is within the next 1–2 business days.~~NL~~[customer] Thanks for the quick help.
+TKT-200131,CLI-0042,SHP-202512-000311,2025-12-22T21:47:00,chat,resolved,5,[customer] Can you confirm SHP-202512-000311 is still on track to arrive this week?~~NL~~[agent.tpatel] Sure thing. I've noted the update on SHP-202512-000311 and confirmed it with the Cincinnati team.~~NL~~[customer] Thanks for the quick help.
+TKT-200210,CLI-0201,SHP-202504-000029,2025-04-24T19:09:00,phone,resolved,4,"[customer] Following up on SHP-202504-000029 — could you send the POD once it's delivered? Accounting needs it.~~NL~~[agent.dfoster] Happy to help — SHP-202504-000029 is on schedule out of our Cincinnati hub; delivery is within the next 1–2 business days.~~NL~~[customer] Perfect, thank you!"
+TKT-200142,CLI-0042,SHP-202509-000070,2025-09-03T12:35:00,phone,resolved,5,[customer] Following up on SHP-202509-000070 — could you send the POD once it's delivered? Accounting needs it.~~NL~~[agent.tpatel] Happy to help — SHP-202509-000070 is on schedule out of our Chicago hub; delivery is within the next 1–2 business days.~~NL~~[customer] Thanks for the quick help.
+TKT-200214,CLI-0007,SHP-202512-000297,2025-12-24T09:26:00,email,resolved,4,"[customer] Can you confirm SHP-202512-000297 is still on track to arrive this week?~~NL~~[agent.kobrien] Attached the POD for SHP-202512-000297. Let me know if there's anything else!~~NL~~[customer] Perfect, thank you!"
+TKT-200030,CLI-0201,SHP-202504-000023,2025-04-10T20:12:00,email,pending,,[customer] This is the second time I'm reaching out about SHP-202504-000023. It was due days ago and I still have nothing. This is unacceptable for the rates we pay.~~NL~~[agent.lchen] Apologies for the delay on SHP-202504-000023. I've opened an investigation and looped in the Columbus operations team.~~NL~~[agent.lchen] Good news — SHP-202504-000023 is back in motion. I'll monitor it through delivery and confirm the POD with you.
+TKT-200247,CLI-0201,SHP-202506-000193,2025-06-08T22:33:00,email,resolved,5,"[customer] Can you confirm SHP-202506-000193 is still on track to arrive this week?~~NL~~[agent.tpatel] Attached the POD for SHP-202506-000193. Let me know if there's anything else!~~NL~~[customer] Perfect, thank you!"
+TKT-200218,CLI-0155,SHP-202512-000293,2025-12-23T16:02:00,chat,resolved,5,[customer] Can you confirm SHP-202512-000293 is still on track to arrive this week?~~NL~~[agent.lchen] Attached the POD for SHP-202512-000293. Let me know if there's anything else!~~NL~~[customer] Thanks for the quick help.
+TKT-200118,CLI-0169,SHP-202506-000095,2025-06-09T18:29:00,portal,resolved,5,"[customer] Can you confirm SHP-202506-000095 is still on track to arrive this week?~~NL~~[agent.kobrien] Happy to help — SHP-202506-000095 is on schedule out of our Indianapolis hub; delivery is within the next 1–2 business days.~~NL~~[customer] Great, appreciate it."
+TKT-200045,CLI-0169,SHP-202512-000341,2025-12-13T17:12:00,portal,resolved,2,[customer] Requesting an update on SHP-202512-000341. It appears to be delayed.~~NL~~[agent.tpatel] Apologies for the delay on SHP-202512-000341. I've opened an investigation and looped in the Chicago operations team.~~NL~~[agent.tpatel] Dispatch confirms SHP-202512-000341 will be reattempted next business day. I've flagged your account for a proactive follow-up.
+TKT-200055,CLI-0201,SHP-202508-000134,2025-08-06T18:16:00,email,resolved,3,"[customer] Good morning! Quick question on SHP-202508-000134, currently delayed. No rush, just planning around it.~~NL~~[agent.mruiz] Thanks for reaching out — I'm sorry for the trouble with SHP-202508-000134. I see it was affected by an exception at our Chicago hub. Let me pull the latest.~~NL~~[agent.mruiz] Good news — SHP-202508-000134 is back in motion. I'll monitor it through delivery and confirm the POD with you."
+TKT-200227,CLI-0042,SHP-202502-000168,2025-02-04T20:40:00,phone,resolved,5,"[customer] Hi — quick question on SHP-202502-000168. Can you confirm the delivery window?~~NL~~[agent.jbrooks] Sure thing. I've noted the update on SHP-202502-000168 and confirmed it with the Cincinnati team.~~NL~~[customer] Perfect, thank you!"
+TKT-200012,CLI-0169,SHP-202511-000108,2025-11-12T20:30:00,phone,resolved,3,[customer] Following up on SHP-202511-000108. Could you confirm whether this will still be delivered this week?~~NL~~[agent.lchen] Thank you for your patience. I've located SHP-202511-000108 in our system (origin HUB-DET). Checking with dispatch now.~~NL~~[agent.lchen] Update: SHP-202511-000108 is re-routed and expected to deliver within 48 hours. I've added a note to prioritize it. Anything else I can do?
+TKT-200272,CLI-0169,SHP-202508-000254,2025-08-09T17:49:00,chat,resolved,5,"[customer] Following up on SHP-202508-000254 — could you send the POD once it's delivered? Accounting needs it.~~NL~~[agent.dfoster] Happy to help — SHP-202508-000254 is on schedule out of our Indianapolis hub; delivery is within the next 1–2 business days.~~NL~~[customer] Great, appreciate it."
+TKT-200024,CLI-0007,SHP-202503-000194,2025-03-17T16:54:00,phone,resolved,1,[customer] Where is SHP-202503-000194?? Your tracking hasn't updated and my customer is furious. I need answers today.~~NL~~[agent.mruiz] Apologies for the delay on SHP-202503-000194. I've opened an investigation and looped in the Detroit operations team.~~NL~~[customer] That still isn't good enough but I'll wait for the update.
+TKT-200199,CLI-0201,SHP-202501-000108,2025-01-27T15:37:00,email,resolved,5,[customer] Hi — quick question on SHP-202501-000108. Can you confirm the delivery window?~~NL~~[agent.jbrooks] Happy to help — SHP-202501-000108 is on schedule out of our Chicago hub; delivery is within the next 1–2 business days.~~NL~~[customer] Thanks for the quick help.
+TKT-200180,CLI-0042,SHP-202506-000287,2025-06-21T17:52:00,chat,resolved,5,"[customer] Hello, I need to update the delivery contact for SHP-202506-000287 if it hasn't gone out yet.~~NL~~[agent.jbrooks] Attached the POD for SHP-202506-000287. Let me know if there's anything else!~~NL~~[customer] Perfect, thank you!"
+TKT-200285,CLI-0042,SHP-202503-000257,2025-03-12T15:55:00,chat,resolved,5,"[customer] Following up on SHP-202503-000257 — could you send the POD once it's delivered? Accounting needs it.~~NL~~[agent.dfoster] Sure thing. I've noted the update on SHP-202503-000257 and confirmed it with the Indianapolis team.~~NL~~[customer] Great, appreciate it."
+TKT-200134,CLI-0201,SHP-202507-000047,2025-07-10T23:34:00,chat,resolved,5,[customer] Can you confirm SHP-202507-000047 is still on track to arrive this week?~~NL~~[agent.mruiz] Sure thing. I've noted the update on SHP-202507-000047 and confirmed it with the Indianapolis team.~~NL~~[customer] Thanks for the quick help.
+TKT-200070,CLI-0169,SHP-202509-000058,2025-09-18T22:02:00,portal,resolved,2,[customer] This is the second time I'm reaching out about SHP-202509-000058. It was due days ago and I still have nothing. This is unacceptable for the rates we pay.~~NL~~[agent.mruiz] Thanks for reaching out — I'm sorry for the trouble with SHP-202509-000058. I see it was affected by an exception at our Cincinnati hub. Let me pull the latest.~~NL~~[agent.mruiz] Update: SHP-202509-000058 is re-routed and expected to deliver within 48 hours. I've added a note to prioritize it. Anything else I can do?
+TKT-200038,CLI-0201,SHP-202512-000008,2025-12-27T12:19:00,phone,resolved,3,"[customer] Hello, hoping you can help with SHP-202512-000008. I understand there may be delays — just need an updated delivery window when you have a moment. Thanks!~~NL~~[agent.lchen] Thank you for your patience. I've located SHP-202512-000008 in our system (origin HUB-CMH). Checking with dispatch now.~~NL~~[agent.lchen] Dispatch confirms SHP-202512-000008 will be reattempted next business day. I've flagged your account for a proactive follow-up."
+TKT-200050,CLI-0155,SHP-202501-000062,2025-01-11T17:56:00,email,resolved,3,"[customer] Hi, I'm checking on shipment SHP-202501-000062. The status shows delayed — can you tell me the latest ETA?~~NL~~[agent.mruiz] Thanks for reaching out — I'm sorry for the trouble with SHP-202501-000062. I see it was affected by an exception at our Indianapolis hub. Let me pull the latest.~~NL~~[agent.mruiz] Update: SHP-202501-000062 is re-routed and expected to deliver within 48 hours. I've added a note to prioritize it. Anything else I can do?"
+TKT-200271,CLI-0169,SHP-202508-000282,2025-08-29T19:11:00,phone,resolved,5,"[customer] Hello, I need to update the delivery contact for SHP-202508-000282 if it hasn't gone out yet.~~NL~~[agent.tpatel] Attached the POD for SHP-202508-000282. Let me know if there's anything else!~~NL~~[customer] Perfect, thank you!"
+TKT-200150,CLI-0201,SHP-202512-000176,2025-12-18T23:24:00,chat,resolved,5,"[customer] Hello, I need to update the delivery contact for SHP-202512-000176 if it hasn't gone out yet.~~NL~~[agent.jbrooks] Happy to help — SHP-202512-000176 is on schedule out of our Columbus hub; delivery is within the next 1–2 business days.~~NL~~[customer] Great, appreciate it."
+TKT-200274,CLI-0155,SHP-202504-000137,2025-04-29T23:03:00,phone,resolved,5,"[customer] Hello, I need to update the delivery contact for SHP-202504-000137 if it hasn't gone out yet.~~NL~~[agent.jbrooks] Attached the POD for SHP-202504-000137. Let me know if there's anything else!~~NL~~[customer] Thanks for the quick help."
+TKT-200130,CLI-0201,SHP-202507-000234,2025-07-15T15:35:00,portal,resolved,5,"[customer] Hello, I need to update the delivery contact for SHP-202507-000234 if it hasn't gone out yet.~~NL~~[agent.mruiz] Happy to help — SHP-202507-000234 is on schedule out of our Chicago hub; delivery is within the next 1–2 business days.~~NL~~[customer] Thanks for the quick help."
+TKT-200159,CLI-0042,SHP-202506-000261,2025-06-21T11:56:00,phone,resolved,4,"[customer] Hello, I need to update the delivery contact for SHP-202506-000261 if it hasn't gone out yet.~~NL~~[agent.jbrooks] Happy to help — SHP-202506-000261 is on schedule out of our Columbus hub; delivery is within the next 1–2 business days.~~NL~~[customer] Great, appreciate it."
+TKT-200194,CLI-0042,SHP-202503-000119,2025-03-05T14:54:00,email,resolved,5,"[customer] Hi — quick question on SHP-202503-000119. Can you confirm the delivery window?~~NL~~[agent.kobrien] Happy to help — SHP-202503-000119 is on schedule out of our Indianapolis hub; delivery is within the next 1–2 business days.~~NL~~[customer] Perfect, thank you!"
+TKT-200090,CLI-0007,SHP-202512-000381,2025-12-21T22:05:00,email,resolved,4,"[customer] Hi — quick question on SHP-202512-000381. Can you confirm the delivery window?~~NL~~[agent.kobrien] Sure thing. I've noted the update on SHP-202512-000381 and confirmed it with the Columbus team.~~NL~~[customer] Perfect, thank you!"
+TKT-200064,CLI-0042,SHP-202502-000091,2025-02-08T21:33:00,chat,open,,[customer] This is the second time I'm reaching out about SHP-202502-000091. It was due days ago and I still have nothing. This is unacceptable for the rates we pay.~~NL~~[agent.lchen] Apologies for the delay on SHP-202502-000091. I've opened an investigation and looped in the Detroit operations team.~~NL~~[agent.lchen] Update: SHP-202502-000091 is re-routed and expected to deliver within 48 hours. I've added a note to prioritize it. Anything else I can do?~~NL~~[customer] That still isn't good enough but I'll wait for the update.
+TKT-200126,CLI-0007,SHP-202512-000394,2025-12-05T20:47:00,phone,resolved,5,"[customer] Hello, I need to update the delivery contact for SHP-202512-000394 if it hasn't gone out yet.~~NL~~[agent.jbrooks] Attached the POD for SHP-202512-000394. Let me know if there's anything else!~~NL~~[customer] Perfect, thank you!"
+TKT-200228,CLI-0169,SHP-202501-000177,2025-01-03T17:06:00,chat,resolved,4,[customer] Following up on SHP-202501-000177 — could you send the POD once it's delivered? Accounting needs it.~~NL~~[agent.mruiz] Attached the POD for SHP-202501-000177. Let me know if there's anything else!~~NL~~[customer] Thanks for the quick help.
+TKT-200135,CLI-0042,SHP-202506-000152,2025-06-09T20:26:00,phone,resolved,5,[customer] Following up on SHP-202506-000152 — could you send the POD once it's delivered? Accounting needs it.~~NL~~[agent.jbrooks] Attached the POD for SHP-202506-000152. Let me know if there's anything else!~~NL~~[customer] Thanks for the quick help.
+TKT-200095,CLI-0042,SHP-202502-000246,2025-02-27T17:54:00,chat,resolved,5,"[customer] Following up on SHP-202502-000246 — could you send the POD once it's delivered? Accounting needs it.~~NL~~[agent.jbrooks] Sure thing. I've noted the update on SHP-202502-000246 and confirmed it with the Chicago team.~~NL~~[customer] Great, appreciate it."
+TKT-200149,CLI-0007,SHP-202504-000017,2025-04-04T11:39:00,portal,resolved,4,[customer] Following up on SHP-202504-000017 — could you send the POD once it's delivered? Accounting needs it.~~NL~~[agent.kobrien] Happy to help — SHP-202504-000017 is on schedule out of our Cincinnati hub; delivery is within the next 1–2 business days.~~NL~~[customer] Thanks for the quick help.
+TKT-200063,CLI-0169,SHP-202501-000310,2025-01-15T07:49:00,email,resolved,3,[customer] Requesting an update on SHP-202501-000310. It appears to be delayed.~~NL~~[agent.mruiz] Thank you for your patience. I've located SHP-202501-000310 in our system (origin HUB-IND). Checking with dispatch now.
+TKT-200298,CLI-0201,SHP-202507-000101,2025-07-03T22:35:00,email,resolved,5,"[customer] Following up on SHP-202507-000101 — could you send the POD once it's delivered? Accounting needs it.~~NL~~[agent.lchen] Sure thing. I've noted the update on SHP-202507-000101 and confirmed it with the Detroit team.~~NL~~[customer] Great, appreciate it."
+TKT-200104,CLI-0007,SHP-202511-000052,2025-11-03T11:43:00,chat,resolved,5,"[customer] Can you confirm SHP-202511-000052 is still on track to arrive this week?~~NL~~[agent.mruiz] Attached the POD for SHP-202511-000052. Let me know if there's anything else!~~NL~~[customer] Great, appreciate it."
+TKT-200018,CLI-0169,SHP-202501-000308,2025-01-05T15:53:00,email,resolved,1,[customer] Extremely disappointed. SHP-202501-000308 was marked delayed with zero communication. Please escalate.~~NL~~[agent.tpatel] Apologies for the delay on SHP-202501-000308. I've opened an investigation and looped in the Indianapolis operations team.
+TKT-200040,CLI-0201,SHP-202508-000026,2025-09-01T22:41:00,chat,open,,[customer] This is the second time I'm reaching out about SHP-202508-000026. It was due days ago and I still have nothing. This is unacceptable for the rates we pay.~~NL~~[agent.tpatel] Thanks for reaching out — I'm sorry for the trouble with SHP-202508-000026. I see it was affected by an exception at our Chicago hub. Let me pull the latest.
+TKT-200117,CLI-0042,SHP-202505-000270,2025-05-15T20:15:00,phone,resolved,5,"[customer] Following up on SHP-202505-000270 — could you send the POD once it's delivered? Accounting needs it.~~NL~~[agent.tpatel] Sure thing. I've noted the update on SHP-202505-000270 and confirmed it with the Detroit team.~~NL~~[customer] Perfect, thank you!"
+TKT-200144,CLI-0169,SHP-202503-000032,2025-03-23T23:40:00,portal,resolved,5,"[customer] Can you confirm SHP-202503-000032 is still on track to arrive this week?~~NL~~[agent.mruiz] Happy to help — SHP-202503-000032 is on schedule out of our Cincinnati hub; delivery is within the next 1–2 business days.~~NL~~[customer] Perfect, thank you!"
+TKT-200093,CLI-0155,SHP-202512-000187,2025-12-03T10:51:00,chat,resolved,4,"[customer] Can you confirm SHP-202512-000187 is still on track to arrive this week?~~NL~~[agent.kobrien] Happy to help — SHP-202512-000187 is on schedule out of our Indianapolis hub; delivery is within the next 1–2 business days.~~NL~~[customer] Great, appreciate it."
+TKT-200081,CLI-0169,SHP-202501-000070,2025-01-16T19:15:00,portal,resolved,4,"[customer] Following up on SHP-202501-000070. Could you confirm whether this will still be delivered this week?~~NL~~[agent.dfoster] Apologies for the delay on SHP-202501-000070. I've opened an investigation and looped in the Indianapolis operations team.~~NL~~[agent.dfoster] Update: SHP-202501-000070 is re-routed and expected to deliver within 48 hours. I've added a note to prioritize it. Anything else I can do?~~NL~~[customer] Okay, thank you. Please keep me posted."
+TKT-200099,CLI-0155,SHP-202509-000184,2025-09-04T19:30:00,portal,resolved,4,"[customer] Hi — quick question on SHP-202509-000184. Can you confirm the delivery window?~~NL~~[agent.tpatel] Sure thing. I've noted the update on SHP-202509-000184 and confirmed it with the Detroit team.~~NL~~[customer] Great, appreciate it."
+TKT-200137,CLI-0042,SHP-202510-000152,2025-10-27T07:52:00,phone,resolved,5,[customer] Following up on SHP-202510-000152 — could you send the POD once it's delivered? Accounting needs it.~~NL~~[agent.jbrooks] Sure thing. I've noted the update on SHP-202510-000152 and confirmed it with the Cincinnati team.~~NL~~[customer] Thanks for the quick help.
+TKT-200299,CLI-0201,SHP-202503-000289,2025-03-20T18:42:00,chat,resolved,4,"[customer] Hi — quick question on SHP-202503-000289. Can you confirm the delivery window?~~NL~~[agent.mruiz] Sure thing. I've noted the update on SHP-202503-000289 and confirmed it with the Detroit team.~~NL~~[customer] Perfect, thank you!"
+TKT-200079,CLI-0201,SHP-202505-000205,2025-05-05T16:54:00,phone,resolved,4,"[customer] Requesting an update on SHP-202505-000205. It appears to be delayed.~~NL~~[agent.mruiz] Apologies for the delay on SHP-202505-000205. I've opened an investigation and looped in the Detroit operations team.~~NL~~[agent.mruiz] Update: SHP-202505-000205 is re-routed and expected to deliver within 48 hours. I've added a note to prioritize it. Anything else I can do?~~NL~~[customer] Okay, thank you. Please keep me posted."
+TKT-200252,CLI-0042,SHP-202507-000231,2025-07-28T17:04:00,chat,resolved,4,"[customer] Can you confirm SHP-202507-000231 is still on track to arrive this week?~~NL~~[agent.lchen] Happy to help — SHP-202507-000231 is on schedule out of our Columbus hub; delivery is within the next 1–2 business days.~~NL~~[customer] Perfect, thank you!"
+TKT-200160,CLI-0201,SHP-202512-000352,2025-12-05T02:31:00,email,resolved,5,[customer] Following up on SHP-202512-000352 — could you send the POD once it's delivered? Accounting needs it.~~NL~~[agent.jbrooks] Sure thing. I've noted the update on SHP-202512-000352 and confirmed it with the Chicago team.~~NL~~[customer] Thanks for the quick help.
+TKT-200282,CLI-0042,SHP-202504-000002,2025-04-13T21:39:00,portal,resolved,5,"[customer] Hello, I need to update the delivery contact for SHP-202504-000002 if it hasn't gone out yet.~~NL~~[agent.lchen] Sure thing. I've noted the update on SHP-202504-000002 and confirmed it with the Chicago team.~~NL~~[customer] Great, appreciate it."
+TKT-200094,CLI-0169,SHP-202501-000135,2025-01-17T09:53:00,portal,resolved,4,"[customer] Hello, I need to update the delivery contact for SHP-202501-000135 if it hasn't gone out yet.~~NL~~[agent.jbrooks] Happy to help — SHP-202501-000135 is on schedule out of our Detroit hub; delivery is within the next 1–2 business days.~~NL~~[customer] Great, appreciate it."
+TKT-200213,CLI-0169,SHP-202503-000244,2025-03-22T17:18:00,chat,resolved,5,"[customer] Following up on SHP-202503-000244 — could you send the POD once it's delivered? Accounting needs it.~~NL~~[agent.lchen] Sure thing. I've noted the update on SHP-202503-000244 and confirmed it with the Columbus team.~~NL~~[customer] Perfect, thank you!"
+TKT-200152,CLI-0042,SHP-202502-000245,2025-02-26T13:21:00,email,resolved,4,"[customer] Hello, I need to update the delivery contact for SHP-202502-000245 if it hasn't gone out yet.~~NL~~[agent.lchen] Attached the POD for SHP-202502-000245. Let me know if there's anything else!~~NL~~[customer] Great, appreciate it."
+TKT-200028,CLI-0201,SHP-202501-000260,2025-01-12T17:50:00,chat,resolved,3,[customer] Requesting an update on SHP-202501-000260. It appears to be delayed.~~NL~~[agent.jbrooks] Thanks for reaching out — I'm sorry for the trouble with SHP-202501-000260. I see it was affected by an exception at our Detroit hub. Let me pull the latest.~~NL~~[agent.jbrooks] Dispatch confirms SHP-202501-000260 will be reattempted next business day. I've flagged your account for a proactive follow-up.
+TKT-200074,CLI-0169,SHP-202502-000184,2025-02-06T21:01:00,chat,pending,,[customer] Extremely disappointed. SHP-202502-000184 was marked returned with zero communication. Please escalate.~~NL~~[agent.dfoster] Thanks for reaching out — I'm sorry for the trouble with SHP-202502-000184. I see it was affected by an exception at our Columbus hub. Let me pull the latest.
+TKT-200153,CLI-0169,SHP-202505-000076,2025-05-10T09:18:00,chat,resolved,5,[customer] Can you confirm SHP-202505-000076 is still on track to arrive this week?~~NL~~[agent.jbrooks] Sure thing. I've noted the update on SHP-202505-000076 and confirmed it with the Columbus team.~~NL~~[customer] Thanks for the quick help.
+TKT-200147,CLI-0155,SHP-202508-000078,2025-08-25T20:09:00,phone,resolved,5,"[customer] Can you confirm SHP-202508-000078 is still on track to arrive this week?~~NL~~[agent.dfoster] Happy to help — SHP-202508-000078 is on schedule out of our Chicago hub; delivery is within the next 1–2 business days.~~NL~~[customer] Perfect, thank you!"
+TKT-200085,CLI-0042,SHP-202502-000286,2025-02-06T23:12:00,phone,resolved,4,[customer] Requesting an update on SHP-202502-000286. It appears to be failed.~~NL~~[agent.mruiz] Thank you for your patience. I've located SHP-202502-000286 in our system (origin HUB-CMH). Checking with dispatch now.~~NL~~[agent.mruiz] Dispatch confirms SHP-202502-000286 will be reattempted next business day. I've flagged your account for a proactive follow-up.
+TKT-200023,CLI-0201,SHP-202512-000223,2025-12-14T15:34:00,portal,resolved,2,[customer] Where is SHP-202512-000223?? Your tracking hasn't updated and my customer is furious. I need answers today.~~NL~~[agent.kobrien] Thanks for reaching out — I'm sorry for the trouble with SHP-202512-000223. I see it was affected by an exception at our Indianapolis hub. Let me pull the latest.~~NL~~[customer] That still isn't good enough but I'll wait for the update.
+TKT-200125,CLI-0169,SHP-202508-000080,2025-08-07T23:58:00,email,resolved,5,[customer] Hi — quick question on SHP-202508-000080. Can you confirm the delivery window?~~NL~~[agent.jbrooks] Attached the POD for SHP-202508-000080. Let me know if there's anything else!~~NL~~[customer] Thanks for the quick help.
+TKT-200177,CLI-0042,SHP-202506-000052,2025-06-27T11:04:00,email,resolved,5,[customer] Can you confirm SHP-202506-000052 is still on track to arrive this week?~~NL~~[agent.tpatel] Sure thing. I've noted the update on SHP-202506-000052 and confirmed it with the Indianapolis team.~~NL~~[customer] Thanks for the quick help.
+TKT-200293,CLI-0007,SHP-202504-000279,2025-05-02T23:49:00,chat,resolved,5,[customer] Hi — quick question on SHP-202504-000279. Can you confirm the delivery window?~~NL~~[agent.dfoster] Happy to help — SHP-202504-000279 is on schedule out of our Chicago hub; delivery is within the next 1–2 business days.~~NL~~[customer] Thanks for the quick help.
+TKT-200065,CLI-0007,SHP-202511-000378,2025-11-02T20:46:00,phone,pending,,"[customer] Hi, I'm checking on shipment SHP-202511-000378. The status shows delayed — can you tell me the latest ETA?~~NL~~[agent.kobrien] Thank you for your patience. I've located SHP-202511-000378 in our system (origin HUB-CHI). Checking with dispatch now.~~NL~~[agent.kobrien] Good news — SHP-202511-000378 is back in motion. I'll monitor it through delivery and confirm the POD with you."
+TKT-200056,CLI-0007,SHP-202503-000013,2025-03-07T18:28:00,chat,resolved,2,"[customer] Following up on SHP-202503-000013. Could you confirm whether this will still be delivered this week?~~NL~~[agent.kobrien] Thank you for your patience. I've located SHP-202503-000013 in our system (origin HUB-DET). Checking with dispatch now.~~NL~~[agent.kobrien] Good news — SHP-202503-000013 is back in motion. I'll monitor it through delivery and confirm the POD with you.~~NL~~[customer] Okay, thank you. Please keep me posted."
+TKT-200263,CLI-0042,SHP-202502-000115,2025-02-14T20:27:00,email,resolved,5,"[customer] Hi — quick question on SHP-202502-000115. Can you confirm the delivery window?~~NL~~[agent.tpatel] Happy to help — SHP-202502-000115 is on schedule out of our Chicago hub; delivery is within the next 1–2 business days.~~NL~~[customer] Perfect, thank you!"
+TKT-200220,CLI-0155,SHP-202512-000478,2025-12-20T03:38:00,email,resolved,4,[customer] Can you confirm SHP-202512-000478 is still on track to arrive this week?~~NL~~[agent.mruiz] Attached the POD for SHP-202512-000478. Let me know if there's anything else!~~NL~~[customer] Thanks for the quick help.
+TKT-200239,CLI-0155,SHP-202512-000203,2025-12-05T19:13:00,portal,resolved,4,"[customer] Hello, I need to update the delivery contact for SHP-202512-000203 if it hasn't gone out yet.~~NL~~[agent.jbrooks] Happy to help — SHP-202512-000203 is on schedule out of our Detroit hub; delivery is within the next 1–2 business days.~~NL~~[customer] Perfect, thank you!"
+TKT-200255,CLI-0169,SHP-202512-000476,2025-12-01T06:49:00,email,resolved,5,"[customer] Hi — quick question on SHP-202512-000476. Can you confirm the delivery window?~~NL~~[agent.kobrien] Happy to help — SHP-202512-000476 is on schedule out of our Indianapolis hub; delivery is within the next 1–2 business days.~~NL~~[customer] Great, appreciate it."
+TKT-200027,CLI-0155,SHP-202502-000224,2025-02-22T14:48:00,email,resolved,2,[customer] Where is SHP-202502-000224?? Your tracking hasn't updated and my customer is furious. I need answers today.~~NL~~[agent.mruiz] Apologies for the delay on SHP-202502-000224. I've opened an investigation and looped in the Indianapolis operations team.~~NL~~[customer] Appreciate the quick turnaround.
+TKT-200264,CLI-0169,SHP-202501-000009,2025-01-27T17:54:00,phone,resolved,5,"[customer] Following up on SHP-202501-000009 — could you send the POD once it's delivered? Accounting needs it.~~NL~~[agent.tpatel] Happy to help — SHP-202501-000009 is on schedule out of our Cincinnati hub; delivery is within the next 1–2 business days.~~NL~~[customer] Great, appreciate it."
+TKT-200256,CLI-0201,SHP-202510-000277,2025-10-14T18:27:00,phone,resolved,5,"[customer] Hi — quick question on SHP-202510-000277. Can you confirm the delivery window?~~NL~~[agent.jbrooks] Attached the POD for SHP-202510-000277. Let me know if there's anything else!~~NL~~[customer] Great, appreciate it."
+TKT-200225,CLI-0042,SHP-202503-000163,2025-03-24T19:18:00,portal,resolved,4,"[customer] Can you confirm SHP-202503-000163 is still on track to arrive this week?~~NL~~[agent.mruiz] Happy to help — SHP-202503-000163 is on schedule out of our Detroit hub; delivery is within the next 1–2 business days.~~NL~~[customer] Perfect, thank you!"
+TKT-200212,CLI-0155,SHP-202509-000285,2025-09-21T22:13:00,phone,resolved,5,[customer] Hi — quick question on SHP-202509-000285. Can you confirm the delivery window?~~NL~~[agent.mruiz] Happy to help — SHP-202509-000285 is on schedule out of our Cincinnati hub; delivery is within the next 1–2 business days.~~NL~~[customer] Thanks for the quick help.
+TKT-200061,CLI-0155,SHP-202502-000161,2025-02-27T14:19:00,portal,open,,"[customer] Hi, I'm checking on shipment SHP-202502-000161. The status shows failed — can you tell me the latest ETA?~~NL~~[agent.lchen] Thanks for reaching out — I'm sorry for the trouble with SHP-202502-000161. I see it was affected by an exception at our Cincinnati hub. Let me pull the latest.~~NL~~[agent.lchen] Dispatch confirms SHP-202502-000161 will be reattempted next business day. I've flagged your account for a proactive follow-up.~~NL~~[customer] That still isn't good enough but I'll wait for the update."
+TKT-200138,CLI-0155,SHP-202512-000335,2025-12-15T19:08:00,chat,resolved,5,[customer] Hi — quick question on SHP-202512-000335. Can you confirm the delivery window?~~NL~~[agent.lchen] Attached the POD for SHP-202512-000335. Let me know if there's anything else!~~NL~~[customer] Thanks for the quick help.
+TKT-200123,CLI-0169,SHP-202510-000113,2025-10-27T14:56:00,phone,resolved,5,"[customer] Hello, I need to update the delivery contact for SHP-202510-000113 if it hasn't gone out yet.~~NL~~[agent.jbrooks] Happy to help — SHP-202510-000113 is on schedule out of our Detroit hub; delivery is within the next 1–2 business days.~~NL~~[customer] Thanks for the quick help."
+TKT-200270,CLI-0155,SHP-202511-000235,2025-11-11T19:33:00,chat,resolved,5,"[customer] Hi — quick question on SHP-202511-000235. Can you confirm the delivery window?~~NL~~[agent.lchen] Happy to help — SHP-202511-000235 is on schedule out of our Columbus hub; delivery is within the next 1–2 business days.~~NL~~[customer] Perfect, thank you!"
+TKT-200043,CLI-0155,SHP-202511-000367,2025-11-19T13:08:00,chat,open,,[customer] Following up on SHP-202511-000367. Could you confirm whether this will still be delivered this week?~~NL~~[agent.dfoster] Thank you for your patience. I've located SHP-202511-000367 in our system (origin HUB-CIN). Checking with dispatch now.~~NL~~[agent.dfoster] Good news — SHP-202511-000367 is back in motion. I'll monitor it through delivery and confirm the POD with you.
+TKT-200119,CLI-0007,SHP-202502-000173,2025-02-26T19:37:00,chat,resolved,5,"[customer] Hello, I need to update the delivery contact for SHP-202502-000173 if it hasn't gone out yet.~~NL~~[agent.tpatel] Attached the POD for SHP-202502-000173. Let me know if there's anything else!~~NL~~[customer] Perfect, thank you!"
+TKT-200278,CLI-0042,SHP-202511-000329,2025-11-05T18:39:00,phone,resolved,5,"[customer] Hello, I need to update the delivery contact for SHP-202511-000329 if it hasn't gone out yet.~~NL~~[agent.dfoster] Happy to help — SHP-202511-000329 is on schedule out of our Cincinnati hub; delivery is within the next 1–2 business days.~~NL~~[customer] Great, appreciate it."
+TKT-200230,CLI-0042,SHP-202507-000266,2025-07-30T17:46:00,phone,resolved,5,[customer] Hi — quick question on SHP-202507-000266. Can you confirm the delivery window?~~NL~~[agent.kobrien] Sure thing. I've noted the update on SHP-202507-000266 and confirmed it with the Cincinnati team.~~NL~~[customer] Thanks for the quick help.
+TKT-200259,CLI-0169,SHP-202512-000390,2025-12-11T08:00:00,chat,resolved,5,"[customer] Can you confirm SHP-202512-000390 is still on track to arrive this week?~~NL~~[agent.jbrooks] Happy to help — SHP-202512-000390 is on schedule out of our Detroit hub; delivery is within the next 1–2 business days.~~NL~~[customer] Perfect, thank you!"
+TKT-200008,CLI-0201,SHP-202505-000231,2025-05-26T13:36:00,phone,resolved,1,[customer] Where is SHP-202505-000231?? Your tracking hasn't updated and my customer is furious. I need answers today.~~NL~~[agent.jbrooks] Thanks for reaching out — I'm sorry for the trouble with SHP-202505-000231. I see it was affected by an exception at our Columbus hub. Let me pull the latest.~~NL~~[agent.jbrooks] Update: SHP-202505-000231 is re-routed and expected to deliver within 48 hours. I've added a note to prioritize it. Anything else I can do?~~NL~~[customer] Appreciate the quick turnaround.
+TKT-200200,CLI-0169,SHP-202503-000175,2025-03-08T09:47:00,portal,resolved,5,"[customer] Following up on SHP-202503-000175 — could you send the POD once it's delivered? Accounting needs it.~~NL~~[agent.dfoster] Sure thing. I've noted the update on SHP-202503-000175 and confirmed it with the Columbus team.~~NL~~[customer] Great, appreciate it."
+TKT-200269,CLI-0201,SHP-202505-000215,2025-05-07T11:38:00,email,resolved,5,"[customer] Hi — quick question on SHP-202505-000215. Can you confirm the delivery window?~~NL~~[agent.kobrien] Happy to help — SHP-202505-000215 is on schedule out of our Chicago hub; delivery is within the next 1–2 business days.~~NL~~[customer] Perfect, thank you!"
+TKT-200289,CLI-0155,SHP-202507-000212,2025-07-17T16:56:00,phone,resolved,4,[customer] Hi — quick question on SHP-202507-000212. Can you confirm the delivery window?~~NL~~[agent.dfoster] Attached the POD for SHP-202507-000212. Let me know if there's anything else!~~NL~~[customer] Thanks for the quick help.
+TKT-200098,CLI-0042,SHP-202511-000328,2025-11-21T16:29:00,portal,resolved,5,"[customer] Hi — quick question on SHP-202511-000328. Can you confirm the delivery window?~~NL~~[agent.jbrooks] Attached the POD for SHP-202511-000328. Let me know if there's anything else!~~NL~~[customer] Great, appreciate it."
+TKT-200179,CLI-0201,SHP-202501-000304,2025-01-09T18:24:00,email,resolved,5,"[customer] Hello, I need to update the delivery contact for SHP-202501-000304 if it hasn't gone out yet.~~NL~~[agent.tpatel] Attached the POD for SHP-202501-000304. Let me know if there's anything else!~~NL~~[customer] Perfect, thank you!"
+TKT-200121,CLI-0155,SHP-202503-000314,2025-03-08T21:09:00,email,resolved,5,"[customer] Hello, I need to update the delivery contact for SHP-202503-000314 if it hasn't gone out yet.~~NL~~[agent.mruiz] Happy to help — SHP-202503-000314 is on schedule out of our Cincinnati hub; delivery is within the next 1–2 business days.~~NL~~[customer] Thanks for the quick help."
+TKT-200109,CLI-0042,SHP-202508-000222,2025-08-01T13:20:00,portal,resolved,5,"[customer] Hello, I need to update the delivery contact for SHP-202508-000222 if it hasn't gone out yet.~~NL~~[agent.jbrooks] Happy to help — SHP-202508-000222 is on schedule out of our Indianapolis hub; delivery is within the next 1–2 business days.~~NL~~[customer] Perfect, thank you!"
+TKT-200089,CLI-0169,SHP-202501-000216,2025-01-10T12:01:00,email,resolved,3,"[customer] Hi, I'm checking on shipment SHP-202501-000216. The status shows failed — can you tell me the latest ETA?~~NL~~[agent.tpatel] Thanks for reaching out — I'm sorry for the trouble with SHP-202501-000216. I see it was affected by an exception at our Indianapolis hub. Let me pull the latest.~~NL~~[agent.tpatel] Good news — SHP-202501-000216 is back in motion. I'll monitor it through delivery and confirm the POD with you.~~NL~~[customer] Appreciate the quick turnaround."
+TKT-200020,CLI-0042,SHP-202502-000120,2025-02-20T15:07:00,chat,pending,,"[customer] Good morning! Quick question on SHP-202502-000120, currently delayed. No rush, just planning around it.~~NL~~[agent.dfoster] Apologies for the delay on SHP-202502-000120. I've opened an investigation and looped in the Cincinnati operations team."
+TKT-200203,CLI-0007,SHP-202511-000038,2025-11-11T00:50:00,phone,resolved,4,[customer] Following up on SHP-202511-000038 — could you send the POD once it's delivered? Accounting needs it.~~NL~~[agent.mruiz] Happy to help — SHP-202511-000038 is on schedule out of our Detroit hub; delivery is within the next 1–2 business days.~~NL~~[customer] Thanks for the quick help.
+TKT-200156,CLI-0201,SHP-202505-000136,2025-05-19T16:18:00,chat,resolved,5,"[customer] Hi — quick question on SHP-202505-000136. Can you confirm the delivery window?~~NL~~[agent.kobrien] Attached the POD for SHP-202505-000136. Let me know if there's anything else!~~NL~~[customer] Great, appreciate it."
+TKT-200102,CLI-0042,SHP-202510-000114,2025-10-12T10:23:00,email,resolved,5,"[customer] Following up on SHP-202510-000114 — could you send the POD once it's delivered? Accounting needs it.~~NL~~[agent.tpatel] Sure thing. I've noted the update on SHP-202510-000114 and confirmed it with the Cincinnati team.~~NL~~[customer] Great, appreciate it."
+TKT-200124,CLI-0007,SHP-202511-000142,2025-11-04T13:17:00,email,resolved,5,[customer] Following up on SHP-202511-000142 — could you send the POD once it's delivered? Accounting needs it.~~NL~~[agent.jbrooks] Happy to help — SHP-202511-000142 is on schedule out of our Cincinnati hub; delivery is within the next 1–2 business days.~~NL~~[customer] Thanks for the quick help.
+TKT-200155,CLI-0201,SHP-202510-000131,2025-10-16T16:05:00,portal,resolved,5,[customer] Following up on SHP-202510-000131 — could you send the POD once it's delivered? Accounting needs it.~~NL~~[agent.lchen] Happy to help — SHP-202510-000131 is on schedule out of our Cincinnati hub; delivery is within the next 1–2 business days.~~NL~~[customer] Thanks for the quick help.
+TKT-200059,CLI-0201,SHP-202506-000026,2025-06-28T20:57:00,chat,resolved,3,"[customer] Hello, hoping you can help with SHP-202506-000026. I understand there may be delays — just need an updated delivery window when you have a moment. Thanks!~~NL~~[agent.kobrien] Apologies for the delay on SHP-202506-000026. I've opened an investigation and looped in the Chicago operations team.~~NL~~[agent.kobrien] Dispatch confirms SHP-202506-000026 will be reattempted next business day. I've flagged your account for a proactive follow-up."
+TKT-200173,CLI-0169,SHP-202505-000052,2025-05-11T00:06:00,portal,resolved,5,"[customer] Hi — quick question on SHP-202505-000052. Can you confirm the delivery window?~~NL~~[agent.kobrien] Sure thing. I've noted the update on SHP-202505-000052 and confirmed it with the Indianapolis team.~~NL~~[customer] Perfect, thank you!"
+TKT-200092,CLI-0169,SHP-202509-000244,2025-09-04T17:41:00,chat,resolved,5,"[customer] Hello, I need to update the delivery contact for SHP-202509-000244 if it hasn't gone out yet.~~NL~~[agent.mruiz] Happy to help — SHP-202509-000244 is on schedule out of our Indianapolis hub; delivery is within the next 1–2 business days.~~NL~~[customer] Perfect, thank you!"
+TKT-200162,CLI-0042,SHP-202511-000148,2025-11-06T08:49:00,phone,resolved,4,"[customer] Hello, I need to update the delivery contact for SHP-202511-000148 if it hasn't gone out yet.~~NL~~[agent.jbrooks] Sure thing. I've noted the update on SHP-202511-000148 and confirmed it with the Detroit team.~~NL~~[customer] Perfect, thank you!"
+TKT-200294,CLI-0007,SHP-202502-000158,2025-02-22T16:32:00,email,resolved,5,"[customer] Can you confirm SHP-202502-000158 is still on track to arrive this week?~~NL~~[agent.dfoster] Attached the POD for SHP-202502-000158. Let me know if there's anything else!~~NL~~[customer] Great, appreciate it."
+TKT-200082,CLI-0155,SHP-202501-000114,2025-01-18T11:22:00,chat,open,,"[customer] Good morning! Quick question on SHP-202501-000114, currently delayed. No rush, just planning around it.~~NL~~[agent.jbrooks] Apologies for the delay on SHP-202501-000114. I've opened an investigation and looped in the Indianapolis operations team.~~NL~~[agent.jbrooks] Dispatch confirms SHP-202501-000114 will be reattempted next business day. I've flagged your account for a proactive follow-up."
+TKT-200163,CLI-0169,SHP-202501-000078,2025-01-11T18:15:00,email,resolved,5,"[customer] Can you confirm SHP-202501-000078 is still on track to arrive this week?~~NL~~[agent.mruiz] Attached the POD for SHP-202501-000078. Let me know if there's anything else!~~NL~~[customer] Perfect, thank you!"
+TKT-200000,CLI-0042,SHP-202512-000104,2025-12-12T13:54:00,email,pending,,[customer] Where is SHP-202512-000104?? Your tracking hasn't updated and my customer is furious. I need answers today.~~NL~~[agent.jbrooks] Apologies for the delay on SHP-202512-000104. I've opened an investigation and looped in the Indianapolis operations team.~~NL~~[agent.jbrooks] Good news — SHP-202512-000104 is back in motion. I'll monitor it through delivery and confirm the POD with you.~~NL~~[customer] That still isn't good enough but I'll wait for the update.
+TKT-200268,CLI-0007,SHP-202511-000347,2025-11-21T16:06:00,portal,resolved,5,[customer] Following up on SHP-202511-000347 — could you send the POD once it's delivered? Accounting needs it.~~NL~~[agent.jbrooks] Happy to help — SHP-202511-000347 is on schedule out of our Indianapolis hub; delivery is within the next 1–2 business days.~~NL~~[customer] Thanks for the quick help.
+TKT-200243,CLI-0201,SHP-202501-000109,2025-01-06T14:22:00,portal,resolved,4,"[customer] Following up on SHP-202501-000109 — could you send the POD once it's delivered? Accounting needs it.~~NL~~[agent.lchen] Attached the POD for SHP-202501-000109. Let me know if there's anything else!~~NL~~[customer] Perfect, thank you!"
+TKT-200231,CLI-0169,SHP-202508-000217,2025-08-10T19:25:00,portal,resolved,5,"[customer] Hello, I need to update the delivery contact for SHP-202508-000217 if it hasn't gone out yet.~~NL~~[agent.dfoster] Sure thing. I've noted the update on SHP-202508-000217 and confirmed it with the Columbus team.~~NL~~[customer] Perfect, thank you!"
+TKT-200127,CLI-0007,SHP-202508-000283,2025-08-07T17:07:00,email,resolved,4,"[customer] Can you confirm SHP-202508-000283 is still on track to arrive this week?~~NL~~[agent.dfoster] Attached the POD for SHP-202508-000283. Let me know if there's anything else!~~NL~~[customer] Great, appreciate it."
+TKT-200143,CLI-0169,SHP-202506-000086,2025-06-05T20:20:00,phone,resolved,4,[customer] Can you confirm SHP-202506-000086 is still on track to arrive this week?~~NL~~[agent.dfoster] Attached the POD for SHP-202506-000086. Let me know if there's anything else!~~NL~~[customer] Thanks for the quick help.
+TKT-200001,CLI-0201,SHP-202512-000200,2025-12-03T11:50:00,email,resolved,5,"[customer] Good morning! Quick question on SHP-202512-000200, currently failed. No rush, just planning around it.~~NL~~[agent.dfoster] Thanks for reaching out — I'm sorry for the trouble with SHP-202512-000200. I see it was affected by an exception at our Detroit hub. Let me pull the latest.~~NL~~[agent.dfoster] Dispatch confirms SHP-202512-000200 will be reattempted next business day. I've flagged your account for a proactive follow-up."
+TKT-200295,CLI-0042,SHP-202512-000355,2025-12-09T11:31:00,portal,resolved,5,"[customer] Hi — quick question on SHP-202512-000355. Can you confirm the delivery window?~~NL~~[agent.jbrooks] Attached the POD for SHP-202512-000355. Let me know if there's anything else!~~NL~~[customer] Great, appreciate it."
+TKT-200029,CLI-0201,SHP-202512-000358,2025-12-16T23:06:00,phone,resolved,3,[customer] This is the second time I'm reaching out about SHP-202512-000358. It was due days ago and I still have nothing. This is unacceptable for the rates we pay.~~NL~~[agent.lchen] Thanks for reaching out — I'm sorry for the trouble with SHP-202512-000358. I see it was affected by an exception at our Detroit hub. Let me pull the latest.~~NL~~[agent.lchen] Dispatch confirms SHP-202512-000358 will be reattempted next business day. I've flagged your account for a proactive follow-up.
+TKT-200193,CLI-0155,SHP-202503-000012,2025-03-03T15:18:00,portal,resolved,5,"[customer] Hello, I need to update the delivery contact for SHP-202503-000012 if it hasn't gone out yet.~~NL~~[agent.mruiz] Happy to help — SHP-202503-000012 is on schedule out of our Detroit hub; delivery is within the next 1–2 business days.~~NL~~[customer] Thanks for the quick help."
+TKT-200122,CLI-0155,SHP-202512-000182,2025-12-29T10:28:00,email,resolved,5,"[customer] Hello, I need to update the delivery contact for SHP-202512-000182 if it hasn't gone out yet.~~NL~~[agent.mruiz] Happy to help — SHP-202512-000182 is on schedule out of our Cincinnati hub; delivery is within the next 1–2 business days.~~NL~~[customer] Thanks for the quick help."
+TKT-200175,CLI-0007,SHP-202502-000104,2025-02-17T20:14:00,chat,resolved,5,"[customer] Can you confirm SHP-202502-000104 is still on track to arrive this week?~~NL~~[agent.dfoster] Sure thing. I've noted the update on SHP-202502-000104 and confirmed it with the Columbus team.~~NL~~[customer] Perfect, thank you!"
+TKT-200280,CLI-0201,SHP-202509-000218,2025-09-19T15:51:00,portal,resolved,5,"[customer] Can you confirm SHP-202509-000218 is still on track to arrive this week?~~NL~~[agent.mruiz] Sure thing. I've noted the update on SHP-202509-000218 and confirmed it with the Chicago team.~~NL~~[customer] Perfect, thank you!"
+TKT-200219,CLI-0042,SHP-202506-000177,2025-06-04T17:05:00,portal,resolved,5,[customer] Following up on SHP-202506-000177 — could you send the POD once it's delivered? Accounting needs it.~~NL~~[agent.mruiz] Attached the POD for SHP-202506-000177. Let me know if there's anything else!~~NL~~[customer] Thanks for the quick help.
+TKT-200266,CLI-0169,SHP-202511-000247,2025-11-08T15:09:00,chat,resolved,5,"[customer] Hello, I need to update the delivery contact for SHP-202511-000247 if it hasn't gone out yet.~~NL~~[agent.jbrooks] Sure thing. I've noted the update on SHP-202511-000247 and confirmed it with the Cincinnati team.~~NL~~[customer] Perfect, thank you!"
+TKT-200192,CLI-0169,SHP-202502-000074,2025-02-18T13:50:00,email,resolved,5,"[customer] Following up on SHP-202502-000074 — could you send the POD once it's delivered? Accounting needs it.~~NL~~[agent.kobrien] Sure thing. I've noted the update on SHP-202502-000074 and confirmed it with the Chicago team.~~NL~~[customer] Perfect, thank you!"
+TKT-200291,CLI-0155,SHP-202502-000126,2025-02-22T18:10:00,portal,resolved,4,"[customer] Hi — quick question on SHP-202502-000126. Can you confirm the delivery window?~~NL~~[agent.tpatel] Attached the POD for SHP-202502-000126. Let me know if there's anything else!~~NL~~[customer] Perfect, thank you!"
+TKT-200021,CLI-0169,SHP-202502-000275,2025-02-15T17:47:00,chat,resolved,1,"[customer] Where is SHP-202502-000275?? Your tracking hasn't updated and my customer is furious. I need answers today.~~NL~~[agent.dfoster] Thanks for reaching out — I'm sorry for the trouble with SHP-202502-000275. I see it was affected by an exception at our Cincinnati hub. Let me pull the latest.~~NL~~[customer] Okay, thank you. Please keep me posted."
+TKT-200004,CLI-0201,SHP-202511-000198,2025-11-14T10:00:00,phone,pending,,[customer] Where is SHP-202511-000198?? Your tracking hasn't updated and my customer is furious. I need answers today.~~NL~~[agent.mruiz] Thanks for reaching out — I'm sorry for the trouble with SHP-202511-000198. I see it was affected by an exception at our Chicago hub. Let me pull the latest.~~NL~~[agent.mruiz] Good news — SHP-202511-000198 is back in motion. I'll monitor it through delivery and confirm the POD with you.~~NL~~[customer] That still isn't good enough but I'll wait for the update.
+TKT-200015,CLI-0155,SHP-202507-000197,2025-07-18T19:53:00,portal,resolved,3,[customer] Following up on SHP-202507-000197. Could you confirm whether this will still be delivered this week?~~NL~~[agent.tpatel] Thanks for reaching out — I'm sorry for the trouble with SHP-202507-000197. I see it was affected by an exception at our Indianapolis hub. Let me pull the latest.~~NL~~[agent.tpatel] Good news — SHP-202507-000197 is back in motion. I'll monitor it through delivery and confirm the POD with you.~~NL~~[customer] That still isn't good enough but I'll wait for the update.
+TKT-900000,CLI-0042,SHP-202501-900001,2025-01-14T09:00:00,phone,pending,,[customer] Where is SHP-202501-900001?? Nothing's moved for days. I know Chicago got hit but I need a real ETA.~~NL~~[agent.lchen] I'm sorry — the Jan winter storm at our Chicago hub (incident INC-2025-00417) delayed a large batch including SHP-202501-900001. It's re-routed and moving now; expect delivery within 48 hours.~~NL~~[customer] Fine. Please make sure it actually does this time.
+TKT-900001,CLI-0042,SHP-202501-900002,2025-01-15T10:07:00,phone,pending,,[customer] Where is SHP-202501-900002?? Nothing's moved for days. I know Chicago got hit but I need a real ETA.~~NL~~[agent.mruiz] I'm sorry — the Jan winter storm at our Chicago hub (incident INC-2025-00417) delayed a large batch including SHP-202501-900002. It's re-routed and moving now; expect delivery within 48 hours.~~NL~~[customer] Fine. Please make sure it actually does this time.
+TKT-900002,CLI-0042,SHP-202501-900003,2025-01-16T17:27:00,chat,resolved,3,[customer] Where is SHP-202501-900003?? Nothing's moved for days. I know Chicago got hit but I need a real ETA.~~NL~~[agent.mruiz] I'm sorry — the Jan winter storm at our Chicago hub (incident INC-2025-00417) delayed a large batch including SHP-202501-900003. It's re-routed and moving now; expect delivery within 48 hours.~~NL~~[customer] Fine. Please make sure it actually does this time.
+TKT-900003,CLI-0042,SHP-202502-900004,2025-02-03T16:59:00,chat,pending,2,[customer] Where is SHP-202502-900004?? Nothing's moved for days. I know Chicago got hit but I need a real ETA.~~NL~~[agent.mruiz] I'm sorry — the Jan winter storm at our Chicago hub (incident INC-2025-00417) delayed a large batch including SHP-202502-900004. It's re-routed and moving now; expect delivery within 48 hours.~~NL~~[customer] Fine. Please make sure it actually does this time.
+TKT-900004,CLI-0042,SHP-202501-900005,2025-01-14T10:34:00,phone,pending,,[customer] Where is SHP-202501-900005?? Nothing's moved for days. I know Chicago got hit but I need a real ETA.~~NL~~[agent.lchen] I'm sorry — the Jan winter storm at our Chicago hub (incident INC-2025-00417) delayed a large batch including SHP-202501-900005. It's re-routed and moving now; expect delivery within 48 hours.~~NL~~[customer] Fine. Please make sure it actually does this time.
+TKT-900005,CLI-0042,SHP-202501-900006,2025-01-15T11:13:00,email,resolved,2,[customer] Where is SHP-202501-900006?? Nothing's moved for days. I know Chicago got hit but I need a real ETA.~~NL~~[agent.jbrooks] I'm sorry — the Jan winter storm at our Chicago hub (incident INC-2025-00417) delayed a large batch including SHP-202501-900006. It's re-routed and moving now; expect delivery within 48 hours.~~NL~~[customer] Fine. Please make sure it actually does this time.
+TKT-900006,CLI-0042,SHP-202501-900007,2025-01-16T12:51:00,email,resolved,,[customer] Where is SHP-202501-900007?? Nothing's moved for days. I know Chicago got hit but I need a real ETA.~~NL~~[agent.mruiz] I'm sorry — the Jan winter storm at our Chicago hub (incident INC-2025-00417) delayed a large batch including SHP-202501-900007. It's re-routed and moving now; expect delivery within 48 hours.~~NL~~[customer] Fine. Please make sure it actually does this time.
+TKT-900007,CLI-0042,SHP-202502-900008,2025-02-03T17:24:00,chat,resolved,2,[customer] Where is SHP-202502-900008?? Nothing's moved for days. I know Chicago got hit but I need a real ETA.~~NL~~[agent.mruiz] I'm sorry — the Jan winter storm at our Chicago hub (incident INC-2025-00417) delayed a large batch including SHP-202502-900008. It's re-routed and moving now; expect delivery within 48 hours.~~NL~~[customer] Fine. Please make sure it actually does this time.
+TKT-900008,CLI-0042,SHP-202501-900009,2025-01-14T12:26:00,chat,pending,3,[customer] Where is SHP-202501-900009?? Nothing's moved for days. I know Chicago got hit but I need a real ETA.~~NL~~[agent.jbrooks] I'm sorry — the Jan winter storm at our Chicago hub (incident INC-2025-00417) delayed a large batch including SHP-202501-900009. It's re-routed and moving now; expect delivery within 48 hours.~~NL~~[customer] Fine. Please make sure it actually does this time.
+TKT-900009,CLI-0042,SHP-202501-900010,2025-01-15T15:08:00,email,resolved,2,[customer] Where is SHP-202501-900010?? Nothing's moved for days. I know Chicago got hit but I need a real ETA.~~NL~~[agent.jbrooks] I'm sorry — the Jan winter storm at our Chicago hub (incident INC-2025-00417) delayed a large batch including SHP-202501-900010. It's re-routed and moving now; expect delivery within 48 hours.~~NL~~[customer] Fine. Please make sure it actually does this time.
+TKT-900010,CLI-0201,SHP-202501-900011,2025-01-16T12:48:00,email,resolved,2,[customer] Where is SHP-202501-900011?? Nothing's moved for days. I know Chicago got hit but I need a real ETA.~~NL~~[agent.mruiz] I'm sorry — the Jan winter storm at our Chicago hub (incident INC-2025-00417) delayed a large batch including SHP-202501-900011. It's re-routed and moving now; expect delivery within 48 hours.~~NL~~[customer] Fine. Please make sure it actually does this time.
+TKT-900015,CLI-0007,SHP-202502-900016,2025-02-03T17:58:00,email,resolved,,[customer] Where is SHP-202502-900016?? Nothing's moved for days. I know Chicago got hit but I need a real ETA.~~NL~~[agent.jbrooks] I'm sorry — the Jan winter storm at our Chicago hub (incident INC-2025-00417) delayed a large batch including SHP-202502-900016. It's re-routed and moving now; expect delivery within 48 hours.~~NL~~[customer] Fine. Please make sure it actually does this time.
+TKT-900017,CLI-0007,SHP-202501-900018,2025-01-15T12:20:00,email,resolved,1,[customer] Where is SHP-202501-900018?? Nothing's moved for days. I know Chicago got hit but I need a real ETA.~~NL~~[agent.jbrooks] I'm sorry — the Jan winter storm at our Chicago hub (incident INC-2025-00417) delayed a large batch including SHP-202501-900018. It's re-routed and moving now; expect delivery within 48 hours.~~NL~~[customer] Fine. Please make sure it actually does this time.
+TKT-910000,CLI-0042,SHP-202505-000271,2025-05-14T14:00:00,phone,pending,3,"[customer] Following up on SHP-202505-000271 — another late LTL load. Our account team keeps promising improvement and we're not seeing it.~~NL~~[agent.lchen] Understood, and I'm sorry. I've logged this against the Jaffle Equipment account (CLI-0042) and flagged it for your account owner Marcus Trent.~~NL~~[customer] Please do. Appreciate it."
+TKT-910001,CLI-0042,SHP-202506-000261,2025-06-17T15:00:00,phone,resolved,3,"[customer] Following up on SHP-202506-000261 — another late LTL load. Our account team keeps promising improvement and we're not seeing it.~~NL~~[agent.lchen] Understood, and I'm sorry. I've logged this against the Jaffle Equipment account (CLI-0042) and flagged it for your account owner Marcus Trent.~~NL~~[customer] Please do. Appreciate it."
+TKT-910002,CLI-0042,SHP-202506-000261,2025-06-20T11:00:00,phone,open,2,"[customer] Following up on SHP-202506-000261 — another late LTL load. Our account team keeps promising improvement and we're not seeing it.~~NL~~[agent.lchen] Understood, and I'm sorry. I've logged this against the Jaffle Equipment account (CLI-0042) and flagged it for your account owner Marcus Trent.~~NL~~[customer] Please do. Appreciate it."
+TKT-910003,CLI-0042,SHP-202507-000266,2025-07-13T09:00:00,email,open,1,"[customer] This keeps happening. Following up on SHP-202507-000266 — another late LTL load. Our account team keeps promising improvement and we're not seeing it.~~NL~~[agent.lchen] Understood, and I'm sorry. I've logged this against the Jaffle Equipment account (CLI-0042) and flagged it for your account owner Marcus Trent.~~NL~~[customer] We're starting to look at other carriers."
+TKT-910004,CLI-0042,SHP-202507-000237,2025-07-12T09:00:00,email,resolved,1,"[customer] This keeps happening. Following up on SHP-202507-000237 — another late LTL load. Our account team keeps promising improvement and we're not seeing it.~~NL~~[agent.lchen] Understood, and I'm sorry. I've logged this against the Jaffle Equipment account (CLI-0042) and flagged it for your account owner Marcus Trent.~~NL~~[customer] We're starting to look at other carriers."
+TKT-910005,CLI-0042,SHP-202507-000266,2025-07-10T15:00:00,phone,resolved,1,"[customer] This keeps happening. Following up on SHP-202507-000266 — another late LTL load. Our account team keeps promising improvement and we're not seeing it.~~NL~~[agent.lchen] Understood, and I'm sorry. I've logged this against the Jaffle Equipment account (CLI-0042) and flagged it for your account owner Marcus Trent.~~NL~~[customer] We're starting to look at other carriers."
+TKT-910006,CLI-0042,SHP-202507-000334,2025-07-10T12:00:00,phone,resolved,1,"[customer] This keeps happening. Following up on SHP-202507-000334 — another late LTL load. Our account team keeps promising improvement and we're not seeing it.~~NL~~[agent.lchen] Understood, and I'm sorry. I've logged this against the Jaffle Equipment account (CLI-0042) and flagged it for your account owner Marcus Trent.~~NL~~[customer] We're starting to look at other carriers."
+TKT-910007,CLI-0042,SHP-202508-000262,2025-08-13T16:00:00,phone,pending,1,"[customer] This keeps happening. Following up on SHP-202508-000262 — another late LTL load. Our account team keeps promising improvement and we're not seeing it.~~NL~~[agent.lchen] Understood, and I'm sorry. I've logged this against the Jaffle Equipment account (CLI-0042) and flagged it for your account owner Marcus Trent.~~NL~~[customer] We're starting to look at other carriers."
+TKT-910008,CLI-0042,SHP-202508-000272,2025-08-21T11:00:00,email,pending,1,"[customer] This keeps happening. Following up on SHP-202508-000272 — another late LTL load. Our account team keeps promising improvement and we're not seeing it.~~NL~~[agent.lchen] Understood, and I'm sorry. I've logged this against the Jaffle Equipment account (CLI-0042) and flagged it for your account owner Marcus Trent.~~NL~~[customer] We're starting to look at other carriers."
+TKT-910009,CLI-0042,SHP-202508-000250,2025-08-22T12:00:00,phone,open,2,"[customer] This keeps happening. Following up on SHP-202508-000250 — another late LTL load. Our account team keeps promising improvement and we're not seeing it.~~NL~~[agent.lchen] Understood, and I'm sorry. I've logged this against the Jaffle Equipment account (CLI-0042) and flagged it for your account owner Marcus Trent.~~NL~~[customer] We're starting to look at other carriers."
+TKT-910010,CLI-0042,SHP-202508-000277,2025-08-21T16:00:00,phone,resolved,2,"[customer] This keeps happening. Following up on SHP-202508-000277 — another late LTL load. Our account team keeps promising improvement and we're not seeing it.~~NL~~[agent.lchen] Understood, and I'm sorry. I've logged this against the Jaffle Equipment account (CLI-0042) and flagged it for your account owner Marcus Trent.~~NL~~[customer] We're starting to look at other carriers."
+TKT-910011,CLI-0042,SHP-202508-000262,2025-08-21T11:00:00,phone,resolved,2,"[customer] This keeps happening. Following up on SHP-202508-000262 — another late LTL load. Our account team keeps promising improvement and we're not seeing it.~~NL~~[agent.lchen] Understood, and I'm sorry. I've logged this against the Jaffle Equipment account (CLI-0042) and flagged it for your account owner Marcus Trent.~~NL~~[customer] We're starting to look at other carriers."
+TKT-910012,CLI-0042,SHP-202508-000272,2025-08-11T12:00:00,email,open,1,"[customer] This keeps happening. Following up on SHP-202508-000272 — another late LTL load. Our account team keeps promising improvement and we're not seeing it.~~NL~~[agent.lchen] Understood, and I'm sorry. I've logged this against the Jaffle Equipment account (CLI-0042) and flagged it for your account owner Marcus Trent.~~NL~~[customer] We're starting to look at other carriers."
+TKT-910013,CLI-0042,SHP-202509-000294,2025-09-23T13:00:00,phone,pending,1,"[customer] This keeps happening. Following up on SHP-202509-000294 — another late LTL load. Our account team keeps promising improvement and we're not seeing it.~~NL~~[agent.lchen] Understood, and I'm sorry. I've logged this against the Jaffle Equipment account (CLI-0042) and flagged it for your account owner Marcus Trent.~~NL~~[customer] We're starting to look at other carriers."
+TKT-910014,CLI-0042,SHP-202509-000282,2025-09-14T10:00:00,phone,open,1,"[customer] This keeps happening. Following up on SHP-202509-000282 — another late LTL load. Our account team keeps promising improvement and we're not seeing it.~~NL~~[agent.lchen] Understood, and I'm sorry. I've logged this against the Jaffle Equipment account (CLI-0042) and flagged it for your account owner Marcus Trent.~~NL~~[customer] We're starting to look at other carriers."
+TKT-910015,CLI-0042,SHP-202509-000255,2025-09-12T11:00:00,email,pending,1,"[customer] This keeps happening. Following up on SHP-202509-000255 — another late LTL load. Our account team keeps promising improvement and we're not seeing it.~~NL~~[agent.lchen] Understood, and I'm sorry. I've logged this against the Jaffle Equipment account (CLI-0042) and flagged it for your account owner Marcus Trent.~~NL~~[customer] We're starting to look at other carriers."
+TKT-910016,CLI-0042,SHP-202509-000292,2025-09-10T13:00:00,email,open,2,"[customer] This keeps happening. Following up on SHP-202509-000292 — another late LTL load. Our account team keeps promising improvement and we're not seeing it.~~NL~~[agent.lchen] Understood, and I'm sorry. I've logged this against the Jaffle Equipment account (CLI-0042) and flagged it for your account owner Marcus Trent.~~NL~~[customer] We're starting to look at other carriers."
+TKT-910017,CLI-0042,SHP-202509-000294,2025-09-13T14:00:00,phone,resolved,1,"[customer] This keeps happening. Following up on SHP-202509-000294 — another late LTL load. Our account team keeps promising improvement and we're not seeing it.~~NL~~[agent.lchen] Understood, and I'm sorry. I've logged this against the Jaffle Equipment account (CLI-0042) and flagged it for your account owner Marcus Trent.~~NL~~[customer] We're starting to look at other carriers."
+TKT-910018,CLI-0042,SHP-202509-000259,2025-09-19T15:00:00,email,resolved,1,"[customer] This keeps happening. Following up on SHP-202509-000259 — another late LTL load. Our account team keeps promising improvement and we're not seeing it.~~NL~~[agent.lchen] Understood, and I'm sorry. I've logged this against the Jaffle Equipment account (CLI-0042) and flagged it for your account owner Marcus Trent.~~NL~~[customer] We're starting to look at other carriers."
+TKT-910019,CLI-0042,SHP-202509-000294,2025-09-18T13:00:00,email,resolved,1,"[customer] This keeps happening. Following up on SHP-202509-000294 — another late LTL load. Our account team keeps promising improvement and we're not seeing it.~~NL~~[agent.lchen] Understood, and I'm sorry. I've logged this against the Jaffle Equipment account (CLI-0042) and flagged it for your account owner Marcus Trent.~~NL~~[customer] We're starting to look at other carriers."
+TKT-910020,CLI-0042,SHP-202510-000259,2025-10-26T15:00:00,email,pending,1,"[customer] This keeps happening. Following up on SHP-202510-000259 — another late LTL load. Our account team keeps promising improvement and we're not seeing it.~~NL~~[agent.lchen] Understood, and I'm sorry. I've logged this against the Jaffle Equipment account (CLI-0042) and flagged it for your account owner Marcus Trent.~~NL~~[customer] We're starting to look at other carriers."
+TKT-910021,CLI-0042,SHP-202510-000312,2025-10-19T12:00:00,email,open,1,"[customer] This keeps happening. Following up on SHP-202510-000312 — another late LTL load. Our account team keeps promising improvement and we're not seeing it.~~NL~~[agent.lchen] Understood, and I'm sorry. I've logged this against the Jaffle Equipment account (CLI-0042) and flagged it for your account owner Marcus Trent.~~NL~~[customer] We're starting to look at other carriers."
+TKT-910022,CLI-0042,SHP-202510-000259,2025-10-19T15:00:00,phone,resolved,1,"[customer] This keeps happening. Following up on SHP-202510-000259 — another late LTL load. Our account team keeps promising improvement and we're not seeing it.~~NL~~[agent.lchen] Understood, and I'm sorry. I've logged this against the Jaffle Equipment account (CLI-0042) and flagged it for your account owner Marcus Trent.~~NL~~[customer] We're starting to look at other carriers."
+TKT-910023,CLI-0042,SHP-202510-000332,2025-10-15T14:00:00,email,open,2,"[customer] This keeps happening. Following up on SHP-202510-000332 — another late LTL load. Our account team keeps promising improvement and we're not seeing it.~~NL~~[agent.lchen] Understood, and I'm sorry. I've logged this against the Jaffle Equipment account (CLI-0042) and flagged it for your account owner Marcus Trent.~~NL~~[customer] We're starting to look at other carriers."
+TKT-910024,CLI-0042,SHP-202510-000312,2025-10-15T15:00:00,email,open,2,"[customer] This keeps happening. Following up on SHP-202510-000312 — another late LTL load. Our account team keeps promising improvement and we're not seeing it.~~NL~~[agent.lchen] Understood, and I'm sorry. I've logged this against the Jaffle Equipment account (CLI-0042) and flagged it for your account owner Marcus Trent.~~NL~~[customer] We're starting to look at other carriers."
+TKT-910025,CLI-0042,SHP-202510-000259,2025-10-20T11:00:00,email,resolved,1,"[customer] This keeps happening. Following up on SHP-202510-000259 — another late LTL load. Our account team keeps promising improvement and we're not seeing it.~~NL~~[agent.lchen] Understood, and I'm sorry. I've logged this against the Jaffle Equipment account (CLI-0042) and flagged it for your account owner Marcus Trent.~~NL~~[customer] We're starting to look at other carriers."
+TKT-910026,CLI-0042,SHP-202510-000299,2025-10-10T13:00:00,phone,resolved,2,"[customer] This keeps happening. Following up on SHP-202510-000299 — another late LTL load. Our account team keeps promising improvement and we're not seeing it.~~NL~~[agent.lchen] Understood, and I'm sorry. I've logged this against the Jaffle Equipment account (CLI-0042) and flagged it for your account owner Marcus Trent.~~NL~~[customer] We're starting to look at other carriers."
+TKT-910027,CLI-0042,SHP-202510-000312,2025-10-23T15:00:00,phone,pending,2,"[customer] This keeps happening. Following up on SHP-202510-000312 — another late LTL load. Our account team keeps promising improvement and we're not seeing it.~~NL~~[agent.lchen] Understood, and I'm sorry. I've logged this against the Jaffle Equipment account (CLI-0042) and flagged it for your account owner Marcus Trent.~~NL~~[customer] We're starting to look at other carriers."
+TKT-910028,CLI-0042,SHP-202511-000387,2025-11-26T15:00:00,email,pending,1,"[customer] This keeps happening. Following up on SHP-202511-000387 — another late LTL load. Our account team keeps promising improvement and we're not seeing it.~~NL~~[agent.lchen] Understood, and I'm sorry. I've logged this against the Jaffle Equipment account (CLI-0042) and flagged it for your account owner Marcus Trent.~~NL~~[customer] We're starting to look at other carriers."
+TKT-910029,CLI-0042,SHP-202511-000405,2025-11-24T16:00:00,phone,pending,2,"[customer] This keeps happening. Following up on SHP-202511-000405 — another late LTL load. Our account team keeps promising improvement and we're not seeing it.~~NL~~[agent.lchen] Understood, and I'm sorry. I've logged this against the Jaffle Equipment account (CLI-0042) and flagged it for your account owner Marcus Trent.~~NL~~[customer] We're starting to look at other carriers."
+TKT-910030,CLI-0042,SHP-202511-000405,2025-11-17T15:00:00,email,pending,1,"[customer] This keeps happening. Following up on SHP-202511-000405 — another late LTL load. Our account team keeps promising improvement and we're not seeing it.~~NL~~[agent.lchen] Understood, and I'm sorry. I've logged this against the Jaffle Equipment account (CLI-0042) and flagged it for your account owner Marcus Trent.~~NL~~[customer] We're starting to look at other carriers."
+TKT-910031,CLI-0042,SHP-202511-000380,2025-11-14T11:00:00,email,open,2,"[customer] This keeps happening. Following up on SHP-202511-000380 — another late LTL load. Our account team keeps promising improvement and we're not seeing it.~~NL~~[agent.lchen] Understood, and I'm sorry. I've logged this against the Jaffle Equipment account (CLI-0042) and flagged it for your account owner Marcus Trent.~~NL~~[customer] We're starting to look at other carriers."
+TKT-910032,CLI-0042,SHP-202511-000346,2025-11-25T09:00:00,phone,open,2,"[customer] This keeps happening. Following up on SHP-202511-000346 — another late LTL load. Our account team keeps promising improvement and we're not seeing it.~~NL~~[agent.lchen] Understood, and I'm sorry. I've logged this against the Jaffle Equipment account (CLI-0042) and flagged it for your account owner Marcus Trent.~~NL~~[customer] We're starting to look at other carriers."
+TKT-920000,CLI-0007,SHP-202505-950001,2025-05-13T16:00:00,chat,resolved,1,"[customer] We received the WRONG items for SHP-202505-950001. This isn't what we ordered at all — looks like it was meant for someone else.~~NL~~[agent.mruiz] Apologies — we've identified a fulfillment error at our Indianapolis warehouse affecting several orders (incident INC-2025-02233). We'll arrange pickup of the wrong items and expedite the correct ones.~~NL~~[customer] Thank you, please hurry."
+TKT-920003,CLI-0155,SHP-202505-950004,2025-05-16T11:00:00,phone,resolved,2,"[customer] We received the WRONG items for SHP-202505-950004. This isn't what we ordered at all — looks like it was meant for someone else.~~NL~~[agent.mruiz] Apologies — we've identified a fulfillment error at our Indianapolis warehouse affecting several orders (incident INC-2025-02233). We'll arrange pickup of the wrong items and expedite the correct ones.~~NL~~[customer] Thank you, please hurry."
+TKT-920004,CLI-0169,SHP-202505-950005,2025-05-12T13:00:00,phone,resolved,3,"[customer] We received the WRONG items for SHP-202505-950005. This isn't what we ordered at all — looks like it was meant for someone else.~~NL~~[agent.mruiz] Apologies — we've identified a fulfillment error at our Indianapolis warehouse affecting several orders (incident INC-2025-02233). We'll arrange pickup of the wrong items and expedite the correct ones.~~NL~~[customer] Thank you, please hurry."
+TKT-920005,CLI-0201,SHP-202505-950006,2025-05-13T13:00:00,phone,resolved,2,"[customer] We received the WRONG items for SHP-202505-950006. This isn't what we ordered at all — looks like it was meant for someone else.~~NL~~[agent.mruiz] Apologies — we've identified a fulfillment error at our Indianapolis warehouse affecting several orders (incident INC-2025-02233). We'll arrange pickup of the wrong items and expedite the correct ones.~~NL~~[customer] Thank you, please hurry."

@@ -14,7 +14,7 @@ clients as (
 tickets as (
     select
         client_id,
-        date_trunc('month', opened_at)  as month,
+        {{ dbt.date_trunc('month', 'opened_at') }} as month,
         count(*)                        as ticket_count
     from {{ ref('stg_support_tickets') }}
     group by 1, 2
@@ -23,7 +23,7 @@ tickets as (
 incidents as (
     select
         s.client_id,
-        date_trunc('month', i.occurred_at)  as month,
+        {{ dbt.date_trunc('month', 'i.occurred_at') }} as month,
         count(*)                            as incident_count
     from {{ ref('stg_incidents') }} i
     join {{ ref('stg_shipments') }} s on s.shipment_id = i.shipment_id
