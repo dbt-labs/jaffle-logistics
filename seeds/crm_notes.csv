@@ -1,86 +1,53 @@
 note_id,client_id,account_owner,call_date,note_type,sentiment,shipment_id,body
-CRM-5000,CLI-0007,Dana Whitfield,2025-03-20,QBR,neutral,,"QBR — Northgate Retail Group (CLI-0007), Q1 2025. Account owner: Dana Whitfield.
+CRM-5000,CLI-0007,Dana Whitfield,2025-03-20,QBR,neutral,,"QBR — Jaffle Storefronts (CLI-0007), Q1 2025. Account owner: Dana Whitfield.
 Reviewed service performance against the 97.0% SLA on-time target; trailing-quarter on-time landed at 97.4% (roughly on target). Contract CON-0007-01.
 Overall sentiment neutral. Volume steady. Client asked about peak-season capacity planning. Line of business: last-mile, region OH."
-CRM-5001,CLI-0007,Dana Whitfield,2025-06-16,QBR,positive,,"QBR — Northgate Retail Group (CLI-0007), Q2 2025. Account owner: Dana Whitfield.
+CRM-5001,CLI-0007,Dana Whitfield,2025-06-16,QBR,positive,,"QBR — Jaffle Storefronts (CLI-0007), Q2 2025. Account owner: Dana Whitfield.
 Reviewed service performance against the 97.0% SLA on-time target; trailing-quarter on-time landed at 100.0% (above target). Contract CON-0007-01.
 Overall sentiment positive. Client happy with responsiveness; exploring expanded lanes next quarter. Line of business: last-mile, region OH."
-CRM-5002,CLI-0007,Dana Whitfield,2025-09-16,QBR,positive,,"QBR — Northgate Retail Group (CLI-0007), Q3 2025. Account owner: Dana Whitfield.
+CRM-5002,CLI-0007,Dana Whitfield,2025-09-16,QBR,positive,,"QBR — Jaffle Storefronts (CLI-0007), Q3 2025. Account owner: Dana Whitfield.
 Reviewed service performance against the 97.0% SLA on-time target; trailing-quarter on-time landed at 98.9% (above target). Contract CON-0007-01.
 Overall sentiment positive. Client happy with responsiveness; exploring expanded lanes next quarter. Line of business: last-mile, region OH."
-CRM-5003,CLI-0007,Dana Whitfield,2025-12-22,QBR,positive,,"QBR — Northgate Retail Group (CLI-0007), Q4 2025. Account owner: Dana Whitfield.
+CRM-5003,CLI-0007,Dana Whitfield,2025-12-22,QBR,positive,,"QBR — Jaffle Storefronts (CLI-0007), Q4 2025. Account owner: Dana Whitfield.
 Reviewed service performance against the 97.0% SLA on-time target; trailing-quarter on-time landed at 98.4% (above target). Contract CON-0007-01.
 Overall sentiment positive. Client happy with responsiveness; exploring expanded lanes next quarter. Line of business: last-mile, region OH."
-CRM-5004,CLI-0113,Nora Behrevan,2025-03-15,QBR,positive,,"QBR — Veranda Home Goods (CLI-0113), Q1 2025. Account owner: Nora Behrevan.
-Reviewed service performance against the 95.0% SLA on-time target; trailing-quarter on-time landed at 99.0% (above target). Contract CON-0113-01.
-Overall sentiment positive. Client happy with responsiveness; exploring expanded lanes next quarter. Line of business: last-mile, region OH."
-CRM-5005,CLI-0113,Nora Behrevan,2025-06-19,QBR,neutral,,"QBR — Veranda Home Goods (CLI-0113), Q2 2025. Account owner: Nora Behrevan.
-Reviewed service performance against the 95.0% SLA on-time target; trailing-quarter on-time landed at 95.0% (roughly on target). Contract CON-0113-01.
-Overall sentiment neutral. Volume steady. Client asked about peak-season capacity planning. Line of business: last-mile, region OH."
-CRM-5006,CLI-0113,Nora Behrevan,2025-09-24,QBR,positive,,"QBR — Veranda Home Goods (CLI-0113), Q3 2025. Account owner: Nora Behrevan.
-Reviewed service performance against the 95.0% SLA on-time target; trailing-quarter on-time landed at 100.0% (above target). Contract CON-0113-01.
-Overall sentiment positive. Client happy with responsiveness; exploring expanded lanes next quarter. Line of business: last-mile, region OH."
-CRM-5007,CLI-0113,Nora Behrevan,2025-12-21,QBR,positive,,"QBR — Veranda Home Goods (CLI-0113), Q4 2025. Account owner: Nora Behrevan.
-Reviewed service performance against the 95.0% SLA on-time target; trailing-quarter on-time landed at 95.5% (above target). Contract CON-0113-01.
-Overall sentiment positive. Client happy with responsiveness; exploring expanded lanes next quarter. Line of business: last-mile, region OH."
-CRM-5008,CLI-0128,Priya Rao,2025-03-19,QBR,positive,,"QBR — Brightline Components (CLI-0128), Q1 2025. Account owner: Priya Rao.
-Reviewed service performance against the 95.0% SLA on-time target; trailing-quarter on-time landed at 95.6% (above target). Contract CON-0128-01.
-Overall sentiment positive. Strong quarter. Discussed expanding volume into new lanes. Line of business: LTL, region MI."
-CRM-5009,CLI-0128,Priya Rao,2025-06-16,QBR,positive,,"QBR — Brightline Components (CLI-0128), Q2 2025. Account owner: Priya Rao.
-Reviewed service performance against the 95.0% SLA on-time target; trailing-quarter on-time landed at 97.8% (above target). Contract CON-0128-01.
-Overall sentiment positive. Client happy with responsiveness; exploring expanded lanes next quarter. Line of business: LTL, region MI."
-CRM-5010,CLI-0128,Priya Rao,2025-09-16,QBR,positive,,"QBR — Brightline Components (CLI-0128), Q3 2025. Account owner: Priya Rao.
-Reviewed service performance against the 95.0% SLA on-time target; trailing-quarter on-time landed at 98.7% (above target). Contract CON-0128-01.
-Overall sentiment positive. Strong quarter. Discussed expanding volume into new lanes. Line of business: LTL, region MI."
-CRM-5011,CLI-0128,Priya Rao,2025-12-21,QBR,positive,,"QBR — Brightline Components (CLI-0128), Q4 2025. Account owner: Priya Rao.
-Reviewed service performance against the 95.0% SLA on-time target; trailing-quarter on-time landed at 97.4% (above target). Contract CON-0128-01.
-Overall sentiment positive. Client happy with responsiveness; exploring expanded lanes next quarter. Line of business: LTL, region MI."
-CRM-5012,CLI-0155,Nora Behrevan,2025-03-21,QBR,neutral,,"QBR — Pinewood Outfitters (CLI-0155), Q1 2025. Account owner: Nora Behrevan.
+CRM-5012,CLI-0155,Nora Behrevan,2025-03-21,QBR,neutral,,"QBR — Jaffle Crew Outfitters (CLI-0155), Q1 2025. Account owner: Nora Behrevan.
 Reviewed service performance against the 95.0% SLA on-time target; trailing-quarter on-time landed at 95.1% (roughly on target). Contract CON-0155-01.
 Overall sentiment neutral. A few isolated exceptions discussed; no systemic concerns raised. Line of business: last-mile, region IN."
-CRM-5013,CLI-0155,Nora Behrevan,2025-06-16,QBR,positive,,"QBR — Pinewood Outfitters (CLI-0155), Q2 2025. Account owner: Nora Behrevan.
+CRM-5013,CLI-0155,Nora Behrevan,2025-06-16,QBR,positive,,"QBR — Jaffle Crew Outfitters (CLI-0155), Q2 2025. Account owner: Nora Behrevan.
 Reviewed service performance against the 95.0% SLA on-time target; trailing-quarter on-time landed at 98.7% (above target). Contract CON-0155-01.
 Overall sentiment positive. Strong quarter. Discussed expanding volume into new lanes. Line of business: last-mile, region IN."
-CRM-5014,CLI-0155,Nora Behrevan,2025-09-18,QBR,positive,,"QBR — Pinewood Outfitters (CLI-0155), Q3 2025. Account owner: Nora Behrevan.
+CRM-5014,CLI-0155,Nora Behrevan,2025-09-18,QBR,positive,,"QBR — Jaffle Crew Outfitters (CLI-0155), Q3 2025. Account owner: Nora Behrevan.
 Reviewed service performance against the 95.0% SLA on-time target; trailing-quarter on-time landed at 99.1% (above target). Contract CON-0155-01.
 Overall sentiment positive. Client happy with responsiveness; exploring expanded lanes next quarter. Line of business: last-mile, region IN."
-CRM-5015,CLI-0155,Nora Behrevan,2025-12-17,QBR,positive,,"QBR — Pinewood Outfitters (CLI-0155), Q4 2025. Account owner: Nora Behrevan.
+CRM-5015,CLI-0155,Nora Behrevan,2025-12-17,QBR,positive,,"QBR — Jaffle Crew Outfitters (CLI-0155), Q4 2025. Account owner: Nora Behrevan.
 Reviewed service performance against the 95.0% SLA on-time target; trailing-quarter on-time landed at 98.3% (above target). Contract CON-0155-01.
 Overall sentiment positive. Client happy with responsiveness; exploring expanded lanes next quarter. Line of business: last-mile, region IN."
-CRM-5016,CLI-0169,Sam Calloway,2025-03-15,QBR,neutral,,"QBR — Cascade Beverage Co (CLI-0169), Q1 2025. Account owner: Sam Calloway.
+CRM-5016,CLI-0169,Sam Calloway,2025-03-15,QBR,neutral,,"QBR — Jaffle Beverage Co (CLI-0169), Q1 2025. Account owner: Sam Calloway.
 Reviewed service performance against the 95.0% SLA on-time target; trailing-quarter on-time landed at 94.2% (roughly on target). Contract CON-0169-01.
 Overall sentiment neutral. A few isolated exceptions discussed; no systemic concerns raised. Line of business: warehousing, region OH."
-CRM-5017,CLI-0169,Sam Calloway,2025-06-20,QBR,positive,,"QBR — Cascade Beverage Co (CLI-0169), Q2 2025. Account owner: Sam Calloway.
+CRM-5017,CLI-0169,Sam Calloway,2025-06-20,QBR,positive,,"QBR — Jaffle Beverage Co (CLI-0169), Q2 2025. Account owner: Sam Calloway.
 Reviewed service performance against the 95.0% SLA on-time target; trailing-quarter on-time landed at 100.0% (above target). Contract CON-0169-01.
 Overall sentiment positive. Strong quarter. Discussed expanding volume into new lanes. Line of business: warehousing, region OH."
-CRM-5018,CLI-0169,Sam Calloway,2025-09-15,QBR,positive,,"QBR — Cascade Beverage Co (CLI-0169), Q3 2025. Account owner: Sam Calloway.
+CRM-5018,CLI-0169,Sam Calloway,2025-09-15,QBR,positive,,"QBR — Jaffle Beverage Co (CLI-0169), Q3 2025. Account owner: Sam Calloway.
 Reviewed service performance against the 95.0% SLA on-time target; trailing-quarter on-time landed at 97.9% (above target). Contract CON-0169-01.
 Overall sentiment positive. Client happy with responsiveness; exploring expanded lanes next quarter. Line of business: warehousing, region OH."
-CRM-5019,CLI-0169,Sam Calloway,2025-12-24,QBR,neutral,,"QBR — Cascade Beverage Co (CLI-0169), Q4 2025. Account owner: Sam Calloway.
+CRM-5019,CLI-0169,Sam Calloway,2025-12-24,QBR,neutral,,"QBR — Jaffle Beverage Co (CLI-0169), Q4 2025. Account owner: Sam Calloway.
 Reviewed service performance against the 95.0% SLA on-time target; trailing-quarter on-time landed at 95.3% (roughly on target). Contract CON-0169-01.
 Overall sentiment neutral. A few isolated exceptions discussed; no systemic concerns raised. Line of business: warehousing, region OH."
-CRM-5020,CLI-0155,Nora Behrevan,2025-09-09,call,positive,,"Call note — Pinewood Outfitters (CLI-0155). Nora Behrevan spoke with the account contact. Quick check-in, nothing outstanding. Sentiment positive."
-CRM-5021,CLI-0113,Elaine Vasquez,2025-06-18,call,neutral,,Call note — Veranda Home Goods (CLI-0113). Elaine Vasquez spoke with the account contact. Discussed a delayed shipment; account owner to follow up with ops. Sentiment neutral.
-CRM-5022,CLI-0212,Nora Behrevan,2025-05-02,call,positive,,Call note — Foundry Auto Parts (CLI-0212). Nora Behrevan spoke with the account contact. Client requested an updated rate sheet for next year. Sentiment positive.
-CRM-5023,CLI-0244,Priya Rao,2025-08-23,call,positive,,Call note — Halcyon Textiles (CLI-0244). Priya Rao spoke with the account contact. Client requested an updated rate sheet for next year. Sentiment positive.
-CRM-5024,CLI-0244,Dana Whitfield,2025-09-07,call,neutral,,"Call note — Halcyon Textiles (CLI-0244). Dana Whitfield spoke with the account contact. Quick check-in, nothing outstanding. Sentiment neutral."
-CRM-5025,CLI-0007,Marcus Trent,2025-03-10,call,positive,,Call note — Northgate Retail Group (CLI-0007). Marcus Trent spoke with the account contact. Discussed a delayed shipment; account owner to follow up with ops. Sentiment positive.
-CRM-5026,CLI-0128,Sam Calloway,2025-10-12,call,neutral,,Call note — Brightline Components (CLI-0128). Sam Calloway spoke with the account contact. Client requested an updated rate sheet for next year. Sentiment neutral.
-CRM-5027,CLI-0128,Nora Behrevan,2025-02-18,call,neutral,,Call note — Brightline Components (CLI-0128). Nora Behrevan spoke with the account contact. Client requested an updated rate sheet for next year. Sentiment neutral.
-CRM-5028,CLI-0169,Priya Rao,2025-03-13,call,neutral,,Call note — Cascade Beverage Co (CLI-0169). Priya Rao spoke with the account contact. Reviewed a recent exception; reassured on remediation. Sentiment neutral.
-CRM-5029,CLI-0113,Dana Whitfield,2025-12-05,call,neutral,,Call note — Veranda Home Goods (CLI-0113). Dana Whitfield spoke with the account contact. Discussed a delayed shipment; account owner to follow up with ops. Sentiment neutral.
-CRM-5030,CLI-0113,Nora Behrevan,2025-11-23,call,neutral,,Call note — Veranda Home Goods (CLI-0113). Nora Behrevan spoke with the account contact. Discussed a delayed shipment; account owner to follow up with ops. Sentiment neutral.
-CRM-5031,CLI-0201,Sam Calloway,2025-09-20,call,neutral,,Call note — Marlowe Stationery (CLI-0201). Sam Calloway spoke with the account contact. Discussed a delayed shipment; account owner to follow up with ops. Sentiment neutral.
-CRM-5032,CLI-0212,Marcus Trent,2025-07-13,call,positive,,"Call note — Foundry Auto Parts (CLI-0212). Marcus Trent spoke with the account contact. Quick check-in, nothing outstanding. Sentiment positive."
-CRM-5033,CLI-0155,Elaine Vasquez,2025-09-04,call,positive,,Call note — Pinewood Outfitters (CLI-0155). Elaine Vasquez spoke with the account contact. Reviewed a recent exception; reassured on remediation. Sentiment positive.
-CRM-9001,CLI-0042,Marcus Trent,2025-01-21,QBR,concerned,SHP-202501-900001,"QBR — Kellerman Industrial (CLI-0042), Q1 2025. Account owner: Marcus Trent.
-Tense call. The Jan 14-16 Chicago storm delayed a large batch of Kellerman freight (a representative affected shipment is linked on this note) and the client raised the jackknife incident (INC-2025-00417) directly. On-time for January will breach the 97.0% target. Client asked, pointedly, whether Meridian can handle their peak volumes. Committed to an SLA credit per contract CON-0042-01 and a written recovery plan. Sentiment concerned; first real crack in the relationship this year."
-CRM-9020,CLI-0042,Marcus Trent,2025-04-15,QBR,neutral,,"QBR — Kellerman Industrial (CLI-0042), Q1 2025. Account owner: Marcus Trent.
-Q1 review with Kellerman. January storm credit applied and closed out. On-time recovering but still below the 97% target. Client cautious but constructive. Watching. Contract CON-0042-01."
-CRM-9021,CLI-0042,Marcus Trent,2025-07-16,QBR,concerned,,"QBR — Kellerman Industrial (CLI-0042), Q2 2025. Account owner: Marcus Trent.
-Q2 review. On-time slipped again despite no major weather. Kellerman flagged three late LTL loads this quarter and rising ticket volume. Moved account health to 'watch'. Asked for a concrete improvement plan by next QBR. Contract CON-0042-01."
-CRM-9022,CLI-0042,Marcus Trent,2025-10-14,QBR,concerned,,"QBR — Kellerman Industrial (CLI-0042), Q3 2025. Account owner: Marcus Trent.
+CRM-5020,CLI-0155,Nora Behrevan,2025-09-09,call,positive,,"Call note — Jaffle Crew Outfitters (CLI-0155). Nora Behrevan spoke with the account contact. Quick check-in, nothing outstanding. Sentiment positive."
+CRM-5025,CLI-0007,Marcus Trent,2025-03-10,call,positive,,Call note — Jaffle Storefronts (CLI-0007). Marcus Trent spoke with the account contact. Discussed a delayed shipment; account owner to follow up with ops. Sentiment positive.
+CRM-5028,CLI-0169,Priya Rao,2025-03-13,call,neutral,,Call note — Jaffle Beverage Co (CLI-0169). Priya Rao spoke with the account contact. Reviewed a recent exception; reassured on remediation. Sentiment neutral.
+CRM-5031,CLI-0201,Sam Calloway,2025-09-20,call,neutral,,Call note — Jaffle Paper & Packaging (CLI-0201). Sam Calloway spoke with the account contact. Discussed a delayed shipment; account owner to follow up with ops. Sentiment neutral.
+CRM-5033,CLI-0155,Elaine Vasquez,2025-09-04,call,positive,,Call note — Jaffle Crew Outfitters (CLI-0155). Elaine Vasquez spoke with the account contact. Reviewed a recent exception; reassured on remediation. Sentiment positive.
+CRM-9001,CLI-0042,Marcus Trent,2025-01-21,QBR,concerned,SHP-202501-900001,"QBR — Jaffle Equipment (CLI-0042), Q1 2025. Account owner: Marcus Trent.
+Tense call. The Jan 14-16 Chicago storm delayed a large batch of Jaffle Equipment freight (a representative affected shipment is linked on this note) and the client raised the jackknife incident (INC-2025-00417) directly. On-time for January will breach the 97.0% target. Client asked, pointedly, whether Jaffle Logistics can handle their peak volumes. Committed to an SLA credit per contract CON-0042-01 and a written recovery plan. Sentiment concerned; first real crack in the relationship this year."
+CRM-9020,CLI-0042,Marcus Trent,2025-04-15,QBR,neutral,,"QBR — Jaffle Equipment (CLI-0042), Q1 2025. Account owner: Marcus Trent.
+Q1 review with Jaffle Equipment. January storm credit applied and closed out. On-time recovering but still below the 97% target. Client cautious but constructive. Watching. Contract CON-0042-01."
+CRM-9021,CLI-0042,Marcus Trent,2025-07-16,QBR,concerned,,"QBR — Jaffle Equipment (CLI-0042), Q2 2025. Account owner: Marcus Trent.
+Q2 review. On-time slipped again despite no major weather. Jaffle Equipment flagged three late LTL loads this quarter and rising ticket volume. Moved account health to 'watch'. Asked for a concrete improvement plan by next QBR. Contract CON-0042-01."
+CRM-9022,CLI-0042,Marcus Trent,2025-10-14,QBR,concerned,,"QBR — Jaffle Equipment (CLI-0042), Q3 2025. Account owner: Marcus Trent.
 Q3 review. Trend is clearly down — on-time now materially under target and the client is openly evaluating alternatives. Escalated to 'at-risk'. This is now a retention situation; a formal save plan is attached. Contract CON-0042-01."
-CRM-9030,CLI-0042,Marcus Trent,2025-10-20,plan,concerned,,"ACCOUNT SAVE PLAN — Kellerman Industrial (CLI-0042), contract CON-0042-01.
+CRM-9030,CLI-0042,Marcus Trent,2025-10-20,plan,concerned,,"ACCOUNT SAVE PLAN — Jaffle Equipment (CLI-0042), contract CON-0042-01.
 Situation: strategic LTL account degraded from healthy to at-risk over 2025. Root causes: the January Chicago storm (INC-2025-00417), a summer run of late loads, and rising support-ticket volume without a systemic fix.
-Plan: (1) dedicated CHI capacity for Kellerman freight during peak; (2) weekly on-time scorecard shared with the client; (3) executive sponsor check-in; (4) goodwill credit beyond contractual minimums. Owner: Marcus Trent. Review at Q4 QBR."
+Plan: (1) dedicated CHI capacity for Jaffle Equipment freight during peak; (2) weekly on-time scorecard shared with the client; (3) executive sponsor check-in; (4) goodwill credit beyond contractual minimums. Owner: Marcus Trent. Review at Q4 QBR."

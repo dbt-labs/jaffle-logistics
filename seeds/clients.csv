@@ -1,11 +1,6 @@
 client_id,name,tier,line_of_business,region,health
-CLI-0042,Kellerman Industrial,strategic,LTL,IL,at-risk
-CLI-0007,Northgate Retail Group,strategic,last-mile,OH,healthy
-CLI-0113,Veranda Home Goods,mid,last-mile,OH,healthy
-CLI-0128,Brightline Components,mid,LTL,MI,healthy
-CLI-0155,Pinewood Outfitters,mid,last-mile,IN,healthy
-CLI-0169,Cascade Beverage Co,mid,warehousing,OH,healthy
-CLI-0201,Marlowe Stationery,small,last-mile,KY,healthy
-CLI-0212,Foundry Auto Parts,small,LTL,IN,healthy
-CLI-0233,Sunbelt Garden Supply,small,last-mile,OH,healthy
-CLI-0244,Halcyon Textiles,small,warehousing,KY,healthy
+CLI-0042,Jaffle Equipment,strategic,LTL,IL,at-risk
+CLI-0007,Jaffle Storefronts,strategic,last-mile,OH,healthy
+CLI-0155,Jaffle Crew Outfitters,mid,last-mile,IN,healthy
+CLI-0169,Jaffle Beverage Co,mid,warehousing,OH,watch
+CLI-0201,Jaffle Paper & Packaging,small,LTL,KY,healthy

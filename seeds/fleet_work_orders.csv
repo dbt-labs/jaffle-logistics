@@ -1,5 +1,5 @@
 wo_id,vehicle_id,hub_id,opened_at,linked_incident_id,cost,body
-WO-300000,VEH-0007,HUB-CMH,2025-08-12T07:47:00,INC-2025-00001,4349,"WORK ORDER — vehicle VEH-0007 @ HUB-CMH
+WO-300000,VEH-0007,HUB-CMH,2025-08-12T07:47:00,,4349,"WORK ORDER — vehicle VEH-0007 @ HUB-CMH
 Linked incident: INC-2025-00001.
 COMPLAINT: Collision/accident damage reported by field.
 DIAGNOSIS: Body panel and liftgate damage; hydraulic line pinched.
@@ -48,7 +48,7 @@ DIAGNOSIS: Bent tie rod and control arm following impact; alignment out of spec.
 PARTS: liftgate hydraulic line, panel, fasteners
 LABOR: 12 hrs
 DISPOSITION: returned to service. Total $5060."
-WO-300007,VEH-0024,HUB-DET,2025-01-15T06:48:00,INC-2025-00087,9812,"WORK ORDER — vehicle VEH-0024 @ HUB-DET
+WO-300007,VEH-0024,HUB-DET,2025-01-15T06:48:00,,9812,"WORK ORDER — vehicle VEH-0024 @ HUB-DET
 Linked incident: INC-2025-00087.
 COMPLAINT: Collision/accident damage reported by field.
 DIAGNOSIS: Body panel and liftgate damage; hydraulic line pinched.
@@ -69,21 +69,21 @@ DIAGNOSIS: Front-end damage, coolant leak, bumper and headlamp assembly compromi
 PARTS: bumper assy, headlamp, coolant hose, clips
 LABOR: 8 hrs
 DISPOSITION: held for parts. Total $3567."
-WO-300010,VEH-0008,HUB-IND,2025-05-26T18:24:00,INC-2025-00133,2023,"WORK ORDER — vehicle VEH-0008 @ HUB-IND
+WO-300010,VEH-0008,HUB-IND,2025-05-26T18:24:00,,2023,"WORK ORDER — vehicle VEH-0008 @ HUB-IND
 Linked incident: INC-2025-00133.
 COMPLAINT: Collision/accident damage reported by field.
 DIAGNOSIS: Body panel and liftgate damage; hydraulic line pinched.
 PARTS: bumper assy, headlamp, coolant hose, clips
 LABOR: 5 hrs
 DISPOSITION: road-tested and released. Total $2023."
-WO-300011,VEH-0031,HUB-CMH,2025-08-21T16:08:00,INC-2025-00134,8839,"WORK ORDER — vehicle VEH-0031 @ HUB-CMH
+WO-300011,VEH-0031,HUB-CMH,2025-08-21T16:08:00,,8839,"WORK ORDER — vehicle VEH-0031 @ HUB-CMH
 Linked incident: INC-2025-00134.
 COMPLAINT: Collision/accident damage reported by field.
 DIAGNOSIS: Body panel and liftgate damage; hydraulic line pinched.
 PARTS: liftgate hydraulic line, panel, fasteners
 LABOR: 4 hrs
 DISPOSITION: held for parts. Total $8839."
-WO-300012,VEH-0012,HUB-CMH,2025-02-05T13:37:00,INC-2025-00138,6542,"WORK ORDER — vehicle VEH-0012 @ HUB-CMH
+WO-300012,VEH-0012,HUB-CMH,2025-02-05T13:37:00,,6542,"WORK ORDER — vehicle VEH-0012 @ HUB-CMH
 Linked incident: INC-2025-00138.
 COMPLAINT: Collision/accident damage reported by field.
 DIAGNOSIS: Bent tie rod and control arm following impact; alignment out of spec.
@@ -111,14 +111,14 @@ DIAGNOSIS: Bent tie rod and control arm following impact; alignment out of spec.
 PARTS: liftgate hydraulic line, panel, fasteners
 LABOR: 7 hrs
 DISPOSITION: road-tested and released. Total $5050."
-WO-300016,VEH-0036,HUB-CIN,2025-12-05T19:23:00,INC-2025-00197,10030,"WORK ORDER — vehicle VEH-0036 @ HUB-CIN
+WO-300016,VEH-0036,HUB-CIN,2025-12-05T19:23:00,,10030,"WORK ORDER — vehicle VEH-0036 @ HUB-CIN
 Linked incident: INC-2025-00197.
 COMPLAINT: Collision/accident damage reported by field.
 DIAGNOSIS: Body panel and liftgate damage; hydraulic line pinched.
 PARTS: bumper assy, headlamp, coolant hose, clips
 LABOR: 10 hrs
 DISPOSITION: road-tested and released. Total $10030."
-WO-300017,VEH-0011,HUB-DET,2025-06-08T12:42:00,INC-2025-00235,12195,"WORK ORDER — vehicle VEH-0011 @ HUB-DET
+WO-300017,VEH-0011,HUB-DET,2025-06-08T12:42:00,,12195,"WORK ORDER — vehicle VEH-0011 @ HUB-DET
 Linked incident: INC-2025-00235.
 COMPLAINT: Collision/accident damage reported by field.
 DIAGNOSIS: Front-end damage, coolant leak, bumper and headlamp assembly compromised.
@@ -139,7 +139,7 @@ DIAGNOSIS: Front-end damage, coolant leak, bumper and headlamp assembly compromi
 PARTS: bumper assy, headlamp, coolant hose, clips
 LABOR: 5 hrs
 DISPOSITION: held for parts. Total $11900."
-WO-300020,VEH-0011,HUB-DET,2025-02-12T07:13:00,INC-2025-00256,10401,"WORK ORDER — vehicle VEH-0011 @ HUB-DET
+WO-300020,VEH-0011,HUB-DET,2025-02-12T07:13:00,,10401,"WORK ORDER — vehicle VEH-0011 @ HUB-DET
 Linked incident: INC-2025-00256.
 COMPLAINT: Collision/accident damage reported by field.
 DIAGNOSIS: Bent tie rod and control arm following impact; alignment out of spec.

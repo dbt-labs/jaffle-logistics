@@ -1,8 +1,8 @@
-name: 'meridian'
+name: 'jaffle_logistics'
 version: '1.0.0'
 config-version: 2
 
-profile: 'jaffle-mcp-demo'
+profile: 'jaffle-logistics'
 
 model-paths: ["models"]
 seed-paths: ["seeds"]
@@ -15,7 +15,7 @@ clean-targets:
   - "dbt_packages"
 
 models:
-  meridian:
+  jaffle_logistics:
     staging:
       +materialized: view
     intermediate:
@@ -24,5 +24,5 @@ models:
       +materialized: table
 
 seeds:
-  meridian:
+  jaffle_logistics:
     +quote_columns: false

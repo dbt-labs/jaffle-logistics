@@ -1,20 +1,4 @@
 report_id,incident_id,author,filed_at,severity,shipment_id,body
-IR-7000,INC-2025-00001,M. Vieira (Safety),2025-08-14T07:47:00,1,SHP-202512-000444,"INCIDENT REPORT INC-2025-00001 — ACCIDENT (severity 1)
-Hub: HUB-CMH (Columbus). Filed by M. Vieira (Safety) on 2025-08-14.
-
-SUMMARY
-Accident event (severity 1) at Columbus. Linked entities: vehicle VEH-0007.
-
-TIMELINE
-- 2025-08-12 07:47 event reported.
-- +00:20 supervisor on scene; area secured.
-- +01:30 impact assessed and affected shipments identified.
-
-ROOT CAUSE
-Loss of traction on an unsalted approach; contributing factor was reduced following distance.
-
-REMEDIATION
-Dispatch threshold adjusted for the affected conditions."
 IR-7001,INC-2025-00029,M. Vieira (Safety),2025-05-22T13:18:00,1,SHP-202502-000209,"INCIDENT REPORT INC-2025-00029 — ACCIDENT (severity 1)
 Hub: HUB-CMH (Columbus). Filed by M. Vieira (Safety) on 2025-05-22.
 
@@ -111,22 +95,6 @@ Loss of traction on an unsalted approach; contributing factor was reduced follow
 
 REMEDIATION
 Retraining scheduled; process checklist updated."
-IR-7007,INC-2025-00087,M. Vieira (Safety),2025-01-15T06:48:00,4,SHP-202511-000085,"INCIDENT REPORT INC-2025-00087 — ACCIDENT (severity 4)
-Hub: HUB-DET (Detroit). Filed by M. Vieira (Safety) on 2025-01-15.
-
-SUMMARY
-Accident event (severity 4) at Detroit. Linked entities: vehicle VEH-0024.
-
-TIMELINE
-- 2025-01-14 06:48 event reported.
-- +00:20 supervisor on scene; area secured.
-- +01:30 impact assessed and affected shipments identified.
-
-ROOT CAUSE
-Loss of traction on an unsalted approach; contributing factor was reduced following distance.
-
-REMEDIATION
-Retraining scheduled; process checklist updated."
 IR-7008,INC-2025-00091,M. Vieira (Safety),2025-04-24T06:41:00,2,SHP-202505-000008,"INCIDENT REPORT INC-2025-00091 — ACCIDENT (severity 2)
 Hub: HUB-CMH (Columbus). Filed by M. Vieira (Safety) on 2025-04-24.
 
@@ -151,54 +119,6 @@ Accident event (severity 4) at Chicago. Linked entities: route RTE-CHI-20250313-
 
 TIMELINE
 - 2025-03-13 15:08 event reported.
-- +00:20 supervisor on scene; area secured.
-- +01:30 impact assessed and affected shipments identified.
-
-ROOT CAUSE
-Loss of traction on an unsalted approach; contributing factor was reduced following distance.
-
-REMEDIATION
-Retraining scheduled; process checklist updated."
-IR-7010,INC-2025-00133,M. Vieira (Safety),2025-05-27T18:24:00,2,SHP-202501-000052,"INCIDENT REPORT INC-2025-00133 — ACCIDENT (severity 2)
-Hub: HUB-IND (Indianapolis). Filed by M. Vieira (Safety) on 2025-05-27.
-
-SUMMARY
-Accident event (severity 2) at Indianapolis. Linked entities: vehicle VEH-0008.
-
-TIMELINE
-- 2025-05-24 18:24 event reported.
-- +00:20 supervisor on scene; area secured.
-- +01:30 impact assessed and affected shipments identified.
-
-ROOT CAUSE
-Loss of traction on an unsalted approach; contributing factor was reduced following distance.
-
-REMEDIATION
-Dispatch threshold adjusted for the affected conditions."
-IR-7011,INC-2025-00134,L. Okonkwo (Safety),2025-08-24T16:08:00,4,SHP-202501-000306,"INCIDENT REPORT INC-2025-00134 — ACCIDENT (severity 4)
-Hub: HUB-CMH (Columbus). Filed by L. Okonkwo (Safety) on 2025-08-24.
-
-SUMMARY
-Accident event (severity 4) at Columbus. Linked entities: route RTE-CMH-20250820-002, driver DRV-01043, vehicle VEH-0031.
-
-TIMELINE
-- 2025-08-20 16:08 event reported.
-- +00:20 supervisor on scene; area secured.
-- +01:30 impact assessed and affected shipments identified.
-
-ROOT CAUSE
-Loss of traction on an unsalted approach; contributing factor was reduced following distance.
-
-REMEDIATION
-Bin labeling audit initiated across the hub."
-IR-7012,INC-2025-00138,P. Grantham (Safety),2025-02-08T13:37:00,1,SHP-202507-000331,"INCIDENT REPORT INC-2025-00138 — ACCIDENT (severity 1)
-Hub: HUB-CMH (Columbus). Filed by P. Grantham (Safety) on 2025-02-08.
-
-SUMMARY
-Accident event (severity 1) at Columbus. Linked entities: route RTE-CMH-20250204-002, vehicle VEH-0012.
-
-TIMELINE
-- 2025-02-04 13:37 event reported.
 - +00:20 supervisor on scene; area secured.
 - +01:30 impact assessed and affected shipments identified.
 
@@ -255,38 +175,6 @@ Loss of traction on an unsalted approach; contributing factor was reduced follow
 
 REMEDIATION
 Bin labeling audit initiated across the hub."
-IR-7016,INC-2025-00197,M. Vieira (Safety),2025-12-04T19:23:00,1,SHP-202512-000165,"INCIDENT REPORT INC-2025-00197 — ACCIDENT (severity 1)
-Hub: HUB-CIN (Cincinnati). Filed by M. Vieira (Safety) on 2025-12-04.
-
-SUMMARY
-Accident event (severity 1) at Cincinnati. Linked entities: route RTE-CIN-20251203-004, vehicle VEH-0036.
-
-TIMELINE
-- 2025-12-03 19:23 event reported.
-- +00:20 supervisor on scene; area secured.
-- +01:30 impact assessed and affected shipments identified.
-
-ROOT CAUSE
-Loss of traction on an unsalted approach; contributing factor was reduced following distance.
-
-REMEDIATION
-Dispatch threshold adjusted for the affected conditions."
-IR-7017,INC-2025-00235,L. Okonkwo (Safety),2025-06-08T12:42:00,4,SHP-202512-000048,"INCIDENT REPORT INC-2025-00235 — ACCIDENT (severity 4)
-Hub: HUB-DET (Detroit). Filed by L. Okonkwo (Safety) on 2025-06-08.
-
-SUMMARY
-Accident event (severity 4) at Detroit. Linked entities: route RTE-DET-20250606-001, driver DRV-01021, vehicle VEH-0011.
-
-TIMELINE
-- 2025-06-06 12:42 event reported.
-- +00:20 supervisor on scene; area secured.
-- +01:30 impact assessed and affected shipments identified.
-
-ROOT CAUSE
-Loss of traction on an unsalted approach; contributing factor was reduced following distance.
-
-REMEDIATION
-Bin labeling audit initiated across the hub."
 IR-7018,INC-2025-00248,L. Okonkwo (Safety),2025-01-06T18:56:00,1,,"INCIDENT REPORT INC-2025-00248 — ACCIDENT (severity 1)
 Hub: HUB-IND (Indianapolis). Filed by L. Okonkwo (Safety) on 2025-01-06.
 
@@ -316,38 +204,6 @@ TIMELINE
 
 ROOT CAUSE
 Loss of traction on an unsalted approach; contributing factor was reduced following distance.
-
-REMEDIATION
-Retraining scheduled; process checklist updated."
-IR-7020,INC-2025-00256,P. Grantham (Safety),2025-02-15T07:13:00,1,SHP-202503-000216,"INCIDENT REPORT INC-2025-00256 — ACCIDENT (severity 1)
-Hub: HUB-DET (Detroit). Filed by P. Grantham (Safety) on 2025-02-15.
-
-SUMMARY
-Accident event (severity 1) at Detroit. Linked entities: route RTE-DET-20250211-004, vehicle VEH-0011.
-
-TIMELINE
-- 2025-02-11 07:13 event reported.
-- +00:20 supervisor on scene; area secured.
-- +01:30 impact assessed and affected shipments identified.
-
-ROOT CAUSE
-Loss of traction on an unsalted approach; contributing factor was reduced following distance.
-
-REMEDIATION
-Dispatch threshold adjusted for the affected conditions."
-IR-7021,INC-2025-00126,Alicia Munro,2025-03-08T19:38:00,3,SHP-202512-000421,"INCIDENT REPORT INC-2025-00126 — MISPICK (severity 3)
-Hub: HUB-CHI (Chicago). Filed by Alicia Munro on 2025-03-08.
-
-SUMMARY
-Mispick event (severity 3) at Chicago. Linked entities: no linked entities.
-
-TIMELINE
-- 2025-03-05 19:38 event reported.
-- +00:20 supervisor on scene; area secured.
-- +01:30 impact assessed and affected shipments identified.
-
-ROOT CAUSE
-Item pulled from a mislabeled bin during a high-volume pick wave.
 
 REMEDIATION
 Retraining scheduled; process checklist updated."
@@ -447,22 +303,6 @@ Cascading ETA slippage from an upstream hub exception.
 
 REMEDIATION
 Vehicle pulled for inspection; see linked work order."
-IR-7028,INC-2025-00242,Gordon Reyes,2025-09-28T14:12:00,3,SHP-202503-000035,"INCIDENT REPORT INC-2025-00242 — DAMAGE (severity 3)
-Hub: HUB-CHI (Chicago). Filed by Gordon Reyes on 2025-09-28.
-
-SUMMARY
-Damage event (severity 3) at Chicago. Linked entities: route RTE-CHI-20250924-002, vehicle VEH-0019.
-
-TIMELINE
-- 2025-09-24 14:12 event reported.
-- +00:20 supervisor on scene; area secured.
-- +01:30 impact assessed and affected shipments identified.
-
-ROOT CAUSE
-Improper load securement allowed shifting in transit.
-
-REMEDIATION
-Vehicle pulled for inspection; see linked work order."
 IR-7029,INC-2025-00217,Frank Deluca,2025-11-24T19:47:00,3,SHP-202505-000042,"INCIDENT REPORT INC-2025-00217 — MISPICK (severity 3)
 Hub: HUB-CHI (Chicago). Filed by Frank Deluca on 2025-11-24.
 
@@ -511,22 +351,6 @@ Improper load securement allowed shifting in transit.
 
 REMEDIATION
 Retraining scheduled; process checklist updated."
-IR-7032,INC-2025-00008,Gordon Reyes,2025-09-29T17:38:00,3,SHP-202509-000277,"INCIDENT REPORT INC-2025-00008 — DAMAGE (severity 3)
-Hub: HUB-DET (Detroit). Filed by Gordon Reyes on 2025-09-29.
-
-SUMMARY
-Damage event (severity 3) at Detroit. Linked entities: route RTE-DET-20250925-002, driver DRV-01046.
-
-TIMELINE
-- 2025-09-25 17:38 event reported.
-- +00:20 supervisor on scene; area secured.
-- +01:30 impact assessed and affected shipments identified.
-
-ROOT CAUSE
-Improper load securement allowed shifting in transit.
-
-REMEDIATION
-Dispatch threshold adjusted for the affected conditions."
 IR-7033,INC-2025-00109,Alicia Munro,2025-01-19T17:55:00,4,,"INCIDENT REPORT INC-2025-00109 — DISPUTE (severity 4)
 Hub: HUB-CMH (Columbus). Filed by Alicia Munro on 2025-01-19.
 

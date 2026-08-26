@@ -1,0 +1,8 @@
+packages:
+  - git: https://github.com/dbt-labs/dbt-context-engineering.git
+    name: dbt_context_engineering
+    revision: 59f3c620de25dcf49c135f31e5f13dee4815bf7d
+  - name: dbt_utils
+    package: dbt-labs/dbt_utils
+    version: 1.4.1
+sha1_hash: 2b65c1329f34d79c7bb1019366623343fd8b988d

@@ -1,11 +1,6 @@
 contract_id,client_id,effective_date,sla_ontime_pct,credit_terms
 CON-0042-01,CLI-0042,2023-11-14,97.0,"1.0% of monthly spend credited per full percentage point below the SLA on-time target, capped at 10% of monthly spend."
 CON-0007-01,CLI-0007,2022-04-16,97.0,"1.0% of monthly spend credited per full percentage point below the SLA on-time target, capped at 10% of monthly spend."
-CON-0113-01,CLI-0113,2022-12-29,95.0,"1.0% of monthly spend credited per full percentage point below the SLA on-time target, capped at 10% of monthly spend."
-CON-0128-01,CLI-0128,2024-03-09,95.0,"1.0% of monthly spend credited per full percentage point below the SLA on-time target, capped at 10% of monthly spend."
 CON-0155-01,CLI-0155,2023-07-28,95.0,"1.0% of monthly spend credited per full percentage point below the SLA on-time target, capped at 10% of monthly spend."
 CON-0169-01,CLI-0169,2024-06-24,95.0,"1.0% of monthly spend credited per full percentage point below the SLA on-time target, capped at 10% of monthly spend."
 CON-0201-01,CLI-0201,2024-06-14,92.0,"1.0% of monthly spend credited per full percentage point below the SLA on-time target, capped at 10% of monthly spend."
-CON-0212-01,CLI-0212,2023-02-21,92.0,"1.0% of monthly spend credited per full percentage point below the SLA on-time target, capped at 10% of monthly spend."
-CON-0233-01,CLI-0233,2023-09-28,92.0,"1.0% of monthly spend credited per full percentage point below the SLA on-time target, capped at 10% of monthly spend."
-CON-0244-01,CLI-0244,2024-02-07,92.0,"1.0% of monthly spend credited per full percentage point below the SLA on-time target, capped at 10% of monthly spend."

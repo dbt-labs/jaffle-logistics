@@ -1,5 +1,5 @@
 -- Monthly on-time performance per client, straight from shipments. This is the
--- statistical backbone the Kellerman decline rides on and the input to
+-- statistical backbone the Jaffle Equipment decline rides on and the input to
 -- fct_account_health's on-time column. Grain: one row per (client, month).
 
 with shipments as (

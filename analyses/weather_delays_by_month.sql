@@ -2,7 +2,7 @@
 -- Aggregates weather-typed incidents and weather-tagged dispatch exceptions
 -- alongside total delayed shipments, so the Jan-Feb and Nov-Dec winter/peak
 -- spikes emerge from the broad layer. Run: dbt compile then execute, or paste
--- into a DuckDB session against meridian.duckdb.
+-- into a DuckDB session against jaffle_logistics.duckdb.
 
 with weather_incidents as (
     select date_trunc('month', occurred_at) as month, count(*) as weather_incidents
