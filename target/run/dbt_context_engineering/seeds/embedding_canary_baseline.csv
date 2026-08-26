@@ -1,0 +1,12 @@
+
+    
+    
+    truncate table "STHIBEAULT_TEST_DB"."DBT_STHIBEAULT"."EMBEDDING_CANARY_BASELINE";
+    -- dbt seed --
+    
+            insert into sthibeault_test_db.dbt_sthibeault.embedding_canary_baseline (probe_id, embedding_fn_fingerprint, adapter, model_version, probe_text, baseline_vector) values
+            (%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s)
+        
+
+;
+  

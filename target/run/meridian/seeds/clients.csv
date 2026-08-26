@@ -1,9 +1,7 @@
 
     
     
-    
-    create table sthibeault_test_db.dbt_sthibeault.clients (client_id text,name text,tier text,line_of_business text,region text,health text)
-  ;
+    truncate table "STHIBEAULT_TEST_DB"."DBT_STHIBEAULT"."CLIENTS";
     -- dbt seed --
     
             insert into sthibeault_test_db.dbt_sthibeault.clients (client_id, name, tier, line_of_business, region, health) values

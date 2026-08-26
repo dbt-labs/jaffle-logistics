@@ -26,3 +26,29 @@ models:
 seeds:
   meridian:
     +quote_columns: false
+
+# ---------------------------------------------------------------------------
+# Context-engineering layer (dbt_context_engineering package) configuration.
+# Scope of this cut: chunking -> embedding -> knowledge base -> vector search.
+# (No classify/extract/eval, so no chat-model vars are needed — only the
+# embedding model.) embedding_model is a PLACEHOLDER from the plan; confirm the
+# exact Cortex model ID available in the jaffle-mcp-demo region before running any
+# embed() model. The chunking layer is zero-cost and reads none of these.
+# ---------------------------------------------------------------------------
+vars:
+  # --- Embedding model (Snowflake Cortex) ----------------------------------
+  embedding_model: "snowflake-arctic-embed-m-v1.5" # 768-dim; pinned (a bump re-embeds the whole corpus)
+
+  # --- Chunking (deterministic, zero AI cost) ------------------------------
+  chunk_target_tokens: 512
+  chunk_overlap_tokens: 0
+
+  # --- Cost guard ceilings -------------------------------------------------
+  # Raised above the full corpus (130 chunks + 359 tickets) now that the full
+  # embed run is approved; lower it again to re-arm the small-sample circuit breaker.
+  max_batch_rows: 1000
+  max_est_tokens: 2000000
+  cost_per_1k_tokens: null                         # set to the Cortex price to populate est_cost
+
+  # --- Embedding drift canary (Snowflake needs a literal VECTOR dimension) --
+  embedding_canary_vector_dimension: 768

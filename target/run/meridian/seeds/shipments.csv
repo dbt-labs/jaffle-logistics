@@ -1,9 +1,7 @@
 
     
     
-    
-    create table sthibeault_test_db.dbt_sthibeault.shipments (shipment_id text,client_id text,origin_hub_id text,service_level text,created_at timestamp without time zone,delivered_at timestamp without time zone,status text,route_id text)
-  ;
+    truncate table "STHIBEAULT_TEST_DB"."DBT_STHIBEAULT"."SHIPMENTS";
     -- dbt seed --
     
             insert into sthibeault_test_db.dbt_sthibeault.shipments (shipment_id, client_id, origin_hub_id, service_level, created_at, delivered_at, status, route_id) values

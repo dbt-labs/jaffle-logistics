@@ -1,9 +1,7 @@
 
     
     
-    
-    create table sthibeault_test_db.dbt_sthibeault.crm_notes (note_id text,client_id text,account_owner text,call_date date,note_type text,sentiment text,shipment_id text,body text)
-  ;
+    truncate table "STHIBEAULT_TEST_DB"."DBT_STHIBEAULT"."CRM_NOTES";
     -- dbt seed --
     
             insert into sthibeault_test_db.dbt_sthibeault.crm_notes (note_id, client_id, account_owner, call_date, note_type, sentiment, shipment_id, body) values

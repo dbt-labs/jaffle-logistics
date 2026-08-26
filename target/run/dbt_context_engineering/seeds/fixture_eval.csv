@@ -1,0 +1,12 @@
+
+    
+    
+    truncate table "STHIBEAULT_TEST_DB"."DBT_STHIBEAULT"."FIXTURE_EVAL";
+    -- dbt seed --
+    
+            insert into sthibeault_test_db.dbt_sthibeault.fixture_eval (example_id, input_text, expected_label, predicted_label, evidence) values
+            (%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s)
+        
+
+;
+  

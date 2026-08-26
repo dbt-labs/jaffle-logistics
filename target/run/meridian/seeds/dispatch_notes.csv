@@ -1,9 +1,7 @@
 
     
     
-    
-    create table sthibeault_test_db.dbt_sthibeault.dispatch_notes (note_id text,route_id text,driver_id text,hub_id text,timestamp timestamp without time zone,exception_type text,body text)
-  ;
+    truncate table "STHIBEAULT_TEST_DB"."DBT_STHIBEAULT"."DISPATCH_NOTES";
     -- dbt seed --
     
             insert into sthibeault_test_db.dbt_sthibeault.dispatch_notes (note_id, route_id, driver_id, hub_id, timestamp, exception_type, body) values

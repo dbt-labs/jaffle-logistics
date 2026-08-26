@@ -1,9 +1,7 @@
 
     
     
-    
-    create table sthibeault_test_db.dbt_sthibeault.hubs (hub_id text,city text,function text,capacity_pkg_day integer)
-  ;
+    truncate table "STHIBEAULT_TEST_DB"."DBT_STHIBEAULT"."HUBS";
     -- dbt seed --
     
             insert into sthibeault_test_db.dbt_sthibeault.hubs (hub_id, city, function, capacity_pkg_day) values

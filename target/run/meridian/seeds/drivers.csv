@@ -1,9 +1,7 @@
 
     
     
-    
-    create table sthibeault_test_db.dbt_sthibeault.drivers (driver_id text,hub_id text,employment_type text,hire_date date,status text,perf_score float8)
-  ;
+    truncate table "STHIBEAULT_TEST_DB"."DBT_STHIBEAULT"."DRIVERS";
     -- dbt seed --
     
             insert into sthibeault_test_db.dbt_sthibeault.drivers (driver_id, hub_id, employment_type, hire_date, status, perf_score) values

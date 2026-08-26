@@ -1,9 +1,7 @@
 
     
     
-    
-    create table sthibeault_test_db.dbt_sthibeault.fleet_work_orders (wo_id text,vehicle_id text,hub_id text,opened_at timestamp without time zone,linked_incident_id text,cost integer,body text)
-  ;
+    truncate table "STHIBEAULT_TEST_DB"."DBT_STHIBEAULT"."FLEET_WORK_ORDERS";
     -- dbt seed --
     
             insert into sthibeault_test_db.dbt_sthibeault.fleet_work_orders (wo_id, vehicle_id, hub_id, opened_at, linked_incident_id, cost, body) values

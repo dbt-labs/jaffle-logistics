@@ -1,9 +1,7 @@
 
     
     
-    
-    create table sthibeault_test_db.dbt_sthibeault.incident_reports (report_id text,incident_id text,author text,filed_at timestamp without time zone,severity integer,shipment_id text,body text)
-  ;
+    truncate table "STHIBEAULT_TEST_DB"."DBT_STHIBEAULT"."INCIDENT_REPORTS";
     -- dbt seed --
     
             insert into sthibeault_test_db.dbt_sthibeault.incident_reports (report_id, incident_id, author, filed_at, severity, shipment_id, body) values

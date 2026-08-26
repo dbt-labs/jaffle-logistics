@@ -1,0 +1,12 @@
+
+    
+    
+    truncate table "STHIBEAULT_TEST_DB"."DBT_STHIBEAULT"."FIXTURE_CALLS";
+    -- dbt seed --
+    
+            insert into sthibeault_test_db.dbt_sthibeault.fixture_calls (call_id, customer, participants, recording_url) values
+            (%s,%s,%s,%s),(%s,%s,%s,%s)
+        
+
+;
+  

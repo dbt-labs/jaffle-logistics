@@ -1,0 +1,12 @@
+
+    
+    
+    truncate table "STHIBEAULT_TEST_DB"."DBT_STHIBEAULT"."FIXTURE_DOCUMENTS";
+    -- dbt seed --
+    
+            insert into sthibeault_test_db.dbt_sthibeault.fixture_documents (document_id, document_text, title, citation_url) values
+            (%s,%s,%s,%s),(%s,%s,%s,%s),(%s,%s,%s,%s)
+        
+
+;
+  

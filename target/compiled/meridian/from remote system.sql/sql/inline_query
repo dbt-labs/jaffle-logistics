@@ -1,0 +1,1 @@
+select demo, source_type, citation_url, round(score,3) as score, left(text,70) as preview from sthibeault_test_db.dbt_sthibeault.search where demo='chicago_winter_storm'

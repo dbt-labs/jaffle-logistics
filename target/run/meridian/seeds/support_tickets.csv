@@ -1,9 +1,7 @@
 
     
     
-    
-    create table sthibeault_test_db.dbt_sthibeault.support_tickets (ticket_id text,client_id text,shipment_id text,opened_at timestamp without time zone,channel text,status text,csat integer,body text)
-  ;
+    truncate table "STHIBEAULT_TEST_DB"."DBT_STHIBEAULT"."SUPPORT_TICKETS";
     -- dbt seed --
     
             insert into sthibeault_test_db.dbt_sthibeault.support_tickets (ticket_id, client_id, shipment_id, opened_at, channel, status, csat, body) values

@@ -1,0 +1,12 @@
+
+    
+    
+    truncate table "STHIBEAULT_TEST_DB"."DBT_STHIBEAULT"."EVAL_CRM_SENTIMENT";
+    -- dbt seed --
+    
+            insert into sthibeault_test_db.dbt_sthibeault.eval_crm_sentiment (note_id, true_sentiment) values
+            (%s,%s),(%s,%s),(%s,%s),(%s,%s),(%s,%s),(%s,%s),(%s,%s),(%s,%s),(%s,%s),(%s,%s),(%s,%s),(%s,%s),(%s,%s),(%s,%s),(%s,%s),(%s,%s),(%s,%s),(%s,%s),(%s,%s),(%s,%s),(%s,%s),(%s,%s),(%s,%s),(%s,%s),(%s,%s),(%s,%s),(%s,%s),(%s,%s),(%s,%s),(%s,%s),(%s,%s),(%s,%s),(%s,%s),(%s,%s),(%s,%s),(%s,%s),(%s,%s),(%s,%s),(%s,%s)
+        
+
+;
+  

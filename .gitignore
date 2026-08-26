@@ -1,0 +1,6 @@
+.claude/
+dbt_internal_packages/
+dbt_packages/
+logs/
+claude.md
+package-lock.yml

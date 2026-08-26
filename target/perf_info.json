@@ -1,61 +1,94 @@
 {
-    "path_count": 204,
-    "parsed_path_count": 204,
-    "static_analysis_path_count": 25,
+    "path_count": 313,
+    "parsed_path_count": 313,
+    "static_analysis_path_count": 27,
     "static_analysis_parsed_path_count": 23,
     "is_partial_parse_enabled": true,
     "is_static_analysis_enabled": true,
-    "read_files_elapsed": 0.05394716700538993,
-    "load_macros_elapsed": 0.2584431660361588,
-    "parse_project_elapsed": 0.41081749997101724,
-    "patch_sources_elapsed": 3.625056706368923e-06,
-    "process_manifest_elapsed": 0.019166416954249144,
-    "load_all_elapsed": 0.8169623330468312,
+    "read_files_elapsed": 0.07528541702777147,
+    "load_macros_elapsed": 0.3769566249102354,
+    "parse_project_elapsed": 0.46589391701854765,
+    "patch_sources_elapsed": 5.166977643966675e-06,
+    "process_manifest_elapsed": 0.024780499981716275,
+    "load_all_elapsed": 1.0253382079536095,
     "projects": [
         {
             "project_name": "meridian",
-            "elapsed": 0.4074365010019392,
+            "elapsed": 0.39693029096815735,
             "parsers": [
                 {
                     "parser": "model",
-                    "elapsed": 0.09066987491678447,
+                    "elapsed": 0.09024287492502481,
                     "parsed_path_count": 25
                 },
                 {
                     "parser": "analysis",
-                    "elapsed": 0.04137670900672674,
+                    "elapsed": 0.07528533297590911,
                     "parsed_path_count": 3
                 },
                 {
                     "parser": "seed",
-                    "elapsed": 0.08952937508001924,
-                    "parsed_path_count": 17
+                    "elapsed": 0.05259474995546043,
+                    "parsed_path_count": 19
                 },
                 {
                     "parser": "test",
-                    "elapsed": 0.18388579098973423,
+                    "elapsed": 0.17639375000726432,
                     "parsed_path_count": 3
                 }
             ],
-            "parsed_path_count": 48
+            "parsed_path_count": 50
         },
         {
             "project_name": "dbt_snowflake",
-            "elapsed": 0.0015838330145925283,
+            "elapsed": 0.0018509159563109279,
             "parsers": [],
             "parsed_path_count": 0
         },
         {
             "project_name": "dbt",
-            "elapsed": 0.0016519579803571105,
+            "elapsed": 0.0019157079514116049,
             "parsers": [
                 {
                     "parser": "doc",
-                    "elapsed": 9.554100688546896e-05,
+                    "elapsed": 0.00010095804464071989,
                     "parsed_path_count": 1
                 }
             ],
             "parsed_path_count": 1
+        },
+        {
+            "project_name": "dbt_utils",
+            "elapsed": 0.0023890009615570307,
+            "parsers": [],
+            "parsed_path_count": 0
+        },
+        {
+            "project_name": "dbt_context_engineering",
+            "elapsed": 0.06245204200968146,
+            "parsers": [
+                {
+                    "parser": "model",
+                    "elapsed": 0.013309792033396661,
+                    "parsed_path_count": 2
+                },
+                {
+                    "parser": "test",
+                    "elapsed": 0.03353754198178649,
+                    "parsed_path_count": 1
+                },
+                {
+                    "parser": "seed",
+                    "elapsed": 0.005863582948222756,
+                    "parsed_path_count": 5
+                },
+                {
+                    "parser": "test",
+                    "elapsed": 0.007743833004496992,
+                    "parsed_path_count": 2
+                }
+            ],
+            "parsed_path_count": 10
         }
     ]
 }
