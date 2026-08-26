@@ -6,6 +6,9 @@ select
     cast(opened_at as timestamp)    as opened_at,
     channel,
     status,
-    try_cast(nullif(cast(csat as varchar), '') as integer) as csat,
-    body
+    {{ dbt.safe_cast("nullif(cast(csat as " ~ dbt.type_string() ~ "), '')", dbt.type_int()) }} as csat,
+    -- body is stored with embedded newlines escaped to '~~NL~~' (portable seed-
+    -- loading workaround: some engines reject a quoted CSV field containing a
+    -- real newline unless configured otherwise); restore them here.
+    replace(body, '~~NL~~', chr(10)) as body
 from {{ ref('support_tickets') }}

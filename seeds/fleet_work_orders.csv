@@ -1,509 +1,82 @@
 wo_id,vehicle_id,hub_id,opened_at,linked_incident_id,cost,body
-WO-300000,VEH-0007,HUB-CMH,2025-08-12T07:47:00,,4349,"WORK ORDER — vehicle VEH-0007 @ HUB-CMH
-Linked incident: INC-2025-00001.
-COMPLAINT: Collision/accident damage reported by field.
-DIAGNOSIS: Body panel and liftgate damage; hydraulic line pinched.
-PARTS: tie rod, control arm, alignment kit
-LABOR: 11 hrs
-DISPOSITION: held for parts. Total $4349."
-WO-300001,VEH-0031,HUB-CMH,2025-05-19T13:18:00,INC-2025-00029,7932,"WORK ORDER — vehicle VEH-0031 @ HUB-CMH
-Linked incident: INC-2025-00029.
-COMPLAINT: Collision/accident damage reported by field.
-DIAGNOSIS: Bent tie rod and control arm following impact; alignment out of spec.
-PARTS: tie rod, control arm, alignment kit
-LABOR: 17 hrs
-DISPOSITION: returned to service. Total $7932."
-WO-300002,VEH-0016,HUB-IND,2025-10-13T17:35:00,INC-2025-00067,6215,"WORK ORDER — vehicle VEH-0016 @ HUB-IND
-Linked incident: INC-2025-00067.
-COMPLAINT: Collision/accident damage reported by field.
-DIAGNOSIS: Front-end damage, coolant leak, bumper and headlamp assembly compromised.
-PARTS: tie rod, control arm, alignment kit
-LABOR: 18 hrs
-DISPOSITION: returned to service. Total $6215."
-WO-300003,VEH-0013,HUB-IND,2025-01-27T09:39:00,INC-2025-00068,7595,"WORK ORDER — vehicle VEH-0013 @ HUB-IND
-Linked incident: INC-2025-00068.
-COMPLAINT: Collision/accident damage reported by field.
-DIAGNOSIS: Body panel and liftgate damage; hydraulic line pinched.
-PARTS: tie rod, control arm, alignment kit
-LABOR: 4 hrs
-DISPOSITION: held for parts. Total $7595."
-WO-300004,VEH-0007,HUB-CMH,2025-04-18T13:28:00,INC-2025-00075,5051,"WORK ORDER — vehicle VEH-0007 @ HUB-CMH
-Linked incident: INC-2025-00075.
-COMPLAINT: Collision/accident damage reported by field.
-DIAGNOSIS: Front-end damage, coolant leak, bumper and headlamp assembly compromised.
-PARTS: bumper assy, headlamp, coolant hose, clips
-LABOR: 13 hrs
-DISPOSITION: returned to service. Total $5051."
-WO-300005,VEH-0019,HUB-CHI,2025-07-11T12:27:00,INC-2025-00080,8264,"WORK ORDER — vehicle VEH-0019 @ HUB-CHI
-Linked incident: INC-2025-00080.
-COMPLAINT: Collision/accident damage reported by field.
-DIAGNOSIS: Bent tie rod and control arm following impact; alignment out of spec.
-PARTS: liftgate hydraulic line, panel, fasteners
-LABOR: 14 hrs
-DISPOSITION: returned to service. Total $8264."
-WO-300006,VEH-0029,HUB-DET,2025-07-01T10:58:00,INC-2025-00083,5060,"WORK ORDER — vehicle VEH-0029 @ HUB-DET
-Linked incident: INC-2025-00083.
-COMPLAINT: Collision/accident damage reported by field.
-DIAGNOSIS: Bent tie rod and control arm following impact; alignment out of spec.
-PARTS: liftgate hydraulic line, panel, fasteners
-LABOR: 12 hrs
-DISPOSITION: returned to service. Total $5060."
-WO-300007,VEH-0024,HUB-DET,2025-01-15T06:48:00,,9812,"WORK ORDER — vehicle VEH-0024 @ HUB-DET
-Linked incident: INC-2025-00087.
-COMPLAINT: Collision/accident damage reported by field.
-DIAGNOSIS: Body panel and liftgate damage; hydraulic line pinched.
-PARTS: tie rod, control arm, alignment kit
-LABOR: 8 hrs
-DISPOSITION: held for parts. Total $9812."
-WO-300008,VEH-0028,HUB-CMH,2025-04-23T06:41:00,INC-2025-00091,10022,"WORK ORDER — vehicle VEH-0028 @ HUB-CMH
-Linked incident: INC-2025-00091.
-COMPLAINT: Collision/accident damage reported by field.
-DIAGNOSIS: Body panel and liftgate damage; hydraulic line pinched.
-PARTS: liftgate hydraulic line, panel, fasteners
-LABOR: 16 hrs
-DISPOSITION: returned to service. Total $10022."
-WO-300009,VEH-0005,HUB-CHI,2025-03-13T15:08:00,INC-2025-00100,3567,"WORK ORDER — vehicle VEH-0005 @ HUB-CHI
-Linked incident: INC-2025-00100.
-COMPLAINT: Collision/accident damage reported by field.
-DIAGNOSIS: Front-end damage, coolant leak, bumper and headlamp assembly compromised.
-PARTS: bumper assy, headlamp, coolant hose, clips
-LABOR: 8 hrs
-DISPOSITION: held for parts. Total $3567."
-WO-300010,VEH-0008,HUB-IND,2025-05-26T18:24:00,,2023,"WORK ORDER — vehicle VEH-0008 @ HUB-IND
-Linked incident: INC-2025-00133.
-COMPLAINT: Collision/accident damage reported by field.
-DIAGNOSIS: Body panel and liftgate damage; hydraulic line pinched.
-PARTS: bumper assy, headlamp, coolant hose, clips
-LABOR: 5 hrs
-DISPOSITION: road-tested and released. Total $2023."
-WO-300011,VEH-0031,HUB-CMH,2025-08-21T16:08:00,,8839,"WORK ORDER — vehicle VEH-0031 @ HUB-CMH
-Linked incident: INC-2025-00134.
-COMPLAINT: Collision/accident damage reported by field.
-DIAGNOSIS: Body panel and liftgate damage; hydraulic line pinched.
-PARTS: liftgate hydraulic line, panel, fasteners
-LABOR: 4 hrs
-DISPOSITION: held for parts. Total $8839."
-WO-300012,VEH-0012,HUB-CMH,2025-02-05T13:37:00,,6542,"WORK ORDER — vehicle VEH-0012 @ HUB-CMH
-Linked incident: INC-2025-00138.
-COMPLAINT: Collision/accident damage reported by field.
-DIAGNOSIS: Bent tie rod and control arm following impact; alignment out of spec.
-PARTS: tie rod, control arm, alignment kit
-LABOR: 6 hrs
-DISPOSITION: held for parts. Total $6542."
-WO-300013,VEH-0040,HUB-CHI,2025-05-02T20:37:00,INC-2025-00151,11918,"WORK ORDER — vehicle VEH-0040 @ HUB-CHI
-Linked incident: INC-2025-00151.
-COMPLAINT: Collision/accident damage reported by field.
-DIAGNOSIS: Front-end damage, coolant leak, bumper and headlamp assembly compromised.
-PARTS: liftgate hydraulic line, panel, fasteners
-LABOR: 20 hrs
-DISPOSITION: returned to service. Total $11918."
-WO-300014,VEH-0005,HUB-CHI,2025-06-12T10:58:00,INC-2025-00171,6406,"WORK ORDER — vehicle VEH-0005 @ HUB-CHI
-Linked incident: INC-2025-00171.
-COMPLAINT: Collision/accident damage reported by field.
-DIAGNOSIS: Front-end damage, coolant leak, bumper and headlamp assembly compromised.
-PARTS: tie rod, control arm, alignment kit
-LABOR: 11 hrs
-DISPOSITION: road-tested and released. Total $6406."
-WO-300015,VEH-0040,HUB-CHI,2025-07-25T20:23:00,INC-2025-00180,5050,"WORK ORDER — vehicle VEH-0040 @ HUB-CHI
-Linked incident: INC-2025-00180.
-COMPLAINT: Collision/accident damage reported by field.
-DIAGNOSIS: Bent tie rod and control arm following impact; alignment out of spec.
-PARTS: liftgate hydraulic line, panel, fasteners
-LABOR: 7 hrs
-DISPOSITION: road-tested and released. Total $5050."
-WO-300016,VEH-0036,HUB-CIN,2025-12-05T19:23:00,,10030,"WORK ORDER — vehicle VEH-0036 @ HUB-CIN
-Linked incident: INC-2025-00197.
-COMPLAINT: Collision/accident damage reported by field.
-DIAGNOSIS: Body panel and liftgate damage; hydraulic line pinched.
-PARTS: bumper assy, headlamp, coolant hose, clips
-LABOR: 10 hrs
-DISPOSITION: road-tested and released. Total $10030."
-WO-300017,VEH-0011,HUB-DET,2025-06-08T12:42:00,,12195,"WORK ORDER — vehicle VEH-0011 @ HUB-DET
-Linked incident: INC-2025-00235.
-COMPLAINT: Collision/accident damage reported by field.
-DIAGNOSIS: Front-end damage, coolant leak, bumper and headlamp assembly compromised.
-PARTS: bumper assy, headlamp, coolant hose, clips
-LABOR: 7 hrs
-DISPOSITION: returned to service. Total $12195."
-WO-300018,VEH-0017,HUB-IND,2025-01-04T18:56:00,INC-2025-00248,2428,"WORK ORDER — vehicle VEH-0017 @ HUB-IND
-Linked incident: INC-2025-00248.
-COMPLAINT: Collision/accident damage reported by field.
-DIAGNOSIS: Bent tie rod and control arm following impact; alignment out of spec.
-PARTS: bumper assy, headlamp, coolant hose, clips
-LABOR: 8 hrs
-DISPOSITION: held for parts. Total $2428."
-WO-300019,VEH-0007,HUB-CMH,2025-08-13T16:14:00,INC-2025-00250,11900,"WORK ORDER — vehicle VEH-0007 @ HUB-CMH
-Linked incident: INC-2025-00250.
-COMPLAINT: Collision/accident damage reported by field.
-DIAGNOSIS: Front-end damage, coolant leak, bumper and headlamp assembly compromised.
-PARTS: bumper assy, headlamp, coolant hose, clips
-LABOR: 5 hrs
-DISPOSITION: held for parts. Total $11900."
-WO-300020,VEH-0011,HUB-DET,2025-02-12T07:13:00,,10401,"WORK ORDER — vehicle VEH-0011 @ HUB-DET
-Linked incident: INC-2025-00256.
-COMPLAINT: Collision/accident damage reported by field.
-DIAGNOSIS: Bent tie rod and control arm following impact; alignment out of spec.
-PARTS: liftgate hydraulic line, panel, fasteners
-LABOR: 11 hrs
-DISPOSITION: returned to service. Total $10401."
-WO-300021,VEH-0022,HUB-DET,2025-07-16T07:00:00,,2208,"WORK ORDER — vehicle VEH-0022 @ HUB-DET
-COMPLAINT: DEF system warning light.
-DIAGNOSIS: DEF quality sensor fault.
-PARTS: DEF sensor
-LABOR: 1 hrs
-DISPOSITION: returned to service. Odometer 156682. Total $2208."
-WO-300022,VEH-0020,HUB-CIN,2025-02-09T12:00:00,,1269,"WORK ORDER — vehicle VEH-0020 @ HUB-CIN
-COMPLAINT: Tire wear flagged at pre-trip.
-DIAGNOSIS: Two steer tires below tread minimum.
-PARTS: 2x steer tires
-LABOR: 7 hrs
-DISPOSITION: returned to service. Odometer 209408. Total $1269."
-WO-300023,VEH-0016,HUB-IND,2025-06-02T09:00:00,,287,"WORK ORDER — vehicle VEH-0016 @ HUB-IND
-COMPLAINT: Scheduled preventive maintenance (oil, filters, inspection).
-DIAGNOSIS: Within normal wear; serviced per schedule.
-PARTS: oil, filters, air filter
-LABOR: 1 hrs
-DISPOSITION: returned to service. Odometer 183682. Total $287."
-WO-300024,VEH-0021,HUB-CMH,2025-04-10T14:00:00,,1267,"WORK ORDER — vehicle VEH-0021 @ HUB-CMH
-COMPLAINT: Wiper/defrost fault ahead of winter.
-DIAGNOSIS: Wiper motor linkage worn.
-PARTS: wiper motor linkage
-LABOR: 2 hrs
-DISPOSITION: returned to service. Odometer 90694. Total $1267."
-WO-300025,VEH-0028,HUB-CMH,2025-03-09T14:00:00,,1609,"WORK ORDER — vehicle VEH-0028 @ HUB-CMH
-COMPLAINT: Tire wear flagged at pre-trip.
-DIAGNOSIS: Two steer tires below tread minimum.
-PARTS: 2x steer tires
-LABOR: 5 hrs
-DISPOSITION: returned to service. Odometer 186384. Total $1609."
-WO-300026,VEH-0008,HUB-IND,2025-02-22T07:00:00,,2917,"WORK ORDER — vehicle VEH-0008 @ HUB-IND
-COMPLAINT: Wiper/defrost fault ahead of winter.
-DIAGNOSIS: Wiper motor linkage worn.
-PARTS: wiper motor linkage
-LABOR: 3 hrs
-DISPOSITION: returned to service. Odometer 208145. Total $2917."
-WO-300027,VEH-0022,HUB-DET,2025-06-24T12:00:00,,3163,"WORK ORDER — vehicle VEH-0022 @ HUB-DET
-COMPLAINT: Wiper/defrost fault ahead of winter.
-DIAGNOSIS: Wiper motor linkage worn.
-PARTS: wiper motor linkage
-LABOR: 6 hrs
-DISPOSITION: returned to service. Odometer 156682. Total $3163."
-WO-300028,VEH-0016,HUB-IND,2025-11-09T10:00:00,,2513,"WORK ORDER — vehicle VEH-0016 @ HUB-IND
-COMPLAINT: DEF system warning light.
-DIAGNOSIS: DEF quality sensor fault.
-PARTS: DEF sensor
-LABOR: 2 hrs
-DISPOSITION: returned to service. Odometer 183682. Total $2513."
-WO-300029,VEH-0007,HUB-CMH,2025-03-21T16:00:00,,612,"WORK ORDER — vehicle VEH-0007 @ HUB-CMH
-COMPLAINT: Scheduled preventive maintenance (oil, filters, inspection).
-DIAGNOSIS: Within normal wear; serviced per schedule.
-PARTS: oil, filters, air filter
-LABOR: 4 hrs
-DISPOSITION: returned to service. Odometer 118785. Total $612."
-WO-300030,VEH-0013,HUB-IND,2025-12-15T08:00:00,,426,"WORK ORDER — vehicle VEH-0013 @ HUB-IND
-COMPLAINT: Wiper/defrost fault ahead of winter.
-DIAGNOSIS: Wiper motor linkage worn.
-PARTS: wiper motor linkage
-LABOR: 6 hrs
-DISPOSITION: returned to service. Odometer 20012. Total $426."
-WO-300031,VEH-0020,HUB-CIN,2025-12-16T10:00:00,,2305,"WORK ORDER — vehicle VEH-0020 @ HUB-CIN
-COMPLAINT: Check-engine light at startup.
-DIAGNOSIS: EGR valve sticking; cleared and tested.
-PARTS: EGR valve, gasket
-LABOR: 3 hrs
-DISPOSITION: returned to service. Odometer 209408. Total $2305."
-WO-300032,VEH-0003,HUB-CMH,2025-03-07T13:00:00,,2374,"WORK ORDER — vehicle VEH-0003 @ HUB-CMH
-COMPLAINT: Check-engine light at startup.
-DIAGNOSIS: EGR valve sticking; cleared and tested.
-PARTS: EGR valve, gasket
-LABOR: 5 hrs
-DISPOSITION: returned to service. Odometer 32561. Total $2374."
-WO-300033,VEH-0036,HUB-CIN,2025-06-12T14:00:00,,2699,"WORK ORDER — vehicle VEH-0036 @ HUB-CIN
-COMPLAINT: Check-engine light at startup.
-DIAGNOSIS: EGR valve sticking; cleared and tested.
-PARTS: EGR valve, gasket
-LABOR: 2 hrs
-DISPOSITION: returned to service. Odometer 207887. Total $2699."
-WO-300034,VEH-0028,HUB-CMH,2025-02-16T13:00:00,,2265,"WORK ORDER — vehicle VEH-0028 @ HUB-CMH
-COMPLAINT: Wiper/defrost fault ahead of winter.
-DIAGNOSIS: Wiper motor linkage worn.
-PARTS: wiper motor linkage
-LABOR: 1 hrs
-DISPOSITION: returned to service. Odometer 186384. Total $2265."
-WO-300035,VEH-0011,HUB-DET,2025-10-09T09:00:00,,1306,"WORK ORDER — vehicle VEH-0011 @ HUB-DET
-COMPLAINT: Scheduled preventive maintenance (oil, filters, inspection).
-DIAGNOSIS: Within normal wear; serviced per schedule.
-PARTS: oil, filters, air filter
-LABOR: 1 hrs
-DISPOSITION: returned to service. Odometer 107230. Total $1306."
-WO-300036,VEH-0013,HUB-IND,2025-12-27T13:00:00,,2147,"WORK ORDER — vehicle VEH-0013 @ HUB-IND
-COMPLAINT: Check-engine light at startup.
-DIAGNOSIS: EGR valve sticking; cleared and tested.
-PARTS: EGR valve, gasket
-LABOR: 2 hrs
-DISPOSITION: returned to service. Odometer 20012. Total $2147."
-WO-300037,VEH-0011,HUB-DET,2025-08-25T15:00:00,,1693,"WORK ORDER — vehicle VEH-0011 @ HUB-DET
-COMPLAINT: Wiper/defrost fault ahead of winter.
-DIAGNOSIS: Wiper motor linkage worn.
-PARTS: wiper motor linkage
-LABOR: 7 hrs
-DISPOSITION: returned to service. Odometer 107230. Total $1693."
-WO-300038,VEH-0026,HUB-CIN,2025-10-09T10:00:00,,873,"WORK ORDER — vehicle VEH-0026 @ HUB-CIN
-COMPLAINT: Scheduled preventive maintenance (oil, filters, inspection).
-DIAGNOSIS: Within normal wear; serviced per schedule.
-PARTS: oil, filters, air filter
-LABOR: 3 hrs
-DISPOSITION: returned to service. Odometer 44262. Total $873."
-WO-300039,VEH-0037,HUB-CHI,2025-04-19T07:00:00,,2220,"WORK ORDER — vehicle VEH-0037 @ HUB-CHI
-COMPLAINT: DEF system warning light.
-DIAGNOSIS: DEF quality sensor fault.
-PARTS: DEF sensor
-LABOR: 5 hrs
-DISPOSITION: returned to service. Odometer 147029. Total $2220."
-WO-300040,VEH-0020,HUB-CIN,2025-04-10T11:00:00,,2381,"WORK ORDER — vehicle VEH-0020 @ HUB-CIN
-COMPLAINT: Scheduled preventive maintenance (oil, filters, inspection).
-DIAGNOSIS: Within normal wear; serviced per schedule.
-PARTS: oil, filters, air filter
-LABOR: 3 hrs
-DISPOSITION: returned to service. Odometer 209408. Total $2381."
-WO-300041,VEH-0015,HUB-CHI,2025-01-18T10:00:00,,1315,"WORK ORDER — vehicle VEH-0015 @ HUB-CHI
-COMPLAINT: Scheduled preventive maintenance (oil, filters, inspection).
-DIAGNOSIS: Within normal wear; serviced per schedule.
-PARTS: oil, filters, air filter
-LABOR: 3 hrs
-DISPOSITION: returned to service. Odometer 126858. Total $1315."
-WO-300042,VEH-0018,HUB-CIN,2025-03-09T07:00:00,,2751,"WORK ORDER — vehicle VEH-0018 @ HUB-CIN
-COMPLAINT: Brake noise reported by driver.
-DIAGNOSIS: Front pads at 3mm, rotors serviceable.
-PARTS: front brake pads
-LABOR: 4 hrs
-DISPOSITION: returned to service. Odometer 72175. Total $2751."
-WO-300043,VEH-0035,HUB-CMH,2025-02-01T12:00:00,,2711,"WORK ORDER — vehicle VEH-0035 @ HUB-CMH
-COMPLAINT: Wiper/defrost fault ahead of winter.
-DIAGNOSIS: Wiper motor linkage worn.
-PARTS: wiper motor linkage
-LABOR: 6 hrs
-DISPOSITION: returned to service. Odometer 175496. Total $2711."
-WO-300044,VEH-0021,HUB-CMH,2025-02-23T15:00:00,,1201,"WORK ORDER — vehicle VEH-0021 @ HUB-CMH
-COMPLAINT: Check-engine light at startup.
-DIAGNOSIS: EGR valve sticking; cleared and tested.
-PARTS: EGR valve, gasket
-LABOR: 3 hrs
-DISPOSITION: returned to service. Odometer 90694. Total $1201."
-WO-300045,VEH-0027,HUB-CIN,2025-10-10T12:00:00,,354,"WORK ORDER — vehicle VEH-0027 @ HUB-CIN
-COMPLAINT: Check-engine light at startup.
-DIAGNOSIS: EGR valve sticking; cleared and tested.
-PARTS: EGR valve, gasket
-LABOR: 1 hrs
-DISPOSITION: returned to service. Odometer 233732. Total $354."
-WO-300046,VEH-0023,HUB-IND,2025-04-24T11:00:00,,843,"WORK ORDER — vehicle VEH-0023 @ HUB-IND
-COMPLAINT: Tire wear flagged at pre-trip.
-DIAGNOSIS: Two steer tires below tread minimum.
-PARTS: 2x steer tires
-LABOR: 1 hrs
-DISPOSITION: returned to service. Odometer 239914. Total $843."
-WO-300047,VEH-0035,HUB-CMH,2025-11-28T16:00:00,,555,"WORK ORDER — vehicle VEH-0035 @ HUB-CMH
-COMPLAINT: Check-engine light at startup.
-DIAGNOSIS: EGR valve sticking; cleared and tested.
-PARTS: EGR valve, gasket
-LABOR: 7 hrs
-DISPOSITION: returned to service. Odometer 175496. Total $555."
-WO-300048,VEH-0017,HUB-IND,2025-11-21T16:00:00,,2376,"WORK ORDER — vehicle VEH-0017 @ HUB-IND
-COMPLAINT: Brake noise reported by driver.
-DIAGNOSIS: Front pads at 3mm, rotors serviceable.
-PARTS: front brake pads
-LABOR: 8 hrs
-DISPOSITION: returned to service. Odometer 26717. Total $2376."
-WO-300049,VEH-0015,HUB-CHI,2025-06-09T10:00:00,,2502,"WORK ORDER — vehicle VEH-0015 @ HUB-CHI
-COMPLAINT: Check-engine light at startup.
-DIAGNOSIS: EGR valve sticking; cleared and tested.
-PARTS: EGR valve, gasket
-LABOR: 7 hrs
-DISPOSITION: returned to service. Odometer 126858. Total $2502."
-WO-300050,VEH-0010,HUB-IND,2025-08-08T13:00:00,,1629,"WORK ORDER — vehicle VEH-0010 @ HUB-IND
-COMPLAINT: Brake noise reported by driver.
-DIAGNOSIS: Front pads at 3mm, rotors serviceable.
-PARTS: front brake pads
-LABOR: 8 hrs
-DISPOSITION: returned to service. Odometer 199294. Total $1629."
-WO-300051,VEH-0006,HUB-CHI,2025-08-06T14:00:00,,877,"WORK ORDER — vehicle VEH-0006 @ HUB-CHI
-COMPLAINT: Brake noise reported by driver.
-DIAGNOSIS: Front pads at 3mm, rotors serviceable.
-PARTS: front brake pads
-LABOR: 4 hrs
-DISPOSITION: returned to service. Odometer 235881. Total $877."
-WO-300052,VEH-0037,HUB-CHI,2025-08-24T09:00:00,,2772,"WORK ORDER — vehicle VEH-0037 @ HUB-CHI
-COMPLAINT: Tire wear flagged at pre-trip.
-DIAGNOSIS: Two steer tires below tread minimum.
-PARTS: 2x steer tires
-LABOR: 1 hrs
-DISPOSITION: returned to service. Odometer 147029. Total $2772."
-WO-300053,VEH-0020,HUB-CIN,2025-03-06T13:00:00,,2935,"WORK ORDER — vehicle VEH-0020 @ HUB-CIN
-COMPLAINT: Wiper/defrost fault ahead of winter.
-DIAGNOSIS: Wiper motor linkage worn.
-PARTS: wiper motor linkage
-LABOR: 4 hrs
-DISPOSITION: returned to service. Odometer 209408. Total $2935."
-WO-300054,VEH-0005,HUB-CHI,2025-03-03T13:00:00,,1124,"WORK ORDER — vehicle VEH-0005 @ HUB-CHI
-COMPLAINT: DEF system warning light.
-DIAGNOSIS: DEF quality sensor fault.
-PARTS: DEF sensor
-LABOR: 7 hrs
-DISPOSITION: returned to service. Odometer 117974. Total $1124."
-WO-300055,VEH-0007,HUB-CMH,2025-12-17T09:00:00,,3096,"WORK ORDER — vehicle VEH-0007 @ HUB-CMH
-COMPLAINT: Scheduled preventive maintenance (oil, filters, inspection).
-DIAGNOSIS: Within normal wear; serviced per schedule.
-PARTS: oil, filters, air filter
-LABOR: 2 hrs
-DISPOSITION: returned to service. Odometer 118785. Total $3096."
-WO-300056,VEH-0025,HUB-CIN,2025-07-01T08:00:00,,175,"WORK ORDER — vehicle VEH-0025 @ HUB-CIN
-COMPLAINT: Check-engine light at startup.
-DIAGNOSIS: EGR valve sticking; cleared and tested.
-PARTS: EGR valve, gasket
-LABOR: 1 hrs
-DISPOSITION: returned to service. Odometer 120311. Total $175."
-WO-300057,VEH-0009,HUB-IND,2025-04-25T08:00:00,,1216,"WORK ORDER — vehicle VEH-0009 @ HUB-IND
-COMPLAINT: Brake noise reported by driver.
-DIAGNOSIS: Front pads at 3mm, rotors serviceable.
-PARTS: front brake pads
-LABOR: 1 hrs
-DISPOSITION: returned to service. Odometer 102104. Total $1216."
-WO-300058,VEH-0001,HUB-CMH,2025-02-18T12:00:00,,3017,"WORK ORDER — vehicle VEH-0001 @ HUB-CMH
-COMPLAINT: Scheduled preventive maintenance (oil, filters, inspection).
-DIAGNOSIS: Within normal wear; serviced per schedule.
-PARTS: oil, filters, air filter
-LABOR: 4 hrs
-DISPOSITION: returned to service. Odometer 66513. Total $3017."
-WO-300059,VEH-0009,HUB-IND,2025-08-25T16:00:00,,1939,"WORK ORDER — vehicle VEH-0009 @ HUB-IND
-COMPLAINT: Brake noise reported by driver.
-DIAGNOSIS: Front pads at 3mm, rotors serviceable.
-PARTS: front brake pads
-LABOR: 5 hrs
-DISPOSITION: returned to service. Odometer 102104. Total $1939."
-WO-300060,VEH-0022,HUB-DET,2025-08-05T10:00:00,,348,"WORK ORDER — vehicle VEH-0022 @ HUB-DET
-COMPLAINT: Wiper/defrost fault ahead of winter.
-DIAGNOSIS: Wiper motor linkage worn.
-PARTS: wiper motor linkage
-LABOR: 5 hrs
-DISPOSITION: returned to service. Odometer 156682. Total $348."
-WO-300061,VEH-0035,HUB-CMH,2025-02-01T07:00:00,,541,"WORK ORDER — vehicle VEH-0035 @ HUB-CMH
-COMPLAINT: Wiper/defrost fault ahead of winter.
-DIAGNOSIS: Wiper motor linkage worn.
-PARTS: wiper motor linkage
-LABOR: 5 hrs
-DISPOSITION: returned to service. Odometer 175496. Total $541."
-WO-300062,VEH-0007,HUB-CMH,2025-09-27T13:00:00,,700,"WORK ORDER — vehicle VEH-0007 @ HUB-CMH
-COMPLAINT: Scheduled preventive maintenance (oil, filters, inspection).
-DIAGNOSIS: Within normal wear; serviced per schedule.
-PARTS: oil, filters, air filter
-LABOR: 4 hrs
-DISPOSITION: returned to service. Odometer 118785. Total $700."
-WO-300063,VEH-0002,HUB-CHI,2025-04-14T13:00:00,,723,"WORK ORDER — vehicle VEH-0002 @ HUB-CHI
-COMPLAINT: Tire wear flagged at pre-trip.
-DIAGNOSIS: Two steer tires below tread minimum.
-PARTS: 2x steer tires
-LABOR: 5 hrs
-DISPOSITION: returned to service. Odometer 150964. Total $723."
-WO-300064,VEH-0015,HUB-CHI,2025-11-13T08:00:00,,2134,"WORK ORDER — vehicle VEH-0015 @ HUB-CHI
-COMPLAINT: Brake noise reported by driver.
-DIAGNOSIS: Front pads at 3mm, rotors serviceable.
-PARTS: front brake pads
-LABOR: 2 hrs
-DISPOSITION: returned to service. Odometer 126858. Total $2134."
-WO-300065,VEH-0015,HUB-CHI,2025-02-10T12:00:00,,432,"WORK ORDER — vehicle VEH-0015 @ HUB-CHI
-COMPLAINT: Wiper/defrost fault ahead of winter.
-DIAGNOSIS: Wiper motor linkage worn.
-PARTS: wiper motor linkage
-LABOR: 6 hrs
-DISPOSITION: returned to service. Odometer 126858. Total $432."
-WO-300066,VEH-0008,HUB-IND,2025-06-03T07:00:00,,2596,"WORK ORDER — vehicle VEH-0008 @ HUB-IND
-COMPLAINT: Brake noise reported by driver.
-DIAGNOSIS: Front pads at 3mm, rotors serviceable.
-PARTS: front brake pads
-LABOR: 3 hrs
-DISPOSITION: returned to service. Odometer 208145. Total $2596."
-WO-300067,VEH-0028,HUB-CMH,2025-09-11T16:00:00,,862,"WORK ORDER — vehicle VEH-0028 @ HUB-CMH
-COMPLAINT: Check-engine light at startup.
-DIAGNOSIS: EGR valve sticking; cleared and tested.
-PARTS: EGR valve, gasket
-LABOR: 7 hrs
-DISPOSITION: returned to service. Odometer 186384. Total $862."
-WO-300068,VEH-0010,HUB-IND,2025-11-22T11:00:00,,2679,"WORK ORDER — vehicle VEH-0010 @ HUB-IND
-COMPLAINT: Tire wear flagged at pre-trip.
-DIAGNOSIS: Two steer tires below tread minimum.
-PARTS: 2x steer tires
-LABOR: 6 hrs
-DISPOSITION: returned to service. Odometer 199294. Total $2679."
-WO-300069,VEH-0007,HUB-CMH,2025-05-16T12:00:00,,1207,"WORK ORDER — vehicle VEH-0007 @ HUB-CMH
-COMPLAINT: Check-engine light at startup.
-DIAGNOSIS: EGR valve sticking; cleared and tested.
-PARTS: EGR valve, gasket
-LABOR: 2 hrs
-DISPOSITION: returned to service. Odometer 118785. Total $1207."
-WO-300070,VEH-0001,HUB-CMH,2025-03-25T09:00:00,,1431,"WORK ORDER — vehicle VEH-0001 @ HUB-CMH
-COMPLAINT: Brake noise reported by driver.
-DIAGNOSIS: Front pads at 3mm, rotors serviceable.
-PARTS: front brake pads
-LABOR: 7 hrs
-DISPOSITION: returned to service. Odometer 66513. Total $1431."
-WO-300071,VEH-0029,HUB-DET,2025-12-26T14:00:00,,395,"WORK ORDER — vehicle VEH-0029 @ HUB-DET
-COMPLAINT: Scheduled preventive maintenance (oil, filters, inspection).
-DIAGNOSIS: Within normal wear; serviced per schedule.
-PARTS: oil, filters, air filter
-LABOR: 7 hrs
-DISPOSITION: returned to service. Odometer 164208. Total $395."
-WO-300072,VEH-0018,HUB-CIN,2025-03-03T12:00:00,,642,"WORK ORDER — vehicle VEH-0018 @ HUB-CIN
-COMPLAINT: Brake noise reported by driver.
-DIAGNOSIS: Front pads at 3mm, rotors serviceable.
-PARTS: front brake pads
-LABOR: 7 hrs
-DISPOSITION: returned to service. Odometer 72175. Total $642."
-WO-300073,VEH-0023,HUB-IND,2025-06-16T13:00:00,,2091,"WORK ORDER — vehicle VEH-0023 @ HUB-IND
-COMPLAINT: Check-engine light at startup.
-DIAGNOSIS: EGR valve sticking; cleared and tested.
-PARTS: EGR valve, gasket
-LABOR: 7 hrs
-DISPOSITION: returned to service. Odometer 239914. Total $2091."
-WO-300074,VEH-0039,HUB-IND,2025-11-11T09:00:00,,2798,"WORK ORDER — vehicle VEH-0039 @ HUB-IND
-COMPLAINT: Brake noise reported by driver.
-DIAGNOSIS: Front pads at 3mm, rotors serviceable.
-PARTS: front brake pads
-LABOR: 7 hrs
-DISPOSITION: returned to service. Odometer 88612. Total $2798."
-WO-300075,VEH-0027,HUB-CIN,2025-09-16T15:00:00,,2306,"WORK ORDER — vehicle VEH-0027 @ HUB-CIN
-COMPLAINT: DEF system warning light.
-DIAGNOSIS: DEF quality sensor fault.
-PARTS: DEF sensor
-LABOR: 4 hrs
-DISPOSITION: returned to service. Odometer 233732. Total $2306."
-WO-300076,VEH-0025,HUB-CIN,2025-02-19T13:00:00,,2278,"WORK ORDER — vehicle VEH-0025 @ HUB-CIN
-COMPLAINT: Wiper/defrost fault ahead of winter.
-DIAGNOSIS: Wiper motor linkage worn.
-PARTS: wiper motor linkage
-LABOR: 4 hrs
-DISPOSITION: returned to service. Odometer 120311. Total $2278."
-WO-300077,VEH-0006,HUB-CHI,2025-04-12T07:00:00,,952,"WORK ORDER — vehicle VEH-0006 @ HUB-CHI
-COMPLAINT: Scheduled preventive maintenance (oil, filters, inspection).
-DIAGNOSIS: Within normal wear; serviced per schedule.
-PARTS: oil, filters, air filter
-LABOR: 6 hrs
-DISPOSITION: returned to service. Odometer 235881. Total $952."
-WO-300078,VEH-0036,HUB-CIN,2025-08-05T08:00:00,,364,"WORK ORDER — vehicle VEH-0036 @ HUB-CIN
-COMPLAINT: Tire wear flagged at pre-trip.
-DIAGNOSIS: Two steer tires below tread minimum.
-PARTS: 2x steer tires
-LABOR: 6 hrs
-DISPOSITION: returned to service. Odometer 207887. Total $364."
-WO-300079,VEH-0009,HUB-IND,2025-05-15T09:00:00,,2378,"WORK ORDER — vehicle VEH-0009 @ HUB-IND
-COMPLAINT: DEF system warning light.
-DIAGNOSIS: DEF quality sensor fault.
-PARTS: DEF sensor
-LABOR: 4 hrs
-DISPOSITION: returned to service. Odometer 102104. Total $2378."
-WO-900001,VEH-0015,HUB-CHI,2025-01-15T12:00:00,INC-2025-00417,14200,"WORK ORDER — vehicle VEH-0015 @ HUB-CHI
-Linked incident: INC-2025-00417.
-COMPLAINT: Jackknife event during winter storm; tractor and trailer damage.
-DIAGNOSIS: Bent fifth-wheel mount, damaged air lines, scuffed trailer skin, front fender and step assembly compromised.
-PARTS: fifth-wheel rebuild kit, air line set, fender, step assy, decals
-LABOR: 26 hrs
-DISPOSITION: held for parts, then road-tested and released. Total $14200."
+WO-300000,VEH-0007,HUB-CMH,2025-08-12T07:47:00,,4349,"WORK ORDER — vehicle VEH-0007 @ HUB-CMH~~NL~~Linked incident: INC-2025-00001.~~NL~~COMPLAINT: Collision/accident damage reported by field.~~NL~~DIAGNOSIS: Body panel and liftgate damage; hydraulic line pinched.~~NL~~PARTS: tie rod, control arm, alignment kit~~NL~~LABOR: 11 hrs~~NL~~DISPOSITION: held for parts. Total $4349."
+WO-300001,VEH-0031,HUB-CMH,2025-05-19T13:18:00,INC-2025-00029,7932,"WORK ORDER — vehicle VEH-0031 @ HUB-CMH~~NL~~Linked incident: INC-2025-00029.~~NL~~COMPLAINT: Collision/accident damage reported by field.~~NL~~DIAGNOSIS: Bent tie rod and control arm following impact; alignment out of spec.~~NL~~PARTS: tie rod, control arm, alignment kit~~NL~~LABOR: 17 hrs~~NL~~DISPOSITION: returned to service. Total $7932."
+WO-300002,VEH-0016,HUB-IND,2025-10-13T17:35:00,INC-2025-00067,6215,"WORK ORDER — vehicle VEH-0016 @ HUB-IND~~NL~~Linked incident: INC-2025-00067.~~NL~~COMPLAINT: Collision/accident damage reported by field.~~NL~~DIAGNOSIS: Front-end damage, coolant leak, bumper and headlamp assembly compromised.~~NL~~PARTS: tie rod, control arm, alignment kit~~NL~~LABOR: 18 hrs~~NL~~DISPOSITION: returned to service. Total $6215."
+WO-300003,VEH-0013,HUB-IND,2025-01-27T09:39:00,INC-2025-00068,7595,"WORK ORDER — vehicle VEH-0013 @ HUB-IND~~NL~~Linked incident: INC-2025-00068.~~NL~~COMPLAINT: Collision/accident damage reported by field.~~NL~~DIAGNOSIS: Body panel and liftgate damage; hydraulic line pinched.~~NL~~PARTS: tie rod, control arm, alignment kit~~NL~~LABOR: 4 hrs~~NL~~DISPOSITION: held for parts. Total $7595."
+WO-300004,VEH-0007,HUB-CMH,2025-04-18T13:28:00,INC-2025-00075,5051,"WORK ORDER — vehicle VEH-0007 @ HUB-CMH~~NL~~Linked incident: INC-2025-00075.~~NL~~COMPLAINT: Collision/accident damage reported by field.~~NL~~DIAGNOSIS: Front-end damage, coolant leak, bumper and headlamp assembly compromised.~~NL~~PARTS: bumper assy, headlamp, coolant hose, clips~~NL~~LABOR: 13 hrs~~NL~~DISPOSITION: returned to service. Total $5051."
+WO-300005,VEH-0019,HUB-CHI,2025-07-11T12:27:00,INC-2025-00080,8264,"WORK ORDER — vehicle VEH-0019 @ HUB-CHI~~NL~~Linked incident: INC-2025-00080.~~NL~~COMPLAINT: Collision/accident damage reported by field.~~NL~~DIAGNOSIS: Bent tie rod and control arm following impact; alignment out of spec.~~NL~~PARTS: liftgate hydraulic line, panel, fasteners~~NL~~LABOR: 14 hrs~~NL~~DISPOSITION: returned to service. Total $8264."
+WO-300006,VEH-0029,HUB-DET,2025-07-01T10:58:00,INC-2025-00083,5060,"WORK ORDER — vehicle VEH-0029 @ HUB-DET~~NL~~Linked incident: INC-2025-00083.~~NL~~COMPLAINT: Collision/accident damage reported by field.~~NL~~DIAGNOSIS: Bent tie rod and control arm following impact; alignment out of spec.~~NL~~PARTS: liftgate hydraulic line, panel, fasteners~~NL~~LABOR: 12 hrs~~NL~~DISPOSITION: returned to service. Total $5060."
+WO-300007,VEH-0024,HUB-DET,2025-01-15T06:48:00,,9812,"WORK ORDER — vehicle VEH-0024 @ HUB-DET~~NL~~Linked incident: INC-2025-00087.~~NL~~COMPLAINT: Collision/accident damage reported by field.~~NL~~DIAGNOSIS: Body panel and liftgate damage; hydraulic line pinched.~~NL~~PARTS: tie rod, control arm, alignment kit~~NL~~LABOR: 8 hrs~~NL~~DISPOSITION: held for parts. Total $9812."
+WO-300008,VEH-0028,HUB-CMH,2025-04-23T06:41:00,INC-2025-00091,10022,"WORK ORDER — vehicle VEH-0028 @ HUB-CMH~~NL~~Linked incident: INC-2025-00091.~~NL~~COMPLAINT: Collision/accident damage reported by field.~~NL~~DIAGNOSIS: Body panel and liftgate damage; hydraulic line pinched.~~NL~~PARTS: liftgate hydraulic line, panel, fasteners~~NL~~LABOR: 16 hrs~~NL~~DISPOSITION: returned to service. Total $10022."
+WO-300009,VEH-0005,HUB-CHI,2025-03-13T15:08:00,INC-2025-00100,3567,"WORK ORDER — vehicle VEH-0005 @ HUB-CHI~~NL~~Linked incident: INC-2025-00100.~~NL~~COMPLAINT: Collision/accident damage reported by field.~~NL~~DIAGNOSIS: Front-end damage, coolant leak, bumper and headlamp assembly compromised.~~NL~~PARTS: bumper assy, headlamp, coolant hose, clips~~NL~~LABOR: 8 hrs~~NL~~DISPOSITION: held for parts. Total $3567."
+WO-300010,VEH-0008,HUB-IND,2025-05-26T18:24:00,,2023,"WORK ORDER — vehicle VEH-0008 @ HUB-IND~~NL~~Linked incident: INC-2025-00133.~~NL~~COMPLAINT: Collision/accident damage reported by field.~~NL~~DIAGNOSIS: Body panel and liftgate damage; hydraulic line pinched.~~NL~~PARTS: bumper assy, headlamp, coolant hose, clips~~NL~~LABOR: 5 hrs~~NL~~DISPOSITION: road-tested and released. Total $2023."
+WO-300011,VEH-0031,HUB-CMH,2025-08-21T16:08:00,,8839,"WORK ORDER — vehicle VEH-0031 @ HUB-CMH~~NL~~Linked incident: INC-2025-00134.~~NL~~COMPLAINT: Collision/accident damage reported by field.~~NL~~DIAGNOSIS: Body panel and liftgate damage; hydraulic line pinched.~~NL~~PARTS: liftgate hydraulic line, panel, fasteners~~NL~~LABOR: 4 hrs~~NL~~DISPOSITION: held for parts. Total $8839."
+WO-300012,VEH-0012,HUB-CMH,2025-02-05T13:37:00,,6542,"WORK ORDER — vehicle VEH-0012 @ HUB-CMH~~NL~~Linked incident: INC-2025-00138.~~NL~~COMPLAINT: Collision/accident damage reported by field.~~NL~~DIAGNOSIS: Bent tie rod and control arm following impact; alignment out of spec.~~NL~~PARTS: tie rod, control arm, alignment kit~~NL~~LABOR: 6 hrs~~NL~~DISPOSITION: held for parts. Total $6542."
+WO-300013,VEH-0040,HUB-CHI,2025-05-02T20:37:00,INC-2025-00151,11918,"WORK ORDER — vehicle VEH-0040 @ HUB-CHI~~NL~~Linked incident: INC-2025-00151.~~NL~~COMPLAINT: Collision/accident damage reported by field.~~NL~~DIAGNOSIS: Front-end damage, coolant leak, bumper and headlamp assembly compromised.~~NL~~PARTS: liftgate hydraulic line, panel, fasteners~~NL~~LABOR: 20 hrs~~NL~~DISPOSITION: returned to service. Total $11918."
+WO-300014,VEH-0005,HUB-CHI,2025-06-12T10:58:00,INC-2025-00171,6406,"WORK ORDER — vehicle VEH-0005 @ HUB-CHI~~NL~~Linked incident: INC-2025-00171.~~NL~~COMPLAINT: Collision/accident damage reported by field.~~NL~~DIAGNOSIS: Front-end damage, coolant leak, bumper and headlamp assembly compromised.~~NL~~PARTS: tie rod, control arm, alignment kit~~NL~~LABOR: 11 hrs~~NL~~DISPOSITION: road-tested and released. Total $6406."
+WO-300015,VEH-0040,HUB-CHI,2025-07-25T20:23:00,INC-2025-00180,5050,"WORK ORDER — vehicle VEH-0040 @ HUB-CHI~~NL~~Linked incident: INC-2025-00180.~~NL~~COMPLAINT: Collision/accident damage reported by field.~~NL~~DIAGNOSIS: Bent tie rod and control arm following impact; alignment out of spec.~~NL~~PARTS: liftgate hydraulic line, panel, fasteners~~NL~~LABOR: 7 hrs~~NL~~DISPOSITION: road-tested and released. Total $5050."
+WO-300016,VEH-0036,HUB-CIN,2025-12-05T19:23:00,,10030,"WORK ORDER — vehicle VEH-0036 @ HUB-CIN~~NL~~Linked incident: INC-2025-00197.~~NL~~COMPLAINT: Collision/accident damage reported by field.~~NL~~DIAGNOSIS: Body panel and liftgate damage; hydraulic line pinched.~~NL~~PARTS: bumper assy, headlamp, coolant hose, clips~~NL~~LABOR: 10 hrs~~NL~~DISPOSITION: road-tested and released. Total $10030."
+WO-300017,VEH-0011,HUB-DET,2025-06-08T12:42:00,,12195,"WORK ORDER — vehicle VEH-0011 @ HUB-DET~~NL~~Linked incident: INC-2025-00235.~~NL~~COMPLAINT: Collision/accident damage reported by field.~~NL~~DIAGNOSIS: Front-end damage, coolant leak, bumper and headlamp assembly compromised.~~NL~~PARTS: bumper assy, headlamp, coolant hose, clips~~NL~~LABOR: 7 hrs~~NL~~DISPOSITION: returned to service. Total $12195."
+WO-300018,VEH-0017,HUB-IND,2025-01-04T18:56:00,INC-2025-00248,2428,"WORK ORDER — vehicle VEH-0017 @ HUB-IND~~NL~~Linked incident: INC-2025-00248.~~NL~~COMPLAINT: Collision/accident damage reported by field.~~NL~~DIAGNOSIS: Bent tie rod and control arm following impact; alignment out of spec.~~NL~~PARTS: bumper assy, headlamp, coolant hose, clips~~NL~~LABOR: 8 hrs~~NL~~DISPOSITION: held for parts. Total $2428."
+WO-300019,VEH-0007,HUB-CMH,2025-08-13T16:14:00,INC-2025-00250,11900,"WORK ORDER — vehicle VEH-0007 @ HUB-CMH~~NL~~Linked incident: INC-2025-00250.~~NL~~COMPLAINT: Collision/accident damage reported by field.~~NL~~DIAGNOSIS: Front-end damage, coolant leak, bumper and headlamp assembly compromised.~~NL~~PARTS: bumper assy, headlamp, coolant hose, clips~~NL~~LABOR: 5 hrs~~NL~~DISPOSITION: held for parts. Total $11900."
+WO-300020,VEH-0011,HUB-DET,2025-02-12T07:13:00,,10401,"WORK ORDER — vehicle VEH-0011 @ HUB-DET~~NL~~Linked incident: INC-2025-00256.~~NL~~COMPLAINT: Collision/accident damage reported by field.~~NL~~DIAGNOSIS: Bent tie rod and control arm following impact; alignment out of spec.~~NL~~PARTS: liftgate hydraulic line, panel, fasteners~~NL~~LABOR: 11 hrs~~NL~~DISPOSITION: returned to service. Total $10401."
+WO-300021,VEH-0022,HUB-DET,2025-07-16T07:00:00,,2208,WORK ORDER — vehicle VEH-0022 @ HUB-DET~~NL~~COMPLAINT: DEF system warning light.~~NL~~DIAGNOSIS: DEF quality sensor fault.~~NL~~PARTS: DEF sensor~~NL~~LABOR: 1 hrs~~NL~~DISPOSITION: returned to service. Odometer 156682. Total $2208.
+WO-300022,VEH-0020,HUB-CIN,2025-02-09T12:00:00,,1269,WORK ORDER — vehicle VEH-0020 @ HUB-CIN~~NL~~COMPLAINT: Tire wear flagged at pre-trip.~~NL~~DIAGNOSIS: Two steer tires below tread minimum.~~NL~~PARTS: 2x steer tires~~NL~~LABOR: 7 hrs~~NL~~DISPOSITION: returned to service. Odometer 209408. Total $1269.
+WO-300023,VEH-0016,HUB-IND,2025-06-02T09:00:00,,287,"WORK ORDER — vehicle VEH-0016 @ HUB-IND~~NL~~COMPLAINT: Scheduled preventive maintenance (oil, filters, inspection).~~NL~~DIAGNOSIS: Within normal wear; serviced per schedule.~~NL~~PARTS: oil, filters, air filter~~NL~~LABOR: 1 hrs~~NL~~DISPOSITION: returned to service. Odometer 183682. Total $287."
+WO-300024,VEH-0021,HUB-CMH,2025-04-10T14:00:00,,1267,WORK ORDER — vehicle VEH-0021 @ HUB-CMH~~NL~~COMPLAINT: Wiper/defrost fault ahead of winter.~~NL~~DIAGNOSIS: Wiper motor linkage worn.~~NL~~PARTS: wiper motor linkage~~NL~~LABOR: 2 hrs~~NL~~DISPOSITION: returned to service. Odometer 90694. Total $1267.
+WO-300025,VEH-0028,HUB-CMH,2025-03-09T14:00:00,,1609,WORK ORDER — vehicle VEH-0028 @ HUB-CMH~~NL~~COMPLAINT: Tire wear flagged at pre-trip.~~NL~~DIAGNOSIS: Two steer tires below tread minimum.~~NL~~PARTS: 2x steer tires~~NL~~LABOR: 5 hrs~~NL~~DISPOSITION: returned to service. Odometer 186384. Total $1609.
+WO-300026,VEH-0008,HUB-IND,2025-02-22T07:00:00,,2917,WORK ORDER — vehicle VEH-0008 @ HUB-IND~~NL~~COMPLAINT: Wiper/defrost fault ahead of winter.~~NL~~DIAGNOSIS: Wiper motor linkage worn.~~NL~~PARTS: wiper motor linkage~~NL~~LABOR: 3 hrs~~NL~~DISPOSITION: returned to service. Odometer 208145. Total $2917.
+WO-300027,VEH-0022,HUB-DET,2025-06-24T12:00:00,,3163,WORK ORDER — vehicle VEH-0022 @ HUB-DET~~NL~~COMPLAINT: Wiper/defrost fault ahead of winter.~~NL~~DIAGNOSIS: Wiper motor linkage worn.~~NL~~PARTS: wiper motor linkage~~NL~~LABOR: 6 hrs~~NL~~DISPOSITION: returned to service. Odometer 156682. Total $3163.
+WO-300028,VEH-0016,HUB-IND,2025-11-09T10:00:00,,2513,WORK ORDER — vehicle VEH-0016 @ HUB-IND~~NL~~COMPLAINT: DEF system warning light.~~NL~~DIAGNOSIS: DEF quality sensor fault.~~NL~~PARTS: DEF sensor~~NL~~LABOR: 2 hrs~~NL~~DISPOSITION: returned to service. Odometer 183682. Total $2513.
+WO-300029,VEH-0007,HUB-CMH,2025-03-21T16:00:00,,612,"WORK ORDER — vehicle VEH-0007 @ HUB-CMH~~NL~~COMPLAINT: Scheduled preventive maintenance (oil, filters, inspection).~~NL~~DIAGNOSIS: Within normal wear; serviced per schedule.~~NL~~PARTS: oil, filters, air filter~~NL~~LABOR: 4 hrs~~NL~~DISPOSITION: returned to service. Odometer 118785. Total $612."
+WO-300030,VEH-0013,HUB-IND,2025-12-15T08:00:00,,426,WORK ORDER — vehicle VEH-0013 @ HUB-IND~~NL~~COMPLAINT: Wiper/defrost fault ahead of winter.~~NL~~DIAGNOSIS: Wiper motor linkage worn.~~NL~~PARTS: wiper motor linkage~~NL~~LABOR: 6 hrs~~NL~~DISPOSITION: returned to service. Odometer 20012. Total $426.
+WO-300031,VEH-0020,HUB-CIN,2025-12-16T10:00:00,,2305,"WORK ORDER — vehicle VEH-0020 @ HUB-CIN~~NL~~COMPLAINT: Check-engine light at startup.~~NL~~DIAGNOSIS: EGR valve sticking; cleared and tested.~~NL~~PARTS: EGR valve, gasket~~NL~~LABOR: 3 hrs~~NL~~DISPOSITION: returned to service. Odometer 209408. Total $2305."
+WO-300032,VEH-0003,HUB-CMH,2025-03-07T13:00:00,,2374,"WORK ORDER — vehicle VEH-0003 @ HUB-CMH~~NL~~COMPLAINT: Check-engine light at startup.~~NL~~DIAGNOSIS: EGR valve sticking; cleared and tested.~~NL~~PARTS: EGR valve, gasket~~NL~~LABOR: 5 hrs~~NL~~DISPOSITION: returned to service. Odometer 32561. Total $2374."
+WO-300033,VEH-0036,HUB-CIN,2025-06-12T14:00:00,,2699,"WORK ORDER — vehicle VEH-0036 @ HUB-CIN~~NL~~COMPLAINT: Check-engine light at startup.~~NL~~DIAGNOSIS: EGR valve sticking; cleared and tested.~~NL~~PARTS: EGR valve, gasket~~NL~~LABOR: 2 hrs~~NL~~DISPOSITION: returned to service. Odometer 207887. Total $2699."
+WO-300034,VEH-0028,HUB-CMH,2025-02-16T13:00:00,,2265,WORK ORDER — vehicle VEH-0028 @ HUB-CMH~~NL~~COMPLAINT: Wiper/defrost fault ahead of winter.~~NL~~DIAGNOSIS: Wiper motor linkage worn.~~NL~~PARTS: wiper motor linkage~~NL~~LABOR: 1 hrs~~NL~~DISPOSITION: returned to service. Odometer 186384. Total $2265.
+WO-300035,VEH-0011,HUB-DET,2025-10-09T09:00:00,,1306,"WORK ORDER — vehicle VEH-0011 @ HUB-DET~~NL~~COMPLAINT: Scheduled preventive maintenance (oil, filters, inspection).~~NL~~DIAGNOSIS: Within normal wear; serviced per schedule.~~NL~~PARTS: oil, filters, air filter~~NL~~LABOR: 1 hrs~~NL~~DISPOSITION: returned to service. Odometer 107230. Total $1306."
+WO-300036,VEH-0013,HUB-IND,2025-12-27T13:00:00,,2147,"WORK ORDER — vehicle VEH-0013 @ HUB-IND~~NL~~COMPLAINT: Check-engine light at startup.~~NL~~DIAGNOSIS: EGR valve sticking; cleared and tested.~~NL~~PARTS: EGR valve, gasket~~NL~~LABOR: 2 hrs~~NL~~DISPOSITION: returned to service. Odometer 20012. Total $2147."
+WO-300037,VEH-0011,HUB-DET,2025-08-25T15:00:00,,1693,WORK ORDER — vehicle VEH-0011 @ HUB-DET~~NL~~COMPLAINT: Wiper/defrost fault ahead of winter.~~NL~~DIAGNOSIS: Wiper motor linkage worn.~~NL~~PARTS: wiper motor linkage~~NL~~LABOR: 7 hrs~~NL~~DISPOSITION: returned to service. Odometer 107230. Total $1693.
+WO-300038,VEH-0026,HUB-CIN,2025-10-09T10:00:00,,873,"WORK ORDER — vehicle VEH-0026 @ HUB-CIN~~NL~~COMPLAINT: Scheduled preventive maintenance (oil, filters, inspection).~~NL~~DIAGNOSIS: Within normal wear; serviced per schedule.~~NL~~PARTS: oil, filters, air filter~~NL~~LABOR: 3 hrs~~NL~~DISPOSITION: returned to service. Odometer 44262. Total $873."
+WO-300039,VEH-0037,HUB-CHI,2025-04-19T07:00:00,,2220,WORK ORDER — vehicle VEH-0037 @ HUB-CHI~~NL~~COMPLAINT: DEF system warning light.~~NL~~DIAGNOSIS: DEF quality sensor fault.~~NL~~PARTS: DEF sensor~~NL~~LABOR: 5 hrs~~NL~~DISPOSITION: returned to service. Odometer 147029. Total $2220.
+WO-300040,VEH-0020,HUB-CIN,2025-04-10T11:00:00,,2381,"WORK ORDER — vehicle VEH-0020 @ HUB-CIN~~NL~~COMPLAINT: Scheduled preventive maintenance (oil, filters, inspection).~~NL~~DIAGNOSIS: Within normal wear; serviced per schedule.~~NL~~PARTS: oil, filters, air filter~~NL~~LABOR: 3 hrs~~NL~~DISPOSITION: returned to service. Odometer 209408. Total $2381."
+WO-300041,VEH-0015,HUB-CHI,2025-01-18T10:00:00,,1315,"WORK ORDER — vehicle VEH-0015 @ HUB-CHI~~NL~~COMPLAINT: Scheduled preventive maintenance (oil, filters, inspection).~~NL~~DIAGNOSIS: Within normal wear; serviced per schedule.~~NL~~PARTS: oil, filters, air filter~~NL~~LABOR: 3 hrs~~NL~~DISPOSITION: returned to service. Odometer 126858. Total $1315."
+WO-300042,VEH-0018,HUB-CIN,2025-03-09T07:00:00,,2751,"WORK ORDER — vehicle VEH-0018 @ HUB-CIN~~NL~~COMPLAINT: Brake noise reported by driver.~~NL~~DIAGNOSIS: Front pads at 3mm, rotors serviceable.~~NL~~PARTS: front brake pads~~NL~~LABOR: 4 hrs~~NL~~DISPOSITION: returned to service. Odometer 72175. Total $2751."
+WO-300043,VEH-0035,HUB-CMH,2025-02-01T12:00:00,,2711,WORK ORDER — vehicle VEH-0035 @ HUB-CMH~~NL~~COMPLAINT: Wiper/defrost fault ahead of winter.~~NL~~DIAGNOSIS: Wiper motor linkage worn.~~NL~~PARTS: wiper motor linkage~~NL~~LABOR: 6 hrs~~NL~~DISPOSITION: returned to service. Odometer 175496. Total $2711.
+WO-300044,VEH-0021,HUB-CMH,2025-02-23T15:00:00,,1201,"WORK ORDER — vehicle VEH-0021 @ HUB-CMH~~NL~~COMPLAINT: Check-engine light at startup.~~NL~~DIAGNOSIS: EGR valve sticking; cleared and tested.~~NL~~PARTS: EGR valve, gasket~~NL~~LABOR: 3 hrs~~NL~~DISPOSITION: returned to service. Odometer 90694. Total $1201."
+WO-300045,VEH-0027,HUB-CIN,2025-10-10T12:00:00,,354,"WORK ORDER — vehicle VEH-0027 @ HUB-CIN~~NL~~COMPLAINT: Check-engine light at startup.~~NL~~DIAGNOSIS: EGR valve sticking; cleared and tested.~~NL~~PARTS: EGR valve, gasket~~NL~~LABOR: 1 hrs~~NL~~DISPOSITION: returned to service. Odometer 233732. Total $354."
+WO-300046,VEH-0023,HUB-IND,2025-04-24T11:00:00,,843,WORK ORDER — vehicle VEH-0023 @ HUB-IND~~NL~~COMPLAINT: Tire wear flagged at pre-trip.~~NL~~DIAGNOSIS: Two steer tires below tread minimum.~~NL~~PARTS: 2x steer tires~~NL~~LABOR: 1 hrs~~NL~~DISPOSITION: returned to service. Odometer 239914. Total $843.
+WO-300047,VEH-0035,HUB-CMH,2025-11-28T16:00:00,,555,"WORK ORDER — vehicle VEH-0035 @ HUB-CMH~~NL~~COMPLAINT: Check-engine light at startup.~~NL~~DIAGNOSIS: EGR valve sticking; cleared and tested.~~NL~~PARTS: EGR valve, gasket~~NL~~LABOR: 7 hrs~~NL~~DISPOSITION: returned to service. Odometer 175496. Total $555."
+WO-300048,VEH-0017,HUB-IND,2025-11-21T16:00:00,,2376,"WORK ORDER — vehicle VEH-0017 @ HUB-IND~~NL~~COMPLAINT: Brake noise reported by driver.~~NL~~DIAGNOSIS: Front pads at 3mm, rotors serviceable.~~NL~~PARTS: front brake pads~~NL~~LABOR: 8 hrs~~NL~~DISPOSITION: returned to service. Odometer 26717. Total $2376."
+WO-300049,VEH-0015,HUB-CHI,2025-06-09T10:00:00,,2502,"WORK ORDER — vehicle VEH-0015 @ HUB-CHI~~NL~~COMPLAINT: Check-engine light at startup.~~NL~~DIAGNOSIS: EGR valve sticking; cleared and tested.~~NL~~PARTS: EGR valve, gasket~~NL~~LABOR: 7 hrs~~NL~~DISPOSITION: returned to service. Odometer 126858. Total $2502."
+WO-300050,VEH-0010,HUB-IND,2025-08-08T13:00:00,,1629,"WORK ORDER — vehicle VEH-0010 @ HUB-IND~~NL~~COMPLAINT: Brake noise reported by driver.~~NL~~DIAGNOSIS: Front pads at 3mm, rotors serviceable.~~NL~~PARTS: front brake pads~~NL~~LABOR: 8 hrs~~NL~~DISPOSITION: returned to service. Odometer 199294. Total $1629."
+WO-300051,VEH-0006,HUB-CHI,2025-08-06T14:00:00,,877,"WORK ORDER — vehicle VEH-0006 @ HUB-CHI~~NL~~COMPLAINT: Brake noise reported by driver.~~NL~~DIAGNOSIS: Front pads at 3mm, rotors serviceable.~~NL~~PARTS: front brake pads~~NL~~LABOR: 4 hrs~~NL~~DISPOSITION: returned to service. Odometer 235881. Total $877."
+WO-300052,VEH-0037,HUB-CHI,2025-08-24T09:00:00,,2772,WORK ORDER — vehicle VEH-0037 @ HUB-CHI~~NL~~COMPLAINT: Tire wear flagged at pre-trip.~~NL~~DIAGNOSIS: Two steer tires below tread minimum.~~NL~~PARTS: 2x steer tires~~NL~~LABOR: 1 hrs~~NL~~DISPOSITION: returned to service. Odometer 147029. Total $2772.
+WO-300053,VEH-0020,HUB-CIN,2025-03-06T13:00:00,,2935,WORK ORDER — vehicle VEH-0020 @ HUB-CIN~~NL~~COMPLAINT: Wiper/defrost fault ahead of winter.~~NL~~DIAGNOSIS: Wiper motor linkage worn.~~NL~~PARTS: wiper motor linkage~~NL~~LABOR: 4 hrs~~NL~~DISPOSITION: returned to service. Odometer 209408. Total $2935.
+WO-300054,VEH-0005,HUB-CHI,2025-03-03T13:00:00,,1124,WORK ORDER — vehicle VEH-0005 @ HUB-CHI~~NL~~COMPLAINT: DEF system warning light.~~NL~~DIAGNOSIS: DEF quality sensor fault.~~NL~~PARTS: DEF sensor~~NL~~LABOR: 7 hrs~~NL~~DISPOSITION: returned to service. Odometer 117974. Total $1124.
+WO-300055,VEH-0007,HUB-CMH,2025-12-17T09:00:00,,3096,"WORK ORDER — vehicle VEH-0007 @ HUB-CMH~~NL~~COMPLAINT: Scheduled preventive maintenance (oil, filters, inspection).~~NL~~DIAGNOSIS: Within normal wear; serviced per schedule.~~NL~~PARTS: oil, filters, air filter~~NL~~LABOR: 2 hrs~~NL~~DISPOSITION: returned to service. Odometer 118785. Total $3096."
+WO-300056,VEH-0025,HUB-CIN,2025-07-01T08:00:00,,175,"WORK ORDER — vehicle VEH-0025 @ HUB-CIN~~NL~~COMPLAINT: Check-engine light at startup.~~NL~~DIAGNOSIS: EGR valve sticking; cleared and tested.~~NL~~PARTS: EGR valve, gasket~~NL~~LABOR: 1 hrs~~NL~~DISPOSITION: returned to service. Odometer 120311. Total $175."
+WO-300057,VEH-0009,HUB-IND,2025-04-25T08:00:00,,1216,"WORK ORDER — vehicle VEH-0009 @ HUB-IND~~NL~~COMPLAINT: Brake noise reported by driver.~~NL~~DIAGNOSIS: Front pads at 3mm, rotors serviceable.~~NL~~PARTS: front brake pads~~NL~~LABOR: 1 hrs~~NL~~DISPOSITION: returned to service. Odometer 102104. Total $1216."
+WO-300058,VEH-0001,HUB-CMH,2025-02-18T12:00:00,,3017,"WORK ORDER — vehicle VEH-0001 @ HUB-CMH~~NL~~COMPLAINT: Scheduled preventive maintenance (oil, filters, inspection).~~NL~~DIAGNOSIS: Within normal wear; serviced per schedule.~~NL~~PARTS: oil, filters, air filter~~NL~~LABOR: 4 hrs~~NL~~DISPOSITION: returned to service. Odometer 66513. Total $3017."
+WO-300059,VEH-0009,HUB-IND,2025-08-25T16:00:00,,1939,"WORK ORDER — vehicle VEH-0009 @ HUB-IND~~NL~~COMPLAINT: Brake noise reported by driver.~~NL~~DIAGNOSIS: Front pads at 3mm, rotors serviceable.~~NL~~PARTS: front brake pads~~NL~~LABOR: 5 hrs~~NL~~DISPOSITION: returned to service. Odometer 102104. Total $1939."
+WO-300060,VEH-0022,HUB-DET,2025-08-05T10:00:00,,348,WORK ORDER — vehicle VEH-0022 @ HUB-DET~~NL~~COMPLAINT: Wiper/defrost fault ahead of winter.~~NL~~DIAGNOSIS: Wiper motor linkage worn.~~NL~~PARTS: wiper motor linkage~~NL~~LABOR: 5 hrs~~NL~~DISPOSITION: returned to service. Odometer 156682. Total $348.
+WO-300061,VEH-0035,HUB-CMH,2025-02-01T07:00:00,,541,WORK ORDER — vehicle VEH-0035 @ HUB-CMH~~NL~~COMPLAINT: Wiper/defrost fault ahead of winter.~~NL~~DIAGNOSIS: Wiper motor linkage worn.~~NL~~PARTS: wiper motor linkage~~NL~~LABOR: 5 hrs~~NL~~DISPOSITION: returned to service. Odometer 175496. Total $541.
+WO-300062,VEH-0007,HUB-CMH,2025-09-27T13:00:00,,700,"WORK ORDER — vehicle VEH-0007 @ HUB-CMH~~NL~~COMPLAINT: Scheduled preventive maintenance (oil, filters, inspection).~~NL~~DIAGNOSIS: Within normal wear; serviced per schedule.~~NL~~PARTS: oil, filters, air filter~~NL~~LABOR: 4 hrs~~NL~~DISPOSITION: returned to service. Odometer 118785. Total $700."
+WO-300063,VEH-0002,HUB-CHI,2025-04-14T13:00:00,,723,WORK ORDER — vehicle VEH-0002 @ HUB-CHI~~NL~~COMPLAINT: Tire wear flagged at pre-trip.~~NL~~DIAGNOSIS: Two steer tires below tread minimum.~~NL~~PARTS: 2x steer tires~~NL~~LABOR: 5 hrs~~NL~~DISPOSITION: returned to service. Odometer 150964. Total $723.
+WO-300064,VEH-0015,HUB-CHI,2025-11-13T08:00:00,,2134,"WORK ORDER — vehicle VEH-0015 @ HUB-CHI~~NL~~COMPLAINT: Brake noise reported by driver.~~NL~~DIAGNOSIS: Front pads at 3mm, rotors serviceable.~~NL~~PARTS: front brake pads~~NL~~LABOR: 2 hrs~~NL~~DISPOSITION: returned to service. Odometer 126858. Total $2134."
+WO-300065,VEH-0015,HUB-CHI,2025-02-10T12:00:00,,432,WORK ORDER — vehicle VEH-0015 @ HUB-CHI~~NL~~COMPLAINT: Wiper/defrost fault ahead of winter.~~NL~~DIAGNOSIS: Wiper motor linkage worn.~~NL~~PARTS: wiper motor linkage~~NL~~LABOR: 6 hrs~~NL~~DISPOSITION: returned to service. Odometer 126858. Total $432.
+WO-300066,VEH-0008,HUB-IND,2025-06-03T07:00:00,,2596,"WORK ORDER — vehicle VEH-0008 @ HUB-IND~~NL~~COMPLAINT: Brake noise reported by driver.~~NL~~DIAGNOSIS: Front pads at 3mm, rotors serviceable.~~NL~~PARTS: front brake pads~~NL~~LABOR: 3 hrs~~NL~~DISPOSITION: returned to service. Odometer 208145. Total $2596."
+WO-300067,VEH-0028,HUB-CMH,2025-09-11T16:00:00,,862,"WORK ORDER — vehicle VEH-0028 @ HUB-CMH~~NL~~COMPLAINT: Check-engine light at startup.~~NL~~DIAGNOSIS: EGR valve sticking; cleared and tested.~~NL~~PARTS: EGR valve, gasket~~NL~~LABOR: 7 hrs~~NL~~DISPOSITION: returned to service. Odometer 186384. Total $862."
+WO-300068,VEH-0010,HUB-IND,2025-11-22T11:00:00,,2679,WORK ORDER — vehicle VEH-0010 @ HUB-IND~~NL~~COMPLAINT: Tire wear flagged at pre-trip.~~NL~~DIAGNOSIS: Two steer tires below tread minimum.~~NL~~PARTS: 2x steer tires~~NL~~LABOR: 6 hrs~~NL~~DISPOSITION: returned to service. Odometer 199294. Total $2679.
+WO-300069,VEH-0007,HUB-CMH,2025-05-16T12:00:00,,1207,"WORK ORDER — vehicle VEH-0007 @ HUB-CMH~~NL~~COMPLAINT: Check-engine light at startup.~~NL~~DIAGNOSIS: EGR valve sticking; cleared and tested.~~NL~~PARTS: EGR valve, gasket~~NL~~LABOR: 2 hrs~~NL~~DISPOSITION: returned to service. Odometer 118785. Total $1207."
+WO-300070,VEH-0001,HUB-CMH,2025-03-25T09:00:00,,1431,"WORK ORDER — vehicle VEH-0001 @ HUB-CMH~~NL~~COMPLAINT: Brake noise reported by driver.~~NL~~DIAGNOSIS: Front pads at 3mm, rotors serviceable.~~NL~~PARTS: front brake pads~~NL~~LABOR: 7 hrs~~NL~~DISPOSITION: returned to service. Odometer 66513. Total $1431."
+WO-300071,VEH-0029,HUB-DET,2025-12-26T14:00:00,,395,"WORK ORDER — vehicle VEH-0029 @ HUB-DET~~NL~~COMPLAINT: Scheduled preventive maintenance (oil, filters, inspection).~~NL~~DIAGNOSIS: Within normal wear; serviced per schedule.~~NL~~PARTS: oil, filters, air filter~~NL~~LABOR: 7 hrs~~NL~~DISPOSITION: returned to service. Odometer 164208. Total $395."
+WO-300072,VEH-0018,HUB-CIN,2025-03-03T12:00:00,,642,"WORK ORDER — vehicle VEH-0018 @ HUB-CIN~~NL~~COMPLAINT: Brake noise reported by driver.~~NL~~DIAGNOSIS: Front pads at 3mm, rotors serviceable.~~NL~~PARTS: front brake pads~~NL~~LABOR: 7 hrs~~NL~~DISPOSITION: returned to service. Odometer 72175. Total $642."
+WO-300073,VEH-0023,HUB-IND,2025-06-16T13:00:00,,2091,"WORK ORDER — vehicle VEH-0023 @ HUB-IND~~NL~~COMPLAINT: Check-engine light at startup.~~NL~~DIAGNOSIS: EGR valve sticking; cleared and tested.~~NL~~PARTS: EGR valve, gasket~~NL~~LABOR: 7 hrs~~NL~~DISPOSITION: returned to service. Odometer 239914. Total $2091."
+WO-300074,VEH-0039,HUB-IND,2025-11-11T09:00:00,,2798,"WORK ORDER — vehicle VEH-0039 @ HUB-IND~~NL~~COMPLAINT: Brake noise reported by driver.~~NL~~DIAGNOSIS: Front pads at 3mm, rotors serviceable.~~NL~~PARTS: front brake pads~~NL~~LABOR: 7 hrs~~NL~~DISPOSITION: returned to service. Odometer 88612. Total $2798."
+WO-300075,VEH-0027,HUB-CIN,2025-09-16T15:00:00,,2306,WORK ORDER — vehicle VEH-0027 @ HUB-CIN~~NL~~COMPLAINT: DEF system warning light.~~NL~~DIAGNOSIS: DEF quality sensor fault.~~NL~~PARTS: DEF sensor~~NL~~LABOR: 4 hrs~~NL~~DISPOSITION: returned to service. Odometer 233732. Total $2306.
+WO-300076,VEH-0025,HUB-CIN,2025-02-19T13:00:00,,2278,WORK ORDER — vehicle VEH-0025 @ HUB-CIN~~NL~~COMPLAINT: Wiper/defrost fault ahead of winter.~~NL~~DIAGNOSIS: Wiper motor linkage worn.~~NL~~PARTS: wiper motor linkage~~NL~~LABOR: 4 hrs~~NL~~DISPOSITION: returned to service. Odometer 120311. Total $2278.
+WO-300077,VEH-0006,HUB-CHI,2025-04-12T07:00:00,,952,"WORK ORDER — vehicle VEH-0006 @ HUB-CHI~~NL~~COMPLAINT: Scheduled preventive maintenance (oil, filters, inspection).~~NL~~DIAGNOSIS: Within normal wear; serviced per schedule.~~NL~~PARTS: oil, filters, air filter~~NL~~LABOR: 6 hrs~~NL~~DISPOSITION: returned to service. Odometer 235881. Total $952."
+WO-300078,VEH-0036,HUB-CIN,2025-08-05T08:00:00,,364,WORK ORDER — vehicle VEH-0036 @ HUB-CIN~~NL~~COMPLAINT: Tire wear flagged at pre-trip.~~NL~~DIAGNOSIS: Two steer tires below tread minimum.~~NL~~PARTS: 2x steer tires~~NL~~LABOR: 6 hrs~~NL~~DISPOSITION: returned to service. Odometer 207887. Total $364.
+WO-300079,VEH-0009,HUB-IND,2025-05-15T09:00:00,,2378,WORK ORDER — vehicle VEH-0009 @ HUB-IND~~NL~~COMPLAINT: DEF system warning light.~~NL~~DIAGNOSIS: DEF quality sensor fault.~~NL~~PARTS: DEF sensor~~NL~~LABOR: 4 hrs~~NL~~DISPOSITION: returned to service. Odometer 102104. Total $2378.
+WO-900001,VEH-0015,HUB-CHI,2025-01-15T12:00:00,INC-2025-00417,14200,"WORK ORDER — vehicle VEH-0015 @ HUB-CHI~~NL~~Linked incident: INC-2025-00417.~~NL~~COMPLAINT: Jackknife event during winter storm; tractor and trailer damage.~~NL~~DIAGNOSIS: Bent fifth-wheel mount, damaged air lines, scuffed trailer skin, front fender and step assembly compromised.~~NL~~PARTS: fifth-wheel rebuild kit, air line set, fender, step assy, decals~~NL~~LABOR: 26 hrs~~NL~~DISPOSITION: held for parts, then road-tested and released. Total $14200."

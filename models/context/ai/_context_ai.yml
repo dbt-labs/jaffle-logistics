@@ -1,0 +1,48 @@
+version: 2
+
+# ===========================================================================
+# Embedding + retrieval layer: real cloud AI-function cost (embed() calls),
+# distinct from the deterministic layer's zero-AI-function-cost, ordinary-
+# cloud-compute-cost SQL. These models stay disabled by default
+# (ai_layer_enabled var in dbt_project.yml); build them only after AI-function
+# spend is explicitly approved. Scope: chunking -> embedding -> knowledge base
+# -> vector search.
+# (Classify/extract enrichment and eval/governance were intentionally left out
+# of this cut.)
+# ===========================================================================
+
+models:
+  # --------------------------------------------------------- embeddings
+  - name: chunk_embeddings
+    description: >
+      Governed incremental embeddings of the chunk corpus (embed()), with the
+      six-column cache metadata (ADR-0023). One embedding model (var embedding_model)
+      across the whole KB. embedding is the vector; chunk_text/client_id/citation_url/
+      artifact_ts are carried for the knowledge base.
+    columns:
+      - name: chunk_id
+        tests: [unique, not_null]
+
+  - name: ticket_embeddings
+    description: "Governed incremental embeddings of whole tickets (short -> embed whole, no chunking); the second KB source, contrasting chunked docs with whole-doc embedding."
+    columns:
+      - name: ticket_id
+        tests: [unique, not_null]
+
+  # ------------------------------------------------ knowledge base + search
+  - name: knowledge_base
+    description: >
+      Account-scoped KB in the package common shape (source_type, source_id,
+      account_key, text, embedding, ts, citation_url) unioning chunk + ticket
+      embeddings. Fine-grained artifact type is preserved in citation_url.
+    columns:
+      - name: source_id
+        tests: [not_null]
+      - name: source_type
+        tests:
+          - accepted_values:
+              arguments:
+                values: ['context_chunk', 'ticket']
+
+  - name: search
+    description: "Retrieval demos: Jaffle Equipment account-scoped story + Chicago-storm thematic vector search (each embeds its query once)."

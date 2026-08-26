@@ -1,47 +1,10 @@
 doc_id,client_id,driver_id,effective_date,doc_type,body
-LGL-4000,CLI-0042,,2023-11-14,MSA,"MASTER SERVICES AGREEMENT — Jaffle Logistics and Jaffle Equipment (CLI-0042).
-Effective 2023-11-14. Referenced contract: CON-0042-01.
-1. SERVICES. Jaffle Logistics shall provide LTL logistics services in the IL region.
-2. SERVICE LEVELS. Target on-time delivery of 97.0% measured monthly.
-3. CREDITS. 1.0% of monthly spend credited per full percentage point below the SLA on-time target, capped at 10% of monthly spend.
-4. TERM. Initial term of twenty-four (24) months, auto-renewing for successive twelve (12) month terms.
-Prepared by N. Brightwater (Legal)."
-LGL-4001,CLI-0007,,2022-04-16,MSA,"MASTER SERVICES AGREEMENT — Jaffle Logistics and Jaffle Storefronts (CLI-0007).
-Effective 2022-04-16. Referenced contract: CON-0007-01.
-1. SERVICES. Jaffle Logistics shall provide last-mile logistics services in the OH region.
-2. SERVICE LEVELS. Target on-time delivery of 97.0% measured monthly.
-3. CREDITS. 1.0% of monthly spend credited per full percentage point below the SLA on-time target, capped at 10% of monthly spend.
-4. TERM. Initial term of twenty-four (24) months, auto-renewing for successive twelve (12) month terms.
-Prepared by S. Ackerman (Legal)."
-LGL-4004,CLI-0155,,2023-07-28,MSA,"MASTER SERVICES AGREEMENT — Jaffle Logistics and Jaffle Crew Outfitters (CLI-0155).
-Effective 2023-07-28. Referenced contract: CON-0155-01.
-1. SERVICES. Jaffle Logistics shall provide last-mile logistics services in the IN region.
-2. SERVICE LEVELS. Target on-time delivery of 95.0% measured monthly.
-3. CREDITS. 1.0% of monthly spend credited per full percentage point below the SLA on-time target, capped at 10% of monthly spend.
-4. TERM. Initial term of twenty-four (24) months, auto-renewing for successive twelve (12) month terms.
-Prepared by T. Ramachandran (Legal)."
-LGL-4005,CLI-0169,,2024-06-24,MSA,"MASTER SERVICES AGREEMENT — Jaffle Logistics and Jaffle Beverage Co (CLI-0169).
-Effective 2024-06-24. Referenced contract: CON-0169-01.
-1. SERVICES. Jaffle Logistics shall provide warehousing logistics services in the OH region.
-2. SERVICE LEVELS. Target on-time delivery of 95.0% measured monthly.
-3. CREDITS. 1.0% of monthly spend credited per full percentage point below the SLA on-time target, capped at 10% of monthly spend.
-4. TERM. Initial term of twenty-four (24) months, auto-renewing for successive twelve (12) month terms.
-Prepared by N. Brightwater (Legal)."
-LGL-4006,CLI-0201,,2024-06-14,MSA,"MASTER SERVICES AGREEMENT — Jaffle Logistics and Jaffle Paper & Packaging (CLI-0201).
-Effective 2024-06-14. Referenced contract: CON-0201-01.
-1. SERVICES. Jaffle Logistics shall provide last-mile logistics services in the KY region.
-2. SERVICE LEVELS. Target on-time delivery of 92.0% measured monthly.
-3. CREDITS. 1.0% of monthly spend credited per full percentage point below the SLA on-time target, capped at 10% of monthly spend.
-4. TERM. Initial term of twenty-four (24) months, auto-renewing for successive twelve (12) month terms.
-Prepared by N. Brightwater (Legal)."
-LGL-4010,CLI-0007,,2025-03-11,SLA_addendum,"SLA ADDENDUM to CON-0007-01 — Jaffle Storefronts (CLI-0007). Effective 2025-03-11.
-The parties agree to adjust the on-time measurement window to exclude documented force-majeure weather events at the origin hub. All other terms of the Master Services Agreement remain in effect. Credit mechanics per the MSA are unchanged."
-LGL-4013,CLI-0155,,2025-04-15,SLA_addendum,"SLA ADDENDUM to CON-0155-01 — Jaffle Crew Outfitters (CLI-0155). Effective 2025-04-15.
-The parties agree to adjust the on-time measurement window to exclude documented force-majeure weather events at the origin hub. All other terms of the Master Services Agreement remain in effect. Credit mechanics per the MSA are unchanged."
-LGL-9001,CLI-0042,,2025-02-05,SLA_addendum,"SLA CREDIT MEMORANDUM — Master Services Agreement with Jaffle Equipment (CLI-0042), contract CON-0042-01. Effective 2025-02-05.
-Pursuant to the credit clause of the MSA, Jaffle Logistics acknowledges that the January 14-16 winter storm at the Chicago hub caused on-time performance to fall below the contracted target. Root event documented under incident INC-2025-00417. Jaffle Logistics will apply a credit of 1.0% of January spend per full percentage point below target, capped at 10%. This memorandum does not otherwise modify the MSA."
-LGL-9002,,DRV-01188,2022-06-13,driver_agreement,"INDEPENDENT CONTRACTOR DRIVER AGREEMENT — DRV-01188. Effective 2022-06-13.
-1. RELATIONSHIP. Contractor operates as an independent contractor, not an employee.
-2. PERFORMANCE. Contractor shall complete assigned routes within service windows and promptly notify dispatch of any inability to perform.
-3. TERMINATION FOR CAUSE. Jaffle Logistics may deactivate the contractor for repeated failure to perform or failure to notify, including no-call/no-show events.
-4. DISPUTE. Disputes shall first be raised with People Ops and Legal before external remedies."
+LGL-4000,CLI-0042,,2023-11-14,MSA,"MASTER SERVICES AGREEMENT — Jaffle Logistics and Jaffle Equipment (CLI-0042).~~NL~~Effective 2023-11-14. Referenced contract: CON-0042-01.~~NL~~1. SERVICES. Jaffle Logistics shall provide LTL logistics services in the IL region.~~NL~~2. SERVICE LEVELS. Target on-time delivery of 97.0% measured monthly.~~NL~~3. CREDITS. 1.0% of monthly spend credited per full percentage point below the SLA on-time target, capped at 10% of monthly spend.~~NL~~4. TERM. Initial term of twenty-four (24) months, auto-renewing for successive twelve (12) month terms.~~NL~~Prepared by N. Brightwater (Legal)."
+LGL-4001,CLI-0007,,2022-04-16,MSA,"MASTER SERVICES AGREEMENT — Jaffle Logistics and Jaffle Storefronts (CLI-0007).~~NL~~Effective 2022-04-16. Referenced contract: CON-0007-01.~~NL~~1. SERVICES. Jaffle Logistics shall provide last-mile logistics services in the OH region.~~NL~~2. SERVICE LEVELS. Target on-time delivery of 97.0% measured monthly.~~NL~~3. CREDITS. 1.0% of monthly spend credited per full percentage point below the SLA on-time target, capped at 10% of monthly spend.~~NL~~4. TERM. Initial term of twenty-four (24) months, auto-renewing for successive twelve (12) month terms.~~NL~~Prepared by S. Ackerman (Legal)."
+LGL-4004,CLI-0155,,2023-07-28,MSA,"MASTER SERVICES AGREEMENT — Jaffle Logistics and Jaffle Crew Outfitters (CLI-0155).~~NL~~Effective 2023-07-28. Referenced contract: CON-0155-01.~~NL~~1. SERVICES. Jaffle Logistics shall provide last-mile logistics services in the IN region.~~NL~~2. SERVICE LEVELS. Target on-time delivery of 95.0% measured monthly.~~NL~~3. CREDITS. 1.0% of monthly spend credited per full percentage point below the SLA on-time target, capped at 10% of monthly spend.~~NL~~4. TERM. Initial term of twenty-four (24) months, auto-renewing for successive twelve (12) month terms.~~NL~~Prepared by T. Ramachandran (Legal)."
+LGL-4005,CLI-0169,,2024-06-24,MSA,"MASTER SERVICES AGREEMENT — Jaffle Logistics and Jaffle Beverage Co (CLI-0169).~~NL~~Effective 2024-06-24. Referenced contract: CON-0169-01.~~NL~~1. SERVICES. Jaffle Logistics shall provide warehousing logistics services in the OH region.~~NL~~2. SERVICE LEVELS. Target on-time delivery of 95.0% measured monthly.~~NL~~3. CREDITS. 1.0% of monthly spend credited per full percentage point below the SLA on-time target, capped at 10% of monthly spend.~~NL~~4. TERM. Initial term of twenty-four (24) months, auto-renewing for successive twelve (12) month terms.~~NL~~Prepared by N. Brightwater (Legal)."
+LGL-4006,CLI-0201,,2024-06-14,MSA,"MASTER SERVICES AGREEMENT — Jaffle Logistics and Jaffle Paper & Packaging (CLI-0201).~~NL~~Effective 2024-06-14. Referenced contract: CON-0201-01.~~NL~~1. SERVICES. Jaffle Logistics shall provide last-mile logistics services in the KY region.~~NL~~2. SERVICE LEVELS. Target on-time delivery of 92.0% measured monthly.~~NL~~3. CREDITS. 1.0% of monthly spend credited per full percentage point below the SLA on-time target, capped at 10% of monthly spend.~~NL~~4. TERM. Initial term of twenty-four (24) months, auto-renewing for successive twelve (12) month terms.~~NL~~Prepared by N. Brightwater (Legal)."
+LGL-4010,CLI-0007,,2025-03-11,SLA_addendum,SLA ADDENDUM to CON-0007-01 — Jaffle Storefronts (CLI-0007). Effective 2025-03-11.~~NL~~The parties agree to adjust the on-time measurement window to exclude documented force-majeure weather events at the origin hub. All other terms of the Master Services Agreement remain in effect. Credit mechanics per the MSA are unchanged.
+LGL-4013,CLI-0155,,2025-04-15,SLA_addendum,SLA ADDENDUM to CON-0155-01 — Jaffle Crew Outfitters (CLI-0155). Effective 2025-04-15.~~NL~~The parties agree to adjust the on-time measurement window to exclude documented force-majeure weather events at the origin hub. All other terms of the Master Services Agreement remain in effect. Credit mechanics per the MSA are unchanged.
+LGL-9001,CLI-0042,,2025-02-05,SLA_addendum,"SLA CREDIT MEMORANDUM — Master Services Agreement with Jaffle Equipment (CLI-0042), contract CON-0042-01. Effective 2025-02-05.~~NL~~Pursuant to the credit clause of the MSA, Jaffle Logistics acknowledges that the January 14-16 winter storm at the Chicago hub caused on-time performance to fall below the contracted target. Root event documented under incident INC-2025-00417. Jaffle Logistics will apply a credit of 1.0% of January spend per full percentage point below target, capped at 10%. This memorandum does not otherwise modify the MSA."
+LGL-9002,,DRV-01188,2022-06-13,driver_agreement,"INDEPENDENT CONTRACTOR DRIVER AGREEMENT — DRV-01188. Effective 2022-06-13.~~NL~~1. RELATIONSHIP. Contractor operates as an independent contractor, not an employee.~~NL~~2. PERFORMANCE. Contractor shall complete assigned routes within service windows and promptly notify dispatch of any inability to perform.~~NL~~3. TERMINATION FOR CAUSE. Jaffle Logistics may deactivate the contractor for repeated failure to perform or failure to notify, including no-call/no-show events.~~NL~~4. DISPUTE. Disputes shall first be raised with People Ops and Legal before external remedies."

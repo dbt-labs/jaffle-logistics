@@ -1,6 +1,6 @@
--- Small adapter-aware helpers so the models run on both Snowflake (the
--- jaffle-mcp-demo profile) and DuckDB. Regex and date-format functions differ by
--- warehouse; these switch on target.type.
+-- Small adapter-aware helpers so the models run across DuckDB (local dev),
+-- Snowflake, BigQuery, and Databricks (the jaffle-logistics profile). Regex and
+-- date-format functions differ by warehouse; these switch on target.type.
 
 -- First regex match in a column (or NULL/'' if none). Dispatch notes embed at
 -- most one shipment ID, so first-match is sufficient.
@@ -25,6 +25,10 @@
 {% macro month_key(col) %}
     {%- if target.type == 'duckdb' -%}
         strftime({{ col }}, '%Y-%m')
+    {%- elif target.type == 'bigquery' -%}
+        format_timestamp('%Y-%m', {{ col }})
+    {%- elif target.type == 'databricks' -%}
+        date_format({{ col }}, 'yyyy-MM')
     {%- else -%}
         to_char({{ col }}, 'YYYY-MM')
     {%- endif -%}

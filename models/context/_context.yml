@@ -1,0 +1,101 @@
+version: 2
+
+models:
+  # ------------------------------------------------------------------ Phase 2
+  # Deterministic chunking layer: zero AI-function cost (no embed()/generate()/
+  # classify() calls anywhere in this layer). Three distinct cost tiers apply
+  # across this project, and "zero AI-function cost" only ever means the third:
+  #   - local DuckDB runs: effectively zero cost, nothing billed at all.
+  #   - Snowflake/BigQuery/Databricks runs of this layer: ordinary cloud compute
+  #     cost (warehouse credits for the SQL itself), same as any other model.
+  #   - models/context/ai/*: cloud AI-function cost, the real, billed embed()
+  #     calls, gated separately (see dbt_project.yml's ai_layer_enabled var).
+  # chunk_id uniqueness is the key gate: it also guards attach_metadata's
+  # functional-dependency contract (a broken FD fans out the join and fails
+  # uniqueness loudly).
+  - name: int_transcript_turns
+    description: >
+      One row per spoken turn in a call transcript (unit = turn), exploded from the
+      transcript body. Feeds chunk_transcripts. Grain: (transcript_id, turn_index).
+    columns:
+      - name: turn_id
+        description: "Unique turn id (transcript_id + zero-padded turn_index)."
+        tests: [unique, not_null]
+      - name: transcript_id
+        tests:
+          - not_null
+          - relationships:
+              arguments:
+                to: ref('stg_call_transcripts')
+                field: transcript_id
+      - name: turn_text
+        tests: [not_null]
+
+  - name: int_context_documents
+    description: >
+      Unified client-scoped document source (legal_docs + incident_reports +
+      crm_notes) in a common shape, with a synthetic citation_url and client_id
+      resolved (incident reports reach client via shipment). Grain: one row per
+      source document; doc_key unique across sources.
+    columns:
+      - name: doc_key
+        description: "Unique source-document id across all doc sources."
+        tests: [unique, not_null]
+      - name: source_type
+        tests:
+          - not_null
+          - accepted_values:
+              arguments:
+                values: ['legal_doc', 'incident_report', 'crm_note']
+      - name: body
+        tests: [not_null]
+
+  - name: chunk_transcripts
+    description: "Token-bounded chunks of transcript turns (never spanning a transcript)."
+    columns:
+      - name: chunk_id
+        tests: [unique, not_null]
+
+  - name: split_context_docs
+    description: "Documents split into one row per sentence (layer-1 splitter), feeding chunk_docs."
+    columns:
+      - name: sentence_id
+        tests: [unique, not_null]
+
+  - name: chunk_docs
+    description: "Token-bounded chunks of document sentences (never spanning a document)."
+    columns:
+      - name: chunk_id
+        tests: [unique, not_null]
+
+  - name: transcript_chunks_meta
+    description: "Transcript chunks with client_id attached (attach_metadata)."
+    columns:
+      - name: chunk_id
+        tests: [unique, not_null]
+
+  - name: doc_chunks_meta
+    description: "Document chunks with client_id / source_type / citation_url attached."
+    columns:
+      - name: chunk_id
+        tests: [unique, not_null]
+
+  - name: chunks_with_meta
+    description: >
+      The unified, metadata-carrying chunk corpus (transcripts + documents) in one
+      common shape, the last model with zero AI-function cost (see the Phase 2
+      note above) and the gate before any real AI-function spend.
+    columns:
+      - name: chunk_id
+        description: "Unique chunk id across the whole corpus."
+        tests: [unique, not_null]
+      - name: chunk_text
+        tests: [not_null]
+      - name: source_type
+        tests:
+          - not_null
+          - accepted_values:
+              arguments:
+                values: ['call_transcript', 'legal_doc', 'incident_report', 'crm_note']
+      - name: citation_url
+        tests: [not_null]
