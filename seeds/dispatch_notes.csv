@@ -819,8 +819,6 @@ DN-100408,RTE-IND-20251215-002,DRV-01188,HUB-IND,2025-12-15T12:15:00,address,"[1
 Suite # missing, 4 stops undeliverable. Contacting account for update."
 DN-100409,RTE-CIN-20250218-003,DRV-01041,HUB-CIN,2025-02-18T13:19:00,mechanical,"[02/18 13:19] RTE-CIN-20250218-003 / DRV-01041 @ CIN
 Check-engine light, reduced power. Swapped to spare, 1 stops late."
-DN-100410,RTE-CHI-20251223-003,DRV-01047,HUB-CHI,2025-12-23T18:58:00,customer_nsf,"[12/23 18:58] RTE-CHI-20251223-003 / DRV-01047 @ CHI
-Consignee refused delivery SHP-202512-000208. Return to hub initiated."
 DN-100411,RTE-DET-20250103-004,DRV-01014,HUB-DET,2025-01-03T17:24:00,traffic,"[01/03 17:24] RTE-DET-20250103-004 / DRV-01014 @ DET
 Accident on route, detour added. 3 DEL slipped past commit."
 DN-100412,RTE-CIN-20251203-002,DRV-01019,HUB-CIN,2025-12-03T13:11:00,weather,"[12/03 13:11] RTE-CIN-20251203-002 / DRV-01019 @ CIN
@@ -889,8 +887,6 @@ DN-100443,RTE-IND-20250212-003,DRV-01033,HUB-IND,2025-02-12T10:37:00,weather,"[0
 Snow/ice on route. 37 stops ATT, 1 DEL to next day. Salt trucks late. ETA slippage all afternoon."
 DN-100444,RTE-CIN-20251212-001,DRV-01034,HUB-CIN,2025-12-12T11:10:00,traffic,"[12/12 11:10] RTE-CIN-20251212-001 / DRV-01034 @ CIN
 I-90 closure, major backup. ETA +90m. 5 stops missed cutoff."
-DN-100445,RTE-CHI-20251219-004,DRV-01011,HUB-CHI,2025-12-19T15:21:00,access,"[12/19 15:21] RTE-CHI-20251219-004 / DRV-01011 @ CHI
-Gate locked at delivery, no answer. ATT x2. SHP-202512-000242 left as NSF, reattempt scheduled."
 DN-100446,RTE-CIN-20251112-001,DRV-01008,HUB-CIN,2025-11-12T08:27:00,access,"[11/12 08:27] RTE-CIN-20251112-001 / DRV-01008 @ CIN
 Gate locked at delivery, no answer. ATT x2. the stop left as NSF, reattempt scheduled."
 DN-100447,RTE-CIN-20250101-001,DRV-01023,HUB-CIN,2025-01-01T16:25:00,volume,"[01/01 16:25] RTE-CIN-20250101-001 / DRV-01023 @ CIN
@@ -951,8 +947,6 @@ DN-100474,RTE-CMH-20250130-001,DRV-01010,HUB-CMH,2025-01-30T13:48:00,address,"[0
 Suite # missing, 3 stops undeliverable. Contacting account for update."
 DN-100475,RTE-CIN-20251205-001,DRV-01002,HUB-CIN,2025-12-05T10:32:00,weather,"[12/05 10:32] RTE-CIN-20251205-001 / DRV-01002 @ CIN
 Freezing rain. Driver DRV-01002 pulled early for safety. 6 stops rolled to tomorrow."
-DN-100476,RTE-CHI-20251223-003,DRV-01047,HUB-CHI,2025-12-23T10:28:00,address,"[12/23 10:28] RTE-CHI-20251223-003 / DRV-01047 @ CHI
-Bad address on SHP-202512-000208. Geocode off by ~3mi. Held for dispatch correction."
 DN-100477,RTE-CHI-20250207-004,DRV-01017,HUB-CHI,2025-02-07T11:26:00,mechanical,"[02/07 11:26] RTE-CHI-20250207-004 / DRV-01017 @ CHI
 Liftgate fault mid-route. DRV-01017 completed 61 stops manual, 4 deferred. VEH flagged for shop."
 DN-100478,RTE-DET-20251104-001,DRV-01014,HUB-DET,2025-11-04T12:19:00,address,"[11/04 12:19] RTE-DET-20251104-001 / DRV-01014 @ DET
@@ -1091,8 +1085,6 @@ DN-100544,RTE-IND-20250221-001,DRV-01045,HUB-IND,2025-02-21T10:51:00,weather,"[0
 Whiteout conditions Indianapolis. Held 4 pkgs at hub, road closures on the north loop. POD delayed."
 DN-100545,RTE-DET-20250429-003,DRV-01014,HUB-DET,2025-04-29T17:41:00,traffic,"[04/29 17:41] RTE-DET-20250429-003 / DRV-01014 @ DET
 I-74 closure, major backup. ETA +90m. 1 stops missed cutoff."
-DN-100546,RTE-CHI-20251120-001,DRV-01048,HUB-CHI,2025-11-20T10:03:00,address,"[11/20 10:03] RTE-CHI-20251120-001 / DRV-01048 @ CHI
-Bad address on SHP-202511-000131. Geocode off by ~3mi. Held for dispatch correction."
 DN-100547,RTE-IND-20251107-004,DRV-01031,HUB-IND,2025-11-07T17:47:00,weather,"[11/07 17:47] RTE-IND-20251107-004 / DRV-01031 @ IND
 Freezing rain. Driver DRV-01031 pulled early for safety. 5 stops rolled to tomorrow."
 DN-100548,RTE-CIN-20251210-002,DRV-01003,HUB-CIN,2025-12-10T09:44:00,weather,"[12/10 09:44] RTE-CIN-20251210-002 / DRV-01003 @ CIN

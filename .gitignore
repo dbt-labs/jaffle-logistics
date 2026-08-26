@@ -1,0 +1,17 @@
+target/
+dbt_packages/
+dbt_modules/
+logs/
+.user.yml
+
+# DuckDB / local dev database files
+*.duckdb
+*.duckdb.wal
+
+# OS / editor cruft
+.DS_Store
+.vscode/
+.idea/
+
+# env files
+.env

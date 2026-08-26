@@ -219,13 +219,13 @@ SLK-99001,#ops-chi,"@gordon, @marla, @tokafor, @marcus",2025-01-15T09:05:00,INC-
 @gordon: just heard a semi jackknifed on the ramp — that's INC-2025-00417. everyone ok?
 @tokafor: driver's fine, unit's not. recovery en route, I'll open the work order
 @marla: holding remaining routes. RTE-CHI-20250115-201 is the one that went down
-@marcus: Kellerman already called. their freight is in this batch. going to be a credit conversation
+@marcus: Jaffle Equipment already called. their freight is in this batch. going to be a credit conversation
 @gordon: file the incident report today. let's get ahead of the tickets"
-SLK-99010,#accounts,"@marcus, @elaine, @dana",2025-07-18T11:00:00,CLI-0042,"@marcus: getting worried about Kellerman (CLI-0042). on-time's been sliding since the Q2 QBR and tickets are up
+SLK-99010,#accounts,"@marcus, @elaine, @dana",2025-07-18T11:00:00,CLI-0042,"@marcus: getting worried about Jaffle Equipment (CLI-0042). on-time's been sliding since the Q2 QBR and tickets are up
 @elaine: is it a CHI capacity thing or something systemic?
 @marcus: bit of both. moving them to watch. going to need a real plan before Q3
 @dana: strategic account, let's not let this become a churn story"
-SLK-99011,#accounts,"@marcus, @dana, @gordon",2025-10-15T15:30:00,CLI-0042,"@marcus: Kellerman (CLI-0042) is officially at-risk. they're evaluating alternatives
+SLK-99011,#accounts,"@marcus, @dana, @gordon",2025-10-15T15:30:00,CLI-0042,"@marcus: Jaffle Equipment (CLI-0042) is officially at-risk. they're evaluating alternatives
 @dana: ok this is a retention fire drill. save plan written?
 @marcus: yes, CRM-9030. dedicated CHI capacity + weekly scorecard + exec sponsor
 @gordon: ops will support the dedicated capacity for peak. let's not lose them"
@@ -241,4 +241,4 @@ SLK-99040,#dispatch,"@gordon, @marla, @alicia, @frank, @yolanda",2025-11-24T08:3
 @marla: CHI is slammed, watching the weather too — do NOT want a repeat of January
 @alicia: IND holding up post-mispick fix. scan-to-confirm is slowing us slightly but accuracy's good
 @frank: fleet's stretched, PMs deferred where safe. flag anything unsafe
-@yolanda: overlap risk with the Kellerman save plan — they get dedicated CHI capacity, protect it"
+@yolanda: overlap risk with the Jaffle Equipment save plan — they get dedicated CHI capacity, protect it"

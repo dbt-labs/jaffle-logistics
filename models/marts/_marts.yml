@@ -66,8 +66,8 @@ models:
 
   - name: fct_account_health
     description: >
-      Monthly account-health fact (grain: client-month). Surfaces the Kellerman
-      decline: on-time % down, ticket/incident counts up across 2025.
+      Monthly account-health fact (grain: client-month). Surfaces the Jaffle
+      Equipment decline: on-time % down, ticket/incident counts up across 2025.
     columns:
       - name: account_month_key
         tests: [unique, not_null]
