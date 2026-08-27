@@ -18,22 +18,35 @@ models:
   jaffle_logistics:
     staging:
       +materialized: view
+      +docs:
+        node_color: "#D2955C"
     intermediate:
       +materialized: view
     marts:
       +materialized: table
     context:
+      # Up-to-meta phase (chunk/reshape through the *_meta models): blue.
+      # Overridden to cyan below for the ai/ subfolder (up-to-knowledge-base),
+      # and per-model for the five *_hashed models, which sit between the two.
+      +docs:
+        node_color: "#7C93B0"
       ai:
-        # Real cloud AI-function-cost layer (embed() calls): chunk_embeddings,
-        # ticket_embeddings, knowledge_base, search. Their upstream
-        # int_chunks_hashed/int_tickets_hashed helpers stay outside this gate
-        # (models/context/) since they only compute a hash column, no AI call.
+        # Real cloud AI-function-cost layer (embed()/classify() calls): five
+        # independent per-source chains (legal_docs/incident_reports/crm_notes/
+        # call_transcripts/support_tickets)_{classify,embed,embedded_classified},
+        # plus knowledge_base and search. Their upstream *_hashed helpers stay
+        # outside this gate (models/context/) since they only compute a hash
+        # column, no AI call.
         # Disabled by default so a plain `dbt build` can never accidentally
         # trigger AI-function spend.
         # This is an actual selection-time gate (dbt won't build a disabled model
         # even under an explicit --select), not just a documentation convention.
         # Opt in per invocation: --vars '{ai_layer_enabled: true}'.
         +enabled: "{{ var('ai_layer_enabled', false) }}"
+        # Up-to-knowledge-base phase: cyan. knowledge_base itself overrides to
+        # purple, search overrides to unset, both in models/context/ai/_context_ai.yml.
+        +docs:
+          node_color: "#7FAFAF"
 
   # Same gate, same var, applied to the package's own runtime drift monitor
   # (embedding_canary), which also makes real embed() calls and is disabled by
@@ -47,6 +60,9 @@ models:
 seeds:
   jaffle_logistics:
     +quote_columns: false
+    # Source phase (the project's raw origin data): green.
+    +docs:
+      node_color: "#7FA37F"
     contracts:
       # BigQuery's schema autodetection infers this column as INT64 from the sample
       # values, then rejects the literal "97.0" text in the CSV. Force it explicitly
@@ -93,8 +109,8 @@ vars:
   # --- Cost guard ceilings --------------------------------------------------
   # Left at the package's own defaults (max_batch_rows: 10000, max_est_tokens:
   # 5000000) intentionally. Do NOT raise these until an embed()-spending build
-  # of models/context/ai/chunk_embeddings.sql or ticket_embeddings.sql has been
-  # explicitly approved, that's the whole point of the circuit breaker.
+  # of one of models/context/ai/*_embed.sql has been explicitly approved,
+  # that's the whole point of the circuit breaker.
   cost_per_1k_tokens: null
 
   # Snowflake-only: VECTOR's dimension is part of its type, so this must be a literal

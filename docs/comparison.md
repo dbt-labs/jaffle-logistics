@@ -75,8 +75,9 @@ problems (see [governance](governance.md)).
 
 ## Fixing it with classify()
 
-`chunk_classifications` and `ticket_classifications` label every chunk
-and ticket by content type: `account_assessment`, `contract_reference`,
+Each source's `*_classify` model labels every chunk and ticket record
+by content type, sharing one taxonomy and prompt across all five:
+`account_assessment`, `contract_reference`,
 `weather_disruption`, `vehicle_or_driver_incident`,
 `handling_or_warehouse_error`, or `routine_status`. Each label is a
 business category, not a judgment of how well the text is written, and
@@ -112,15 +113,28 @@ path to that question, and no regex a person could write in advance to
 catch every way an incident report might describe a storm.
 
 Raw, it fails the same way as the account demo: the top 10 is unrelated
-incidents' generic remediation lines plus `IR-9001::3` again. Filtered
-to `classification = 'weather_disruption'`, it mostly works: 8 of the
-top 9 results are tickets naming the January storm and its incident ID
-(`INC-2025-00417`) directly. `IR-9001`'s own summary, "a semi jackknifed
-on an icy on-ramp... during the Jan 14-16 winter storm," still doesn't
-crack the top 10 even filtered, plausibly because that text reads as
-`vehicle_or_driver_incident` as easily as `weather_disruption`. Filtering
-by category removes irrelevant categories; it doesn't guarantee the best
-chunk within a category outranks every other chunk sharing it.
+incidents' generic remediation lines plus `IR-9001::3` again. Filtered to
+`classification = 'weather_disruption'`, it mostly works: the top 10 is
+dominated by tickets naming the January storm and its incident ID
+(`INC-2025-00417`) directly, occasionally joined by an incident report
+whose remediation genuinely describes a weather-driven dispatch change.
+
+The exact mix isn't stable run to run. `classify()` isn't incremental
+(unlike `embed()`, it has no ADR-0023 cache metadata), so a full
+reclassification relabels the entire corpus fresh from the LLM every
+time, and the same unchanged text can land differently between runs.
+One incident-report remediation chunk, "Added a manual weather check to
+the dispatch board for this hub before morning departures," has been
+classified both `routine_status` and `weather_disruption` across
+different reclassification runs in this project's own testing, each
+time changing which rows pass the filter. `IR-9001`'s own summary, "a
+semi jackknifed on an icy on-ramp... during the Jan 14-16 winter storm,"
+hasn't cracked the top 10 in either version, plausibly because that text
+reads as `vehicle_or_driver_incident` as easily as `weather_disruption`.
+Filtering by category removes irrelevant categories; it doesn't
+guarantee the best chunk within a category outranks every other chunk
+sharing it, and, as this shows, it doesn't guarantee the same chunk gets
+the same category twice.
 
 ## Reading it together
 

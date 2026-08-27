@@ -57,11 +57,21 @@ against real output, not assumed correct because it's a governed model.
 
 ## The incremental-delta proof
 
-`chunk_embeddings` and `ticket_embeddings` are incremental, built on the
-package's six-column cache metadata (ADR-0023): a chunk or ticket whose
+Each source's `*_embed` model is incremental, built on the package's
+six-column cache metadata (ADR-0023): a chunk or ticket record whose
 text hasn't changed is never re-embedded. A rerun of the full AI layer
 with no content change reprocessed zero rows on all three cloud
 platforms. That's what makes running this layer on a schedule
 affordable instead of a recurring full-corpus embedding bill.
 
+## Catching an orphaned embedding after a re-chunk
+
+Each of the five `*_embed` models also carries a `relationships` test
+on `chunk_id` back to its own `*_hashed` upstream, the same
+`orphan_chunks`/`orphan_embeddings` pattern `dbt_context_engineering`
+ships in its own test suite (ADR-0023). If a source's chunking logic
+ever changes how its `chunk_id`s are produced, a `chunk_id` an embed
+table still holds but the current chunker no longer produces fails
+this test loudly, instead of sitting in the knowledge base as a
+permanent, undetected gap.
 
