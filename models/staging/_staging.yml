@@ -283,7 +283,7 @@ models:
         tests:
           - accepted_values:
               arguments:
-                values: ['QBR', 'call', 'plan']
+                values: ['QBR', 'call', 'plan', 'review']
       - name: sentiment
         tests:
           - accepted_values:

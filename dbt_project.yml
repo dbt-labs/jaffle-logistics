@@ -74,7 +74,12 @@ vars:
   embedding_model: "{{ 'snowflake-arctic-embed-m-v1.5' if target.type == 'snowflake' else 'databricks-gte-large-en' if target.type == 'databricks' else 'text-embedding-005' }}"
 
   # --- Chunking (deterministic, zero AI-function cost) ---------------------
-  chunk_target_tokens: 512
+  # 100, not the more typical 512, is deliberate: this seed corpus's transcripts and
+  # documents mostly run 80-225 tokens whole, so 512 would never actually split
+  # anything. Set small on purpose so a real `dbt build` produces real multi-chunk
+  # documents (chunk_id suffixes ::1, ::2, ::3...) to demonstrate and document,
+  # not just a single chunk per source artifact every time.
+  chunk_target_tokens: 100
   chunk_overlap_tokens: 0
 
   # --- Output-side cost control ---------------------------------------------
