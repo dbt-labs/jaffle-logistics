@@ -16,3 +16,6 @@ logs/
 
 # env files
 .env
+
+# MkDocs build output
+site/

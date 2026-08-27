@@ -1,0 +1,56 @@
+site_name: Jaffle Logistics
+site_description: >-
+  A worked example of context engineering in dbt: turning free-text
+  operational data into a governed, queryable knowledge base.
+repo_url: https://github.com/dbt-labs/jaffle-logistics
+repo_name: dbt-labs/jaffle-logistics
+edit_uri: edit/main/docs/
+
+# Flat .html files (comparison.html) instead of pretty-URL folders
+# (comparison/index.html). Pretty URLs rely on a web server resolving
+# a bare directory to its index.html; opened straight off disk via
+# file://, nothing does that resolution and links land on the folder.
+use_directory_urls: false
+
+theme:
+  name: material
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: deep orange
+      accent: deep orange
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: deep orange
+      accent: deep orange
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+  features:
+    - navigation.tracking
+    - navigation.top
+    - content.code.copy
+    - toc.follow
+
+extra_css:
+  - stylesheets/extra.css
+
+markdown_extensions:
+  - admonition
+  - tables
+  - toc:
+      permalink: true
+  - pymdownx.highlight
+  - pymdownx.superfences
+
+nav:
+  - Home: index.md
+  - The problem: the-problem.md
+  - Context engineering: context-engineering.md
+  - Comparison: comparison.md
+  - Governance: governance.md
+  - Multi-platform: multi-platform.md
+  - Roadmap: roadmap.md

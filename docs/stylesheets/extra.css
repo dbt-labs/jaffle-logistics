@@ -1,0 +1,23 @@
+/* Material's default sidebar width is 12.1rem each side; shaving 30% off both
+   (~8.5rem) and handing the reclaimed width to the content grid so diagrams
+   render larger. */
+.md-sidebar {
+  width: 8.5rem;
+}
+
+.md-grid {
+  max-width: 68rem;
+}
+
+/* Material's built-in "deep orange" palette is brighter/redder than dbt's
+   brand orange. Override the exact hex (approximated from the brand swatch)
+   for the header bar, links, and highlighted text, in both color schemes. */
+[data-md-color-scheme="default"],
+[data-md-color-scheme="slate"] {
+  --md-primary-fg-color: #D2470A;
+  --md-primary-fg-color--light: #E8703D;
+  --md-primary-fg-color--dark: #A83A08;
+  --md-accent-fg-color: #D2470A;
+  --md-typeset-a-color: #D2470A;
+}
+
