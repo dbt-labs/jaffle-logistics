@@ -13,6 +13,16 @@ models:
   # chunk_id uniqueness is the key gate: it also guards attach_metadata's
   # functional-dependency contract (a broken FD fans out the join and fails
   # uniqueness loudly).
+  #
+  # Five sources, five independent end-to-end paths (chunk/reshape -> hash ->
+  # classify -> embed -> embedded_classified in models/context/ai/), unioned
+  # only at knowledge_base. This mirrors dbt_context_engineering's documented
+  # usage of knowledge_base() (ADR-0006): a conformed union of many
+  # independently-maintained sources, not a single pre-unified corpus. In a
+  # real system these five sources would genuinely arrive via different
+  # systems on different schedules; this project uses one shared classify()
+  # taxonomy and prompt across all five since it's a worked example, not
+  # because the sources are actually identical.
   - name: int_transcript_turns
     description: >
       One row per spoken turn in a call transcript (unit = turn), exploded from the
@@ -31,71 +41,105 @@ models:
       - name: turn_text
         tests: [not_null]
 
-  - name: int_context_documents
-    description: >
-      Unified client-scoped document source (legal_docs + incident_reports +
-      crm_notes) in a common shape, with a synthetic citation_url and client_id
-      resolved (incident reports reach client via shipment). Grain: one row per
-      source document; doc_key unique across sources.
-    columns:
-      - name: doc_key
-        description: "Unique source-document id across all doc sources."
-        tests: [unique, not_null]
-      - name: source_type
-        tests:
-          - not_null
-          - accepted_values:
-              arguments:
-                values: ['legal_doc', 'incident_report', 'crm_note']
-      - name: body
-        tests: [not_null]
-
   - name: chunk_transcripts
     description: "Token-bounded chunks of transcript turns (never spanning a transcript)."
     columns:
       - name: chunk_id
         tests: [unique, not_null]
 
-  - name: split_context_docs
-    description: "Documents split into one row per sentence (layer-1 splitter), feeding chunk_docs."
+  - name: transcript_chunks_meta
+    description: "Transcript chunks with client_id / call_date attached (attach_metadata)."
+    columns:
+      - name: chunk_id
+        tests: [unique, not_null]
+
+  - name: int_legal_docs_documents
+    description: "Legal docs reshaped with a synthetic citation_url, feeding split_legal_docs."
+    columns:
+      - name: doc_id
+        tests: [unique, not_null]
+      - name: body
+        tests: [not_null]
+
+  - name: split_legal_docs
+    description: "Legal docs split into one row per sentence (layer-1 splitter), feeding chunk_legal_docs."
     columns:
       - name: sentence_id
         tests: [unique, not_null]
 
-  - name: chunk_docs
-    description: "Token-bounded chunks of document sentences (never spanning a document)."
+  - name: chunk_legal_docs
+    description: "Token-bounded chunks of legal-doc sentences (never spanning a document)."
     columns:
       - name: chunk_id
         tests: [unique, not_null]
 
-  - name: transcript_chunks_meta
-    description: "Transcript chunks with client_id attached (attach_metadata)."
+  - name: legal_docs_chunks_meta
+    description: "Legal-doc chunks with client_id / citation_url / artifact_ts attached (attach_metadata)."
     columns:
       - name: chunk_id
         tests: [unique, not_null]
 
-  - name: doc_chunks_meta
-    description: "Document chunks with client_id / source_type / citation_url attached."
-    columns:
-      - name: chunk_id
-        tests: [unique, not_null]
-
-  - name: chunks_with_meta
+  - name: int_incident_reports_documents
     description: >
-      The unified, metadata-carrying chunk corpus (transcripts + documents) in one
-      common shape, the last model with zero AI-function cost (see the Phase 2
-      note above) and the gate before any real AI-function spend.
+      Incident reports reshaped with a synthetic citation_url and client_id
+      resolved via the affected shipment (incident reports carry no client_id
+      column directly). Feeds split_incident_reports.
+    columns:
+      - name: report_id
+        tests: [unique, not_null]
+      - name: body
+        tests: [not_null]
+
+  - name: split_incident_reports
+    description: "Incident reports split into one row per sentence (layer-1 splitter), feeding chunk_incident_reports."
+    columns:
+      - name: sentence_id
+        tests: [unique, not_null]
+
+  - name: chunk_incident_reports
+    description: "Token-bounded chunks of incident-report sentences (never spanning a report)."
     columns:
       - name: chunk_id
-        description: "Unique chunk id across the whole corpus."
         tests: [unique, not_null]
-      - name: chunk_text
+
+  - name: incident_reports_chunks_meta
+    description: "Incident-report chunks with client_id / citation_url / artifact_ts attached (attach_metadata)."
+    columns:
+      - name: chunk_id
+        tests: [unique, not_null]
+
+  - name: int_crm_notes_documents
+    description: "CRM notes reshaped with a synthetic citation_url, feeding split_crm_notes."
+    columns:
+      - name: note_id
+        tests: [unique, not_null]
+      - name: body
         tests: [not_null]
-      - name: source_type
-        tests:
-          - not_null
-          - accepted_values:
-              arguments:
-                values: ['call_transcript', 'legal_doc', 'incident_report', 'crm_note']
-      - name: citation_url
-        tests: [not_null]
+
+  - name: split_crm_notes
+    description: "CRM notes split into one row per sentence (layer-1 splitter), feeding chunk_crm_notes."
+    columns:
+      - name: sentence_id
+        tests: [unique, not_null]
+
+  - name: chunk_crm_notes
+    description: "Token-bounded chunks of CRM-note sentences (never spanning a note)."
+    columns:
+      - name: chunk_id
+        tests: [unique, not_null]
+
+  - name: crm_notes_chunks_meta
+    description: "CRM-note chunks with client_id / citation_url / artifact_ts attached (attach_metadata)."
+    columns:
+      - name: chunk_id
+        tests: [unique, not_null]
+
+  - name: ticket_records_meta
+    description: >
+      Support tickets reshaped straight into the shared chunk-shape, deliberately
+      without calling chunk(): a ticket body is already the atomic embedding unit, so
+      chunk_seq is always 1 by construction, not by an assumption about ticket length.
+      Contrasts with the four chunk_*_meta models above, which genuinely chunk.
+    columns:
+      - name: chunk_id
+        tests: [unique, not_null]

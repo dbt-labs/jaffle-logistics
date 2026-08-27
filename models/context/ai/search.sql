@@ -33,8 +33,8 @@
 -- or +enabled, so an unconditional embed() call here would break parsing
 -- project-wide on duckdb.
 {% set is_duckdb = target.type == 'duckdb' %}
-{% set performance_query = "[0.0, 0.0, 0.0]" if is_duckdb else dbt_context_engineering.embed("'late deliveries and what is driving them'") %}
-{% set chicago_storm_query = "[0.0, 0.0, 0.0]" if is_duckdb else dbt_context_engineering.embed("'truck accident during the Chicago winter storm'") %}
+{% set performance_query = "cast([0.0, 0.0, 0.0] as double[3])" if is_duckdb else dbt_context_engineering.embed("'late deliveries and what is driving them'") %}
+{% set chicago_storm_query = "cast([0.0, 0.0, 0.0] as double[3])" if is_duckdb else dbt_context_engineering.embed("'truck accident during the Chicago winter storm'") %}
 {{ config(materialized='table') }}
 
 with jaffle_equipment as (

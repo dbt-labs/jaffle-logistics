@@ -1,40 +1,66 @@
 version: 2
 
 # ===========================================================================
-# Embedding + retrieval layer: real cloud AI-function cost (embed() calls),
-# distinct from the deterministic layer's zero-AI-function-cost, ordinary-
-# cloud-compute-cost SQL. These models stay disabled by default
+# Embedding + retrieval layer: real cloud AI-function cost (embed()/classify()
+# calls), distinct from the deterministic layer's zero-AI-function-cost,
+# ordinary-cloud-compute-cost SQL. These models stay disabled by default
 # (ai_layer_enabled var in dbt_project.yml); build them only after AI-function
-# spend is explicitly approved. Scope: chunking -> embedding -> knowledge base
-# -> vector search.
-# (Classify/extract enrichment and eval/governance were intentionally left out
-# of this cut.)
+# spend is explicitly approved.
+#
+# Five sources, five independent hash -> classify -> embed -> embedded_classified
+# chains (legal_docs, incident_reports, crm_notes, call_transcripts,
+# support_tickets), unioned only at knowledge_base. Each source keeps its own
+# end-to-end path instead of a shared corpus, reflecting that in a real
+# system these would arrive via different systems on different schedules.
 # ===========================================================================
 
 models:
   # --------------------------------------------------------- embeddings
-  - name: chunk_embeddings
+  - name: legal_docs_embed
     description: >
-      Governed incremental embeddings of the chunk corpus (embed()), with the
-      six-column cache metadata (ADR-0023). One embedding model (var embedding_model)
-      across the whole KB. embedding is the vector; chunk_text/client_id/citation_url/
-      artifact_ts are carried for the knowledge base.
+      Governed incremental embeddings of legal-doc chunks (embed()), with the
+      six-column cache metadata (dbt_context_engineering ADR-0023). One embedding model (var embedding_model)
+      across the whole KB.
     columns:
       - name: chunk_id
         tests: [unique, not_null]
 
-  - name: ticket_embeddings
-    description: "Governed incremental embeddings of whole tickets (short -> embed whole, no chunking); the second KB source, contrasting chunked docs with whole-doc embedding."
+  - name: incident_reports_embed
+    description: "Governed incremental embeddings of incident-report chunks (embed()). Same pattern as legal_docs_embed."
     columns:
-      - name: ticket_id
+      - name: chunk_id
+        tests: [unique, not_null]
+
+  - name: crm_notes_embed
+    description: "Governed incremental embeddings of CRM-note chunks (embed()). Same pattern as legal_docs_embed."
+    columns:
+      - name: chunk_id
+        tests: [unique, not_null]
+
+  - name: call_transcripts_embed
+    description: "Governed incremental embeddings of call-transcript chunks (embed()). Same pattern as legal_docs_embed."
+    columns:
+      - name: chunk_id
+        tests: [unique, not_null]
+
+  - name: support_tickets_embed
+    description: >
+      Governed incremental embeddings of whole support-ticket records (embed()); the
+      one source that never calls chunk() (see ticket_records_meta). Same governed
+      pattern as legal_docs_embed otherwise.
+    columns:
+      - name: chunk_id
         tests: [unique, not_null]
 
   # ------------------------------------------------ knowledge base + search
   - name: knowledge_base
     description: >
       Account-scoped KB in the package common shape (source_type, source_id,
-      account_key, text, embedding, ts, citation_url) unioning chunk + ticket
-      embeddings. Fine-grained artifact type is preserved in citation_url.
+      account_key, text, embedding, ts, citation_url) unioning all five
+      independently-embedded sources. source_type is a real per-source label
+      (Legal Document / Incident Report / CRM Notes / Call Transcript / Support
+      Ticket); the finer-grained artifact id is preserved in citation_url and
+      source_id.
     columns:
       - name: source_id
         tests: [not_null]
@@ -42,7 +68,7 @@ models:
         tests:
           - accepted_values:
               arguments:
-                values: ['context_chunk', 'ticket']
+                values: ['Legal Document', 'Incident Report', 'CRM Notes', 'Call Transcript', 'Support Ticket']
 
   - name: search
     description: "Retrieval demos: Jaffle Equipment account-scoped story + Chicago-storm thematic vector search (each embeds its query once)."

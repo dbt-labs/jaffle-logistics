@@ -1,7 +1,7 @@
 -- Carry the transcript's client_id onto every transcript chunk (attach_metadata:
 -- a DISTINCT collapse + join on partition_key, plain portable SQL, zero AI-function cost).
--- source_type and citation_url are added in chunks_with_meta (constant for this
--- source), keeping the metadata_relation here to the columns it actually holds.
+-- source_type and citation_url are added in call_transcripts_hashed (constant for
+-- this source), keeping the metadata_relation here to the columns it actually holds.
 {{ config(materialized='table') }}
 
 {{ dbt_context_engineering.attach_metadata(
