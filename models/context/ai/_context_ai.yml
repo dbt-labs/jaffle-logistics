@@ -20,37 +20,70 @@ models:
     description: >
       Governed incremental embeddings of legal-doc chunks (embed()), with the
       six-column cache metadata (dbt_context_engineering ADR-0023). One embedding model (var embedding_model)
-      across the whole KB.
+      across the whole KB. The relationships test below is ADR-0023's
+      orphan_chunks/orphan_embeddings pattern: it fails loudly if a chunk_id in this
+      table stops existing in legal_docs_hashed after a re-chunk, instead of leaving
+      a silent, permanent gap.
     columns:
       - name: chunk_id
-        tests: [unique, not_null]
+        tests:
+          - unique
+          - not_null
+          - relationships:
+              arguments:
+                to: ref('legal_docs_hashed')
+                field: chunk_id
 
   - name: incident_reports_embed
     description: "Governed incremental embeddings of incident-report chunks (embed()). Same pattern as legal_docs_embed."
     columns:
       - name: chunk_id
-        tests: [unique, not_null]
+        tests:
+          - unique
+          - not_null
+          - relationships:
+              arguments:
+                to: ref('incident_reports_hashed')
+                field: chunk_id
 
   - name: crm_notes_embed
     description: "Governed incremental embeddings of CRM-note chunks (embed()). Same pattern as legal_docs_embed."
     columns:
       - name: chunk_id
-        tests: [unique, not_null]
+        tests:
+          - unique
+          - not_null
+          - relationships:
+              arguments:
+                to: ref('crm_notes_hashed')
+                field: chunk_id
 
   - name: call_transcripts_embed
     description: "Governed incremental embeddings of call-transcript chunks (embed()). Same pattern as legal_docs_embed."
     columns:
       - name: chunk_id
-        tests: [unique, not_null]
+        tests:
+          - unique
+          - not_null
+          - relationships:
+              arguments:
+                to: ref('call_transcripts_hashed')
+                field: chunk_id
 
   - name: support_tickets_embed
     description: >
       Governed incremental embeddings of whole support-ticket records (embed()); the
-      one source that never calls chunk() (see ticket_records_meta). Same governed
-      pattern as legal_docs_embed otherwise.
+      one source that never calls chunk(), reshaping each ticket body straight to the
+      chunk-shaped output instead. Same governed pattern as legal_docs_embed otherwise.
     columns:
       - name: chunk_id
-        tests: [unique, not_null]
+        tests:
+          - unique
+          - not_null
+          - relationships:
+              arguments:
+                to: ref('support_tickets_hashed')
+                field: chunk_id
 
   # ------------------------------------------------ knowledge base + search
   - name: knowledge_base
@@ -61,6 +94,9 @@ models:
       (Legal Document / Incident Report / CRM Notes / Call Transcript / Support
       Ticket); the finer-grained artifact id is preserved in citation_url and
       source_id.
+    config:
+      docs:
+        node_color: "#9E85AC"
     columns:
       - name: source_id
         tests: [not_null]
@@ -72,3 +108,6 @@ models:
 
   - name: search
     description: "Retrieval demos: Jaffle Equipment account-scoped story + Chicago-storm thematic vector search (each embeds its query once)."
+    config:
+      docs:
+        node_color: null

@@ -38,7 +38,8 @@ What's still open:
   and it still occupies a slot in the candidate set as a
   low-information vector. The direct fix is a floor in the `chunk()`
   macro that merges a below-threshold trailing chunk into its
-  predecessor, so `chunk_transcripts` and `chunk_docs` both inherit it.
+  predecessor, so `chunk_transcripts` and the three document chunkers
+  (`chunk_legal_docs` / `chunk_incident_reports` / `chunk_crm_notes`) all inherit it.
 - **A generation step.** `search.sql` hands back ranked rows, not an
   answer, even once the above is fixed. Completing the pattern means a
   `generate()`/`ai_complete()`-calling model that takes the top-k
@@ -99,3 +100,50 @@ without changing the retrieval story this project tells.
 
 None of that is built. It's the next worked example this project could
 tell, alongside the retrieval one.
+
+## Path C: materialization, sized for a demo, not designed for production
+
+Every model's materialization in this project was picked for this
+demo's row counts (dozens to low hundreds of rows per source) and fast
+iteration, not evaluated against what a real production corpus would
+need. Four specific decisions are unresolved:
+
+- **`classify()` has no incremental delta pattern.** Every `*_classify`
+  model is a `table`, and unlike `*_embed` (incremental, with
+  dbt_context_engineering's ADR-0023 cache metadata reprocessing only
+  new/changed rows), `classify()` reclassifies the whole corpus fresh
+  from the LLM on every single build. At this project's scale that's
+  free. At real corpus sizes it becomes the dominant cost and runtime
+  driver, and nothing here, or in `dbt_context_engineering` itself,
+  designs what a `classify()`-side content-hash cache mirroring
+  `embed()`'s would look like.
+- **The join and union layers undo `embed()`'s incrementality.** Each
+  `*_embedded_classified` model and `knowledge_base` itself are
+  `table`, so every build fully drops and rewrites them by scanning the
+  entire upstream `*_embed` and `*_classify` tables, not just what
+  changed. `embed()`'s incremental delta only bounds the embedding
+  layer's own cost; the downstream join and five-way union still pay
+  for a full corpus rewrite every time. Whether these should become
+  incremental themselves, and what an incremental union across five
+  independently-refreshed sources would even mean, hasn't been
+  designed.
+- **The `*_hashed` layer is a view, recomputed on every read.** Each
+  source's `content_hash()` computation lives in a `view`
+  (`legal_docs_hashed`, `incident_reports_hashed`, and so on), so both
+  that source's `*_classify` and `*_embed` models independently re-scan
+  the same upstream `*_chunks_meta` table and recompute the same hash.
+  Free at this scale; real duplicated compute at real scale, and no
+  decision has been made about the point at which that view should
+  become a table.
+- **No indexing story for `knowledge_base` at scale.** `search.sql`
+  already notes an opt-in vector-index service exists (`dbt
+  run-operation create_vector_index`) as an alternative to brute-force
+  cosine similarity. Nothing here decides when a real corpus should
+  switch to it, or how a `table`-materialized `knowledge_base` that
+  gets fully rewritten every build would coexist with an external index
+  that has its own refresh cadence.
+
+None of this is a bug at this project's scale. It's an explicit
+disclosure that materialization here followed "what's simplest to
+demo," not "what a production-sized version of this pattern would
+require," and that gap hasn't been designed yet.

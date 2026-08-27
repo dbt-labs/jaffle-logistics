@@ -39,6 +39,3 @@ ceiling while staying in dbt:
 - **[Roadmap](roadmap.md)** is honest about what's deliberately not built
   yet.
 
-Nothing here is production advice for a real logistics company. It's a
-project built to show what context engineering in dbt actually looks like,
-end to end, against data messy enough to make the exercise worth doing.

@@ -18,11 +18,18 @@ models:
   jaffle_logistics:
     staging:
       +materialized: view
+      +docs:
+        node_color: "#D2955C"
     intermediate:
       +materialized: view
     marts:
       +materialized: table
     context:
+      # Up-to-meta phase (chunk/reshape through the *_meta models): blue.
+      # Overridden to cyan below for the ai/ subfolder (up-to-knowledge-base),
+      # and per-model for the five *_hashed models, which sit between the two.
+      +docs:
+        node_color: "#7C93B0"
       ai:
         # Real cloud AI-function-cost layer (embed()/classify() calls): five
         # independent per-source chains (legal_docs/incident_reports/crm_notes/
@@ -36,6 +43,10 @@ models:
         # even under an explicit --select), not just a documentation convention.
         # Opt in per invocation: --vars '{ai_layer_enabled: true}'.
         +enabled: "{{ var('ai_layer_enabled', false) }}"
+        # Up-to-knowledge-base phase: cyan. knowledge_base itself overrides to
+        # purple, search overrides to unset, both in models/context/ai/_context_ai.yml.
+        +docs:
+          node_color: "#7FAFAF"
 
   # Same gate, same var, applied to the package's own runtime drift monitor
   # (embedding_canary), which also makes real embed() calls and is disabled by
@@ -49,6 +60,9 @@ models:
 seeds:
   jaffle_logistics:
     +quote_columns: false
+    # Source phase (the project's raw origin data): green.
+    +docs:
+      node_color: "#7FA37F"
     contracts:
       # BigQuery's schema autodetection infers this column as INT64 from the sample
       # values, then rejects the literal "97.0" text in the CSV. Force it explicitly

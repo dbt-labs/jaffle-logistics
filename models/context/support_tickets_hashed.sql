@@ -1,10 +1,11 @@
 -- content_hash needs a real column upstream of the embedding model (not a
 -- same-SELECT alias, BigQuery won't resolve that, and the guard/log can't
 -- meter it otherwise). Hash the EXACT string handed to embed() (chunk_text,
--- the whole ticket body: ticket_records_meta deliberately never calls
--- chunk(), see that model). Zero AI-function cost (still ordinary cloud
--- compute cost on Snowflake/BigQuery/Databricks, free only on local DuckDB).
-{{ config(materialized='view') }}
+-- the whole ticket body: a support ticket body is already the atomic
+-- embedding unit, so ticket_records_meta deliberately never calls chunk()).
+-- Zero AI-function cost (still ordinary cloud compute cost on
+-- Snowflake/BigQuery/Databricks, free only on local DuckDB).
+{{ config(materialized='view', docs={'node_color': '#7FAFAF'}) }}
 
 select
     chunk_id,

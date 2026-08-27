@@ -6,7 +6,7 @@
 -- added here rather than a dedicated wrapper model. Zero AI-function cost
 -- (still ordinary cloud compute cost on Snowflake/BigQuery/Databricks, free
 -- only on local DuckDB).
-{{ config(materialized='view') }}
+{{ config(materialized='view', docs={'node_color': '#7FAFAF'}) }}
 
 select
     chunk_id,
