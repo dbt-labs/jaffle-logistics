@@ -6,6 +6,12 @@ repo_url: https://github.com/dbt-labs/jaffle-logistics
 repo_name: dbt-labs/jaffle-logistics
 edit_uri: edit/main/docs/
 
+# Flat .html files (comparison.html) instead of pretty-URL folders
+# (comparison/index.html). Pretty URLs rely on a web server resolving
+# a bare directory to its index.html; opened straight off disk via
+# file://, nothing does that resolution and links land on the folder.
+use_directory_urls: false
+
 theme:
   name: material
   palette:
@@ -24,7 +30,6 @@ theme:
         icon: material/brightness-4
         name: Switch to light mode
   features:
-    - navigation.instant
     - navigation.tracking
     - navigation.top
     - content.code.copy
