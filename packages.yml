@@ -1,2 +1,3 @@
 packages:
-  - git: "https://github.com/dbt-labs/dbt-context-engineering.git"
+  - private: dbt-labs/dbt-context-engineering
+    provider: "github"
