@@ -207,15 +207,13 @@ Two shapes, run once per source, plus two singletons: five
 (the five `*_embed` models, `search`, and `embedding_canary`); the
 other five call `classify()`, dispatched to `AI_CLASSIFY` on Snowflake,
 `ai_classify` on Databricks, and a schema-constrained `AI.GENERATE` on
-BigQuery. Twelve AI-calling jobs total, one gate. That's up from four
-in an earlier cut of this project that unified all five sources into
-one shared corpus before hashing; this version deliberately un-unified
-them to match `knowledge_base()`'s own documented usage pattern
-(independent per-source paths, converged only at the union), trading
-five-times the near-duplicate boilerplate for isolation each source
-would realistically need: a bad batch or a rate limit on one source's
-`classify()` call doesn't block the other four's `dbt build --select`
-independently.
+BigQuery. Twelve AI-calling jobs total, one gate. Five independent
+per-source paths, rather than one shared corpus unified before hashing,
+matches `knowledge_base()`'s own documented usage pattern (independent
+per-source paths, converged only at the union), trading five-times the
+near-duplicate boilerplate for isolation each source would realistically
+need: a bad batch or a rate limit on one source's `classify()` call
+doesn't block the other four's `dbt build --select` independently.
 
 That gate is `ai_layer_enabled` in `dbt_project.yml`, `false` by
 default. It's a real dbt `+enabled` config, so a disabled model can't

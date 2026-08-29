@@ -1,9 +1,13 @@
 # Comparison: two narratives, one account
 
 The same account's story, told twice: once by hand-written joins, once
-by semantic retrieval. Both ran against real data. The join-based story
-holds up completely. The retrieval story doesn't, on its own, and that
-gap is the useful part of this page.
+by semantic retrieval. Both ran against real data. The join returns
+every artifact tied to the account by an exact identifier, all 181 rows
+of it; the coherent narrative below exists only because eight of those
+rows were picked out by hand. Semantic retrieval does better than manual assembly, but only once it
+moves past raw cosine similarity. Raw similarity fails for a specific,
+tested reason; a business-scoped `classify()` pass fixes most of it,
+and that improvement is what this page demonstrates.
 
 ## The account: Jaffle Equipment (`CLI-0042`)
 
@@ -138,7 +142,7 @@ the same category twice.
 
 ## Reading it together
 
-The join-based story is exact, complete, and blind to anything not
+The join-based story is exact, exhaustive, and blind to anything not
 named explicitly. Raw semantic search asks the right kind of question
 and fails for a specific, tested reason. A real, business-scoped
 `classify()` taxonomy fixes most of that, with one disclosed gap left
