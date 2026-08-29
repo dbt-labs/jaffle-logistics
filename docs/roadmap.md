@@ -1,10 +1,10 @@
 # Roadmap: what's deliberately not built yet
 
 This project covers chunking, embedding, classification, the knowledge
-base, and vector search: retrieval, plus a real, tested content filter
-for one of retrieval's real failure modes. Two things stay unbuilt:
-hardening that retrieval further, and a separate sentiment/triage
-classify-and-eval layer on top of it.
+base, and vector search. That's retrieval, plus a real, tested content
+filter for one of retrieval's real failure modes. Two things remain
+unbuilt. One is hardening that retrieval further. The other is a
+separate sentiment/triage classify-and-eval layer on top of it.
 
 ## Path A: what's still missing before this is a real RAG pattern
 
@@ -112,8 +112,9 @@ need. Four specific decisions are unresolved:
   model is a `table`, and unlike `*_embed` (incremental, with
   dbt_context_engineering's ADR-0023 cache metadata reprocessing only
   new/changed rows), `classify()` reclassifies the whole corpus fresh
-  from the LLM on every single build. At this project's scale that's
-  free. At real corpus sizes it becomes the dominant cost and runtime
+  from the LLM on every single build. At this project's scale, with
+  dozens to low hundreds of rows per source, that's cheap. At real
+  corpus sizes it becomes the dominant cost and runtime
   driver, and nothing here, or in `dbt_context_engineering` itself,
   designs what a `classify()`-side content-hash cache mirroring
   `embed()`'s would look like.
@@ -132,7 +133,7 @@ need. Four specific decisions are unresolved:
   (`legal_docs_hashed`, `incident_reports_hashed`, and so on), so both
   that source's `*_classify` and `*_embed` models independently re-scan
   the same upstream `*_chunks_meta` table and recompute the same hash.
-  Free at this scale; real duplicated compute at real scale, and no
+  Cheap at this scale; real duplicated compute at real scale, and no
   decision has been made about the point at which that view should
   become a table.
 - **No indexing story for `knowledge_base` at scale.** `search.sql`
