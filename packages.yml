@@ -1,3 +1,4 @@
 packages:
   - private: dbt-labs/dbt-context-engineering
     provider: "github"
+    revision: treven/materialization_and_guardrails

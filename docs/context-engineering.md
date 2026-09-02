@@ -222,5 +222,12 @@ triggers AI spend. Turning it on is one flag:
 `--vars '{ai_layer_enabled: true}'`, covering `embedding_canary` too, so
 enabling spend is one decision, not several.
 
+A second, package-level gate sits underneath that one: `generate`,
+`classify`, `embed`, `extract`, and `ai_agg` each refuse to fire unless
+`ai_functions_enabled` is `true` for the target, checked inside the
+function itself rather than a config value a caller has to remember to
+use. `dbt_project.yml` sets `ai_functions_enabled` from the same
+`ai_layer_enabled` var, so the one flag above still enables both.
+
 See [governance](governance.md) for the cost guards, audit log, and
 incremental design behind that gate.
