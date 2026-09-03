@@ -14,6 +14,7 @@
 {{ config(
     materialized='incremental',
     unique_key='chunk_id',
+    full_refresh=var('allow_full_reembed', false),
     pre_hook=[
         "{{ dbt_context_engineering.guard_batch(ref('crm_notes_hashed'), 'chunk_text', filter=dbt_context_engineering.incremental_delta_predicate('chunk_id', dbt_context_engineering.embedding_fn_fingerprint(model=var('embedding_model')), 'embedding_fn_fingerprint', content_hash_column='content_hash')) }}",
         "{{ dbt_context_engineering.log_ai_run('embed', model_name=var('embedding_model'), relation=ref('crm_notes_hashed'), input_column='chunk_text', filter=dbt_context_engineering.incremental_delta_predicate('chunk_id', dbt_context_engineering.embedding_fn_fingerprint(model=var('embedding_model')), 'embedding_fn_fingerprint', content_hash_column='content_hash')) }}"

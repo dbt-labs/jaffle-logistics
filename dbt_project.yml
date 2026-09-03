@@ -14,6 +14,13 @@ clean-targets:
   - "target"
   - "dbt_packages"
 
+# dbt_context_engineering no longer self-creates ai_run_log (its own bootstrap raced
+# under concurrent threads). Runs once, serially, before any model, so there's nothing
+# else to race against yet. depends_on is required: ref() inside the macro's
+# conditional isn't statically inferable by dbt's parser without it.
+on-run-start:
+  - "-- depends_on: {{ ref('ai_run_log') }}\n{{ dbt_context_engineering.create_ai_run_log_table() }}"
+
 models:
   jaffle_logistics:
     staging:
@@ -42,6 +49,9 @@ models:
         # This is an actual selection-time gate (dbt won't build a disabled model
         # even under an explicit --select), not just a documentation convention.
         # Opt in per invocation: --vars '{ai_layer_enabled: true}'.
+        # Note: even with this on, the package's own dispatch-layer check
+        # (ai_functions_enabled, below) still has to be true or the AI call itself
+        # raises. Both trace back to the one ai_layer_enabled switch.
         +enabled: "{{ var('ai_layer_enabled', false) }}"
         # Up-to-knowledge-base phase: cyan. knowledge_base itself overrides to
         # purple, search overrides to unset, both in models/context/ai/_context_ai.yml.
@@ -80,6 +90,18 @@ vars:
   # are truly free. Override per invocation, not by editing this file:
   # --vars '{ai_layer_enabled: true}'.
   ai_layer_enabled: false
+
+  # dbt_context_engineering's own dispatch-layer gate (ADR-0030): every AI function
+  # raises unless this is true for the target, independent of whether the calling
+  # model is even +enabled. Kept tied to the one ai_layer_enabled switch above rather
+  # than a second knob to remember to flip.
+  ai_functions_enabled: "{{ var('ai_layer_enabled', false) }}"
+
+  # Required on every AI-calling incremental model's own full_refresh config
+  # (ADR-0030's require_full_refresh_gate): makes a full re-embed require an explicit
+  # opt-in at invocation time, rather than a bare --full-refresh silently re-billing
+  # the whole corpus. --vars '{allow_full_reembed: true}'.
+  allow_full_reembed: false
 
   # Per-warehouse model endpoints (region/workspace-dependent; adjust if unavailable).
   # Required by dbt_context_engineering for compile-time embedding fingerprinting
