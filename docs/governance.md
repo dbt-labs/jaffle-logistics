@@ -1,18 +1,17 @@
 # Governance: what keeps AI-function spend safe to run
 
-Turning on `ai_functions_enabled` starts real, billed `embed()` and
+Turning on `ai_layer_enabled` starts real, billed `embed()` and
 `classify()` calls. This project uses `dbt_context_engineering`'s
 governed pattern to keep that safe: a cost guard before spend happens,
 an audit log of what ran, and an incremental design that keeps reruns
 cheap.
 
-`ai_functions_enabled` gates two things at once. `dbt_project.yml` keys
-`models/context/ai/`'s `+enabled:` config on it directly, a
-selection-time gate: dbt skips those models entirely, not just a
-documentation convention. The package's own `generate`/`classify`/
-`embed`/etc. also refuse to fire unless the same var is `true` for the
-target, checked inside the function itself so there's no config value
-to forget to route a call through. One flag covers both.
+`ai_layer_enabled` is a selection-time gate, not the only one. The
+package's own `generate`/`classify`/`embed`/etc. also refuse to fire
+unless `ai_functions_enabled` is `true` for the target, checked inside
+the function itself so there's no config value to forget to route a
+call through. `dbt_project.yml` ties `ai_functions_enabled` to the same
+`ai_layer_enabled` var, so flipping one flag still covers both.
 
 ## The cost guard
 

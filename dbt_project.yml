@@ -48,14 +48,11 @@ models:
         # trigger AI-function spend.
         # This is an actual selection-time gate (dbt won't build a disabled model
         # even under an explicit --select), not just a documentation convention.
-        # Opt in per invocation: --vars '{ai_functions_enabled: true}'.
-        # Keyed directly on ai_functions_enabled, dbt_context_engineering's own
-        # dispatch-layer var (ADR-0030, enforced inside every generate/classify/
-        # extract/embed/ai_agg call via require_ai_functions_enabled): a
-        # selected model with this false would fail with that macro's raised
-        # compiler error rather than being skipped, so the skip and the raise
-        # agree on the same flag.
-        +enabled: "{{ var('ai_functions_enabled', false) }}"
+        # Opt in per invocation: --vars '{ai_layer_enabled: true}'.
+        # Note: even with this on, the package's own dispatch-layer check
+        # (ai_functions_enabled, below) still has to be true or the AI call itself
+        # raises. Both trace back to the one ai_layer_enabled switch.
+        +enabled: "{{ var('ai_layer_enabled', false) }}"
         # Up-to-knowledge-base phase: cyan. knowledge_base itself overrides to
         # purple, search overrides to unset, both in models/context/ai/_context_ai.yml.
         +docs:
@@ -68,7 +65,7 @@ models:
   # ones to remember.
   dbt_context_engineering:
     monitoring:
-      +enabled: "{{ var('ai_functions_enabled', false) }}"
+      +enabled: "{{ var('ai_layer_enabled', false) }}"
 
 seeds:
   jaffle_logistics:
@@ -91,14 +88,14 @@ vars:
   # of the project on Snowflake/BigQuery/Databricks still costs ordinary cloud
   # compute either way, just never AI-function billing; only local DuckDB runs
   # are truly free. Override per invocation, not by editing this file:
-  # --vars '{ai_functions_enabled: true}'.
-  #
-  # This is dbt_context_engineering's own var (ADR-0030's dispatch-layer gate:
-  # every generate/classify/extract/embed/ai_agg call raises a compiler error
-  # unless this is true for the target). The +enabled: gates above key off
-  # this same var directly, so one flag controls both the selection-time skip
-  # and the package's own dispatch-layer check.
-  ai_functions_enabled: false
+  # --vars '{ai_layer_enabled: true}'.
+  ai_layer_enabled: false
+
+  # dbt_context_engineering's own dispatch-layer gate (ADR-0030): every AI function
+  # raises unless this is true for the target, independent of whether the calling
+  # model is even +enabled. Kept tied to the one ai_layer_enabled switch above rather
+  # than a second knob to remember to flip.
+  ai_functions_enabled: "{{ var('ai_layer_enabled', false) }}"
 
   # Required on every AI-calling incremental model's own full_refresh config
   # (ADR-0030's require_full_refresh_gate): makes a full re-embed require an explicit

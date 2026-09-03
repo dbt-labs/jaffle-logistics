@@ -4,7 +4,7 @@ version: 2
 # Embedding + retrieval layer: real cloud AI-function cost (embed()/classify()
 # calls), distinct from the deterministic layer's zero-AI-function-cost,
 # ordinary-cloud-compute-cost SQL. These models stay disabled by default
-# (ai_functions_enabled var in dbt_project.yml); build them only after AI-function
+# (ai_layer_enabled var in dbt_project.yml); build them only after AI-function
 # spend is explicitly approved.
 #
 # Five sources, five independent hash -> classify -> embed -> embedded_classified
