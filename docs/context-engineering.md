@@ -136,7 +136,7 @@ directly.
 
 Same governed pattern as the embedding models: `guard_batch` and
 `log_ai_run` as pre-hooks, `complete_ai_run` as a post-hook, gated
-behind `ai_layer_enabled`. Not incremental, though: `classify()` has no
+behind `ai_functions_enabled`. Not incremental, though: `classify()` has no
 cache metadata the way `embed()` does, so every build reclassifies each
 source's whole corpus. At this demo's scale that's a small, disclosed
 cost; a larger corpus would need the equivalent of `embed()`'s caching
@@ -215,19 +215,19 @@ near-duplicate boilerplate for isolation each source would realistically
 need: a bad batch or a rate limit on one source's `classify()` call
 doesn't block the other four's `dbt build --select` independently.
 
-That gate is `ai_layer_enabled` in `dbt_project.yml`, `false` by
+That gate is `ai_functions_enabled` in `dbt_project.yml`, `false` by
 default. It's a real dbt `+enabled` config, so a disabled model can't
 build even under an explicit `--select`. A plain `dbt build` never
 triggers AI spend. Turning it on is one flag:
-`--vars '{ai_layer_enabled: true}'`, covering `embedding_canary` too, so
+`--vars '{ai_functions_enabled: true}'`, covering `embedding_canary` too, so
 enabling spend is one decision, not several.
 
-A second, package-level gate sits underneath that one: `generate`,
+The same var also drives a second, package-level gate: `generate`,
 `classify`, `embed`, `extract`, and `ai_agg` each refuse to fire unless
 `ai_functions_enabled` is `true` for the target, checked inside the
 function itself rather than a config value a caller has to remember to
-use. `dbt_project.yml` sets `ai_functions_enabled` from the same
-`ai_layer_enabled` var, so the one flag above still enables both.
+use. One flag, checked at both the selection-time `+enabled` gate above
+and inside the functions themselves.
 
 See [governance](governance.md) for the cost guards, audit log, and
 incremental design behind that gate.
