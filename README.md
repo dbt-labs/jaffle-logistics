@@ -40,7 +40,7 @@ up-to-meta, up-to-knowledge-base, knowledge base):
 | `models/intermediate/` | Cross-source joins (shipment touchpoints, SLA rollups) |
 | `models/marts/` | Client/driver/hub dimensions and fact tables |
 | `models/context/` | The context-engineering pipeline: chunk/reshape and hash, one independent chain per source (legal docs, incident reports, CRM notes, call transcripts, support tickets) |
-| `models/context/ai/` | `embed()`/`classify()` calls per source, plus `knowledge_base` (unions all five) and `search` — gated behind `ai_layer_enabled`, real billed cloud calls |
+| `models/context/ai/` | `embed()`/`classify()` calls per source, plus `knowledge_base` (unions all five) and `search` — gated behind `ai_functions_enabled`, real billed cloud calls |
 | `seeds/` | Source data as CSVs, one per system above, plus two unused eval seeds for a classify-and-eval layer that isn't built yet |
 | `analyses/` | The deterministic (join-only) and narrative demo queries |
 | `macros/` | Portable cross-warehouse helpers and AI prompt definitions |

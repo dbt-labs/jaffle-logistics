@@ -9,7 +9,7 @@ models:
   #   - Snowflake/BigQuery/Databricks runs of this layer: ordinary cloud compute
   #     cost (warehouse credits for the SQL itself), same as any other model.
   #   - models/context/ai/*: cloud AI-function cost, the real, billed embed()
-  #     calls, gated separately (see dbt_project.yml's ai_layer_enabled var).
+  #     calls, gated separately (see dbt_project.yml's ai_functions_enabled var).
   # chunk_id uniqueness is the key gate: it also guards attach_metadata's
   # functional-dependency contract (a broken FD fans out the join and fails
   # uniqueness loudly).
