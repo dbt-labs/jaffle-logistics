@@ -10,6 +10,56 @@ knowledge base via
 [`dbt_context_engineering`](https://github.com/dbt-labs/dbt-context-engineering).
 The full story, with real query output, lives in [`docs/`](docs/index.md).
 
+## How to use this project
+
+### Prerequisites
+
+- dbt Core 1.8 or higher
+- An adapter for whichever warehouse you want to target: `dbt-duckdb`, `dbt-snowflake`, `dbt-bigquery`, or `dbt-databricks`
+
+
+### Get running locally with DuckDB
+
+DuckDB is the fastest path to seeing the project run, and the only target where the AI layer can never bill, since DuckDB has no `embed()` or `classify()` implementation.
+
+1. Install dependencies.
+
+   ```bash
+   dbt deps
+   ```
+
+2. Add a profile named `jaffle-logistics` to `~/.dbt/profiles.yml`.
+
+   ```yaml
+   jaffle-logistics:
+     target: duckdb
+     outputs:
+       duckdb:
+         type: duckdb
+         path: jaffle_logistics.duckdb
+         threads: 4
+   ```
+
+3. Build the project.
+
+   ```bash
+   dbt build
+   ```
+
+   This seeds the source CSVs and builds the staging, intermediate, and marts models. The AI layer under `models/context/ai/` is skipped. `dbt_project.yml` sets `ai_functions_enabled: false` by default, so a plain `dbt build` never triggers a billed `embed()` or `classify()` call.
+
+### Running the AI layer
+
+Setting `ai_functions_enabled: true` builds the models under `models/context/ai/` instead of skipping them. Point your profile at Snowflake, BigQuery, or Databricks for that to mean real work: `embed()` and `classify()` calls that hit a real model endpoint and bill.
+
+```bash
+dbt build --vars '{"ai_functions_enabled": true}'
+```
+
+The same flag also builds these models on DuckDB, but each one detects the DuckDB target and substitutes a hardcoded placeholder, either a zero vector or a fixed label, instead of calling `embed()`/`classify()`. The build succeeds and produces real rows, just with fake, structurally-compatible values instead of real AI output. So "DuckDB is the only target where the AI layer can never bill" describes this substitution, rather than a build failure or a skipped model.
+
+See [governance](docs/governance.md) for what the cost guards and audit log around this call do.
+
 ## Lineage
 
 The context-engineering pipeline, colored by phase (source, staging,
@@ -64,3 +114,9 @@ root):
 - [Governance](docs/governance.md) — cost guards, audit log, incremental reruns
 - [Multi-platform](docs/multi-platform.md) — cross-engine SQL portability fixes
 - [Roadmap](docs/roadmap.md) — what's deliberately not built yet
+
+## Support & maintenance
+
+This project is provided as-is, without SLAs. It's a worked example, not a maintained product, and maintenance is best-effort.
+
+To report an issue or request a change, open a GitHub issue or discussion on this repo.
