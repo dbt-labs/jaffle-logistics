@@ -2,6 +2,10 @@ name: 'jaffle_logistics'
 version: '1.0.0'
 config-version: 2
 
+# vars.yml requires dbt-core 1.12+ (no VARS_FILE_NAME support before that; vars.yml is
+# silently ignored, and every var reading from it falls back to its hardcoded default).
+require-dbt-version: [">=1.12.0"]
+
 profile: 'jaffle-logistics'
 
 model-paths: ["models"]

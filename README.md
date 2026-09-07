@@ -14,7 +14,7 @@ The full story, with real query output, lives in [`docs/`](docs/index.md).
 
 ### Prerequisites
 
-- dbt Core 1.8 or higher
+- dbt Core 1.12 or higher (required for `vars.yml` support)
 - An adapter for whichever warehouse you want to target: `dbt-duckdb`, `dbt-snowflake`, `dbt-bigquery`, or `dbt-databricks`
 
 
