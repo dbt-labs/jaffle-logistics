@@ -87,6 +87,17 @@ seeds:
   # package ships this seed disabled by default, paired with its own monitoring +enabled: false;
   # without this override the canary model turns on via ai_functions_enabled but its baseline
   # seed stays off, so assert_embedding_canary_matches_baseline can never actually run.
+  #
+  # KNOWN-ISSUE(dbt-core#16128): with ai_functions_enabled true, `dbtf build --target duckdb`
+  # fails loading this seed. Fusion's duckdb adapter doubles the package root when resolving a
+  # package-owned seed's file path (.../dbt_packages/dbt_context_engineering/dbt_packages/
+  # dbt_context_engineering/seeds/embedding_canary_baseline.csv), so the file is never found.
+  # Confirmed Fusion-engine-only (dbt-core 1.12 loads it fine on every adapter, and Fusion loads
+  # it fine on snowflake/bigquery/databricks; only the duckdb+Fusion combination fails) and
+  # confirmed unrelated to this project or to dbt_context_engineering's own seed-paths config
+  # (both correct). Not fixable here — tracked upstream at
+  # https://github.com/dbt-labs/dbt-core/issues/16128. Resolves automatically once dbt-fusion
+  # ships a fix; no project-side action needed then.
   dbt_context_engineering:
     +enabled: "{{ var('ai_functions_enabled', false) }}"
 
