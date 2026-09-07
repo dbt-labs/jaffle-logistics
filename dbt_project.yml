@@ -83,61 +83,10 @@ seeds:
       +column_types:
         sla_ontime_pct: "{{ 'float64' if target.type == 'bigquery' else 'float' }}"
 
-vars:
-  # Master switch for real cloud AI-function spend (embed() calls) across the
-  # whole project: our own models/context/ai/ layer and
-  # dbt_context_engineering's embedding_canary monitor. false = both disabled,
-  # so a plain `dbt build` never calls a billed AI function. Running the rest
-  # of the project on Snowflake/BigQuery/Databricks still costs ordinary cloud
-  # compute either way, just never AI-function billing; only local DuckDB runs
-  # are truly free. Override per invocation, not by editing this file:
-  # --vars '{ai_functions_enabled: true}'.
-  #
-  # This is dbt_context_engineering's own var (ADR-0030's dispatch-layer gate:
-  # every generate/classify/extract/embed/ai_agg call raises a compiler error
-  # unless this is true for the target). The +enabled: gates above key off
-  # this same var directly, so one flag controls both the selection-time skip
-  # and the package's own dispatch-layer check.
-  ai_functions_enabled: false
+  # Mirrors the models: dbt_context_engineering: monitoring: +enabled override above. The
+  # package ships this seed disabled by default, paired with its own monitoring +enabled: false;
+  # without this override the canary model turns on via ai_functions_enabled but its baseline
+  # seed stays off, so assert_embedding_canary_matches_baseline can never actually run.
+  dbt_context_engineering:
+    +enabled: "{{ var('ai_functions_enabled', false) }}"
 
-  # Required on every AI-calling incremental model's own full_refresh config
-  # (ADR-0030's require_full_refresh_gate): makes a full re-embed require an explicit
-  # opt-in at invocation time, rather than a bare --full-refresh silently re-billing
-  # the whole corpus. --vars '{allow_full_reembed: true}'.
-  allow_full_reembed: false
-
-  # Per-warehouse model endpoints (region/workspace-dependent; adjust if unavailable).
-  # Required by dbt_context_engineering for compile-time embedding fingerprinting
-  # (see models/monitoring/embedding_canary.sql) even on targets/models that never
-  # actually call generate()/embed() this cut, since dbt Jinja-renders every model
-  # file during parsing regardless of --select or a model's own +enabled config.
-  model_generate: "{{ 'mistral-large2' if target.type == 'snowflake' else 'databricks-claude-haiku-4-5' if target.type == 'databricks' else 'gemini-2.5-flash' }}"
-  embedding_model: "{{ 'snowflake-arctic-embed-m-v1.5' if target.type == 'snowflake' else 'databricks-gte-large-en' if target.type == 'databricks' else 'text-embedding-005' }}"
-
-  # --- Chunking (deterministic, zero AI-function cost) ---------------------
-  # 100, not the more typical 512, is deliberate: this seed corpus's transcripts and
-  # documents mostly run 80-225 tokens whole, so 512 would never actually split
-  # anything. Set small on purpose so a real `dbt build` produces real multi-chunk
-  # documents (chunk_id suffixes ::1, ::2, ::3...) to demonstrate and document,
-  # not just a single chunk per source artifact every time.
-  chunk_target_tokens: 100
-  chunk_overlap_tokens: 0
-
-  # --- Output-side cost control ---------------------------------------------
-  # Output cap on generate (AI_COMPLETE/ai_query max_tokens). No thinking knob on Cortex/Databricks.
-  max_output_tokens: 1024
-  # BigQuery AI.* thinking budget, cuts Gemini 2.5 Flash's default thinking output for
-  # these structured tasks. Ignored (var default none) on Snowflake/Databricks.
-  bq_thinking_budget: 0
-  # bq_connection: left unset on BigQuery, try the service-account / default path first.
-
-  # --- Cost guard ceilings --------------------------------------------------
-  # Left at the package's own defaults (max_batch_rows: 10000, max_est_tokens:
-  # 5000000) intentionally. Do NOT raise these until an embed()-spending build
-  # of one of models/context/ai/*_embed.sql has been explicitly approved,
-  # that's the whole point of the circuit breaker.
-  cost_per_1k_tokens: null
-
-  # Snowflake-only: VECTOR's dimension is part of its type, so this must be a literal
-  # matching embedding_model's output dimension (768 for snowflake-arctic-embed-m-v1.5).
-  embedding_canary_vector_dimension: 768
