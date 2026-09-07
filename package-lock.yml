@@ -2,7 +2,7 @@ packages:
   - name: dbt_context_engineering
     private: dbt-labs/dbt-context-engineering
     provider: github
-    revision: 21f5307bb686e75f38943cd90794b98efd80b9d6
+    revision: aa3c1c5ad3d3fd658153eeebf4410df2503adb6c
   - name: dbt_utils
     package: dbt-labs/dbt_utils
     version: 1.4.1

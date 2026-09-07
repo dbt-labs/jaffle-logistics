@@ -14,7 +14,7 @@ The full story, with real query output, lives in [`docs/`](docs/index.md).
 
 ### Prerequisites
 
-- dbt Core 1.8 or higher
+- dbt Core 1.12 or higher (required for `vars.yml` support)
 - An adapter for whichever warehouse you want to target: `dbt-duckdb`, `dbt-snowflake`, `dbt-bigquery`, or `dbt-databricks`
 
 
@@ -114,6 +114,12 @@ root):
 - [Governance](docs/governance.md) — cost guards, audit log, incremental reruns
 - [Multi-platform](docs/multi-platform.md) — cross-engine SQL portability fixes
 - [Roadmap](docs/roadmap.md) — what's deliberately not built yet
+
+## Known issues
+
+External issues that block or limit part of this project. Tracked upstream; not fixable here.
+
+- **[dbt-core#16128](https://github.com/dbt-labs/dbt-core/issues/16128)**: on the Fusion engine (`dbt-fusion`), the DuckDB adapter fails to load a seed owned by an installed package. Symptom is an `IO Error: No files found` against a doubled path (`.../dbt_packages/<pkg>/dbt_packages/<pkg>/seeds/<file>.csv`). Confirmed Fusion-engine-only: `dbt-core` 1.12 loads the same seed fine on every adapter, and Fusion loads it fine on Snowflake, BigQuery, and Databricks; only the DuckDB adapter under Fusion fails. In this project it only affects `dbt_context_engineering`'s `embedding_canary_baseline` seed, which only builds when `ai_functions_enabled: true`. A plain `dbt build`/`dbtf build` is unaffected, since that seed stays disabled by default. Resolves automatically once dbt-fusion ships a fix; no project-side action needed.
 
 ## Support & maintenance
 
