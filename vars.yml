@@ -13,7 +13,7 @@ vars:
   # unless this is true for the target). The +enabled: gates above key off
   # this same var directly, so one flag controls both the selection-time skip
   # and the package's own dispatch-layer check.
-  ai_functions_enabled: true
+  ai_functions_enabled: false
 
   # Required on every AI-calling incremental model's own full_refresh config
   # (ADR-0030's require_full_refresh_gate): makes a full re-embed require an explicit
