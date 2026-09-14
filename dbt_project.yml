@@ -74,6 +74,16 @@ models:
     monitoring:
       +enabled: "{{ var('ai_functions_enabled', false) }}"
 
+analyses:
+  jaffle_logistics:
+    # the_pattern/00 and /01 only touch pre-AI models and would parse fine either
+    # way, but 02-06 ref() the models/context/ai/ layer gated above. Same flag,
+    # same lockstep: an enabled analysis ref()ing a disabled model is a parse
+    # error (DisabledDependency), so the whole walkthrough moves with the gate
+    # rather than splitting into two folders for two files' sake.
+    the_pattern:
+      +enabled: "{{ var('ai_functions_enabled', false) }}"
+
 seeds:
   jaffle_logistics:
     +quote_columns: false

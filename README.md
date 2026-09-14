@@ -79,6 +79,7 @@ up-to-meta, up-to-knowledge-base, knowledge base):
 │       └── ai/
 ├── seeds/
 ├── analyses/
+│   └── the_pattern/
 ├── macros/
 ├── tests/
 └── docs/
@@ -93,6 +94,7 @@ up-to-meta, up-to-knowledge-base, knowledge base):
 | `models/context/ai/` | `embed()`/`classify()` calls per source, plus `knowledge_base` (unions all five) and `search` — gated behind `ai_functions_enabled`, real billed cloud calls |
 | `seeds/` | Source data as CSVs, one per system above, plus two unused eval seeds for a classify-and-eval layer that isn't built yet |
 | `analyses/` | The deterministic (join-only) and narrative demo queries |
+| `analyses/the_pattern/` | The chunk/embed/combine/search pipeline broken into seven numbered, runnable steps, one query per stage |
 | `macros/` | Portable cross-warehouse helpers and AI prompt definitions |
 | `tests/` | Singular tests, including an AI-run-log completeness check |
 | `docs/` | The full write-up, built as an mkdocs-material site |
