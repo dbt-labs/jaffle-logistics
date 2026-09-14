@@ -18,6 +18,16 @@ clean-targets:
   - "target"
   - "dbt_packages"
 
+flags:
+  # Off by default in dbt-core 1.12 for backward compat: without it, analysis-path
+  # project configs (the `analyses:` block below) are silently ignored, since
+  # dbt-core falls back to resolving analysis config from the `models:` block and
+  # an `analysis/`-prefixed FQN instead (dbt/context/context_config.py). Needed
+  # here so analyses/the_pattern's own +enabled config actually takes effect;
+  # without it, the_pattern's ai_functions_enabled gate silently never applies
+  # and `dbt parse` fails whenever the AI layer is disabled (the default).
+  require_corrected_analysis_fqns: true
+
 # dbt_context_engineering no longer self-creates ai_run_log (its own bootstrap raced
 # under concurrent threads). Runs once, serially, before any model, so there's nothing
 # else to race against yet. depends_on is required: ref() inside the macro's
