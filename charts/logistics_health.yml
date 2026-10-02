@@ -2,17 +2,45 @@ title: "Jaffle Logistics health"
 source: logistics
 
 queries:
-  jaffle_equipment_monthly:
+  delivery_performance:
     sql: |
       select
           month,
-          ontime_pct,
-          sla_target,
-          ticket_count as support_tickets,
-          incident_count as incidents
+          'On-time delivery' as metric,
+          ontime_pct as value
       from SB_ANALYTICS.DBT_SBERG.FCT_ACCOUNT_HEALTH
       where client_name = 'Jaffle Equipment'
-      order by month
+
+      union all
+
+      select
+          month,
+          'SLA target' as metric,
+          sla_target as value
+      from SB_ANALYTICS.DBT_SBERG.FCT_ACCOUNT_HEALTH
+      where client_name = 'Jaffle Equipment'
+
+      order by month, metric
+
+  customer_burden:
+    sql: |
+      select
+          month,
+          'Support tickets' as event_type,
+          ticket_count as events
+      from SB_ANALYTICS.DBT_SBERG.FCT_ACCOUNT_HEALTH
+      where client_name = 'Jaffle Equipment'
+
+      union all
+
+      select
+          month,
+          'Incidents' as event_type,
+          incident_count as events
+      from SB_ANALYTICS.DBT_SBERG.FCT_ACCOUNT_HEALTH
+      where client_name = 'Jaffle Equipment'
+
+      order by month, event_type
 
   incidents_by_type:
     sql: |
@@ -40,39 +68,28 @@ queries:
       order by avg_ontime_pct
 
 charts:
-  on_time_trend:
+  delivery_performance:
     type: line
-    query: jaffle_equipment_monthly
+    query: delivery_performance
     x: month
-    y: ontime_pct
-    title: "Jaffle Equipment on-time delivery %"
+    y: value
+    color: metric
+    title: "On-time delivery vs. SLA target"
 
-  sla_target_trend:
-    type: line
-    query: jaffle_equipment_monthly
-    x: month
-    y: sla_target
-    title: "Jaffle Equipment SLA target %"
-
-  support_ticket_trend:
+  customer_burden:
     type: bar
-    query: jaffle_equipment_monthly
+    query: customer_burden
     x: month
-    y: support_tickets
-    title: "Jaffle Equipment support tickets"
-
-  incident_trend:
-    type: bar
-    query: jaffle_equipment_monthly
-    x: month
-    y: incidents
-    title: "Jaffle Equipment client-attributed incidents"
+    y: events
+    color: event_type
+    title: "Support tickets and incidents by month"
 
   incident_mix:
     type: bar
     query: incidents_by_type
     x: incident_type
     y: incidents
+    color: incident_type
     title: "Incidents by type"
 
   account_kpis_table:
@@ -81,16 +98,12 @@ charts:
     title: "Account health KPIs"
 
 rows:
-  - title: "Delivery performance"
-    cols:
-      - on_time_trend
-      - sla_target_trend
+  - title: "Jaffle Equipment delivery performance"
+    rows:
+      - delivery_performance
   - title: "Customer and operational burden"
     cols:
-      - support_ticket_trend
-      - incident_trend
-  - title: "Operations"
-    cols:
+      - customer_burden
       - incident_mix
   - title: "Account comparison"
     rows:
