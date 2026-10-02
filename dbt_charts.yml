@@ -1,0 +1,5 @@
+sources:
+  logistics:
+    type: dbt_profile
+    profile: jaffle-logistics
+    target: default

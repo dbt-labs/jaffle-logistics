@@ -1,6 +1,16 @@
 version: 2
 
 models:
+  - name: time_spine_daily
+    description: "Daily time spine for Semantic Layer time-based joins and aggregations, covering 2020 through 2029."
+    time_spine:
+      standard_granularity_column: date_day
+    columns:
+      - name: date_day
+        description: "Daily timestamp used as the standard Semantic Layer time grain."
+        granularity: day
+
+
   - name: dim_hubs
     description: "Hub dimension."
     columns:
@@ -32,49 +42,363 @@ models:
 
   - name: fct_shipments
     description: "Shipment fact (grain: shipment) with touchpoint counts."
+    semantic_model:
+      enabled: true
+    agg_time_dimension: created_at
     columns:
       - name: shipment_id
         tests: [unique, not_null]
+        entity:
+          type: primary
+          name: shipment
       - name: client_id
+        entity:
+          type: foreign
+          name: client
         tests:
           - relationships:
               arguments:
                 to: ref('dim_clients')
                 field: client_id
+      - name: origin_hub_id
+        entity:
+          type: foreign
+          name: hub
+      - name: route_id
+        entity:
+          type: foreign
+          name: route
+      - name: created_at
+        granularity: day
+        dimension:
+          type: time
+      - name: delivered_at
+        granularity: day
+        dimension:
+          type: time
+      - name: client_name
+        dimension:
+          type: categorical
+      - name: client_tier
+        dimension:
+          type: categorical
+      - name: origin_city
+        dimension:
+          type: categorical
+      - name: service_level
+        dimension:
+          type: categorical
       - name: status
         tests:
           - accepted_values:
               arguments:
                 values: ['delivered', 'delayed', 'failed', 'returned']
+        dimension:
+          type: categorical
+      - name: is_ontime
+        dimension:
+          type: categorical
+    metrics:
+      - name: shipment_count
+        label: Shipments
+        description: "Number of shipments created."
+        type: simple
+        agg: count
+        expr: 1
+      - name: delivered_shipment_count
+        label: Delivered shipments
+        description: "Number of shipments with delivered status, the project's on-time definition."
+        type: simple
+        agg: count
+        expr: 1
+        filter: |
+          {{ Dimension('shipment__status') }} = 'delivered'
+      - name: delayed_shipment_count
+        label: Delayed shipments
+        description: "Number of shipments with delayed status."
+        type: simple
+        agg: count
+        expr: 1
+        filter: |
+          {{ Dimension('shipment__status') }} = 'delayed'
+      - name: failed_or_returned_shipment_count
+        label: Failed or returned shipments
+        description: "Number of shipments that failed or were returned."
+        type: simple
+        agg: count
+        expr: 1
+        filter: |
+          {{ Dimension('shipment__status') }} in ('failed', 'returned')
+      - name: total_shipment_touchpoints
+        label: Shipment touchpoints
+        description: "Total structured and text-extracted artifacts stitched to shipments."
+        type: simple
+        agg: sum
+        expr: touchpoint_count
+        fill_nulls_with: 0
+      - name: average_touchpoints_per_shipment
+        label: Average touchpoints per shipment
+        description: "Average number of stitched operational and customer artifacts per shipment."
+        type: simple
+        agg: average
+        expr: touchpoint_count
+      - name: on_time_delivery_rate
+        label: On-time delivery rate
+        description: "Delivered shipments divided by all shipments; returned as a ratio from 0 to 1."
+        type: ratio
+        numerator: delivered_shipment_count
+        denominator: shipment_count
 
   - name: fct_incidents
     description: "Incident fact (grain: incident) with report/work-order flags."
+    semantic_model:
+      enabled: true
+    agg_time_dimension: occurred_at
     columns:
       - name: incident_id
         tests: [unique, not_null]
+        entity:
+          type: primary
+          name: incident
+      - name: shipment_id
+        entity:
+          type: foreign
+          name: shipment
       - name: hub_id
+        entity:
+          type: foreign
+          name: hub
         tests:
           - relationships:
               arguments:
                 to: ref('dim_hubs')
                 field: hub_id
+      - name: route_id
+        entity:
+          type: foreign
+          name: route
+      - name: driver_id
+        entity:
+          type: foreign
+          name: driver
+      - name: vehicle_id
+        entity:
+          type: foreign
+          name: vehicle
+      - name: occurred_at
+        granularity: day
+        dimension:
+          type: time
       - name: incident_type
         tests:
           - accepted_values:
               arguments:
                 values: ['damage', 'delay', 'accident', 'mispick', 'dispute', 'weather']
+        dimension:
+          type: categorical
+      - name: severity
+        dimension:
+          type: categorical
+      - name: hub_city
+        dimension:
+          type: categorical
+      - name: has_report
+        dimension:
+          type: categorical
+    metrics:
+      - name: incident_count
+        label: Incidents
+        description: "Number of operational incidents."
+        type: simple
+        agg: count
+        expr: 1
+      - name: severe_incident_count
+        label: Severe incidents
+        description: "Number of incidents with severity 3 or 4."
+        type: simple
+        agg: count
+        expr: 1
+        filter: |
+          {{ Dimension('incident__severity') }} >= 3
+      - name: weather_incident_count
+        label: Weather incidents
+        description: "Number of incidents classified as weather-related."
+        type: simple
+        agg: count
+        expr: 1
+        filter: |
+          {{ Dimension('incident__incident_type') }} = 'weather'
+      - name: handling_incident_count
+        label: Handling incidents
+        description: "Number of damage or mispick incidents, used to track handling failures."
+        type: simple
+        agg: count
+        expr: 1
+        filter: |
+          {{ Dimension('incident__incident_type') }} in ('damage', 'mispick')
+      - name: reported_incident_count
+        label: Incidents with reports
+        description: "Number of incidents with at least one incident report."
+        type: simple
+        agg: count
+        expr: 1
+        filter: |
+          {{ Dimension('incident__has_report') }} = true
+      - name: incident_report_rate
+        label: Incident report rate
+        description: "Incidents with a report divided by all incidents; returned as a ratio from 0 to 1."
+        type: ratio
+        numerator: reported_incident_count
+        denominator: incident_count
+      - name: average_incident_severity
+        label: Average incident severity
+        description: "Average severity on the project's 1-to-4 scale."
+        type: simple
+        agg: average
+        expr: severity
+      - name: incident_work_order_count
+        label: Incident-linked work orders
+        description: "Number of fleet work orders linked to incidents."
+        type: simple
+        agg: sum
+        expr: work_order_count
+        fill_nulls_with: 0
 
   - name: fct_account_health
     description: >
       Monthly account-health fact (grain: client-month). Surfaces the Jaffle
       Equipment decline: on-time % down, ticket/incident counts up across 2025.
+    semantic_model:
+      enabled: true
+    agg_time_dimension: reporting_month
     columns:
       - name: account_month_key
         tests: [unique, not_null]
+        entity:
+          type: primary
+          name: account_month
       - name: client_id
+        entity:
+          type: foreign
+          name: client
         tests:
           - not_null
           - relationships:
               arguments:
                 to: ref('dim_clients')
                 field: client_id
+      - name: month
+        granularity: month
+        dimension:
+          type: time
+          name: reporting_month
+
+      - name: client_name
+        dimension:
+          type: categorical
+      - name: tier
+        dimension:
+          type: categorical
+      - name: health
+        dimension:
+          type: categorical
+      - name: ontime_vs_target
+        dimension:
+          type: categorical
+    derived_semantics:
+      dimensions:
+        - name: sla_status
+          label: SLA status
+          type: categorical
+          expr: "case when ontime_vs_target >= 0 then 'meeting_sla' else 'below_sla' end"
+    metrics:
+      - name: account_month_count
+        label: Account months
+        description: "Number of observed client-months."
+        type: simple
+        agg: count
+        expr: 1
+      - name: account_health_shipment_count
+        label: Account-health shipments
+        description: "Shipments represented in the client-month account-health series."
+        type: simple
+        agg: sum
+        expr: shipments
+        fill_nulls_with: 0
+      - name: support_ticket_count
+        label: Support tickets
+        description: "Support tickets opened for clients in the selected period."
+        type: simple
+        agg: sum
+        expr: ticket_count
+        fill_nulls_with: 0
+      - name: account_incident_count
+        label: Client-attributed incidents
+        description: "Incidents attributed to clients through an affected shipment."
+        type: simple
+        agg: sum
+        expr: incident_count
+        fill_nulls_with: 0
+      - name: average_monthly_on_time_pct
+        label: Average monthly on-time percentage
+        description: "Average of client-month on-time percentages; use on_time_delivery_rate for shipment-weighted rollups."
+        type: simple
+        agg: average
+        expr: ontime_pct
+      - name: average_sla_target_pct
+        label: Average SLA target percentage
+        description: "Average contracted on-time target across selected client-months."
+        type: simple
+        agg: average
+        expr: sla_target
+      - name: average_on_time_vs_target_pct
+        label: Average on-time variance to SLA
+        description: "Average percentage-point difference between monthly on-time performance and SLA target."
+        type: simple
+        agg: average
+        expr: ontime_vs_target
+      - name: months_meeting_sla_count
+        label: Months meeting SLA
+        description: "Number of client-months at or above the contracted on-time target."
+        type: simple
+        agg: count
+        expr: 1
+        fill_nulls_with: 0
+        filter: |
+          {{ Dimension('account_month__sla_status') }} = 'meeting_sla'
+      - name: months_below_sla_count
+        label: Months below SLA
+        description: "Number of client-months below the contracted on-time target."
+        type: simple
+        agg: count
+        expr: 1
+        fill_nulls_with: 0
+        filter: |
+          {{ Dimension('account_month__sla_status') }} = 'below_sla'
+
+      - name: sla_attainment_rate
+        label: SLA attainment rate
+        description: "Client-months meeting SLA divided by all observed client-months; returned as a ratio from 0 to 1."
+        type: ratio
+        numerator: months_meeting_sla_count
+        denominator: account_month_count
+      - name: support_tickets_per_100_shipments
+        label: Support tickets per 100 shipments
+        description: "Support burden normalized by shipment volume."
+        type: derived
+        expr: "100.0 * support_tickets / shipments"
+        input_metrics:
+          - name: support_ticket_count
+            alias: support_tickets
+          - name: account_health_shipment_count
+            alias: shipments
+      - name: incidents_per_100_shipments
+        label: Incidents per 100 shipments
+        description: "Client-attributed incidents normalized by shipment volume."
+        type: derived
+        expr: "100.0 * incidents / shipments"
+        input_metrics:
+          - name: account_incident_count
+            alias: incidents
+          - name: account_health_shipment_count
+            alias: shipments

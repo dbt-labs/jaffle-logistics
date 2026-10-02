@@ -1,0 +1,97 @@
+title: "Jaffle Logistics health"
+source: logistics
+
+queries:
+  jaffle_equipment_monthly:
+    sql: |
+      select
+          month,
+          ontime_pct,
+          sla_target,
+          ticket_count as support_tickets,
+          incident_count as incidents
+      from SB_ANALYTICS.DBT_SBERG.FCT_ACCOUNT_HEALTH
+      where client_name = 'Jaffle Equipment'
+      order by month
+
+  incidents_by_type:
+    sql: |
+      select
+          incident_type,
+          count(*) as incidents
+      from SB_ANALYTICS.DBT_SBERG.FCT_INCIDENTS
+      group by incident_type
+      order by incidents desc
+
+  account_kpis:
+    sql: |
+      select
+          client_name,
+          round(avg(ontime_pct), 1) as avg_ontime_pct,
+          round(avg(sla_target), 1) as sla_target_pct,
+          round(
+              100.0 * avg(case when ontime_vs_target >= 0 then 1 else 0 end),
+              1
+          ) as sla_attainment_pct,
+          sum(ticket_count) as support_tickets,
+          sum(incident_count) as incidents
+      from SB_ANALYTICS.DBT_SBERG.FCT_ACCOUNT_HEALTH
+      group by client_name
+      order by avg_ontime_pct
+
+charts:
+  on_time_trend:
+    type: line
+    query: jaffle_equipment_monthly
+    x: month
+    y: ontime_pct
+    title: "Jaffle Equipment on-time delivery %"
+
+  sla_target_trend:
+    type: line
+    query: jaffle_equipment_monthly
+    x: month
+    y: sla_target
+    title: "Jaffle Equipment SLA target %"
+
+  support_ticket_trend:
+    type: bar
+    query: jaffle_equipment_monthly
+    x: month
+    y: support_tickets
+    title: "Jaffle Equipment support tickets"
+
+  incident_trend:
+    type: bar
+    query: jaffle_equipment_monthly
+    x: month
+    y: incidents
+    title: "Jaffle Equipment client-attributed incidents"
+
+  incident_mix:
+    type: bar
+    query: incidents_by_type
+    x: incident_type
+    y: incidents
+    title: "Incidents by type"
+
+  account_kpis_table:
+    type: table
+    query: account_kpis
+    title: "Account health KPIs"
+
+rows:
+  - title: "Delivery performance"
+    cols:
+      - on_time_trend
+      - sla_target_trend
+  - title: "Customer and operational burden"
+    cols:
+      - support_ticket_trend
+      - incident_trend
+  - title: "Operations"
+    cols:
+      - incident_mix
+  - title: "Account comparison"
+    rows:
+      - account_kpis_table
