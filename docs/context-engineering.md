@@ -26,6 +26,10 @@ its place next to embedding, not after it (see [comparison](comparison.md)).
 This is a real, governed, multi-platform building block, not the whole
 of a RAG pattern. [Roadmap](roadmap.md) covers what it still needs.
 
+[`analyses/the_pattern/`](https://github.com/dbt-labs/jaffle-logistics/tree/main/analyses/the_pattern)
+breaks this same pipeline into seven numbered, runnable queries, one per
+stage, each linked from its matching section below.
+
 ## Chunk: on the data's logical boundaries, or not at all
 
 Five sources, three chunking strategies.
@@ -82,6 +86,12 @@ does to search.
 Chunking costs nothing beyond ordinary SQL compute. No `embed()`,
 `generate()`, or `classify()` call happens here.
 
+Run it yourself:
+[`00_raw_transcript.sql`](https://github.com/dbt-labs/jaffle-logistics/blob/main/analyses/the_pattern/00_raw_transcript.sql)
+shows `CT-99001` before chunking,
+[`01_chunk.sql`](https://github.com/dbt-labs/jaffle-logistics/blob/main/analyses/the_pattern/01_chunk.sql)
+shows the same transcript after.
+
 ## Embed: for recall
 
 Five embedding models, one per source
@@ -107,6 +117,10 @@ It doesn't get you precision. In this project's own search results, a
 six-token trailing sentence and a contract's signature block outrank
 real account signal on plain cosine similarity (see
 [comparison](comparison.md)). That's what enrichment fixes.
+
+Run it yourself:
+[`02_embed.sql`](https://github.com/dbt-labs/jaffle-logistics/blob/main/analyses/the_pattern/02_embed.sql)
+shows `CT-99001`'s chunks with their populated `embedding` column.
 
 ## Enrich: for precision
 
@@ -136,11 +150,15 @@ directly.
 
 Same governed pattern as the embedding models: `guard_batch` and
 `log_ai_run` as pre-hooks, `complete_ai_run` as a post-hook, gated
-behind `ai_layer_enabled`. Not incremental, though: `classify()` has no
+behind `ai_functions_enabled`. Not incremental, though: `classify()` has no
 cache metadata the way `embed()` does, so every build reclassifies each
 source's whole corpus. At this demo's scale that's a small, disclosed
 cost; a larger corpus would need the equivalent of `embed()`'s caching
 before copying this pattern as-is.
+
+Run it yourself:
+[`05_classify.sql`](https://github.com/dbt-labs/jaffle-logistics/blob/main/analyses/the_pattern/05_classify.sql)
+shows `CT-99001`'s chunks with their assigned label.
 
 ## Combine: a real union of five independent sources
 
@@ -158,6 +176,10 @@ upstream system here. The citation URL preserves the finer-grained
 artifact id (which CRM note, which incident report, which ticket), so
 any result traces back to its source. `classification` is an optional
 slot in the package's shape; this project fills it for every source.
+
+Run it yourself:
+[`03_knowledge_base.sql`](https://github.com/dbt-labs/jaffle-logistics/blob/main/analyses/the_pattern/03_knowledge_base.sql)
+shows the unioned rows for Jaffle Equipment (`CLI-0042`) across all five sources.
 
 ## Search: by meaning, then by category
 
@@ -178,6 +200,12 @@ All four ran for real, against real embeddings and a real `classify()`
 pass. The raw runs don't return a clean top 10. The classified runs
 mostly do, with one disclosed gap. [Comparison](comparison.md) has the
 actual ranked output for all four.
+
+Run it yourself:
+[`04_raw_search.sql`](https://github.com/dbt-labs/jaffle-logistics/blob/main/analyses/the_pattern/04_raw_search.sql)
+is the account-scoped demo, raw;
+[`06_search_with_classify.sql`](https://github.com/dbt-labs/jaffle-logistics/blob/main/analyses/the_pattern/06_search_with_classify.sql)
+is the same demo filtered on `classification`.
 
 Cosine similarity at this scale doesn't need to be indexed.
 `dbt run-operation create_vector_index` adds one (Snowflake Cortex
@@ -215,12 +243,19 @@ near-duplicate boilerplate for isolation each source would realistically
 need: a bad batch or a rate limit on one source's `classify()` call
 doesn't block the other four's `dbt build --select` independently.
 
-That gate is `ai_layer_enabled` in `dbt_project.yml`, `false` by
+That gate is `ai_functions_enabled` in `dbt_project.yml`, `false` by
 default. It's a real dbt `+enabled` config, so a disabled model can't
 build even under an explicit `--select`. A plain `dbt build` never
 triggers AI spend. Turning it on is one flag:
-`--vars '{ai_layer_enabled: true}'`, covering `embedding_canary` too, so
+`--vars '{ai_functions_enabled: true}'`, covering `embedding_canary` too, so
 enabling spend is one decision, not several.
+
+The same var also drives a second, package-level gate: `generate`,
+`classify`, `embed`, `extract`, and `ai_agg` each refuse to fire unless
+`ai_functions_enabled` is `true` for the target, checked inside the
+function itself rather than a config value a caller has to remember to
+use. One flag, checked at both the selection-time `+enabled` gate above
+and inside the functions themselves.
 
 See [governance](governance.md) for the cost guards, audit log, and
 incremental design behind that gate.

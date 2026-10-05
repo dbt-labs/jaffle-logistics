@@ -44,7 +44,7 @@ What's still open:
   answer, even once the above is fixed. Completing the pattern means a
   `generate()`/`ai_complete()`-calling model that takes the top-k
   retrieved rows as context and synthesizes a response, gated behind
-  `ai_layer_enabled` and the same `guard_batch`/`log_ai_run` pattern the
+  `ai_functions_enabled` and the same `guard_batch`/`log_ai_run` pattern the
   embedding and classification models already use.
 
 None of this is built. This project has retrieval plus a real, working
@@ -83,7 +83,7 @@ without changing the retrieval story this project tells.
 ## What adding it would take
 
 - A `classify()`-calling model over CRM notes (sentiment) and support
-  tickets (sentiment and category), gated behind `ai_layer_enabled` and
+  tickets (sentiment and category), gated behind `ai_functions_enabled` and
   the same `guard_batch`/`log_ai_run` pattern the embedding and Path A
   classification models use, following the same per-project
   prompt/schema pattern (`macros/prompts/`) Path A demonstrates.

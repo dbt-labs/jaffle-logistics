@@ -1,10 +1,18 @@
 # Governance: what keeps AI-function spend safe to run
 
-Turning on `ai_layer_enabled` starts real, billed `embed()` and
+Turning on `ai_functions_enabled` starts real, billed `embed()` and
 `classify()` calls. This project uses `dbt_context_engineering`'s
 governed pattern to keep that safe: a cost guard before spend happens,
 an audit log of what ran, and an incremental design that keeps reruns
 cheap.
+
+`ai_functions_enabled` gates two things at once. `dbt_project.yml` keys
+`models/context/ai/`'s `+enabled:` config on it directly, a
+selection-time gate: dbt skips those models entirely, not just a
+documentation convention. The package's own `generate`/`classify`/
+`embed`/etc. also refuse to fire unless the same var is `true` for the
+target, checked inside the function itself so there's no config value
+to forget to route a call through. One flag covers both.
 
 ## The cost guard
 
@@ -21,11 +29,20 @@ unapproved spend before it happens, not after.
 
 ## The audit log
 
-`log_ai_run` writes a row to `ai_run_log` before the AI call;
-`complete_ai_run` flips it to `completed = true` after. Every run has a
-record of what was called, when, and whether it finished. A governance
-test, `assert_ai_run_log_all_completed`, asserts no run is ever left
-stuck incomplete.
+`log_ai_run` appends a `'started'` row to `ai_run_log` before the AI
+call; `complete_ai_run` appends a SEPARATE `'completed'` row for the
+same invocation after, rather than updating the `'started'` row in
+place (event-sourced, so two independent models writing on different
+threads never conflict over the same row). Every run has a record of
+what was called, when, and whether it finished, read by checking
+whether a `'completed'` row exists for a `'started'` row's keys. A
+governance test, `assert_ai_run_log_all_completed`, asserts no
+`'started'` row is ever left without a matching `'completed'` row.
+
+`ai_run_log` no longer self-creates on first write. This project wires
+`create_ai_run_log_table()` as an `on-run-start` hook in
+`dbt_project.yml`, so the table exists, created once and serially,
+before any AI-calling model's threads start.
 
 ## Retrieval quality is a governance question too
 

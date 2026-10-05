@@ -51,7 +51,8 @@ The same account, asked differently: `search.sql`'s
 `jaffle_equipment_performance_issues` demo embeds "late deliveries and
 what is driving them" once, then runs cosine similarity over
 `knowledge_base`, filtered to `account_key = 'CLI-0042'`. No join, no
-regex, no exact string.
+regex, no exact string. Run it yourself:
+[`04_raw_search.sql`](https://github.com/dbt-labs/jaffle-logistics/blob/main/analyses/the_pattern/04_raw_search.sql).
 
 The real top 10 on Snowflake:
 
@@ -94,7 +95,11 @@ against arbitrary future questions; that's separate work, covered in
 [roadmap](roadmap.md). What follows is real `classify()` output against
 real data, a demonstration of the mechanism, not proof it generalizes.
 
-Filtered to `classification = 'account_assessment'`:
+Filtered to `classification = 'account_assessment'`. Run it yourself:
+[`05_classify.sql`](https://github.com/dbt-labs/jaffle-logistics/blob/main/analyses/the_pattern/05_classify.sql)
+shows the labels, then
+[`06_search_with_classify.sql`](https://github.com/dbt-labs/jaffle-logistics/blob/main/analyses/the_pattern/06_search_with_classify.sql)
+runs the filtered search below:
 
 | rank | source_id | score | what it is |
 |---|---|---|---|
