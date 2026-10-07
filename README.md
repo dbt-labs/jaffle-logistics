@@ -48,6 +48,49 @@ DuckDB is the fastest path to seeing the project run, and the only target where 
 
    This seeds the source CSVs and builds the staging, intermediate, and marts models. The AI layer under `models/context/ai/` is skipped. `dbt_project.yml` sets `ai_functions_enabled: false` by default, so a plain `dbt build` never triggers a billed `embed()` or `classify()` call.
 
+### Run on Databricks
+
+1. Install the adapter alongside dbt Core 1.12.
+
+   ```bash
+   pip install "dbt-core>=1.12,<1.13" dbt-databricks
+   dbt deps
+   ```
+
+2. Add a `databricks` output to the `jaffle-logistics` profile and select it with `--target databricks` (or make it the profile's default `target`).
+
+   ```yaml
+   jaffle-logistics:
+     target: duckdb
+     outputs:
+       # duckdb: ... (as above)
+       databricks:
+         type: databricks
+         host: "{{ env_var('DATABRICKS_HOST') }}"            # e.g. dbc-1234abcd-5678.cloud.databricks.com
+         http_path: "{{ env_var('DATABRICKS_HTTP_PATH') }}"  # SQL warehouse > Connection details
+         token: "{{ env_var('DATABRICKS_TOKEN') }}"
+         catalog: "{{ env_var('DATABRICKS_CATALOG', 'main') }}"  # a Unity Catalog catalog you can create schemas in
+         schema: jaffle_logistics
+         threads: 8
+   ```
+
+3. Build the deterministic layer. Any SQL warehouse or cluster works for this step, and no AI functions are called.
+
+   ```bash
+   dbt build --target databricks
+   ```
+
+4. Optionally, build the AI layer (real, billed `ai_query()` and `ai_classify()` calls):
+
+   ```bash
+   dbt build --target databricks --vars '{"ai_functions_enabled": true}'
+   ```
+
+   This step has stricter prerequisites than step 3:
+
+   - **A serverless SQL warehouse (DBR 18.2+).** `ai_classify()` and `vector_cosine_similarity()` aren't available on classic or Pro warehouses. `dbt_context_engineering`'s serverless check is currently a no-op stub, so on the wrong warehouse type the AI models fail at run time with a Databricks "function not found" error, not a clear dbt message.
+   - **Access to the Foundation Model serving endpoints** named in `vars.yml`: `databricks-gte-large-en` (`embedding_model`) and `databricks-claude-haiku-4-5` (`model_generate`). Availability varies by region. If yours differs, override per invocation, e.g. `--vars '{"ai_functions_enabled": true, "embedding_model": "<your-endpoint>"}'`. Changing the embedding model changes the embedding fingerprint. The next build then re-embeds the whole corpus (billed), and the `embedding_canary` drift check has no baseline to compare against until you re-bless one (`dbt run-operation print_embedding_canary`).
+
 ### Running the AI layer
 
 Setting `ai_functions_enabled: true` builds the models under `models/context/ai/` instead of skipping them. Point your profile at Snowflake, BigQuery, or Databricks for that to mean real work: `embed()` and `classify()` calls that hit a real model endpoint and bill.
