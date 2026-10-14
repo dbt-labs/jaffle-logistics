@@ -1,0 +1,158 @@
+  /* ===== Fivetran + dbt Labs corporate theme =====================================================
+     Appended after the deck's own CSS by build_corporate.py. The deck's colours are CSS variables,
+     so the palette swap below does most of the work; the rest of this file swaps the 16-bit chrome
+     (pixel font, hard drop shadows, scanlines, thick frames) for the corporate deck's look: white
+     content slides with a navy headline, hairline cards, an IBM Plex Mono label voice, the logo
+     badge bottom-left with the brand gradient running along the foot, and navy title and section
+     slides carrying the template's colour blocks. */
+  :root {
+    --deep: #ffffff;          /* slide background, and the "ink on an accent" colour */
+    --navy: #ffffff;          /* card fill */
+    --navy-2: #f4f7fd;        /* tinted card fill */
+    --teal: #c9d6f0;          /* hairline, and the quiet data series */
+    --teal-hi: #4e83f7;       /* brand blue: primary accent, tabs, the "neutral" data series */
+    --hot: #e3346f;           /* brand pink, darkened for text on white: the bad number */
+    --amber: #ff6704;         /* brand orange: the number that matters */
+    --violet: #632ff5;
+    --text: #001526;          /* brand navy */
+    --dim: #5a6b7d;
+    --pixel: "Inter Tight", "Inter", system-ui, sans-serif;   /* loaded at 600 only, so it is always semibold */
+    --mono: "Inter", system-ui, sans-serif;
+    --code: "IBM Plex Mono", ui-monospace, monospace;
+    --brand-navy: #001526;
+    --brand-blue-lt: #a7c4fe;
+    --brand-grad: linear-gradient(90deg, #4f82f6 0%, #b662db 42%, #e75c87 70%, #fd6708 100%);
+  }
+
+  /* the semantic-layer appendix slides had their own amber-on-brown palette */
+  .reveal .sl {
+    --sl-bg: #ffffff;
+    --sl-panel: #ffffff;
+    --sl-head: #ffffff;
+    --sl-edge: #ffc9a3;
+    --sl-text: #001526;
+    --sl-dim: #8a5a35;
+  }
+  .reveal .sl .panel { border-color: #ffc9a3; }
+  .reveal .sl .hd h2 { color: var(--brand-navy); }
+
+  .reveal { font-family: var(--mono); color: var(--text); -webkit-font-smoothing: antialiased; }
+  .reveal code, .reveal .code, .reveal pre { font-family: var(--code); }
+
+  /* no scanlines, no hard pixel shadows, no blinking */
+  .frame::after { display: none; }
+  .reveal *, .reveal *::before, .reveal *::after { text-shadow: none !important; animation: none !important; }
+
+  /* cards: white, hairline border, soft corners */
+  .panel {
+    border: 1.5px solid #d9dee7;
+    border-radius: 10px;
+    box-shadow: 0 1px 2px rgba(0, 21, 38, .04), 0 4px 14px rgba(0, 21, 38, .05);
+  }
+  .panel > .tab {
+    top: 0; left: 18px; border-radius: 4px; padding: 5px 9px 4px;
+    font-family: var(--code); font-weight: 600; font-size: 12px; letter-spacing: .06em;
+    background: var(--brand-navy); color: #fff;
+  }
+  .sl .panel > .tab { background: var(--amber); color: #fff; }
+
+  /* the headline band becomes a plain headline, as on the corporate content slides */
+  .panel.hd { background: transparent; border: 0; box-shadow: none; border-radius: 0; padding-left: 28px; }
+  .hd h2 { font-family: var(--pixel); font-size: 40px; line-height: 1.12; letter-spacing: 0; color: var(--brand-navy); }
+  .hd h2 .no { font-family: var(--code); font-weight: 600; font-size: 16px; color: var(--amber); vertical-align: 8px; }
+  .hd h2 .when { font-family: var(--code); font-weight: 600; font-size: 13px !important; letter-spacing: .06em; border-radius: 4px; color: #fff !important; }
+  .hd .owns { font-size: 20px; color: var(--dim); }
+  .hd .owns .px { font-family: var(--code); font-weight: 600; }
+  .res .hd .key { font-size: 15px; }
+  .lt .hd:has(.ico) h2 { font-size: 34px; }
+
+  /* small label voice: IBM Plex Mono caps, letter-spaced */
+  .kick, .lt-flow .st .no, .src b, .lt-cards .card .n, .ask {
+    font-family: var(--code) !important; font-weight: 600; letter-spacing: .08em;
+  }
+  .src { font-size: 16px; }
+  .src b { font-size: 12px; color: var(--teal-hi); }
+
+  /* light-deck kit */
+  .lt-flow .st { border: 1.5px solid #d9dee7; border-radius: 10px; box-shadow: 0 4px 14px rgba(0, 21, 38, .05); }
+  .reveal .lt-flow .st.fragment.current-fragment { border-color: var(--amber); box-shadow: 0 0 0 3px rgba(255, 103, 4, .25); }
+  .lt-flow .st .nm { color: var(--brand-navy); }
+  .lt-flow .st .nm.code { font-family: var(--code); }
+  .lt-stmt .chips span { border: 1.5px solid var(--teal-hi); border-radius: 999px; background: #fff; font-family: var(--code); font-weight: 600; font-size: 16px; letter-spacing: .06em; }
+  .lt-stmt .ask { font-size: 16px; }
+  .lt-stmt .stmt { color: var(--brand-navy); }
+  .lt-cards .card .lbl, .lt-big .figs .v, .lt-cards .card .num, .lt .callout .v, .lt .facts .v { letter-spacing: -.01em; }
+  .rag .on { background: rgba(255, 103, 4, .07); }
+
+  /* pictures: the pixel drawings stay, recoloured; their black shadows become a soft grey */
+  .netmap .nd rect.sh { fill: #d9dee7; }
+  .storm .pic .skid rect, .storm .pic .sh { fill: #c3cad6; }
+  .storm .pic .w { fill: var(--brand-navy); }
+  .wx .chart .grd { stroke: #e3e8f0; }
+  .chart .ln.ghost { stroke: #b7c0cc; }
+  .chart .pt.ghost, .chart text.ghost { fill: #b7c0cc; }
+
+  /* the status bar: logo badge bottom-left, brand gradient along the foot, a quiet page label */
+  .panel.status {
+    left: 0; top: 664px; width: 1280px; height: 56px; padding: 0 24px 0 132px;
+    background: transparent; border: 0; border-radius: 0; box-shadow: none;
+    display: flex; align-items: center; justify-content: space-between;
+    font-family: var(--code); font-weight: 500; font-size: 12px; letter-spacing: .08em; color: var(--dim);
+  }
+  .panel.status::before {
+    content: ""; position: absolute; left: 0; top: 0; width: 114px; height: 56px;
+    background: var(--brand-navy) url("__LOGO_BADGE__") center / 102px auto no-repeat;
+  }
+  .panel.status::after { content: ""; position: absolute; left: 114px; right: 0; bottom: 0; height: 10px; background: var(--brand-grad); }
+  .panel.status > span { margin-top: -10px; }
+  .panel.status .c { color: var(--dim); }
+  .panel.status .r { display: none; }
+  .reveal .progress { color: var(--amber); background: transparent; height: 3px; }
+
+  /* ===== navy slides: the opening title, the Jaffle title, section breaks, thank-you ========== */
+  .reveal .slides section.talk, .reveal .slides section.ttl {
+    background: #fff url("__TITLE_BG__") center / 1280px 720px no-repeat;
+  }
+  .reveal .slides section.sect {
+    background: #fff url("__SECTION_BG__") center / 1280px 720px no-repeat;
+  }
+  section.talk .panel.status, section.ttl .panel.status, section.sect .panel.status { display: none; }
+  section.talk .panel, section.ttl .panel, section.sect .panel { background: transparent; border: 0; box-shadow: none; }
+
+  /* opening title: lock-up, mono kicker, big white headline, presenter */
+  .talk .title-box, .ttl .title-box {
+    left: 170px; top: 150px; width: 940px; height: 430px; padding: 0; text-align: left;
+    display: flex; flex-direction: column; align-items: flex-start;
+  }
+  .talk .title-box::before, .ttl .title-box::before {
+    content: ""; position: absolute; left: 0; top: -82px; width: 268px; height: 58px;
+    background: url("__LOGO_LOCKUP__") left center / contain no-repeat;
+  }
+  .talk .title-box h1, .ttl .title-box h1 {
+    order: 2; font-family: "Inter", sans-serif; font-weight: 600; font-size: 64px; line-height: 1.08;
+    letter-spacing: -.02em; color: #fff;
+  }
+  .talk .title-box .sub, .ttl .title-box .sub {
+    order: 1; margin: 18px 0 30px; font-family: var(--code); font-weight: 400; font-size: 26px; color: var(--brand-blue-lt);
+  }
+  .talk .title-box .who { order: 3; margin-top: 64px; font-size: 26px; color: #fff; }
+  .talk .title-box .role { order: 4; margin-top: 8px; font-size: 20px; color: #b9c4d0; }
+  .ttl .title-box .cities { order: 3; margin-top: 30px; font-size: 24px; color: #fff; }
+  .ttl .title-box .start { display: none; }
+  .ttl .title-box .prep { order: 5; position: static; margin-top: 64px; font-size: 18px; color: #b9c4d0; }
+  .ttl .title-box .src { position: static; order: 6; margin-top: 10px; padding: 0; color: #b9c4d0; }
+  .ttl .title-box .src b { color: var(--brand-blue-lt); }
+  .ttl .title-box .src code { color: #b9c4d0; }
+
+  /* section breaks: centred white headline on the navy block, mono kicker in light blue */
+  .sect .bd { left: 40px; top: 40px; width: 1160px; height: 600px; }
+  .sect .kick { font-size: 18px; color: var(--brand-blue-lt); }
+  .sect h2, section.sect h2 { font-family: "Inter", sans-serif !important; font-weight: 600; font-size: 64px; letter-spacing: -.02em; color: #fff !important; }
+  .sect .panel { color: #fff; }
+  .sect .panel div[style*="color:var(--dim)"] { color: #b9c4d0 !important; }
+  .sect .panel div[style*="var(--pixel)"] { font-family: var(--code) !important; color: var(--brand-blue-lt) !important; }
+  .sect .panel div[style*="border:4px solid var(--amber)"] { border: 0 !important; box-shadow: none !important; border-radius: 8px; overflow: hidden; }
+
+  /* the deck's logos are the official white versions, drawn for a dark slide; on white they are
+     flipped dark (invert keeps the dbt mark orange once the hue is turned back round) */
+  section:not(.talk):not(.ttl):not(.sect) svg image { filter: invert(1) hue-rotate(180deg); }
