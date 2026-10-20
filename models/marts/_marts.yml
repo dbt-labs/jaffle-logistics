@@ -1,5 +1,70 @@
 version: 2
 
+anchors:
+  - &shipment_metric_metadata
+    config:
+      meta:
+        ai:
+          ready: true
+          usage_notes: "Certified shipment-operations metric approved for AI consumption; use the metric description to choose the exact measure."
+          preferred_dimensions: [shipment__client_name, shipment__client_tier, shipment__origin_city, shipment__service_level, shipment__status, metric_time]
+        governance:
+          owner: analytics_engineering
+          status: certified
+          certified_by: analytics_engineering
+          business_domain: logistics_operations
+          semantic_version: 1
+        terminology:
+          when_to_use: "Use for governed questions about shipment volume, delivery outcomes, service levels, or shipment touchpoints."
+          approved_terms: [shipments, delivery performance, shipment operations]
+          when_not_to_use: "Do not use for incident, account-health, revenue, cost, or profit questions."
+          definition_short: "A certified measure of shipment activity or delivery performance."
+          business_synonyms: [shipment volume, deliveries, logistics activity]
+          discouraged_terms: [orders, incidents, revenue, profit]
+
+  - &incident_metric_metadata
+    config:
+      meta:
+        ai:
+          ready: true
+          usage_notes: "Certified incident-operations metric approved for AI consumption; use the metric description to choose the exact measure."
+          preferred_dimensions: [incident__incident_type, incident__severity, incident__hub_city, incident__has_report, metric_time]
+        governance:
+          owner: analytics_engineering
+          status: certified
+          certified_by: analytics_engineering
+          business_domain: safety_and_incidents
+          semantic_version: 1
+        terminology:
+          when_to_use: "Use for governed questions about operational incidents, severity, reports, or incident-linked work orders."
+          approved_terms: [incidents, operational incidents, incident reporting]
+          when_not_to_use: "Do not use for shipment volume, account health, revenue, cost, or profit questions."
+          definition_short: "A certified measure of operational incident activity or severity."
+          business_synonyms: [events, operational failures, safety incidents]
+          discouraged_terms: [shipments, support tickets, revenue, profit]
+
+  - &account_health_metric_metadata
+    config:
+      meta:
+        ai:
+          ready: true
+          usage_notes: "Certified client account-health metric approved for AI consumption; use the metric description to choose the exact measure."
+          preferred_dimensions: [account_month__client_name, account_month__tier, account_month__health, account_month__ontime_vs_target, account_month__sla_status, metric_time]
+        governance:
+          owner: analytics_engineering
+          status: certified
+          certified_by: analytics_engineering
+          business_domain: customer_success
+          semantic_version: 1
+        terminology:
+          when_to_use: "Use for governed questions about monthly client health, SLA performance, support burden, or client-attributed incidents."
+          approved_terms: [account health, client health, SLA performance]
+          when_not_to_use: "Do not use for shipment-level delivery rates, fleet-wide incidents, revenue, cost, or profit questions."
+          definition_short: "A certified measure of monthly client health or SLA performance."
+          business_synonyms: [customer health, service health, account performance]
+          discouraged_terms: [shipment-level performance, revenue, profit, gross margin]
+
+
 models:
   - name: time_spine_daily
     description: "Daily time spine for Semantic Layer time-based joins and aggregations, covering 2020 through 2029."
@@ -99,13 +164,15 @@ models:
         dimension:
           type: categorical
     metrics:
-      - name: shipment_count
+      - <<: *shipment_metric_metadata
+        name: shipment_count
         label: Shipments
         description: "Number of shipments created."
         type: simple
         agg: count
         expr: 1
-      - name: delivered_shipment_count
+      - <<: *shipment_metric_metadata
+        name: delivered_shipment_count
         label: Delivered shipments
         description: "Number of shipments with delivered status, the project's on-time definition."
         type: simple
@@ -113,7 +180,8 @@ models:
         expr: 1
         filter: |
           {{ Dimension('shipment__status') }} = 'delivered'
-      - name: delayed_shipment_count
+      - <<: *shipment_metric_metadata
+        name: delayed_shipment_count
         label: Delayed shipments
         description: "Number of shipments with delayed status."
         type: simple
@@ -121,7 +189,8 @@ models:
         expr: 1
         filter: |
           {{ Dimension('shipment__status') }} = 'delayed'
-      - name: failed_or_returned_shipment_count
+      - <<: *shipment_metric_metadata
+        name: failed_or_returned_shipment_count
         label: Failed or returned shipments
         description: "Number of shipments that failed or were returned."
         type: simple
@@ -129,25 +198,29 @@ models:
         expr: 1
         filter: |
           {{ Dimension('shipment__status') }} in ('failed', 'returned')
-      - name: total_shipment_touchpoints
+      - <<: *shipment_metric_metadata
+        name: total_shipment_touchpoints
         label: Shipment touchpoints
         description: "Total structured and text-extracted artifacts stitched to shipments."
         type: simple
         agg: sum
         expr: touchpoint_count
         fill_nulls_with: 0
-      - name: average_touchpoints_per_shipment
+      - <<: *shipment_metric_metadata
+        name: average_touchpoints_per_shipment
         label: Average touchpoints per shipment
         description: "Average number of stitched operational and customer artifacts per shipment."
         type: simple
         agg: average
         expr: touchpoint_count
-      - name: on_time_delivery_rate
+      - <<: *shipment_metric_metadata
+        name: on_time_delivery_rate
         label: On-time delivery rate
         description: "Delivered shipments divided by all shipments; returned as a ratio from 0 to 1."
         type: ratio
         numerator: delivered_shipment_count
         denominator: shipment_count
+
 
   - name: fct_incidents
     description: "Incident fact (grain: incident) with report/work-order flags."
@@ -206,13 +279,15 @@ models:
         dimension:
           type: categorical
     metrics:
-      - name: incident_count
+      - <<: *incident_metric_metadata
+        name: incident_count
         label: Incidents
         description: "Number of operational incidents."
         type: simple
         agg: count
         expr: 1
-      - name: severe_incident_count
+      - <<: *incident_metric_metadata
+        name: severe_incident_count
         label: Severe incidents
         description: "Number of incidents with severity 3 or 4."
         type: simple
@@ -220,7 +295,8 @@ models:
         expr: 1
         filter: |
           {{ Dimension('incident__severity') }} >= 3
-      - name: weather_incident_count
+      - <<: *incident_metric_metadata
+        name: weather_incident_count
         label: Weather incidents
         description: "Number of incidents classified as weather-related."
         type: simple
@@ -228,7 +304,8 @@ models:
         expr: 1
         filter: |
           {{ Dimension('incident__incident_type') }} = 'weather'
-      - name: handling_incident_count
+      - <<: *incident_metric_metadata
+        name: handling_incident_count
         label: Handling incidents
         description: "Number of damage or mispick incidents, used to track handling failures."
         type: simple
@@ -236,7 +313,8 @@ models:
         expr: 1
         filter: |
           {{ Dimension('incident__incident_type') }} in ('damage', 'mispick')
-      - name: reported_incident_count
+      - <<: *incident_metric_metadata
+        name: reported_incident_count
         label: Incidents with reports
         description: "Number of incidents with at least one incident report."
         type: simple
@@ -244,25 +322,29 @@ models:
         expr: 1
         filter: |
           {{ Dimension('incident__has_report') }} = true
-      - name: incident_report_rate
+      - <<: *incident_metric_metadata
+        name: incident_report_rate
         label: Incident report rate
         description: "Incidents with a report divided by all incidents; returned as a ratio from 0 to 1."
         type: ratio
         numerator: reported_incident_count
         denominator: incident_count
-      - name: average_incident_severity
+      - <<: *incident_metric_metadata
+        name: average_incident_severity
         label: Average incident severity
         description: "Average severity on the project's 1-to-4 scale."
         type: simple
         agg: average
         expr: severity
-      - name: incident_work_order_count
+      - <<: *incident_metric_metadata
+        name: incident_work_order_count
         label: Incident-linked work orders
         description: "Number of fleet work orders linked to incidents."
         type: simple
         agg: sum
         expr: work_order_count
         fill_nulls_with: 0
+
 
   - name: fct_account_health
     description: >
@@ -312,52 +394,60 @@ models:
           type: categorical
           expr: "case when ontime_vs_target >= 0 then 'meeting_sla' else 'below_sla' end"
     metrics:
-      - name: account_month_count
+      - <<: *account_health_metric_metadata
+        name: account_month_count
         label: Account months
         description: "Number of observed client-months."
         type: simple
         agg: count
         expr: 1
-      - name: account_health_shipment_count
+      - <<: *account_health_metric_metadata
+        name: account_health_shipment_count
         label: Account-health shipments
         description: "Shipments represented in the client-month account-health series."
         type: simple
         agg: sum
         expr: shipments
         fill_nulls_with: 0
-      - name: support_ticket_count
+      - <<: *account_health_metric_metadata
+        name: support_ticket_count
         label: Support tickets
         description: "Support tickets opened for clients in the selected period."
         type: simple
         agg: sum
         expr: ticket_count
         fill_nulls_with: 0
-      - name: account_incident_count
+      - <<: *account_health_metric_metadata
+        name: account_incident_count
         label: Client-attributed incidents
         description: "Incidents attributed to clients through an affected shipment."
         type: simple
         agg: sum
         expr: incident_count
         fill_nulls_with: 0
-      - name: average_monthly_on_time_pct
+      - <<: *account_health_metric_metadata
+        name: average_monthly_on_time_pct
         label: Average monthly on-time percentage
         description: "Average of client-month on-time percentages; use on_time_delivery_rate for shipment-weighted rollups."
         type: simple
         agg: average
         expr: ontime_pct
-      - name: average_sla_target_pct
+      - <<: *account_health_metric_metadata
+        name: average_sla_target_pct
         label: Average SLA target percentage
         description: "Average contracted on-time target across selected client-months."
         type: simple
         agg: average
         expr: sla_target
-      - name: average_on_time_vs_target_pct
+      - <<: *account_health_metric_metadata
+        name: average_on_time_vs_target_pct
         label: Average on-time variance to SLA
         description: "Average percentage-point difference between monthly on-time performance and SLA target."
         type: simple
         agg: average
         expr: ontime_vs_target
-      - name: months_meeting_sla_count
+      - <<: *account_health_metric_metadata
+        name: months_meeting_sla_count
         label: Months meeting SLA
         description: "Number of client-months at or above the contracted on-time target."
         type: simple
@@ -366,7 +456,8 @@ models:
         fill_nulls_with: 0
         filter: |
           {{ Dimension('account_month__sla_status') }} = 'meeting_sla'
-      - name: months_below_sla_count
+      - <<: *account_health_metric_metadata
+        name: months_below_sla_count
         label: Months below SLA
         description: "Number of client-months below the contracted on-time target."
         type: simple
@@ -376,13 +467,15 @@ models:
         filter: |
           {{ Dimension('account_month__sla_status') }} = 'below_sla'
 
-      - name: sla_attainment_rate
+      - <<: *account_health_metric_metadata
+        name: sla_attainment_rate
         label: SLA attainment rate
         description: "Client-months meeting SLA divided by all observed client-months; returned as a ratio from 0 to 1."
         type: ratio
         numerator: months_meeting_sla_count
         denominator: account_month_count
-      - name: support_tickets_per_100_shipments
+      - <<: *account_health_metric_metadata
+        name: support_tickets_per_100_shipments
         label: Support tickets per 100 shipments
         description: "Support burden normalized by shipment volume."
         type: derived
@@ -392,7 +485,8 @@ models:
             alias: support_tickets
           - name: account_health_shipment_count
             alias: shipments
-      - name: incidents_per_100_shipments
+      - <<: *account_health_metric_metadata
+        name: incidents_per_100_shipments
         label: Incidents per 100 shipments
         description: "Client-attributed incidents normalized by shipment volume."
         type: derived
