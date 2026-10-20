@@ -496,3 +496,73 @@ models:
             alias: incidents
           - name: account_health_shipment_count
             alias: shipments
+
+
+
+  # Intentionally disconnected Semantic Layer example. The revenue metric is
+  # defined on orders/customers, while supplier_region lives on a supplier-only
+  # semantic model. Asking for revenue by supplier region must fail because no
+  # shared entity creates a valid join path.
+  - name: semantic_example_orders
+    description: >
+      Demo order fact used to show Semantic Layer join-path validation. Grain:
+      one row per order. This model intentionally has no supplier entity.
+    semantic_model:
+      enabled: true
+    agg_time_dimension: ordered_at
+    columns:
+      - name: order_id
+        data_tests: [unique, not_null]
+        entity:
+          type: primary
+          name: sales_order
+      - name: customer_id
+        data_tests: [not_null]
+        entity:
+          type: foreign
+          name: customer
+      - name: ordered_at
+        granularity: day
+        dimension:
+          type: time
+      - name: revenue
+        description: "Revenue recognized for the order."
+    metrics:
+      - name: total_revenue
+        label: Total Revenue
+        description: >
+          Total order revenue. This metric can be grouped only by dimensions
+          reachable from the order/customer semantic model; supplier dimensions
+          are intentionally unreachable in this example.
+        type: simple
+        agg: sum
+        expr: revenue
+      - name: total_revenue_mtd
+        label: Total Revenue MTD
+        description: >
+          Month-to-date total revenue, intended to be grouped by metric_time at
+          day grain. Supplier Region is not a valid grouping because there is no
+          semantic join path from orders or customers to suppliers.
+        type: cumulative
+        input_metric: total_revenue
+        grain_to_date: month
+
+  - name: semantic_example_suppliers
+    description: >
+      Demo supplier dimension used to show an unreachable Semantic Layer
+      dimension. Grain: one row per supplier. It intentionally shares no entity
+      with semantic_example_orders.
+    semantic_model:
+      enabled: true
+    columns:
+      - name: supplier_id
+        data_tests: [unique, not_null]
+        entity:
+          type: primary
+          name: supplier
+      - name: supplier_region
+        description: >
+          Geographic region for a supplier. This dimension is intentionally
+          disconnected from the order/customer semantic model.
+        dimension:
+          type: categorical
