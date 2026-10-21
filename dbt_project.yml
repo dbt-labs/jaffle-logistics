@@ -1,4 +1,4 @@
-name: 'jaffle_logistics'
+name: 'context_engineering'
 version: '1.0.0'
 config-version: 2
 
@@ -7,6 +7,9 @@ config-version: 2
 require-dbt-version: [">=1.12.0"]
 
 profile: 'jaffle-logistics'
+
+dbt-cloud:
+  project-id: 70471823586909
 
 model-paths: ["models"]
 seed-paths: ["seeds"]
@@ -36,7 +39,8 @@ on-run-start:
   - "-- depends_on: {{ ref('ai_run_log') }}\n{{ dbt_context_engineering.create_ai_run_log_table() }}"
 
 models:
-  jaffle_logistics:
+  context_engineering:
+    +static_analysis: strict
     staging:
       +materialized: view
       +docs:
@@ -85,7 +89,7 @@ models:
       +enabled: "{{ var('ai_functions_enabled', false) }}"
 
 analyses:
-  jaffle_logistics:
+  context_engineering:
     # the_pattern/00 and /01 only touch pre-AI models and would parse fine either
     # way, but 02-06 ref() the models/context/ai/ layer gated above. Same flag,
     # same lockstep: an enabled analysis ref()ing a disabled model is a parse
@@ -95,7 +99,7 @@ analyses:
       +enabled: "{{ var('ai_functions_enabled', false) }}"
 
 seeds:
-  jaffle_logistics:
+  context_engineering:
     +quote_columns: false
     # Source phase (the project's raw origin data): green.
     +docs:
