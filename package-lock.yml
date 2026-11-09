@@ -1,8 +1,5 @@
 packages:
   - name: dbt_context_engineering
     package: dbt-labs/dbt_context_engineering
-    version: 0.1.2
-  - name: dbt_utils
-    package: dbt-labs/dbt_utils
-    version: 1.4.1
-sha1_hash: 126c45f7505ff3f30c233166406c2797f936be50
+    version: 0.2.0
+sha1_hash: 5c249a224a952b1cec27d148e9ba28ac75a2cf87
