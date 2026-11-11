@@ -48,6 +48,14 @@ the allowed set read from the same schema the classify call was given. The
 tests are enabled only when `ai_functions_enabled` is true, like the models
 they check, and only mean something against real classify output.
 
+The four `chunk_*` models carry the package's `no_oversized_chunks` test on
+`exceeds_target`, set to `warn`. `chunk_target_tokens` is 100 on purpose, so
+single sentences above that size are expected and the test reports them
+instead of failing the build. `grounded` and `eval` are not applied: they
+need an `extract()` model with an evidence column and a golden-labelled
+classify model, and this project has neither yet (see `docs/roadmap.md`,
+Path B).
+
 `ai_run_log` no longer self-creates on first write. This project wires
 `create_ai_run_log_table()` as an `on-run-start` hook in
 `dbt_project.yml`, so the table exists, created once and serially,
