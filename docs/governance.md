@@ -37,7 +37,16 @@ threads never conflict over the same row). Every run has a record of
 what was called, when, and whether it finished, read by checking
 whether a `'completed'` row exists for a `'started'` row's keys. A
 governance test, `assert_ai_run_log_all_completed`, asserts no
-`'started'` row is ever left without a matching `'completed'` row.
+`'started'` row is ever left without a matching `'completed'` row. The
+match includes `node_id` (the model's unique id), so one model's
+`'completed'` row cannot hide another model's failed `'started'` row.
+
+Each `*_classify` model also has a `conforms_to_schema` singular test
+(`assert_<source>_content_type_conforms`). It returns any row whose
+`content_type` is null or outside the `jaffle_content_type` v1 enum, with
+the allowed set read from the same schema the classify call was given. The
+tests are enabled only when `ai_functions_enabled` is true, like the models
+they check, and only mean something against real classify output.
 
 `ai_run_log` no longer self-creates on first write. This project wires
 `create_ai_run_log_table()` as an `on-run-start` hook in

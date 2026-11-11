@@ -96,7 +96,7 @@ up-to-meta, up-to-knowledge-base, knowledge base):
 | `analyses/` | The deterministic (join-only) and narrative demo queries |
 | `analyses/the_pattern/` | The chunk/embed/combine/search pipeline broken into seven numbered, runnable steps, one query per stage |
 | `macros/` | Portable cross-warehouse helpers and AI prompt definitions |
-| `tests/` | Singular tests, including an AI-run-log completeness check |
+| `tests/` | Singular tests: an AI-run-log completeness check and `conforms_to_schema` checks on each classify model's `content_type` |
 | `docs/` | The full write-up, built as an mkdocs-material site |
 
 Four adapters are supported: DuckDB (local, free), Snowflake, BigQuery, and
