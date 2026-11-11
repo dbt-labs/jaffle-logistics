@@ -8,4 +8,4 @@ select
     e.*,
     c.content_type as classification
 from {{ ref('call_transcripts_embed') }} e
-join {{ ref('call_transcripts_classify') }} c on c.chunk_id = e.chunk_id
+left join {{ ref('call_transcripts_classify') }} c on c.chunk_id = e.chunk_id

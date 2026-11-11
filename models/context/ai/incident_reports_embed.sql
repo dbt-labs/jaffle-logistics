@@ -38,6 +38,7 @@ with embedded as (
         {%- endif %} as embedding
     from {{ ref('incident_reports_hashed') }}
     {% if delta %}where {{ delta }}{% endif %}
+    {{ dbt_context_engineering.dev_sample_filter() }}
 )
 
 select

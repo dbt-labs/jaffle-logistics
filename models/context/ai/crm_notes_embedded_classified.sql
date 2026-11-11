@@ -8,4 +8,4 @@ select
     e.*,
     c.content_type as classification
 from {{ ref('crm_notes_embed') }} e
-join {{ ref('crm_notes_classify') }} c on c.chunk_id = e.chunk_id
+left join {{ ref('crm_notes_classify') }} c on c.chunk_id = e.chunk_id

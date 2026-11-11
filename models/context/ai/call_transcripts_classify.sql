@@ -34,3 +34,4 @@ select
     ) }}
     {%- endif %} as content_type
 from {{ ref('call_transcripts_hashed') }}
+{{ dbt_context_engineering.dev_sample_filter() }}

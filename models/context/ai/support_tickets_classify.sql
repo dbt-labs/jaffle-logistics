@@ -34,3 +34,4 @@ select
     ) }}
     {%- endif %} as content_type
 from {{ ref('support_tickets_hashed') }}
+{{ dbt_context_engineering.dev_sample_filter() }}

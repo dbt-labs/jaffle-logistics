@@ -34,3 +34,4 @@ select
     ) }}
     {%- endif %} as content_type
 from {{ ref('legal_docs_hashed') }}
+{{ dbt_context_engineering.dev_sample_filter() }}
