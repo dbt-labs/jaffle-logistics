@@ -46,6 +46,13 @@ models:
     columns:
       - name: chunk_id
         tests: [unique, not_null]
+      - name: exceeds_target
+        tests:
+          # warn, not error: chunk_target_tokens is set to 100 on purpose (see vars.yml), so
+          # single sentences above that size are expected here. The test still surfaces them.
+          - dbt_context_engineering.no_oversized_chunks:
+              config:
+                severity: warn
 
   - name: transcript_chunks_meta
     description: "Transcript chunks with client_id / call_date attached (attach_metadata)."
@@ -72,6 +79,13 @@ models:
     columns:
       - name: chunk_id
         tests: [unique, not_null]
+      - name: exceeds_target
+        tests:
+          # warn, not error: chunk_target_tokens is set to 100 on purpose (see vars.yml), so
+          # single sentences above that size are expected here. The test still surfaces them.
+          - dbt_context_engineering.no_oversized_chunks:
+              config:
+                severity: warn
 
   - name: legal_docs_chunks_meta
     description: "Legal-doc chunks with client_id / citation_url / artifact_ts attached (attach_metadata)."
@@ -101,6 +115,13 @@ models:
     columns:
       - name: chunk_id
         tests: [unique, not_null]
+      - name: exceeds_target
+        tests:
+          # warn, not error: chunk_target_tokens is set to 100 on purpose (see vars.yml), so
+          # single sentences above that size are expected here. The test still surfaces them.
+          - dbt_context_engineering.no_oversized_chunks:
+              config:
+                severity: warn
 
   - name: incident_reports_chunks_meta
     description: "Incident-report chunks with client_id / citation_url / artifact_ts attached (attach_metadata)."
@@ -127,6 +148,13 @@ models:
     columns:
       - name: chunk_id
         tests: [unique, not_null]
+      - name: exceeds_target
+        tests:
+          # warn, not error: chunk_target_tokens is set to 100 on purpose (see vars.yml), so
+          # single sentences above that size are expected here. The test still surfaces them.
+          - dbt_context_engineering.no_oversized_chunks:
+              config:
+                severity: warn
 
   - name: crm_notes_chunks_meta
     description: "CRM-note chunks with client_id / citation_url / artifact_ts attached (attach_metadata)."
