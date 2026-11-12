@@ -22,6 +22,12 @@
     post_hook="{{ dbt_context_engineering.complete_ai_run('classify', model_name='ai_classify (built-in)') }}"
 ) }}
 
+with sampled as (
+    select chunk_id, chunk_text
+    from {{ ref('support_tickets_hashed') }}
+    {{ dbt_context_engineering.dev_sample_filter() }}
+)
+
 select
     chunk_id,
     {% if is_duckdb -%}
@@ -33,5 +39,4 @@ select
         output_schema=dbt_context_engineering.schema_def('jaffle_content_type', 'v1')
     ) }}
     {%- endif %} as content_type
-from {{ ref('support_tickets_hashed') }}
-{{ dbt_context_engineering.dev_sample_filter() }}
+from sampled

@@ -25,8 +25,10 @@ vars:
   # AI-calling select of every *_classify and *_embed model). null = no sampling, so prod and any
   # run that does not set it process the full corpus. Set it only in dev/CI, per invocation:
   # --vars '{ai_sample_rows: 25}' caps each classify/embed model at 25 random rows. Do not set it in
-  # a prod job. Note guard_batch and log_ai_run still measure the unsampled input, so the guard
-  # stays conservative in dev.
+  # a prod job. Note guard_batch and log_ai_run still measure the unsampled input: the guard stays
+  # conservative in dev, and ai_run_log overstates rows and estimated cost for sampled runs.
+  # classify and embed each draw their own random sample, so in dev most embedded_classified rows
+  # (and knowledge_base.classification) are null.
   ai_sample_rows: null
 
   # Per-warehouse model endpoints (region/workspace-dependent; adjust if unavailable).
