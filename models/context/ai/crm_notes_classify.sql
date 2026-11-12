@@ -15,6 +15,7 @@
 
 {{ config(
     materialized='table',
+    meta={'ai_prompt': {'name': 'jaffle_content_type', 'version': 'v1'}},
     pre_hook=[
         "{{ dbt_context_engineering.guard_batch(ref('crm_notes_hashed'), 'chunk_text') }}",
         "{{ dbt_context_engineering.log_ai_run('classify', model_name='ai_classify (built-in)', relation=ref('crm_notes_hashed'), input_column='chunk_text') }}"
@@ -29,8 +30,8 @@ select
     {%- else -%}
     {{ dbt_context_engineering.classify(
         'chunk_text',
-        prompt=dbt_context_engineering.prompt('jaffle_content_type', 'v1'),
-        output_schema=dbt_context_engineering.schema_def('jaffle_content_type', 'v1')
+        prompt=dbt_context_engineering.config_prompt(),
+        output_schema=dbt_context_engineering.config_schema()
     ) }}
     {%- endif %} as content_type
 from {{ ref('crm_notes_hashed') }}

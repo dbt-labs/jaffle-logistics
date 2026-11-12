@@ -41,6 +41,11 @@ vars:
   # --- Output-side cost control ---------------------------------------------
   # Output cap on generate (AI_COMPLETE/ai_query max_tokens). No thinking knob on Cortex/Databricks.
   max_output_tokens: 1024
+  # Per-row output allowance the cost guard and ai_run_log add for classify calls. classify()
+  # returns one short label (not a max_output_tokens-sized reply), so without this the guard
+  # falls back to max_output_tokens above and overstates classify spend about 70 percent.
+  # Keep it a plain number: dbt_context_engineering treats a null or non-numeric value as 0.
+  est_output_tokens_per_row: 16
   # BigQuery AI.* thinking budget, cuts Gemini 2.5 Flash's default thinking output for
   # these structured tasks. Ignored (var default none) on Snowflake/Databricks.
   bq_thinking_budget: 0
