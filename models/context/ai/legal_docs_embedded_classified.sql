@@ -8,4 +8,4 @@ select
     e.*,
     c.content_type as classification
 from {{ ref('legal_docs_embed') }} e
-join {{ ref('legal_docs_classify') }} c on c.chunk_id = e.chunk_id
+left join {{ ref('legal_docs_classify') }} c on c.chunk_id = e.chunk_id

@@ -22,7 +22,14 @@
     post_hook="{{ dbt_context_engineering.complete_ai_run('embed', model_name=var('embedding_model')) }}"
 ) }}
 
-with embedded as (
+with sampled as (
+    select *
+    from {{ ref('call_transcripts_hashed') }}
+    {% if delta %}where {{ delta }}{% endif %}
+    {{ dbt_context_engineering.dev_sample_filter() }}
+),
+
+embedded as (
     select
         chunk_id,
         client_id,
@@ -36,8 +43,7 @@ with embedded as (
         {%- else -%}
         {{ dbt_context_engineering.embed('chunk_text') }}
         {%- endif %} as embedding
-    from {{ ref('call_transcripts_hashed') }}
-    {% if delta %}where {{ delta }}{% endif %}
+    from sampled
 )
 
 select

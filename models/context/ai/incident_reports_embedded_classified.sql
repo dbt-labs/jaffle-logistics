@@ -8,4 +8,4 @@ select
     e.*,
     c.content_type as classification
 from {{ ref('incident_reports_embed') }} e
-join {{ ref('incident_reports_classify') }} c on c.chunk_id = e.chunk_id
+left join {{ ref('incident_reports_classify') }} c on c.chunk_id = e.chunk_id

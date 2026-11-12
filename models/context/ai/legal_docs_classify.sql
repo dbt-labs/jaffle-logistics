@@ -23,6 +23,12 @@
     post_hook="{{ dbt_context_engineering.complete_ai_run('classify', model_name='ai_classify (built-in)') }}"
 ) }}
 
+with sampled as (
+    select chunk_id, chunk_text
+    from {{ ref('legal_docs_hashed') }}
+    {{ dbt_context_engineering.dev_sample_filter() }}
+)
+
 select
     chunk_id,
     {% if is_duckdb -%}
@@ -34,4 +40,4 @@ select
         output_schema=dbt_context_engineering.config_schema()
     ) }}
     {%- endif %} as content_type
-from {{ ref('legal_docs_hashed') }}
+from sampled
